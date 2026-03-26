@@ -1,0 +1,142 @@
+Horus Heresy
+============
+
+
+## Overview ##
+__What's this?__
+
+This is the data repo for the Horus Heresy 2nd edition supplemented with Panoptica rules and units
+
+BSData organisation created this project initially. It's a GitHub repository of datafiles.
+Maintained by community, in no way endorsed by BattleScribe or any other company/publisher. 
+If you want to help please create a PR or issue so we can take a look.
+
+We strongly recommend you use NewRecruit over Battlescribe, as battlescribe is abandonware.
+
+__Why was this setup?__
+
+I have been a long time user of the great repo set up [here](https://github.com/LeonisAstra/30K-4-All) but i ran into the issue that I could not use my mechanicum units. After much work trying to get the intial repo rebased and trying to add the new units I decided to start work on it from scratch. So this is a completely new project based upon the BSData repo with my own additions and inspiration from LeonIsAstra his repo.
+
+__I found a bug!__ / *I have another request*
+
+Great, thank you! Please [Report a bug][bug report] - you can also suggest enhancements and raise other issues there.
+
+# Roadmap
+
+## **Panoptica**
+Most entries processed
+
+TODO:
+- Shattered legionary
+-  Legion Praevian and Corrupted Engines (Page 123) Balance Change
+
+#### Weapons
+- All done except Extrinsica Weapons
+## **Ingenium**
+#### **HQ**
+#### **Elite**
+#### **Troops**
+Units: done
+- Porphetian Armoured carrier Dedicated transport ALL HQ: TODO
+#### **Fast Attack**
+#### **Heavy Support**
+#### **Lords of War**
+
+
+## **Centura**
+## **Antiqua**
+## **Imperatus**
+
+
+## Standards
+
+
+### Creating units
+#### Names
+In general, we remove the "Legion" prefix from units, unless that unit has a non-legion equivalent such as Legion Baneblade
+
+We create a unit entry for each unit, and a model entry within that unit (even if it's a single model unit).
+This allows us to get an accurate model count and keeps everything consistent.
+
+On UNITS we default them to hidden and add a modifier with constraint to set "Hidden to False" if "Equal to 1 selection in force of <> on". Ensure "And all child selections is checked".
+On UPGRADES, we default the option to not hidden, and set "Hidden to True" if the "off" condition is selected.
+
+#### Important reminders:
+These are requirements on a unit to maintain rites of war:
+- Solar Auxillia and Imperialis Militia units need "SA or IM Unit" for rites of war that count that number of units.
+- - Lords of war should be excluded from this as they won't be in the "allied detachment"
+
+### .cattemplate? and what are all the template_id_ comments?
+A .cattemplate file is a .cat file, renamed to .cattemplate, used by [BSCOPY](https://github.com/nstephenh/BSCopy)
+
+We used bscopy to copy all 18 legions after implementing the first one. 
+We didn't maintain the template so it's not recommended to re-run bscopy
+
+## Notes
+
+I am working on this in my free time and mainly focussed on getting the panoptica rules actually used by my gaming group added first.
+
+### Priority List
+
+- Mechanicum
+- Death Guard
+- Imperial Fists
+- Iron Warriors
+- Custodes
+- etc..
+
+
+## References
+
+* Horus Heresy: Age of Darkness Rulebook
+* [Warhammer: The Horus Heresy – Age of Darkness Rulebook Errata and FAQ V1.2](https://assets.warhammer-community.com/horusheresy_faqs&errata_rulebook_eng_24.09-mx5kndri3o.pdf)
+* Liber Astartes (Book)
+* Liber Hereticus (Book)
+* "Both Astartes Army books" refers to the first section of both of the above books, as they are identical
+* Liber Mechanicum (Book)
+* Liber Imperium (Book)
+* [Liber Astartes Errata and FAQ V1.2](https://assets.warhammer-community.com/horusheresy_faqs&errata_liberastartes_eng_24.09-oytusbjk5r.pdf)
+* [Liber Hereticus Errata and FAQ V1.2](https://assets.warhammer-community.com/horusheresy_faqs&errata_liberhereticus_eng_24.09-exfs3zjfaw.pdf)
+* [Liber Mechanicum Errata and FAQ V1.1](https://assets.warhammer-community.com/horusheresy_faqs&errata_libermechanicum_eng_24.09-ngyszpxnmn.pdf)
+* [Liber Imperium Errata and FAQ V1.1] (https://assets.warhammer-community.com/horusheresy_faqs&errata_liberimperium_eng_24.09-sgghybudv2.pdf)
+* [The Siege of Cthonia V1.0] (https://assets.warhammer-community.com/horusheresy_faqs&errata_siegeofcthonia_eng_24.09-684ujhnvfl.pdf)
+* [Warsmith Dominus] (https://assets.warhammer-community.com/horusheresy_additionalrules_warsmith_dominus_eng-9ngn2fiegx-mt2z5uei0r.pdf)
+* [Ka'bandha] (https://assets.warhammer-community.com/horusheresy_additionalrules_ka'bandha_eng_24.09-qn4rwnyoca.pdf)
+* [Legion Javelin] (https://assets.warhammer-community.com/horusheresy_additionalrules_legionjavelinsquadron_eng_24.09-hgogyoypdg.pdf)
+* [Arvus Lighter] (https://assets.warhammer-community.com/horusheresy_additionalrules_arvus_lighter_eng_05-jjogiky2h4-t4zpnlxhei.pdf)
+* [Legion Mastodon] (https://assets.warhammer-community.com/horusheresy_additionalrules_legionmastodon_eng_24.09-c0kpx1cgno.pdf)
+* [Legacies of The Age of Darkness Legions v1.3 PDF](https://assets.warhammer-community.com/dave-s-downloads-25-09/horusheresy_legaciesoftheageofdarkness_legionesastartes_eng_24.09.23.pdf)
+* [Legacies of The Age of Darkness: Imperialis Militia V1.1] (https://assets.warhammer-community.com/horusheresy_legaciesoftheageofdarkness_imperialismilitia_eng_24.09-tyq53ht49b.pdf)
+* [Legacies of The Age of Darkness: Mechanicum v1.0 PDF](https://assets.warhammer-community.com/horusheresy_legaciesoftheageofdarkness_mechanicum_eng_24.09-odihunq81s.pdf)
+* [Legacies of The Age of Darkness: Daemons of the Ruinstorm V1.0] (https://assets.warhammer-community.com/horusheresy_legaciesoftheageofdarkness_daemonsoftheruinstorm_eng_24.09-lufp0xm3vt.pdf)
+* [Legacies of The Age of Darkness: Solar Auxilia V1.1] (https://assets.warhammer-community.com/horusheresy_legaciesoftheageofdarkness_solarauxilia_eng_24.09-ws4kir7amo.pdf)
+
+
+* [Exemplary Battles of the Age of Darkness: The Axandria IV Incident] (https://assets.warhammer-community.com/horusheresy_exemplarybattles_thealexandriaivincident_eng_24.09-2q9tvfdyql.pdf) 
+
+* [Exemplary Battles of the Age of Darkness: The Depths of Tredecimmia] (https://assets.warhammer-community.com/dave-s-downloads-25-09/horusheresy_exemplarybattles_thedepthsoftredecimmia_eng_24.09.23.pdf)
+* [Exemplary Battles of the Age of Darkness: Liberation of Constanix II] (https://assets.warhammer-community.com/horusheresy_exemplarybattles_liberationofconstanixii_eng_24.09-xn2k0tfbto.pdf)
+* [Exemplary Battles of the Age of Darkness: The Burning of Ohmn-Mat] (https://assets.warhammer-community.com/horusheresy_exemplarybattles_theburningofohmn-mat_eng_24-vno3sfye0y.pdf)
+* [Exemplary Battles of the Age of Darkness: The Battle of Trisolian: Vengeful Spirit] (https://assets.warhammer-community.com/horusheresy_exemplarybattles_thebattleoftrisolian_vengefulspirit_eng_24.09-frcwsgxbix.pdf)
+* [Exemplary Battles of the Age of Darkness: The Battle of Felweather Keep] (https://assets.warhammer-community.com/horusheresy_exemplarybattles_thebattleforfelweatherkeep_eng_24.09-oqvigqdtrz.pdf)
+* [Exemplary Battles of the Age of Darkness: The Battle of Kalium Gate] (https://assets.warhammer-community.com/horusheresy_exemplarybattles_thebattleforkaliumgate_eng_24.09-ygtmebjf82.pdf)
+* [Exemplary Battles of the Age of Darkness: The Scouring of Gilden's Star] (https://assets.warhammer-community.com/horusheresy_exemplarybattles_thescouringofgilden'sstar_eng_24.09-cgf4kmmr28.pdf)
+* [Exemplary Battles of the Age of Darkness: The Battle of Nyrcon City] (https://assets.warhammer-community.com/horusheresy_exemplarybattles_thebattleofnyrconcity_eng_24.09-euuqt6gegh.pdf)
+* [Exemplary Battles of the Age of Darkness: The Battle of Perditus Umbral-51] (https://assets.warhammer-community.com/horusheresy_exemplarybattles_thebattleofperditusumbral51_eng_24.09-g3s1261myg.pdf)
+* [Exemplary Battles of the Age of Darkness: The Breaking of the Perfect Fortress] (https://assets.warhammer-community.com/horusheresy_exemplarybattles_thebreakingoftheperfectfortress_eng_24.09-5ds3vom7i0.pdf)
+* [Exemplary Battles of the Age of Darkness: Assault On Castrum Velx] (https://assets.warhammer-community.com/horusheresy_exemplarybattles_assaultoncastrumvelx_eng_24.09-qjasoqqvgz.pdf)
+* [Exemplary Battles of the Age of Darkness: The Death of Conopus] (https://assets.warhammer-community.com/horusheresy_exemplarybattles_thedeathofcanopus_eng_24.09-yq4yzvecwa.pdf)
+* [Exemplary Battles of the Age of Darkness: The Battle of Pluto: Hydra's Devestation] (https://assets.warhammer-community.com/dave-s-downloads-25-09/horusheresy_exemplarybattles_thebattieofpluto_hydra'sdevestation_eng_24.09.pdf)
+* [Exemplary Battles of Age of Darkness: Unit Update v1.1 PDF](https://assets.warhammer-community.com/horusheresy_exemplarybattles_exemplarybattlesunitupdate_eng_24.09-zvqxjklhwo.pdf)
+
+
+## Links ##
+
+* [BSData organization homepage][BSData.net]
+
+[BSData.net]: https://www.bsdata.net/
+
+## Contributors ##
+
+* Base contribution [BSData 2nd edtion repo](https://github.com/BSData/horus-heresy-2nd-edition)
+* [Pirak3](https://github.com/pirak3)
