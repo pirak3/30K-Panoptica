@@ -732,6 +732,11 @@
         <categoryLink targetId="7b0a-a743-a8da-3a39" id="075d-a861-097f-d2a6" primary="false" name="Transport Sub-type"/>
       </categoryLinks>
     </entryLink>
+    <entryLink import="true" name="Kataphron Breacher Servitor Maniple" hidden="false" id="9abc-5b55-440d-3a85" type="selectionEntry" targetId="9a73-c62b-f3d7-512d">
+      <categoryLinks>
+        <categoryLink targetId="7aee-565f-b0ae-294e" id="b9ce-a1f0-8108-0813" primary="true" name="Elites:"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="d0f2-ee39-450c-39db" name="Archmagos Prime" publicationId="bde1-6db1-163b-3b76" page="20" hidden="false" collective="false" import="true" type="unit">
