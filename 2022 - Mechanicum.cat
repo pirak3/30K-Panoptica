@@ -737,6 +737,16 @@
         <categoryLink targetId="7aee-565f-b0ae-294e" id="b9ce-a1f0-8108-0813" primary="true" name="Elites:"/>
       </categoryLinks>
     </entryLink>
+    <entryLink import="true" name="Kataphron Destructor Servitor Maniple" hidden="false" id="ca83-d194-be95-c746" type="selectionEntry" targetId="c423-5579-ad18-0ede">
+      <categoryLinks>
+        <categoryLink targetId="7aee-565f-b0ae-294e" id="f96e-6f79-a71a-d814" primary="true" name="Elites:"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Triaros Guardian" hidden="false" id="d984-29b8-e8cc-a402" type="selectionEntry" targetId="2ca6-bb02-21ad-6c8c">
+      <categoryLinks>
+        <categoryLink targetId="7aee-565f-b0ae-294e" id="7db3-5e16-775e-d7d7" primary="true" name="Elites:"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="d0f2-ee39-450c-39db" name="Archmagos Prime" publicationId="bde1-6db1-163b-3b76" page="20" hidden="false" collective="false" import="true" type="unit">

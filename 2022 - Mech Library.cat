@@ -413,7 +413,12 @@ In addition, when a model with an ionic deflector loses its last Wound or Hull P
             <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5087-e127-5d50-22d0" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="473a-89d7-e6ba-b3fa" name="Volkite Caliver" hidden="false" collective="false" import="true" targetId="9250-490f-abeb-b901" type="selectionEntry"/>
+            <entryLink id="473a-89d7-e6ba-b3fa" name="Volkite Caliver" hidden="false" collective="false" import="true" targetId="9250-490f-abeb-b901" type="selectionEntry">
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="49b4-ba7b-bc00-02e5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="ff9d-b9f1-0852-155f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="7332-6e75-9ca7-1113" name="Pintle Mounted Twin-Linked Mauler Bolt Cannon" hidden="false" collective="false" import="true" defaultSelectionEntryId="8a3b-2033-fd0b-78ca">
@@ -422,7 +427,12 @@ In addition, when a model with an ionic deflector loses its last Wound or Hull P
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7646-2d77-c613-2c28" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="8a3b-2033-fd0b-78ca" name="Twin-linked Mauler Bolt Cannon" hidden="false" collective="false" import="true" targetId="ac88-bcf4-d7b4-5c56" type="selectionEntry"/>
+            <entryLink id="8a3b-2033-fd0b-78ca" name="Twin-linked Mauler Bolt Cannon" hidden="false" collective="false" import="true" targetId="ac88-bcf4-d7b4-5c56" type="selectionEntry">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7d47-8bde-b724-a65f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6eb8-274c-89ca-b37a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="cab5-253f-bd6d-1b68" name="Up to two Hull (Front) Mounted Hunter-Killer Missiles" hidden="false" collective="false" import="true">
@@ -8689,7 +8699,7 @@ The Cybertheurgist may choose to make a Cybertheurgy check before using this Cyb
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Kataphron Breacher Servitor Maniple" hidden="false" id="9a73-c62b-f3d7-512d">
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Kataphron Breacher" hidden="false" id="b4d1-7a85-7b15-66f7">
+        <selectionEntry type="model" import="true" name="Kataphron Breacher" hidden="false" id="b4d1-7a85-7b15-66f7">
           <profiles>
             <profile name="Kataphron Breacher" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="5050-45be-7061-04a6">
               <characteristics>
@@ -8715,7 +8725,7 @@ The Cybertheurgist may choose to make a Cybertheurgy check before using this Cyb
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="45"/>
           </costs>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Melee Weapon" id="cfc5-c055-e78b-6ef0" hidden="false">
+            <selectionEntryGroup name="Melee Weapon" id="cfc5-c055-e78b-6ef0" hidden="false" defaultSelectionEntryId="0689-886c-19dc-7f41">
               <entryLinks>
                 <entryLink import="true" name="Hydraulic Claw" hidden="false" id="6195-715b-4628-5dfb" type="selectionEntry" targetId="5add-27e1-dbf3-2409">
                   <costs>
@@ -8729,7 +8739,7 @@ The Cybertheurgist may choose to make a Cybertheurgy check before using this Cyb
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="17bd-7b52-a656-ee6c"/>
               </constraints>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Ranged Weapon" id="4cf9-b672-6f02-3cc9" hidden="false">
+            <selectionEntryGroup name="Ranged Weapon" id="4cf9-b672-6f02-3cc9" hidden="false" defaultSelectionEntryId="e4e7-fdd8-dd32-171d">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7119-4827-e26d-a77b"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fa8a-f621-d771-9f02"/>
@@ -8838,6 +8848,287 @@ The Cybertheurgist may choose to make a Cybertheurgy check before using this Cyb
           </characteristics>
         </profile>
       </profiles>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Kataphron Destructor Servitor Maniple" hidden="false" id="c423-5579-ad18-0ede">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Kataphron Destructor" hidden="false" id="ec11-48ff-c491-1803">
+          <profiles>
+            <profile name="Kataphron Destructor" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="1025-3ea4-8a00-d6c2">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Servitor)</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">3</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">5</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">5</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">3</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">2</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">6</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">4+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Weapon #1" id="5f1a-d82e-d893-6e7a" hidden="false" defaultSelectionEntryId="68d3-f36a-bb83-734f">
+              <entryLinks>
+                <entryLink import="true" name="Arc Claw" hidden="false" id="68d3-f36a-bb83-734f" type="selectionEntry" targetId="b753-b373-03b8-83c4"/>
+                <entryLink import="true" name="Sulphur Ejector" hidden="false" id="8024-7acd-c6c1-7129" type="selectionEntry" targetId="c0ee-3a37-62de-1f35">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Phospor Repeater" hidden="false" id="b216-30cb-37e6-c1a1" type="selectionEntry" targetId="ef87-2eae-1595-178a">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="66bd-2d77-d2d9-b24e"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8a93-f587-841b-d7e1"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Weapon #2" id="3910-fe8b-5198-5d05" hidden="false" defaultSelectionEntryId="f507-99f4-c404-8b30">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8fef-b57a-7416-d1fb"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f78a-744a-75ca-28ef"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Graviton Imploder" hidden="false" id="f507-99f4-c404-8b30" type="selectionEntry" targetId="c651-d95e-6aa9-c3de"/>
+                <entryLink import="true" name="Phospor Cannon" hidden="false" id="4bf8-2f60-b692-7d2a" type="selectionEntry" targetId="eeae-3798-3132-ac98">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Erradication Beamer" hidden="false" id="c817-ff18-e37a-ba87" type="selectionEntry" targetId="9601-67b7-7281-5ad9">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Plasma Culverin" hidden="false" id="1937-d3f8-33ca-7b3d" type="selectionEntry" targetId="bb39-6ec3-adab-e29f">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink targetId="f60d-8386-e622-13f0" id="a1dc-c628-81c4-0e97" primary="false" name="Servitor Unit Sub-type"/>
+            <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="dae4-0d3b-f1f5-b82d" primary="false" name="Infantry Unit Type"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="15e6-b7df-5a06-dd57"/>
+            <constraint type="max" value="15" field="selections" scope="parent" shared="true" id="9a19-05e7-8bd8-0001"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Feel No Pain (X)" id="7f9c-7aaf-4c1a-5069" hidden="false" type="rule" targetId="ec46-ff29-32e0-c2aa">
+          <modifiers>
+            <modifier type="set" value="Feel No Pain (5+)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Bulky (X)" id="f9dd-a57c-a765-0ca5" hidden="false" type="rule" targetId="676c-7b75-4b6f-9405">
+          <modifiers>
+            <modifier type="set" value="Bulky (3)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Phospor Repeater" hidden="false" id="ef87-2eae-1595-178a">
+      <profiles>
+        <profile name="Phospor Repeater" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="2f37-6bfc-8d38-0dab">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Rapid Fire, Ignores Cover</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Ignores Cover" id="3ea4-2833-138f-52ca" hidden="false" type="rule" targetId="fdb5-59e2-c446-1cbc"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Sulphur Ejector" hidden="false" id="c0ee-3a37-62de-1f35">
+      <profiles>
+        <profile name="Sulphur Ejector" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="b4d9-f58a-628b-1f00">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">Template</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Torrent (6”), Breaching (6+)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Torrent (X)" id="7a77-583d-a75b-aeae" hidden="false" type="rule" targetId="5cfb-fc94-e6db-43b8">
+          <modifiers>
+            <modifier type="set" value="Torrent (6&quot;)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Breaching (X)" id="3256-645c-415e-8711" hidden="false" type="rule" targetId="a760-f736-1bf3-fa3c">
+          <modifiers>
+            <modifier type="set" value="Breaching (6+)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Erradication Beamer" hidden="false" id="9601-67b7-7281-5ad9">
+      <profiles>
+        <profile name="Erradication Beamer - 24-36&quot;" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="5153-f96b-84c8-edbe">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24-36&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1 Blast (3&quot;) Blind</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Erradication Beamer - Up to 12&quot;" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="eaa2-f601-731b-87eb">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">Up to 12&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1 Blast (3&quot;) Blind</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Erradication Beamer - 12-24&quot;" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="a496-db5e-9b6b-8b90">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">12-24&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1 Blast (3&quot;) Blind</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Blind" id="4172-b5c3-bd93-4d60" hidden="false" type="rule" targetId="d836-747d-07d6-2b63"/>
+        <infoLink name="Blast" id="8e85-2a0a-194d-4c21" hidden="false" type="rule" targetId="1d9a-73ef-5f4f-8bd8">
+          <modifiers>
+            <modifier type="set" value="Blast (3&quot;)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Plasma Culverin" hidden="false" id="bb39-6ec3-adab-e29f">
+      <profiles>
+        <profile name="Plasma Culverin" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="6123-6a55-bca3-8daf">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2, Blast (3”), Breaching (5+)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Blast" id="797c-e24e-7249-fcd7" hidden="false" type="rule" targetId="1d9a-73ef-5f4f-8bd8">
+          <modifiers>
+            <modifier type="set" value="Blast (3&quot;)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Breaching (X)" id="fa5e-9d7a-b640-c137" hidden="false" type="rule" targetId="a760-f736-1bf3-fa3c">
+          <modifiers>
+            <modifier type="set" value="Breaching (5+)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Triaros Guardian" hidden="false" id="2ca6-bb02-21ad-6c8c">
+      <profiles>
+        <profile name="Triaros Guardian" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="d6e7-1625-495b-cd96">
+          <characteristics>
+            <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle</characteristic>
+            <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">12</characteristic>
+            <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">4</characteristic>
+            <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">14</characteristic>
+            <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">12</characteristic>
+            <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">12</characteristic>
+            <characteristic name="HP" typeId="a76c-83b1-602f-9e62">6</characteristic>
+            <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">-</characteristic>
+            <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Void Shield" hidden="false" id="57ef-ddf3-eee7-23f2">
+          <infoLinks>
+            <infoLink name="Void Shields" id="4d2d-9029-47f4-3bb7" hidden="false" type="rule" targetId="c503-f5b8-3da0-16e6"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a35f-4c81-2155-5d58"/>
+            <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="4f9e-f236-d429-c4d5"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <infoLinks>
+        <infoLink name="Galvanic Traction Drive" id="c8e7-4c9f-f53e-6ce7" hidden="false" type="rule" targetId="e51e-cae1-d9e7-d317"/>
+        <infoLink name="It Will Not Die (X)" id="8ebe-ec7c-5eac-a948" hidden="false" type="rule" targetId="2784-d0be-a4e2-890f">
+          <modifiers>
+            <modifier type="set" value="It Will Not Die (6+)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Defensor-Grid Projector" id="976d-e22e-07bf-f36e" hidden="false" type="rule" targetId="5400-5607-6677-02a5"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Flare Shield" hidden="false" id="19d1-198d-0c58-51de" type="selectionEntry" targetId="0e77-6285-22bb-1534">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8444-432e-a597-228d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4b5d-c9c2-8dde-d489" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Searchlights" hidden="false" id="2ea5-f779-7024-77b0" type="selectionEntry" targetId="4ae3-79b4-6051-505e">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a503-8dc6-7e98-5bb1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="338a-e208-7712-e160" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Shock Ram" hidden="false" id="5ddb-d3e1-4609-5f7b" type="selectionEntry" targetId="e22e-df78-c49b-7b98">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7586-e454-ee74-1234" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c4da-3dfe-0466-2222" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Pintle Mounted Mauler Bolt Cannon Array" id="981d-ceb5-2eaf-55d2" hidden="false" collective="false" import="true" defaultSelectionEntryId="8a3b-2033-fd0b-78ca">
+          <entryLinks>
+            <entryLink import="true" name="Mauler Bolt Cannon Array" hidden="false" id="80f5-ac18-1aa4-4d4d" type="selectionEntry" targetId="412d-80d2-724d-bdf0">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c9b1-e068-9466-9f25" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1025-f659-efd5-124d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Centreline Mounted Volkite Calivers" id="97f4-77bd-34f9-650e" hidden="false" collective="false" import="true" defaultSelectionEntryId="473a-89d7-e6ba-b3fa">
+          <entryLinks>
+            <entryLink import="true" name="Volkite Caliver" hidden="false" id="9d2b-88a3-f211-b7bb" collective="false" targetId="9250-490f-abeb-b901" type="selectionEntry">
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="8c14-8c25-fe04-55f3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="cfcc-ed50-3688-6408" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="125"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="e2b6-b770-784c-9e95" id="b5d6-91e6-e5b3-6222" primary="false" name="Vehicle:"/>
+      </categoryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
