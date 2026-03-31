@@ -747,6 +747,11 @@
         <categoryLink targetId="7aee-565f-b0ae-294e" id="7db3-5e16-775e-d7d7" primary="true" name="Elites:"/>
       </categoryLinks>
     </entryLink>
+    <entryLink import="true" name="Sarumiat Battle-Automata Maniple" hidden="false" id="8aa7-e7c5-db80-a75f" type="selectionEntry" targetId="f1cf-4c2e-39ac-373b">
+      <categoryLinks>
+        <categoryLink targetId="7aee-565f-b0ae-294e" id="64d3-4b59-067b-f7ad" primary="true" name="Elites:"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="d0f2-ee39-450c-39db" name="Archmagos Prime" publicationId="bde1-6db1-163b-3b76" page="20" hidden="false" collective="false" import="true" type="unit">

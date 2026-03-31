@@ -9130,6 +9130,131 @@ The Cybertheurgist may choose to make a Cybertheurgy check before using this Cyb
         <categoryLink targetId="e2b6-b770-784c-9e95" id="b5d6-91e6-e5b3-6222" primary="false" name="Vehicle:"/>
       </categoryLinks>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Sarumiat Battle-Automata Maniple" hidden="false" id="f1cf-4c2e-39ac-373b">
+      <entryLinks>
+        <entryLink import="true" name="Paragon of Metal" hidden="false" id="85fc-8fd2-a48d-7c77" type="selectionEntry" targetId="cc2a-46fe-bbf3-6ba2">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="greaterThan" value="1" field="selections" scope="f1cf-4c2e-39ac-373b" childId="74a2-08fc-6504-4f9d" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Sarumiat" hidden="false" id="74a2-08fc-6504-4f9d">
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="165"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="10fc-0e8d-a66c-1906"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="5ad3-bc64-f0f1-5641"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Sarumiat Cleaver-Blades" hidden="false" id="003c-9c72-0a0f-6bf5">
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="61f5-b126-672e-d117"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="c075-3611-eb96-6220"/>
+              </constraints>
+              <profiles>
+                <profile name="Sarumiat Cleaver-Blades" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="3746-a82a-3cf8-39e4">
+                  <characteristics>
+                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+2</characteristic>
+                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Murderous Strike (6+)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Murderous Strike (X)" id="f6c8-3cd4-287a-5cff" hidden="false" type="rule" targetId="93b9-1454-0e7c-42ae">
+                  <modifiers>
+                    <modifier type="set" value="Murderous Strike (6+)" field="name"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Electrocoil Harpoon" hidden="false" id="7c37-e167-d0ff-153d">
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="d823-8cea-6ba0-7048"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6bd7-3d4b-8fe6-f3cf"/>
+              </constraints>
+              <profiles>
+                <profile name="Electrocoil Harpoon" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="93eb-eeba-1229-8de5">
+                  <characteristics>
+                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">8&quot;</characteristic>
+                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Brutal (2), Sniper, Prey-Snare (Minoris)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Brutal (X)" id="cc0d-d6a1-c50a-2f04" hidden="false" type="rule" targetId="5079-1fec-d32b-8b84">
+                  <modifiers>
+                    <modifier type="set" value="Brutal (2)" field="name"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Sniper" id="285c-2b2c-fa22-585b" hidden="false" type="rule" targetId="9cd8-e726-5dbe-b106"/>
+                <infoLink name="Prey-Snare (X)" id="b88e-de3a-b574-5857" hidden="false" type="rule" targetId="f653-4acb-2316-00e2">
+                  <modifiers>
+                    <modifier type="set" value="Prey-Snare (Minoris)" field="name"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Atomantic Deflector" hidden="false" id="533f-cee8-7c48-bd50" type="selectionEntry" targetId="38fb-9a0b-edef-a497">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b23e-647e-704e-36f6"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9f40-89c9-10e6-7e59"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Searchlights" hidden="false" id="ae24-ddac-7a7c-3a41" type="selectionEntry" targetId="4ae3-79b4-6051-505e">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fa55-3551-c3b9-5dda"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2f3a-6f33-b10d-06e5"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Fleet (X)" id="2579-7d54-1b2a-ba09" hidden="false" type="rule" targetId="ddc9-0b4b-78da-bbd2">
+          <modifiers>
+            <modifier type="set" value="Fleet (2)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Crusader" id="4b90-7230-af09-82e2" hidden="false" type="rule" targetId="c705-0829-75f6-a785"/>
+        <infoLink name="Hammer of Wrath (X)" id="d819-fdf7-ed9d-523f" hidden="false" type="rule" targetId="aec0-c3aa-1e4e-1779">
+          <modifiers>
+            <modifier type="set" value="Hammer of Wrath (2)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Hatred (X)" id="ef31-fed6-41c5-eba7" hidden="false" type="rule" targetId="dc0b-fe69-6b71-e0a4">
+          <modifiers>
+            <modifier type="set" value="Hatred (Everything!)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Monster Hunter" id="78e4-88bb-ff63-7cc5" hidden="false" type="rule" targetId="118d-58ce-8611-ab15"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="59a4-7b61-600a-c457" id="d0f6-2c24-7b0b-2e55" primary="false" name="Skirmish Sub-type"/>
+        <categoryLink targetId="2440-b64e-cb24-87f0" id="78f7-cedc-4adb-6e61" primary="false" name="Cybernetica Sub-type"/>
+        <categoryLink targetId="d8ab-8e21-e193-63ba" id="be18-86b3-64c8-8d71" primary="false" name="Automata Unit Type"/>
+      </categoryLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="1b29-a58e-296c-3946" name="Household Ranks" hidden="true" collective="false" import="true">
