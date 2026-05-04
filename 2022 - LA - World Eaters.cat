@@ -5204,5 +5204,29 @@
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Centurion: Rites of War" hidden="false" id="5def-3b0f-3898-daba">
+      <entryLinks>
+        <entryLink import="true" name="Centurion: Rites of War" hidden="false" id="8d75-528d-bef1-53d5" type="selectionEntryGroup" targetId="beb0-ea74-d478-d228"/>
+      </entryLinks>
+      <modifiers>
+        <modifier type="set" value="0" field="cf10-0fec-1c0c-9b08">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="e031-3c2-e3f8-d40a" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="0068-6b0a-0086-3d6b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f707-cf7f-2de7-be8b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cf10-0fec-1c0c-9b08" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink name="Rite of War:" hidden="false" id="7f48-8d2e-42dd-91e5" targetId="d494-e450-d4aa-579a" primary="true"/>
+      </categoryLinks>
+    </selectionEntry>
   </selectionEntries>
 </catalogue>

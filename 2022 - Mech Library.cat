@@ -117,7 +117,28 @@ Poisoned (X) or Rad-Phage Special Rules.
 Detachment has the Skitarii Unit Sub-type themselves.</description>
         </rule>
       </rules>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="force" shared="true" id="ae6a-3cce-04ff-a4f6" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="increment" value="1" field="ae6a-3cce-04ff-a4f6">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="36c3-e85e-97cc-c503" shared="true" roundUp="false" includeChildSelections="true"/>
+          </repeats>
+        </modifier>
+        <modifier type="decrement" value="1" field="ae6a-3cce-04ff-a4f6">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="0e88-0a7e-b04c-d6c3" shared="true" roundUp="false" includeChildSelections="true"/>
+          </repeats>
+        </modifier>
+        <modifier type="set" value="100" field="ae6a-3cce-04ff-a4f6">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="6c45-e6e0-74fb-6b9d" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </categoryEntry>
+    <categoryEntry name="Skitarii HQ Sub-Type" id="6c45-e6e0-74fb-6b9d" hidden="false"/>
   </categoryEntries>
   <sharedSelectionEntries>
     <selectionEntry id="e825-c60e-e6c3-60f0" name="Photon Gauntlet" publicationId="bde1-6db1-163b-3b76" page="117" hidden="false" collective="false" import="true" type="upgrade">
@@ -9254,6 +9275,156 @@ The Cybertheurgist may choose to make a Cybertheurgy check before using this Cyb
         <categoryLink targetId="2440-b64e-cb24-87f0" id="78f7-cedc-4adb-6e61" primary="false" name="Cybernetica Sub-type"/>
         <categoryLink targetId="d8ab-8e21-e193-63ba" id="be18-86b3-64c8-8d71" primary="false" name="Automata Unit Type"/>
       </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Archaeoptor Imperator Squadron" hidden="false" id="8c99-62eb-b2db-e671">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Archaeopter Imperator" hidden="false" id="3155-5f3e-d72f-7146">
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="120"/>
+          </costs>
+          <entryLinks>
+            <entryLink import="true" name="Searchlights" hidden="false" id="b2d8-35bf-6ae7-c542" type="selectionEntry" targetId="4ae3-79b4-6051-505e">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e2fb-f299-3915-0415"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5f4d-8d53-135a-3929"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Auto-Repeater Carbine" hidden="false" id="deac-8c62-a9e3-f089" type="selectionEntry" targetId="9f74-c345-daa3-012b">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="51ea-1aaf-b524-a30b"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="4ae3-5b98-d91b-3900"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="Two Sponson Mounted Auto-Repeater Carbines" field="name"/>
+              </modifiers>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <infoLinks>
+            <infoLink name="Broad-Spectrum Data-Tether" id="4759-8144-365b-aeef" hidden="false" type="profile" targetId="0934-8aee-0809-7a81"/>
+          </infoLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Weapon #1" id="0af3-7f3c-6309-158d" hidden="false" defaultSelectionEntryId="4a7f-88e1-8fb0-ff2d">
+              <entryLinks>
+                <entryLink import="true" name="Auto-Repeater Battery" hidden="false" id="4a7f-88e1-8fb0-ff2d" type="selectionEntry" targetId="c8b6-d37b-9804-82ba">
+                  <modifiers>
+                    <modifier type="set" value="Hull (Front) Mounted Auto-Repeater Battery" field="name"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Phospor Cannon" hidden="false" id="d49d-118f-b7a9-c89e" type="selectionEntry" targetId="eeae-3798-3132-ac98">
+                  <infoLinks>
+                    <infoLink name="Twin-linked" id="ec41-544c-0861-675e" hidden="false" type="rule" targetId="8542-ee9d-e2fa-52fe"/>
+                  </infoLinks>
+                  <modifiers>
+                    <modifier type="set" value="Hull (Front) Mounted Twin-Linked Phosphor Cannon" field="name"/>
+                  </modifiers>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bfd1-2160-5e60-cab3"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="57f6-80d8-7464-d9b7"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Weapon #2" id="ac02-1e3d-db68-9df5" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Auto-Repeater Battery" hidden="false" id="88f6-aca8-bd40-1d42" type="selectionEntry" targetId="c8b6-d37b-9804-82ba">
+                  <modifiers>
+                    <modifier type="set" value="Turret Mounted Auto-Repeater Battery" field="name"/>
+                  </modifiers>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Darkfire Cannon" hidden="false" id="8ca7-5521-0943-843e" type="selectionEntry" targetId="6f3d-9a42-da1d-2c2e">
+                  <modifiers>
+                    <modifier type="set" value="Turret Mounted Darkfire Cannon" field="name"/>
+                  </modifiers>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Gravis Lascannon" hidden="false" id="0cb4-14b6-acc4-3b1a" type="selectionEntry" targetId="1fe0-7c96-5200-0e39">
+                  <modifiers>
+                    <modifier type="set" value="Turret Mounted Gravis Lascannon" field="name"/>
+                  </modifiers>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c237-3a86-c446-757e"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="0c40-bbad-8d9f-21e9"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Tectomagnic Bomb Rack" hidden="false" id="5633-2085-4661-18c4">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Tectomagnic Bomb Rack" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="a710-43c0-b2cb-691a">
+                      <characteristics>
+                        <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
+                        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">6</characteristic>
+                        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Bomb 2, Blast (3”), Shred, Pinning, Shell Shock (2)</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Bomb" id="a323-a3a5-b6fe-3921" hidden="false" type="rule" targetId="37e8-1ecc-5953-1bb6"/>
+                    <infoLink name="Blast" id="8b2b-9170-9649-3951" hidden="false" type="rule" targetId="1d9a-73ef-5f4f-8bd8">
+                      <modifiers>
+                        <modifier type="set" value="Blast (3&quot;)" field="name"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink name="Shred" id="d3ac-c4c6-a02c-e10b" hidden="false" type="rule" targetId="5e7e-1628-8174-6f2c"/>
+                    <infoLink name="Pinning" id="9c96-25b5-b973-3c93" hidden="false" type="rule" targetId="1c96-205c-59a0-3cf2"/>
+                    <infoLink name="Shell Shock (X)" id="fb69-822b-4cc0-9f2c" hidden="false" type="rule" targetId="46b7-63a1-941c-96a5">
+                      <modifiers>
+                        <modifier type="set" value="Shell Shock (2)" field="name"/>
+                      </modifiers>
+                    </infoLink>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <categoryLinks>
+            <categoryLink targetId="e2b6-b770-784c-9e95" id="d831-dbcb-0b03-c275" primary="false" name="Vehicle:"/>
+            <categoryLink targetId="4e84-2d57-4986-2b23" id="f7d9-a629-51e7-eabe" primary="false" name="Flyer Sub-type"/>
+            <categoryLink targetId="3a7a-8bb7-b0d3-e2e7" id="5915-4459-83b0-fc29" primary="false" name="Hover Sub-type"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Archaeopter Imperator" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="d716-5893-0080-3406">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle (Flyer, Hover, Skitarii)</characteristic>
+                <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">18</characteristic>
+                <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">4</characteristic>
+                <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">11</characteristic>
+                <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">11</characteristic>
+                <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">11</characteristic>
+                <characteristic name="HP" typeId="a76c-83b1-602f-9e62">3</characteristic>
+                <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">-</characteristic>
+                <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="dfcf-8473-6211-e01d"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7a4f-7754-7fe3-8c3f"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <infoLinks>
+        <infoLink name="Deep Strike" id="3a62-eb2c-e41b-751e" hidden="false" type="rule" targetId="f1e1-986f-c783-ca9e"/>
+        <infoLink name="Attack Wing" id="7cf2-762b-cdc2-3f81" hidden="false" type="rule" targetId="d4dd-c15b-6cea-6c3f"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>

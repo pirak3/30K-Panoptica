@@ -5646,5 +5646,29 @@ Note that even though Jaghatai Khan is counted as having the Cavalry Unit Type 
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Centurion: Rites of War" hidden="false" id="119b-260c-9307-57a8">
+      <entryLinks>
+        <entryLink import="true" name="Centurion: Rites of War" hidden="false" id="d77c-e4a9-1a35-03b2" type="selectionEntryGroup" targetId="beb0-ea74-d478-d228"/>
+      </entryLinks>
+      <modifiers>
+        <modifier type="set" value="0" field="dd0c-4b93-4e7a-62fa">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="e031-3c2-e3f8-d40a" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="0068-6b0a-0086-3d6b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9075-fa59-e1ac-504f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dd0c-4b93-4e7a-62fa" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink name="Rite of War:" hidden="false" id="8927-4f68-29e0-75f8" targetId="d494-e450-d4aa-579a" primary="true"/>
+      </categoryLinks>
+    </selectionEntry>
   </selectionEntries>
 </catalogue>

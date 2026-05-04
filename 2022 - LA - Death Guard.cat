@@ -4933,5 +4933,30 @@ Any enemy unit with at least one model within 12&quot; of a Warlord with this Tr
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Centurion: Rites of War" hidden="false" id="8003-70e8-08da-503e">
+      <entryLinks>
+        <entryLink import="true" name="Centurion: Rites of War" hidden="false" id="58d0-5bac-c836-3be7" type="selectionEntryGroup" targetId="beb0-ea74-d478-d228">
+          <modifiers>
+            <modifier type="set" value="0" field="5767-a877-b8f6-7e20">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="e031-3c2-e3f8-d40a" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="0068-6b0a-0086-3d6b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d091-3cb6-473f-c890" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4393-3005-7b60-1377" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink targetId="f47f-295e-3ac6-e189" id="2b13-e8ca-29ba-2af0" primary="true" name="Centurion: Rites of War"/>
+      </categoryLinks>
+    </selectionEntry>
   </selectionEntries>
 </catalogue>
