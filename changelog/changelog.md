@@ -2,6 +2,17 @@
 
 All notable changes to the BattleScribe Data Repository will be documented in this file.
 
+## [Unreleased] - Current branch
+
+### Added
+- **Units**:
+  - `[Death Guard]` Added `[Death Shroud Cataphractii Squad]` - `[Elite]`
+  - `[Death Guard]` Added `[Grave Warden Tartaros Squad]` - `[Elite]`
+
+### Changed
+- **Units / Points**:
+  - `Consul`: Added new `[Death Guard]` consularis option: `[Alchymus]`
+
 ---
 
 ## Release Archive

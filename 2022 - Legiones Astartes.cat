@@ -70178,6 +70178,38 @@ Any Solar Auxilia Rifles Sections included through the use of the Overseer’s R
             </modifier>
           </modifiers>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Alchymus" hidden="false" id="0a98-0119-a145-3fee">
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35"/>
+          </costs>
+          <rules>
+            <rule name="Alchem Munitions" id="b74c-5709-beff-326f" hidden="false">
+              <description>The Alchymus, and any unit they join, gain the Poisoned (3+) Special Rule for all melee attacks, and the Fleshbane and Gets Hot Special Rules for all ranged attacks made with Bolt and Auto Weapons.</description>
+            </rule>
+            <rule name="Withering Aura" id="29d6-cb55-4b5a-107e" hidden="false">
+              <description>Any model locked in a combat with an Alchymus which does not have the Legiones Astartes (Death Guard) Special Rule suffers a -1 penalty to their
+Strength Characteristic for the duration of the combat.</description>
+            </rule>
+          </rules>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="b5b7-3410-a8e5-95a6" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="dd1f-1c51-706c-e5f7" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="XIV: Death Guard"/>
+                    <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="25a2-7a52-632a-6b2c" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="ae4a-f95c-968e-eb46" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <categoryLinks>
+            <categoryLink targetId="4171-e276-e90d-b8e5" id="a26b-423b-9ba8-4c02" primary="false" name="Legion Consularis:"/>
+            <categoryLink targetId="21b7-e431-9859-2d38" id="bcf7-3719-1a4a-4bcd" primary="false" name="Alchymus:"/>
+          </categoryLinks>
+        </selectionEntry>
       </selectionEntries>
       <infoLinks>
         <infoLink id="b1a4-9e87-ed6b-e517" name="Legiones Consularis" targetId="5a1d-d2f6-692b-d834" type="rule"/>
