@@ -34,13 +34,13 @@ All notable changes to the BattleScribe Data Repository will be documented in th
 ### [1.0.0] - 2026-03-26
 - Initial release
 
-### Added
+### Changed
 - **Units**:
-  - All units from legio centura
+  - All units from panoptica
 - **Weapons & Wargear**:
-  - All weapons and wargear from legio centura
+  - All weapons and wargear from panoptica
 - **Rules & Abilities**:
-  - All Rules and abilities from legio centura
+  - All Rules and abilities from panoptica
 - **TODO: 
   - Alternate game modes
   - Some exotic weapons
