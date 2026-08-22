@@ -5895,5 +5895,29 @@ Additionally, all models with the Infantry or Cavalry Unit Types in a unit that 
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Centurion: Rites of War" hidden="false" id="2e41-3219-0ea9-6c04">
+      <entryLinks>
+        <entryLink import="true" name="Centurion: Rites of War" hidden="false" id="83be-1a51-24f9-73e1" type="selectionEntryGroup" targetId="beb0-ea74-d478-d228"/>
+      </entryLinks>
+      <modifiers>
+        <modifier type="set" value="0" field="591e-636a-3234-5504">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="e031-3c2-e3f8-d40a" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="0068-6b0a-0086-3d6b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b45b-e18c-69d9-c4cd" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="591e-636a-3234-5504" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink name="Rite of War:" hidden="false" id="cc45-b73c-96a0-820e" targetId="d494-e450-d4aa-579a" primary="true"/>
+      </categoryLinks>
+    </selectionEntry>
   </selectionEntries>
 </catalogue>

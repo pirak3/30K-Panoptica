@@ -1523,6 +1523,7 @@ If that test is failed, the unit suffers one Wound, allocated by the controlling
       </rules>
     </categoryEntry>
     <categoryEntry name="Shattered Legion Primary Detachment" id="c248-15b0-d8ed-8990" hidden="false"/>
+    <categoryEntry name="Centurion: Rites of War" id="f47f-295e-3ac6-e189" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="d926-652f-8436-30ce" name="1. Crusade Force Organisation Chart" hidden="false">
@@ -2551,6 +2552,274 @@ If that test is failed, the unit suffers one Wound, allocated by the controlling
       <constraints>
         <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="c2e7-a23b-9550-671a"/>
       </constraints>
+    </forceEntry>
+    <forceEntry name="ZM 2. Centurion" id="b956-4f8e-2bca-7756" hidden="false">
+      <constraints>
+        <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="6d01-edcc-d504-7e78"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink name="Expanded Army Lists" hidden="false" id="1659-0187-d30a-063e" targetId="e8ed-ca49-ad6d-5688" primary="false"/>
+        <categoryLink name="Allegiance:" hidden="false" id="ef02-dd7d-d0fe-51fe" targetId="e90d-e5a8-f42d-da84" primary="false">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="f441-d2ea-15c6-331a" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="78ed-9d19-d877-eedf" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Centurion: Rites of War" hidden="false" id="69d7-4f70-d7ca-2324" targetId="f47f-295e-3ac6-e189"/>
+        <categoryLink name="Blackshield Oaths" hidden="false" id="adb4-7057-fab3-215f" targetId="cb34-ca48-547a-5d90"/>
+        <categoryLink name="The Rewards Of Treachery" hidden="false" id="7804-be83-f8b0-dfef" targetId="c5d2-69ee-8787-55d9" primary="false"/>
+        <categoryLink name="Provenances of War" hidden="false" id="9cb2-1af8-dc33-a41d" targetId="346a-fb59-a199-25c4" primary="false"/>
+        <categoryLink name="Ætheric Dominion (Whole Army)" hidden="false" id="3b3c-f5c1-d10e-3eab" targetId="5d31-e5d-67bd-1083">
+          <modifiers>
+            <modifier type="set" value="1" field="5924-d7a7-3d38-8d1d">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="afca-3047-fb26-d097" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d601-e213-fa45-8ee8" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="1" field="8b55-4d30-edcd-ab7a">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="afca-3047-fb26-d097" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d601-e213-fa45-8ee8" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="1" field="0868-9bc9-0302-5523">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="afca-3047-fb26-d097" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d601-e213-fa45-8ee8" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="5924-d7a7-3d38-8d1d"/>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="8b55-4d30-edcd-ab7a"/>
+            <constraint type="max" value="0" field="selections" scope="force" shared="true" id="0868-9bc9-0302-5523"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="HQ:" hidden="false" id="b112-c96d-0c8b-b315" targetId="4f85-eb33-30c9-8f51" primary="false">
+          <modifiers>
+            <modifier type="increment" value="1" field="3221-b65e-17db-9eda">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="b23c-e41d-1ffe-1a38" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="increment" value="1" field="bd5c-f954-5e46-83b7">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="41b5-73f0-cdc9-1f83" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="b23c-e41d-1ffe-1a38" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="increment" value="1" field="bd5c-f954-5e46-83b7">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="bf10-c83b-b8ed-aaf1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="5" field="bd5c-f954-5e46-83b7">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="9a27-97d3-a06-ef35" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="0" field="bd5c-f954-5e46-83b7">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="ced-ce18-5d5b-e54" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="0" field="3221-b65e-17db-9eda">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="ced-ce18-5d5b-e54" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="force" shared="true" id="bd5c-f954-5e46-83b7" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="3221-b65e-17db-9eda" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Elites:" hidden="false" id="c8c7-b11d-2a5b-0735" targetId="7aee-565f-b0ae-294e" primary="false">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="force" shared="true" id="a5ef-825d-2261-d2cb" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="efb2-e3a2-78a1-ea7f"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="6" field="a5ef-825d-2261-d2cb">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="e936-95f1-63a6-a606" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="1" field="efb2-e3a2-78a1-ea7f">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="e936-95f1-63a6-a606" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+        <categoryLink name="Troops:" hidden="false" id="20ad-5109-14d4-f2a5" targetId="9b5d-fac7-799b-d7e7" primary="false">
+          <constraints>
+            <constraint type="max" value="4" field="selections" scope="force" shared="true" id="052f-8864-92a9-112e" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="min" value="2" field="selections" scope="force" shared="true" id="eba4-bec7-e6fa-2f5b" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="052f-8864-92a9-112e">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="e936-95f1-63a6-a606" shared="true" includeChildSelections="true"/>
+              </conditions>
+              <comment>Pride is Our Armour</comment>
+            </modifier>
+            <modifier type="set" value="0" field="eba4-bec7-e6fa-2f5b">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="e936-95f1-63a6-a606" shared="true" includeChildSelections="true"/>
+              </conditions>
+              <comment>Pride is Our Armour</comment>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+        <categoryLink name="Fast Attack:" hidden="false" id="d3d1-76a1-fc81-00e2" targetId="20ef-cd01-a8da-376e" primary="false">
+          <modifiers>
+            <modifier type="increment" value="1" field="0e62-8752-eb1b-e756">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="force" childId="7031-469a-1aeb-eab0" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </repeats>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="e6ec-f3e6-760c-f9bb" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="4342-923b-e0dd-9e87" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="increment" value="1" field="0e62-8752-eb1b-e756">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="e6ec-f3e6-760c-f9bb" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="4342-923b-e0dd-9e87" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="1" field="895f-4c15-d42e-3e3e">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="4ca1-b02c-e2c7-5f09" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="296a-89a3-2269-2093" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="increment" value="4" field="895f-4c15-d42e-3e3e">
+              <conditions>
+                <condition type="atLeast" value="4" field="selections" scope="force" childId="d3bb-bdf9-4478-9553" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="3" field="895f-4c15-d42e-3e3e">
+              <conditions>
+                <condition type="equalTo" value="3" field="selections" scope="force" childId="d3bb-bdf9-4478-9553" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="2" field="895f-4c15-d42e-3e3e">
+              <conditions>
+                <condition type="equalTo" value="2" field="selections" scope="force" childId="d3bb-bdf9-4478-9553" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="895f-4c15-d42e-3e3e">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="d3bb-bdf9-4478-9553" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="force" shared="true" id="895f-4c15-d42e-3e3e" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="0e62-8752-eb1b-e756" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Heavy Support:" hidden="false" id="cd31-c29a-039e-815a" targetId="7031-469a-1aeb-eab0" primary="false">
+          <modifiers>
+            <modifier type="set" value="1" field="e5d0-536a-1a82-c455">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="e20d-6f02-d7d5-395f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="20d9-ae98-5324-6bb3" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="4ca1-b02c-e2c7-5f09" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="7f55-5d02-ba77-243d" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="c030-15b8-323b-f17b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="9c83-69fb-8066-a773" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="force" shared="true" id="e5d0-536a-1a82-c455" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Compulsory HQ:" hidden="false" id="e6fc-0dfb-8e06-c26d" targetId="f823-8c1d-6a87-26a1" primary="false">
+          <modifiers>
+            <modifier type="increment" value="1" field="fd1b-6501-8095-6503">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="b23c-e41d-1ffe-1a38" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="0" field="fd1b-6501-8095-6503">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="ced-ce18-5d5b-e54" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="fd1b-6501-8095-6503" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Compulsory Troops:" hidden="false" id="8335-df6f-5f4c-0a7c" targetId="8f42-a824-fb5f-8fea" primary="false">
+          <modifiers>
+            <modifier type="increment" value="1" field="8c27-d319-7493-5424">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="b23c-e41d-1ffe-1a38" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="force" shared="true" id="8c27-d319-7493-5424" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Infantry Unit Type" hidden="false" id="1832-2815-d681-8832" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
+        <categoryLink name="Clanfolk Cavalry (Troops)" hidden="false" id="888f-baed-9acc-2485" targetId="d029-ac65-0ade-0c32" primary="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="b6a7-0554-4124-a687" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Ogryn Conscripts (Compulsory)" hidden="false" id="7035-55f8-c3e0-29a0" targetId="d813-b3e9-24f0-78bd" primary="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="6f56-1c49-c07a-2ee9" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
     </forceEntry>
   </forceEntries>
   <selectionEntries>
@@ -4239,7 +4508,7 @@ Then choose the army you wish to have a lord of war from, then pick &quot;Lord o
         <profile id="1e69-e442-2d5b-8787" name="Gravis Lascannon" publicationId="a716-c1c4-7b26-8424" page="132" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
             <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2, Sunder</characteristic>
           </characteristics>
@@ -17613,6 +17882,155 @@ Special rules that are removed:
         </modifier>
       </modifiers>
     </selectionEntryGroup>
+    <selectionEntryGroup name="Centurion: Rites of War" id="beb0-ea74-d478-d228" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Ambush Contingent" hidden="false" id="62c0-3639-5a2a-c62b">
+          <rules>
+            <rule name="Ambush Contingent" id="3a5e-ab8f-3cb4-6697" hidden="false">
+              <description>• All models with the Scout or Infiltrate Special Rules gain the Shrouded (6+) Special Rule, or a +1 to the Shrouded Special Rule if they already
+have it, during the first Game Turn.
+• You may re-roll the dice to determine who gets the first turn, and re-roll an attempt to Seize the Initiative.
+• Rather than rolling to see if Night Fighting is in effect, the Controlling Player of this Army may choose if the Night Fighting Special Rule is in
+effect or not. If both Players have this effect, use the regular Night Fighting Rules instead.
+• Legion Scout Squads or Legion Reconnaissance Squads do not have the Support Squad Special Rule.
+
+• All Compulsory Troops Choices in a detachment using this Rite of War must be Legion Scout Squads or Legion Reconnaissance Squads.
+• No model equipped with any variant of Legion Terminator Armour may be selected in a Detachment using this Rite of War.
+• No Infantry model with the Heavy or Artillery Sub-types may be selected in a Detachment using this Rite of War.
+• A Legion Centurion with the Vigilator or Pathfinder Legiones Consularis Upgrade must be taken as the Compulsory HQ choice for a
+Detachment using this Rite of War.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Ravager Warband" hidden="false" id="8746-18c9-dad7-523c">
+          <rules>
+            <rule name="Ravager Warband" id="8b54-a5b3-abf9-ba00" hidden="false">
+              <description>• A unit equipped with any pattern of Jump Pack in a detachment using this Rite of War may re-roll the dice to determine their charge distance -
+but must accept the second result, even if it is worse.
+• A unit equipped with any pattern of Jump Pack in a detachment using this Rite of War which deploys via Deep Strike gains the Shrouded (5+)
+Special Rule on the turn it arrives.
+• Legion Veteran Assault Squads gain the Line Sub-type in a detachment using this Rite of War.
+
+
+• All Compulsory Troops Choices in a detachment using this Rite of War must be Legion Assault Squads.
+• In a detachment using this Rite of War, at least one Legion Assault Support Squad must be taken as a non-Compulsory Troops Choice.
+• A model equipped with any pattern of jump pack must be taken as the Compulsory HQ choice for a Detachment using this Rite of War.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Tactical Strike Force" hidden="false" id="b773-f5f4-e348-6e25">
+          <rules>
+            <rule name="Tactical Strike Force" id="5f2c-1901-a9d9-f7e9" hidden="false">
+              <description>• All models in a detachment using this Rite of War equipped with a Bolter (including those armed with Specialist Ammunition such as Asphyx
+or Shrapnel, etc) may use the Fury of the Legion Special Rule, even if they would not normally be able to do so.
+• All Legion Tactical Support Squad units in a detachment using this Rite of War gain the Heart of the Legion Special Rule.
+• Any model in a detachment using this Rite of War which benefits from the Heart of the Legion Special Rule gains the Feel No Pain (5+) Special
+Rule, instead of Feel No Pain (6+) Special Rule. The Feel No Pain (5+) cannot be improved by any source.
+
+
+• All Compulsory Troops Choices in a detachment using this Rite of War must be Legion Tactical Squads.
+• In a detachment using this Rite of War, at least one Legion Tactical Support Squad must be taken as a Troops Choice.
+• A Detachment using this Rite of War must take a model with the Independent Character Special Rule which is not equipped with any pattern
+of Jump Pack, Terminator Armour, Bike, or Jetbike as a Compulsory HQ choice.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Blooded Veterans" hidden="false" id="5ca0-3855-a537-0473">
+          <rules>
+            <rule name="Blooded Veterans" id="d33a-804d-ca2f-44a3" hidden="false">
+              <description>• Legion Veteran Squads may be taken as Troops Choices in a detachment using this Rite of War.
+• Legion Veteran Squads taken as Compulsory Troops Choices gain the Line Sub-type.
+• Legion Veteran Assault Squads may be taken as non-Compulsory Troops Choices in a detachment using this Rite of War.
+• Whilst constructing your army, you may choose to give each Legion Veteran Squad and Legion Veteran Assault Squad in a detachment using this
+Rite of War either the Precision Strikes (6+) or Precision Shots (6+) Special Rules.
+
+
+• All Compulsory Troops Choices in a detachment using this Rite of War must be Legion Veteran Squads.
+• If all Legion Veteran Squads taken in a detachment using this Rite of War are removed from play, the Opposing Player gains an additional Victory
+Point.
+• A Detachment using this Rite of War must take a Legion Centurion with the Champion Legiones Consularis upgrade as a Compulsory HQ choice.
+• If a Legion Centurion with the Champion Legiones Consularis upgrade taken in a detachment using this Rite of War is removed from play, the
+Opposing Player gains an additional Victory Point.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Destroyer Conclave" hidden="false" id="b54c-2bc9-a6ee-d58d">
+          <rules>
+            <rule name="Destroyer Conclave" id="fed7-97db-4db3-4a8c" hidden="false">
+              <description>• Any model which may take a Havoc Launcher in a detachment using this Rite of War may instead take a Phosphex Discharger for +20 points.
+• Any unit which has any models equipped with a Missile Launcher in a detachment using this Rite of War may purchase Rad Missiles in
+addition to their normal ammunition types for +10 points per model.
+• Legion Destroyer Assault Squads and Legion Destroyer Mortalis Squads may be taken as Troops Choices in a detachment using this
+Rite of War.
+• In a detachment using this Rite of War, Legion Destroyer Assault Squads and Legion Destroyer Mortalis Squads may act as a Denial unit as
+long as they are within 6” of an Objective, instead of the usual 3”.
+
+
+• A Detachment using this Rite of War must take a Legion Centurion with the Siege Breaker or Moritat Legiones Consularis upgrade as a
+Compulsory HQ choice.
+• All Compulsory Troops Choices in a detachment using this Rite of War must be Legion Destroyer Assault Squads or Legion Destroyer
+Mortalis Squads.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Command Brigade" hidden="false" id="7817-3f75-afd5-5f7a">
+          <rules>
+            <rule name="Command Brigade" id="ba19-fb90-ee26-10b9" hidden="false">
+              <description>• In a detachment using this Rite of War, the effect range of the Legion Standard wargear is increased to 12”.
+• Any unit equipped with a Nuncio-Vox in a detachment using this Rite of War may benefit from the effects of the Cognis Signum carried by a
+Master of Signals – though this bonus can only be claimed by one unit per turn.
+• A Legion Command Squad may be taken for any Centurion in a detachment using this Rite of War.
+
+
+• In a detachment using this Rite of War, the Warlord must be a Legion Centurion with the Delegatus Legiones Consularis upgrade.
+• In a detachment using this Rite of War you must select a Legion Command Squad, of which the Delegatus must be the Leader.
+• A Legion Centurion with the Master of Signals Legiones Consularis upgrade must be selected as part of a detachment using this Rite of War.
+This Centurion occupies the same Force Organisation Slot as the Delegatus, and must be attached to the Command Squad including the
+Delegatus.
+• In a detachment using this Rite of War, when a Legion Command Squad or model with the Independent Character Special Rule is removed
+from play, the Opposing Player gains an additional Victory Point.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Breacher Shieldwall" hidden="false" id="9391-f2e0-e77d-8bda">
+          <rules>
+            <rule name="Breacher Shieldwall" id="cf74-b963-ebbe-ab30" hidden="false">
+              <description>• In a detachment using this Rite of War, any model armed with a Boarding Shield in unit coherency with at least two other models also
+equipped with Boarding Shields may re-roll Invulnerable Saves of 1.
+• In a detachment using this Rite of War, any model armed with a Boarding Shield in base-to-base contact with at least two other models also
+equipped with Boarding Shields count their Weapon Skill as +1 whilst any model attempts to hit them in close combat.
+• In a detachment using this Rite of War, Legion Breacher Squads gain the Relentless Special Rule.
+• Legion Tactical Support Squads may be equipped with Boarding Shields for +5 points per model. (If this upgrade is selected, the whole squad
+must be so upgraded). Any units upgraded in this manner gain the Heavy Sub-type.
+
+
+• A model equipped with a Boarding Shield must be taken as the Compulsory HQ choice for a Detachment using this Rite of War.
+• All Compulsory Troops Choices in a detachment using this Rite of War must be Legion Breacher Squads.
+• A Detachment using this Rite of War must take at least one Legion Tactical Support Squad, and this squad must be equipped with Boarding
+Shields.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Seeker Cadre" hidden="false" id="4594-2775-2a85-5f5e">
+          <rules>
+            <rule name="Seeker Cadre" id="1992-6cd2-15da-5ee5" hidden="false">
+              <description>• Legion Seeker Squads may be taken as Troops Choices in a detachment using this Rite of War.
+• All units in a detachment using this Rite of War gain the Preferred Enemy (Warlord) Special Rule.
+• In a detachment using this Rite of War, if you successfully slay the enemy Warlord, you gain an additional Victory Point.
+
+
+• In a detachment using this Rite of War, if you do not successfully slay the enemy Warlord, the Opposing Player an additional Victory Point.
+• All Compulsory Troops Choices in a detachment using this Rite of War must be Legion Seeker Squads.
+• In a detachment using this Rite of War, all models equipped with any variant of Terminator Armour, with the Artillery Sub-type, or with the
+Vehicle Unit Type must begin the game in Reserve.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5767-a877-b8f6-7e20" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
     <rule id="0ac9-fab7-aef3-de1d" name="Rending (X)" publicationId="e77a-823a-da94-16b9" page="246" hidden="false">
@@ -18608,6 +19026,13 @@ Note that if a unit makes use of this Special Rule, they may not claim the bene
     </rule>
     <rule name="Immobile" id="a37b-25ee-9b14-12fa" hidden="false">
       <description>A model with this Special Rule may not move for any reason, including making Run moves, declaring or otherwise making Charge moves, falling back, or make Reactions which would allow it to move. If it would be forced to do so, the model is immediately destroyed.</description>
+    </rule>
+    <rule name="Bomb" id="37e8-1ecc-5953-1bb6" hidden="false">
+      <description>Bombs are weapon types unique to Flyers. All Bombs have the One Use special rule. Unlike other weapons, Bombs must be used in the Movement phase of their turn in a special kind of attack called a Bombing Run. A model can only attack with one Bomb type weapon in its Movement phase. If a model attacks with a Bomb type weapon, it counts as having already attacked with one weapon in its ensuing Shooting phase. However, any additional weapons it fires that turn can choose a different target to that of the Bomb.
+
+
+Bombing Runs
+To make a Bombing Run, a Flyer must be Zooming. Move the model that is making the Bombing Run, and then nominate one model that it passed over. Place the Blast marker for the Bomb so that the central hole on the marker is over the target model, and roll a Scatter dice. If a Hit is rolled, the attack is on target and the marker is not moved. If an arrow is rolled, move the marker D6&quot; in that direction. Once the final position has been determined, resolve the effects as described in the Bomb’s profile.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
