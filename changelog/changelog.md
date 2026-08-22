@@ -26,6 +26,7 @@ All notable changes to the BattleScribe Data Repository will be documented in th
 ### Changed
 - **Weapons & Wargear**:
   - Fixed strength of `[Gravis Lascannon]`: 10 -> 9
+  - Fixed AP of `[Hydraulic claw - Iron Grasp]` : - -> 2
 
 ---
 
