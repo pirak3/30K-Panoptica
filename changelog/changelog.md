@@ -4,7 +4,9 @@ All notable changes to the BattleScribe Data Repository will be documented in th
 
 ---
 
-## [Unreleased] - Current branch
+## Release Archive
+
+### [2026-08-22]
 
 ### Added
 - **Units**:
@@ -28,9 +30,6 @@ All notable changes to the BattleScribe Data Repository will be documented in th
   - Fixed strength of `[Gravis Lascannon]`: 10 -> 9
   - Fixed AP of `[Hydraulic claw - Iron Grasp]` : - -> 2
 
----
-
-## Release Archive
 
 ### [1.0.0] - 2026-03-26
 - Initial release
