@@ -11,6 +11,8 @@
 
 # Don't ignore docs
 !*.md
+!/changelog/
+!/changelog/*md
 
 # Don't ignore github files
 !/.github

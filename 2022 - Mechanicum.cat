@@ -737,6 +737,28 @@
         <categoryLink targetId="7aee-565f-b0ae-294e" id="b9ce-a1f0-8108-0813" primary="true" name="Elites:"/>
       </categoryLinks>
     </entryLink>
+    <entryLink import="true" name="Kataphron Destructor Servitor Maniple" hidden="false" id="ca83-d194-be95-c746" type="selectionEntry" targetId="c423-5579-ad18-0ede">
+      <categoryLinks>
+        <categoryLink targetId="7aee-565f-b0ae-294e" id="f96e-6f79-a71a-d814" primary="true" name="Elites:"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Triaros Guardian" hidden="false" id="d984-29b8-e8cc-a402" type="selectionEntry" targetId="2ca6-bb02-21ad-6c8c">
+      <categoryLinks>
+        <categoryLink targetId="7aee-565f-b0ae-294e" id="7db3-5e16-775e-d7d7" primary="true" name="Elites:"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Sarumiat Battle-Automata Maniple" hidden="false" id="8aa7-e7c5-db80-a75f" type="selectionEntry" targetId="f1cf-4c2e-39ac-373b">
+      <categoryLinks>
+        <categoryLink targetId="7aee-565f-b0ae-294e" id="64d3-4b59-067b-f7ad" primary="true" name="Elites:"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Imperator Squadron" hidden="false" id="49a9-7434-0b42-bee8" type="selectionEntry" targetId="8c99-62eb-b2db-e671">
+      <categoryLinks>
+        <categoryLink targetId="20ef-cd01-a8da-376e" id="3b4d-f4dd-19cf-c795" primary="true" name="Fast Attack:"/>
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="e5df-cc16-d1bb-61c6" primary="false" name="Unit:"/>
+        <categoryLink targetId="0e88-0a7e-b04c-d6c3" id="def3-d6e5-caa3-0bc1" primary="false" name="Skitarii Unit Sub-Type"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="d0f2-ee39-450c-39db" name="Archmagos Prime" publicationId="bde1-6db1-163b-3b76" page="20" hidden="false" collective="false" import="true" type="unit">
@@ -7378,7 +7400,6 @@ not be changed during the battle.</description>
           </profiles>
           <categoryLinks>
             <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="b3ba-e512-3409-b386" primary="false" name="Infantry Unit Type"/>
-            <categoryLink targetId="0e88-0a7e-b04c-d6c3" id="b699-18b6-720c-606a" primary="false" name="Skitarii Unit Sub-Type"/>
             <categoryLink targetId="6399-5c65-7833-1025" id="9ecd-f4f6-4ba3-1299" primary="false" name="Line Sub-type"/>
           </categoryLinks>
           <constraints>
@@ -7409,7 +7430,6 @@ not be changed during the battle.</description>
           </profiles>
           <categoryLinks>
             <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="29b7-d214-4499-b7a9" primary="false" name="Infantry Unit Type"/>
-            <categoryLink targetId="0e88-0a7e-b04c-d6c3" id="c435-63db-1375-9a82" primary="false" name="Skitarii Unit Sub-Type"/>
             <categoryLink targetId="6399-5c65-7833-1025" id="d78e-12e9-16fd-63e4" primary="false" name="Line Sub-type"/>
             <categoryLink targetId="f75a-d5c1-59ba-5c5a" id="b78b-74d5-fb69-7fda" primary="false" name="Character"/>
           </categoryLinks>
@@ -7478,6 +7498,9 @@ not be changed during the battle.</description>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="38"/>
       </costs>
+      <categoryLinks>
+        <categoryLink targetId="0e88-0a7e-b04c-d6c3" id="c4ae-cb59-62e6-ca0d" primary="false" name="Skitarii Unit Sub-Type"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Skitarii Ranger Cohort" hidden="false" id="c4fb-cfaf-57fa-726c">
       <selectionEntryGroups>
@@ -7568,7 +7591,6 @@ not be changed during the battle.</description>
           <categoryLinks>
             <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="c40b-43df-7533-505a" primary="false" name="Infantry Unit Type"/>
             <categoryLink targetId="6399-5c65-7833-1025" id="c31b-0b2e-0c3c-1f27" primary="false" name="Line Sub-type"/>
-            <categoryLink targetId="0e88-0a7e-b04c-d6c3" id="d5d7-3fb4-dc6d-c84b" primary="false" name="Skitarii Unit Sub-Type"/>
           </categoryLinks>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Ranger Alpha" hidden="false" id="760b-6cc7-0101-6bf1" sortIndex="1">
@@ -7659,7 +7681,6 @@ not be changed during the battle.</description>
           <categoryLinks>
             <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="96f8-9ba8-9ac8-b9cd" primary="false" name="Infantry Unit Type"/>
             <categoryLink targetId="6399-5c65-7833-1025" id="f3ca-b89c-5210-bdcc" primary="false" name="Line Sub-type"/>
-            <categoryLink targetId="0e88-0a7e-b04c-d6c3" id="1f14-ab74-ab81-51b0" primary="false" name="Skitarii Unit Sub-Type"/>
             <categoryLink targetId="f75a-d5c1-59ba-5c5a" id="ec37-0435-7361-bcab" primary="false" name="Character"/>
           </categoryLinks>
         </selectionEntry>
@@ -7681,6 +7702,9 @@ not be changed during the battle.</description>
           </constraints>
         </entryLink>
       </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="0e88-0a7e-b04c-d6c3" id="29f0-32f4-d40c-420d" primary="false" name="Skitarii Unit Sub-Type"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Skitarii Decimator Cohort" hidden="false" id="1102-f178-641e-6f28">
       <selectionEntryGroups>
@@ -7827,7 +7851,6 @@ not be changed during the battle.</description>
           <categoryLinks>
             <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="8df3-01c9-e899-1ffe" primary="false" name="Infantry Unit Type"/>
             <categoryLink targetId="6399-5c65-7833-1025" id="ab23-31cd-0862-45ca" primary="false" name="Line Sub-type"/>
-            <categoryLink targetId="0e88-0a7e-b04c-d6c3" id="d320-b728-b478-6054" primary="false" name="Skitarii Unit Sub-Type"/>
           </categoryLinks>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Decimator Alpha" hidden="false" id="e24a-5121-ed16-7779" sortIndex="1">
@@ -7896,7 +7919,6 @@ not be changed during the battle.</description>
           <categoryLinks>
             <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="8c25-c0a0-9a92-48f0" primary="false" name="Infantry Unit Type"/>
             <categoryLink targetId="6399-5c65-7833-1025" id="1e6f-2ed8-34bf-0e9b" primary="false" name="Line Sub-type"/>
-            <categoryLink targetId="0e88-0a7e-b04c-d6c3" id="0b4a-8d6e-2d10-69c9" primary="false" name="Skitarii Unit Sub-Type"/>
             <categoryLink targetId="f75a-d5c1-59ba-5c5a" id="9892-051c-94aa-84d3" primary="false" name="Character"/>
           </categoryLinks>
         </selectionEntry>
@@ -7912,6 +7934,9 @@ not be changed during the battle.</description>
           </constraints>
         </entryLink>
       </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="0e88-0a7e-b04c-d6c3" id="1a1b-577e-9f08-fd92" primary="false" name="Skitarii Unit Sub-Type"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Skorpius Dunerider" hidden="false" id="c8a6-5089-8357-1333">
       <infoLinks>

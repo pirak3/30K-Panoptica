@@ -5141,6 +5141,30 @@
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Centurion: Rites of War" hidden="false" id="2432-b6ca-14e3-bf16">
+      <entryLinks>
+        <entryLink import="true" name="Centurion: Rites of War" hidden="false" id="911c-c760-b2e2-7c8e" type="selectionEntryGroup" targetId="beb0-ea74-d478-d228"/>
+      </entryLinks>
+      <modifiers>
+        <modifier type="set" value="0" field="b20b-a866-8027-b1a4">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="e031-3c2-e3f8-d40a" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="0068-6b0a-0086-3d6b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d2b3-e4fc-de7c-a6e7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b20b-a866-8027-b1a4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink name="Rite of War:" hidden="false" id="a337-1f5f-024d-9345" targetId="d494-e450-d4aa-579a" primary="true"/>
+      </categoryLinks>
+    </selectionEntry>
   </selectionEntries>
   <publications>
     <publication name="Warsmith Dominus" id="ef86-87b0-a0fa-6d7b" hidden="false" publisher="Warhammmer Community" publicationDate="2025/03/18"/>

@@ -24529,6 +24529,11 @@ If one or more Wounds is discounted due to this special rule, and the unit that 
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" value="2" field="9594-0515-6074-e9b5">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="62c0-3639-5a2a-c62b" shared="true" includeChildSelections="true" childName="Ambush Contingent"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <infoLinks>
         <infoLink id="1e59-9bd4-20c6-6183" name="Scout" hidden="false" targetId="aacf-9a7e-982d-b793" type="rule"/>
@@ -24537,9 +24542,14 @@ If one or more Wounds is discounted due to this special rule, and the unit that 
         <infoLink id="7ec2-fc4e-5d86-fb0f" name="Support Squad" hidden="false" targetId="768e-56d6-ca52-24ae" type="rule">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="dbde-0e4f-0b5a-43d2" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="62c0-3639-5a2a-c62b" shared="true" includeChildSelections="true" childName="Ambush Contingent"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </infoLink>
@@ -25398,6 +25408,9 @@ If one or more Wounds is discounted due to this special rule, and the unit that 
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
       </costs>
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="9594-0515-6074-e9b5"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry id="e02a-2de6-0b34-e02a" name="Coriolis Pattern Power Shield" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
