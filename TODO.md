@@ -17,5 +17,8 @@ Units Done:
     Sarumiat Battle-Automata
 
 ## Centura
+
+### Death Guard
+Done
 ## Antiqua
 ## Imperatus

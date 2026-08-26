@@ -907,8 +907,15 @@ Conversely, if an Independent Character joins a unit after that unit has been th
             <conditionGroup type="or">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="5d75-f1c7-d6a7-a055" shared="true" id="2952-9f50-c25e-8ca9" includeChildSelections="true"/>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="6e1e-8616-6e4a-173d" shared="true" includeChildSelections="true"/>
               </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="6e1e-8616-6e4a-173d" shared="true" includeChildSelections="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" shared="true" includeChildSelections="true" childName="Alchymus:" childId="21b7-e431-9859-2d38"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </conditionGroup>
           </conditionGroups>
         </modifier>
@@ -1524,6 +1531,23 @@ If that test is failed, the unit suffers one Wound, allocated by the controlling
     </categoryEntry>
     <categoryEntry name="Shattered Legion Primary Detachment" id="c248-15b0-d8ed-8990" hidden="false"/>
     <categoryEntry name="Centurion: Rites of War" id="f47f-295e-3ac6-e189" hidden="false"/>
+    <categoryEntry name="Alchymus:" id="21b7-e431-9859-2d38" hidden="false">
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="force" shared="true" id="c6fc-73e1-1178-1294" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="c6fc-73e1-1178-1294" id="69bb-6e57-1e70-7adc">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="6e1e-8616-6e4a-173d" shared="true" includeChildSelections="true"/>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="8247-54dc-9194-948f" shared="true" includeChildSelections="true" childName="Siege Breaker:"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="d926-652f-8436-30ce" name="1. Crusade Force Organisation Chart" hidden="false">
