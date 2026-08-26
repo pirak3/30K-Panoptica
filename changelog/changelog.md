@@ -8,11 +8,16 @@ All notable changes to the BattleScribe Data Repository will be documented in th
 - **Units**:
   - `[Death Guard]` Added `[Death Shroud Cataphractii Squad]` - `[Elite]`
   - `[Death Guard]` Added `[Grave Warden Tartaros Squad]` - `[Elite]`
+  - `[Iron Warriors]` Added `[Barbas Dantioch]` - `[HQ]`
+  - `[Iron Warriors]` Added `[Volk-Sa'ra'ram]` - `[HQ]`
 
 ### Changed
 - **Units / Points**:
   - `Consul`: Added new `[Death Guard]` consularis option: `[Alchymus]`
-
+- **Weapons & Profiles**:
+  - `Rite of War`: Added new `[Iron Warriors]` rite of war: `[The Iron Without]`
+  - `Shrapnel Weapons`: Added `[Twin-Linked Shrapnel Cannon]` for `[Iron Warriors]`
+  - `Shrapnel Weapons`: Added `[Gravis Shrapnel Cannon Battery]` for `[Iron Warriors]`
 ---
 
 ## Release Archive

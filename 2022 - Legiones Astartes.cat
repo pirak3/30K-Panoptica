@@ -3283,7 +3283,7 @@ When a model has two Raven’s Talons, that model gains +2 Attacks instead of th
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">6</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 4, Pinning</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 4, Twin-Linked, Pinning</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -10192,6 +10192,7 @@ This is a Damage Mitigation roll – any model may make only a single Damage Mit
                 <entryLink id="0056-bbd4-b8bb-d1a1" name="Twin-linked Heavy Flamer" hidden="false" collective="false" import="true" targetId="18ea-34ad-326b-281b" type="selectionEntry"/>
                 <entryLink id="9cb4-7a6b-d7a3-8c16" name="Twin-linked Heavy Bolter" hidden="false" collective="false" import="true" targetId="d03c-9f7e-84fa-d6e8" type="selectionEntry"/>
                 <entryLink id="c6aa-2c75-2a05-25f3" name="Twin-linked Heavy Dragon&apos;s Breath Flamer" hidden="false" collective="false" import="true" targetId="8dbf-d9fa-6fbc-07af" type="selectionEntry"/>
+                <entryLink import="true" name="Twin-Linked Shrapnel Cannon" hidden="false" id="feb2-9b5a-1e20-9d9e" type="selectionEntry" targetId="e96e-abe4-5a29-1c47"/>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="e17b-1c8b-e853-3880" name="3) Missile Options:" hidden="false" collective="false" import="true" defaultSelectionEntryId="cbc5-b9b9-3996-1669">
@@ -11315,6 +11316,7 @@ This is a Damage Mitigation roll – any model may make only a single Damage Mit
                     <modifier type="set" field="hidden" value="true">
                       <conditions>
                         <condition field="selections" scope="d664-5692-cd41-f9be" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ce7e-4548-10b5-8762" type="atLeast"/>
+                        <condition type="atLeast" value="1" field="selections" scope="d664-5692-cd41-f9be" childId="3d32-74dd-abc5-f240" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Gravis Shrapnel Cannon Battery"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -11369,7 +11371,7 @@ This is a Damage Mitigation roll – any model may make only a single Damage Mit
                 </entryLink>
                 <entryLink id="46b9-b9d9-f13d-1818" name="Gravis Shrapnel Cannon" hidden="false" collective="false" import="true" targetId="ce7e-4548-10b5-8762" type="selectionEntry">
                   <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
                   </costs>
                 </entryLink>
                 <entryLink id="42d9-5a40-4e95-48d4" name="Graviton Maul" hidden="false" collective="false" import="true" targetId="b254-abfc-a57f-ab28" type="selectionEntry">
@@ -11388,6 +11390,11 @@ This is a Damage Mitigation roll – any model may make only a single Damage Mit
                 <entryLink id="848e-9c10-0d37-f8e5" name="Warpfire Cannon" hidden="false" collective="false" import="true" targetId="2d54-6e68-4830-4ef3" type="selectionEntry">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Gravis Shrapnel Cannon Battery" hidden="false" id="1dbb-7978-8d21-d403" type="selectionEntry" targetId="3d32-74dd-abc5-f240">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
                   </costs>
                 </entryLink>
               </entryLinks>
@@ -11464,6 +11471,7 @@ This is a Damage Mitigation roll – any model may make only a single Damage Mit
                     <modifier type="set" field="hidden" value="true">
                       <conditions>
                         <condition field="selections" scope="d664-5692-cd41-f9be" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ce7e-4548-10b5-8762" type="atLeast"/>
+                        <condition type="atLeast" value="1" field="selections" scope="d664-5692-cd41-f9be" childId="3d32-74dd-abc5-f240" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Gravis Shrapnel Cannon Battery"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -11478,6 +11486,7 @@ This is a Damage Mitigation roll – any model may make only a single Damage Mit
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
                   </costs>
                 </entryLink>
+                <entryLink import="true" name="Gravis Shrapnel Cannon Battery" hidden="false" id="9f12-6b4c-7aac-4798" type="selectionEntry" targetId="3d32-74dd-abc5-f240"/>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="6683-b2f9-4f92-c2be" name="3) May replace an in-built combi-bolter with one of the following:" hidden="false" collective="false" import="true" defaultSelectionEntryId="9684-53a8-01d0-ce4d">
@@ -11913,6 +11922,7 @@ This is a Damage Mitigation roll – any model may make only a single Damage Mit
                     <modifier type="set" field="name" value="Hull (Front) Mounted Twin-linked Heavy Dragon&apos;s Breath Flamer"/>
                   </modifiers>
                 </entryLink>
+                <entryLink import="true" name="Twin-Linked Shrapnel Cannon" hidden="false" id="5db8-459c-9e49-1308" type="selectionEntry" targetId="e96e-abe4-5a29-1c47"/>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="be67-b0f6-da64-d628" name="4) May take any of the following:" hidden="false" collective="false" import="true">
@@ -13257,7 +13267,24 @@ This is a Damage Mitigation roll – any model may make only a single Damage Mit
                   </modifiers>
                 </entryLink>
                 <entryLink id="2aa6-ed38-ddc9-60fa" name="Cult Arcana Discipline" hidden="true" collective="false" import="true" targetId="d25a-f9ee-4a45-916e" type="selectionEntry"/>
-                <entryLink id="fa9b-23fa-ab59-4853" name="Warsmith" hidden="false" collective="false" import="true" targetId="cb35-21a5-c296-ddd9" type="selectionEntry"/>
+                <entryLink id="fa9b-23fa-ab59-4853" name="Warsmith" hidden="false" collective="false" import="true" targetId="cb35-21a5-c296-ddd9" type="selectionEntry">
+                  <constraints>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="e28a-e5d6-38bb-549c"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="1" field="e28a-e5d6-38bb-549c">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="c32a-5835-8fea-be1c" shared="true" childName="The Iron Without (IW)"/>
+                            <condition type="equalTo" value="0" field="selections" scope="parent" childId="8247-54dc-9194-948f" shared="true" childName="Siege Breaker:"/>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="Barbaras Dantioch" shared="true" childName="Barbaras Dantioch"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
                 <entryLink id="8242-426d-847c-f859" name="Argyrum-pattern Boarding Shield" hidden="false" collective="false" import="true" targetId="f670-7544-e4f3-f5fa" type="selectionEntry">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b7f8-bf4b-eed4-5081" type="max"/>
@@ -36292,6 +36319,7 @@ It is not known if this is a mistake or not, as previously like with the Mech bo
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
               </costs>
             </entryLink>
+            <entryLink import="true" name="Twin-Linked Shrapnel Cannon" hidden="false" id="320d-316f-4986-3e20" type="selectionEntry" targetId="e96e-abe4-5a29-1c47"/>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="66a4-aa73-ca5c-2155" name="3) May take:" hidden="false" collective="false" import="true">
@@ -40035,6 +40063,7 @@ It is not known if this is a mistake or not, as previously like with the Mech bo
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
               </costs>
             </entryLink>
+            <entryLink import="true" name="Twin-Linked Shrapnel Cannon" hidden="false" id="bd99-fedf-0c7d-061b" type="selectionEntry" targetId="e96e-abe4-5a29-1c47"/>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="5cc4-976e-f5c1-49d9" name="2) Wing Weapon Options" hidden="false" collective="false" import="true" defaultSelectionEntryId="96da-5850-ce9e-180d">
@@ -41924,6 +41953,7 @@ It is not known if this is a mistake or not, as previously like with the Mech bo
                 <modifier type="set" field="name" value="Hull (Front) Mounted twin-linkedTwin-linked Heavy Dragon&apos;s Breath Flamer"/>
               </modifiers>
             </entryLink>
+            <entryLink import="true" name="Twin-Linked Shrapnel Cannon" hidden="false" id="6268-5bc5-8880-1bce" type="selectionEntry" targetId="e96e-abe4-5a29-1c47"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -42125,6 +42155,7 @@ It is not known if this is a mistake or not, as previously like with the Mech bo
                 <modifier type="set" field="name" value="Turret Mounted twin-linked Heavy Dragon&apos;s Breath Flamer"/>
               </modifiers>
             </entryLink>
+            <entryLink import="true" name="Twin-Linked Shrapnel Cannon" hidden="false" id="8440-9cdc-bda1-40bf" type="selectionEntry" targetId="e96e-abe4-5a29-1c47"/>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="7a94-6af7-0813-a80f" name="2) Sponson Mounted Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="e99d-73d8-7052-7d2f">
@@ -42143,6 +42174,7 @@ It is not known if this is a mistake or not, as previously like with the Mech bo
                 <modifier type="set" field="name" value="2x Sponson Mounted twin-linked Heavy Dragon&apos;s Breath Flamer"/>
               </modifiers>
             </entryLink>
+            <entryLink import="true" name="Twin-Linked Shrapnel Cannon" hidden="false" id="ddca-9fad-9757-4f0f" type="selectionEntry" targetId="e96e-abe4-5a29-1c47"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -42249,6 +42281,7 @@ It is not known if this is a mistake or not, as previously like with the Mech bo
                 <modifier type="set" field="name" value="Hull (Front) Mounted twin-linked Heavy Dragon&apos;s Breath Flamer"/>
               </modifiers>
             </entryLink>
+            <entryLink import="true" name="Twin-Linked Shrapnel Cannon" hidden="false" id="9e1d-de71-2609-578e" type="selectionEntry" targetId="e96e-abe4-5a29-1c47"/>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="23d9-2170-f7fe-1369" name="4) May take:" hidden="false" collective="false" import="true">
@@ -43258,6 +43291,7 @@ It is not known if this is a mistake or not, as previously like with the Mech bo
                 <modifier type="set" field="name" value="2x Turret Mounted twin-linked Heavy Dragon&apos;s Breath Flamer"/>
               </modifiers>
             </entryLink>
+            <entryLink import="true" name="Twin-Linked Shrapnel Cannon" hidden="false" id="e94f-474d-8e90-f5d0" type="selectionEntry" targetId="e96e-abe4-5a29-1c47"/>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="e7d2-4063-069c-a2fa" name="4) Wing Weapon Options" hidden="false" collective="false" import="true" defaultSelectionEntryId="d6ff-f302-c7d9-fc9f">
@@ -43505,6 +43539,7 @@ It is not known if this is a mistake or not, as previously like with the Mech bo
                 <modifier type="set" field="name" value="2x Sponson Mounted twin-linked Heavy Dragon&apos;s Breath Flamer"/>
               </modifiers>
             </entryLink>
+            <entryLink import="true" name="Twin-Linked Shrapnel Cannon" hidden="false" id="d476-63ba-9dc8-06a9" type="selectionEntry" targetId="e96e-abe4-5a29-1c47"/>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="4d50-ae6a-df38-26da" name="3) Pintle mounted Weapon:" hidden="false" collective="false" import="true">
@@ -43723,6 +43758,7 @@ It is not known if this is a mistake or not, as previously like with the Mech bo
             <entryLink id="bb49-c8b3-ac6d-66d4" name="Twin-linked Heavy Flamer" hidden="false" collective="false" import="true" targetId="18ea-34ad-326b-281b" type="selectionEntry"/>
             <entryLink id="9d6b-4a72-62ea-1317" name="Twin-linked Heavy Bolter" hidden="false" collective="false" import="true" targetId="d03c-9f7e-84fa-d6e8" type="selectionEntry"/>
             <entryLink id="2569-5380-0841-fe7d" name="Twin-linked Heavy Dragon&apos;s Breath Flamer" hidden="false" collective="false" import="true" targetId="8dbf-d9fa-6fbc-07af" type="selectionEntry"/>
+            <entryLink import="true" name="Twin-Linked Shrapnel Cannon" hidden="false" id="ca27-254e-85fe-23a0" type="selectionEntry" targetId="e96e-abe4-5a29-1c47"/>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="1aff-f646-45aa-9c37" name="3) May take:" hidden="false" collective="false" import="true">
@@ -45246,6 +45282,7 @@ It is not known if this is a mistake or not, as previously like with the Mech bo
                     <modifier type="set" field="hidden" value="true">
                       <conditions>
                         <condition field="selections" scope="daf7-b23b-5474-5836" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ce7e-4548-10b5-8762" type="atLeast"/>
+                        <condition type="atLeast" value="1" field="selections" scope="daf7-b23b-5474-5836" childId="3d32-74dd-abc5-f240" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Gravis Shrapnel Cannon Battery"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -45323,6 +45360,7 @@ It is not known if this is a mistake or not, as previously like with the Mech bo
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
                   </costs>
                 </entryLink>
+                <entryLink import="true" name="Gravis Shrapnel Cannon Battery" hidden="false" id="ce80-5ff7-af02-dbbd" type="selectionEntry" targetId="3d32-74dd-abc5-f240"/>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="d276-79d0-2989-80dd" name="2) Weapon Option 2" hidden="false" collective="false" import="true" defaultSelectionEntryId="0f35-46b7-e7fb-9d8d">
@@ -45336,6 +45374,7 @@ It is not known if this is a mistake or not, as previously like with the Mech bo
                     <modifier type="set" field="hidden" value="true">
                       <conditions>
                         <condition field="selections" scope="daf7-b23b-5474-5836" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ce7e-4548-10b5-8762" type="atLeast"/>
+                        <condition type="atLeast" value="1" field="selections" scope="daf7-b23b-5474-5836" childId="3d32-74dd-abc5-f240" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Gravis Shrapnel Cannon Battery"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -45413,6 +45452,7 @@ It is not known if this is a mistake or not, as previously like with the Mech bo
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
                   </costs>
                 </entryLink>
+                <entryLink import="true" name="Gravis Shrapnel Cannon Battery" hidden="false" id="4fa1-078c-292b-f314" type="selectionEntry" targetId="3d32-74dd-abc5-f240"/>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -48737,6 +48777,7 @@ In addition, a model armed with an Argyrum Pattern Boarding Shield cannot claim
                 <modifier type="set" field="name" value="2x Sponson Mounted twin-linked Heavy Dragon&apos;s Breath Flamers"/>
               </modifiers>
             </entryLink>
+            <entryLink import="true" name="Twin-Linked Shrapnel Cannon" hidden="false" id="238b-36a1-0c78-43fe" type="selectionEntry" targetId="e96e-abe4-5a29-1c47"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -49329,6 +49370,7 @@ In addition, a model armed with an Argyrum Pattern Boarding Shield cannot claim
                 <modifier type="set" field="name" value="2x Sponson Mounted twin-linked Heavy Dragon&apos;s Breath Flamer"/>
               </modifiers>
             </entryLink>
+            <entryLink import="true" name="Twin-Linked Shrapnel Cannon" hidden="false" id="81cb-6b72-daec-74a4" type="selectionEntry" targetId="e96e-abe4-5a29-1c47"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -49595,6 +49637,7 @@ In addition, a model armed with an Argyrum Pattern Boarding Shield cannot claim
                 <modifier type="set" field="name" value="Hull (Front) Mounted twin-linked Heavy Dragon&apos;s Breath Flamer"/>
               </modifiers>
             </entryLink>
+            <entryLink import="true" name="Twin-Linked Shrapnel Cannon" hidden="false" id="89c8-4cc6-16c8-a97c" type="selectionEntry" targetId="e96e-abe4-5a29-1c47"/>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="7598-ae00-ef97-1f8d" name="2) Sponson Mounted Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="9da2-5913-a030-475c">
@@ -49613,6 +49656,7 @@ In addition, a model armed with an Argyrum Pattern Boarding Shield cannot claim
                 <modifier type="set" field="name" value="2x Sponson Mounted twin-linked Heavy Dragon&apos;s Breath Flamer"/>
               </modifiers>
             </entryLink>
+            <entryLink import="true" name="Twin-Linked Shrapnel Cannon" hidden="false" id="5da8-8af6-d557-b25a" type="selectionEntry" targetId="e96e-abe4-5a29-1c47"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -49800,6 +49844,7 @@ In addition, a model armed with an Argyrum Pattern Boarding Shield cannot claim
                 <modifier type="set" field="name" value="Hull (Front) Mounted twin-linked Heavy Dragon&apos;s Breath Flamer"/>
               </modifiers>
             </entryLink>
+            <entryLink import="true" name="Twin-Linked Shrapnel Cannon" hidden="false" id="0de9-f0a2-bf63-8e13" type="selectionEntry" targetId="e96e-abe4-5a29-1c47"/>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="619c-6d88-ec7d-a419" name="3) Pintle mounted Weapon:" hidden="false" collective="false" import="true">
@@ -49900,6 +49945,7 @@ In addition, a model armed with an Argyrum Pattern Boarding Shield cannot claim
                 <modifier type="set" field="name" value="2x Sponson Mounted twin-linked Heavy Dragon&apos;s Breath Flamer"/>
               </modifiers>
             </entryLink>
+            <entryLink import="true" name="Twin-Linked Shrapnel Cannon" hidden="false" id="9f81-d0dc-768e-3d0d" type="selectionEntry" targetId="e96e-abe4-5a29-1c47"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -51517,6 +51563,25 @@ In addition, a model armed with an Argyrum Pattern Boarding Shield cannot claim
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
               </costs>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Bolter choice:" id="ac4d-50a3-d006-309c" hidden="false">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="5f54-457a-fbb9-6730" shared="true" includeChildSelections="true" childName="IV: Iron Warriors"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <entryLinks>
+                    <entryLink import="true" name="Twin-Linked Shrapnel Cannon" hidden="false" id="04d4-f796-50b6-38b5" type="selectionEntry" targetId="e96e-abe4-5a29-1c47"/>
+                    <entryLink import="true" name="Twin-linked Heavy Bolter" hidden="false" id="2946-e3b5-f99f-6538" collective="false" targetId="d03c-9f7e-84fa-d6e8" type="selectionEntry"/>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="881e-d0c2-3a9f-c538"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c75c-6feb-c569-bf03"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
             </selectionEntry>
             <selectionEntry id="2708-d71b-c816-faa4" name="Tarantula w/Twin Linked Lascannons" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -52225,6 +52290,9 @@ The Reacting unit may make a Shooting Attack, targeting the unit that triggered 
                   <modifiers>
                     <modifier type="set" field="name" value="Hull (Front) Mounted twin-linked Heavy Bolter"/>
                   </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a0ca-0e15-5b50-2eb2" includeChildSelections="false"/>
+                  </constraints>
                 </entryLink>
                 <entryLink id="81b9-8db0-207f-c8f7" name="Twin-linked Heavy Alchem Flamer" hidden="false" collective="false" import="true" targetId="be24-a2b6-683a-c791" type="selectionEntry">
                   <modifiers>
@@ -52249,6 +52317,7 @@ The Reacting unit may make a Shooting Attack, targeting the unit that triggered 
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
                   </costs>
                 </entryLink>
+                <entryLink import="true" name="Twin-Linked Shrapnel Cannon" hidden="false" id="3196-49c8-d73e-bdfd" type="selectionEntry" targetId="e96e-abe4-5a29-1c47"/>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -60635,6 +60704,7 @@ The Reacting unit may make a Shooting Attack, targeting the unit that triggered 
                 <modifier type="set" field="hidden" value="true">
                   <conditions>
                     <condition field="selections" scope="ea5b-25e4-9c56-38dd" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ce7e-4548-10b5-8762" type="atLeast"/>
+                    <condition type="atLeast" value="1" field="selections" scope="ea5b-25e4-9c56-38dd" childId="3d32-74dd-abc5-f240" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Gravis Shrapnel Cannon Battery"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -60710,6 +60780,7 @@ The Reacting unit may make a Shooting Attack, targeting the unit that triggered 
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
               </costs>
             </entryLink>
+            <entryLink import="true" name="Gravis Shrapnel Cannon Battery" hidden="false" id="ef53-7be9-261e-f731" type="selectionEntry" targetId="3d32-74dd-abc5-f240"/>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="6ab5-36c7-ca64-eeeb" name="2) Weapon Option 2" hidden="false" collective="false" import="true" defaultSelectionEntryId="6cdb-a5c9-3886-eeca">
@@ -60784,6 +60855,7 @@ The Reacting unit may make a Shooting Attack, targeting the unit that triggered 
                 <modifier type="set" field="hidden" value="true">
                   <conditions>
                     <condition field="selections" scope="ea5b-25e4-9c56-38dd" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ce7e-4548-10b5-8762" type="atLeast"/>
+                    <condition type="atLeast" value="1" field="selections" scope="ea5b-25e4-9c56-38dd" childId="3d32-74dd-abc5-f240" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Gravis Shrapnel Cannon Battery"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -60798,6 +60870,7 @@ The Reacting unit may make a Shooting Attack, targeting the unit that triggered 
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
               </costs>
             </entryLink>
+            <entryLink import="true" name="Gravis Shrapnel Cannon Battery" hidden="false" id="8521-e5b0-0235-5e82" type="selectionEntry" targetId="3d32-74dd-abc5-f240"/>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="2331-e5ca-3ac5-b45a" name="3) May replace an in-built combi-bolter with one of the following:" hidden="false" collective="false" import="true" defaultSelectionEntryId="2b52-b0db-98b7-0973">
@@ -61196,6 +61269,7 @@ The Reacting unit may make a Shooting Attack, targeting the unit that triggered 
                 <modifier type="set" field="name" value="4x Turret Mounted twin-linked Heavy Dragon&apos;s Breath Flamerr"/>
               </modifiers>
             </entryLink>
+            <entryLink import="true" name="Twin-Linked Shrapnel Cannon" hidden="false" id="c2b9-19f3-c2b5-70a6" type="selectionEntry" targetId="e96e-abe4-5a29-1c47"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -61315,6 +61389,7 @@ The Reacting unit may make a Shooting Attack, targeting the unit that triggered 
                 <modifier type="set" field="name" value="Centreline (Rear) Mounted twin-linked Heavy Dragon&apos;s Breath Flamerr"/>
               </modifiers>
             </entryLink>
+            <entryLink import="true" name="Twin-Linked Shrapnel Cannon" hidden="false" id="9e6d-16bb-688d-9b27" type="selectionEntry" targetId="e96e-abe4-5a29-1c47"/>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="1b71-53f3-833d-1a76" name="2) Turret Mounted Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="82cd-7eee-716e-866d">
@@ -61333,6 +61408,7 @@ The Reacting unit may make a Shooting Attack, targeting the unit that triggered 
                 <modifier type="set" field="name" value="Turret Mounted twin-linked Heavy Dragon&apos;s Breath Flamer"/>
               </modifiers>
             </entryLink>
+            <entryLink import="true" name="Twin-Linked Shrapnel Cannon" hidden="false" id="13e9-1ced-bc48-e08e" type="selectionEntry" targetId="e96e-abe4-5a29-1c47"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -62194,12 +62270,16 @@ The Reacting unit may make a Shooting Attack, targeting the unit that triggered 
               <modifiers>
                 <modifier type="set" field="name" value="Turret Mounted twin-linked Heavy Bolter"/>
               </modifiers>
+              <categoryLinks>
+                <categoryLink targetId="9b5d-fac7-799b-d7e7" id="005b-9f01-b6c3-4c83" primary="false" name="Troops:"/>
+              </categoryLinks>
             </entryLink>
             <entryLink id="3e62-32cb-519a-2e18" name="Twin-linked Heavy Dragon&apos;s Breath Flamer" hidden="false" collective="false" import="true" targetId="8dbf-d9fa-6fbc-07af" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="name" value="Turret Mounted twin-linked Heavy Dragon&apos;s Breath Flamer"/>
               </modifiers>
             </entryLink>
+            <entryLink import="true" name="Twin-Linked Shrapnel Cannon" hidden="false" id="a38f-b133-1235-d53f" type="selectionEntry" targetId="e96e-abe4-5a29-1c47"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -63461,6 +63541,7 @@ Invulnerable saves granted by a combat shield or boarding shield do not stack wi
                 <modifier type="set" field="hidden" value="true">
                   <conditions>
                     <condition field="selections" scope="dad1-0807-e254-d498" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ce7e-4548-10b5-8762" type="atLeast"/>
+                    <condition type="atLeast" value="1" field="selections" scope="dad1-0807-e254-d498" childId="3d32-74dd-abc5-f240" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Gravis Shrapnel Cannon Battery"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -63536,6 +63617,7 @@ Invulnerable saves granted by a combat shield or boarding shield do not stack wi
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
               </costs>
             </entryLink>
+            <entryLink import="true" name="Gravis Shrapnel Cannon Battery" hidden="false" id="3c6e-f3bb-4a8c-7d52" type="selectionEntry" targetId="3d32-74dd-abc5-f240"/>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="af8e-bdad-6a5b-a5fd" name="2) Weapon Option 2" hidden="false" collective="false" import="true" defaultSelectionEntryId="5bee-009c-57ae-f21e">
@@ -63610,6 +63692,7 @@ Invulnerable saves granted by a combat shield or boarding shield do not stack wi
                 <modifier type="set" field="hidden" value="true">
                   <conditions>
                     <condition field="selections" scope="dad1-0807-e254-d498" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ce7e-4548-10b5-8762" type="atLeast"/>
+                    <condition type="atLeast" value="1" field="selections" scope="dad1-0807-e254-d498" childId="3d32-74dd-abc5-f240" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Gravis Shrapnel Cannon Battery"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -63624,6 +63707,7 @@ Invulnerable saves granted by a combat shield or boarding shield do not stack wi
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
               </costs>
             </entryLink>
+            <entryLink import="true" name="Gravis Shrapnel Cannon Battery" hidden="false" id="3b6a-3bb1-7786-6516" type="selectionEntry" targetId="3d32-74dd-abc5-f240"/>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="b812-6d9b-7b32-fbec" name="3) May replace an in-built combi-bolter with one of the following:" hidden="false" collective="false" import="true" defaultSelectionEntryId="8026-5914-294c-6a54">
@@ -68364,6 +68448,95 @@ In addition, Kaedes Nex can be included as part of a Blackshields Detachment (se
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="165"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Gravis Shrapnel Cannon Battery" hidden="false" id="3d32-74dd-abc5-f240" collective="false">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="equalTo" value="0" field="selections" scope="force" childId="5f54-457a-fbb9-6730" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Gravis Shrapnel Cannon Battery" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="0b7a-5a9f-c393-a22b">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">6</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 7, Twin-Linked, Pinning</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="append" value="Reroll 1s to hit (Hammer of Olympia)" field="2f86-c8b4-b3b4-3ff9">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="1d51-72ff-c102-09d3" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Twin-linked" id="399c-e234-f8e8-9c76" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
+        <infoLink name="Pinning" id="fd5d-21d3-d7d4-bc74" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+        <infoLink name="Shrapnel Weapons Reroll 1s to Hit (Hammer of Olympia)" id="8108-5d63-24d4-3cce" hidden="false" targetId="7ca5-9127-867f-0a57" type="rule">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="1d51-72ff-c102-09d3" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Twin-Linked Shrapnel Cannon" hidden="true" id="e96e-abe4-5a29-1c47" collective="false">
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="fcc5-256b-f2d9-aa24" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="5f54-457a-fbb9-6730" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Twin-Linked Shrapnel Cannon" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="9970-fb47-670a-f27c">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">6</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 4, Twin-Linked Pinning</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="append" value="Reroll 1s to hit (Hammer of Olympia)" field="2f86-c8b4-b3b4-3ff9">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="1d51-72ff-c102-09d3" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Pinning" id="83c4-189c-5199-d745" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+        <infoLink name="Shrapnel Weapons Reroll 1s to Hit (Hammer of Olympia)" id="f415-bfa5-6f61-8be8" hidden="false" targetId="7ca5-9127-867f-0a57" type="rule">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="1d51-72ff-c102-09d3" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Twin-linked" id="d355-0464-1577-d3ab" hidden="false" type="rule" targetId="8542-ee9d-e2fa-52fe"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>

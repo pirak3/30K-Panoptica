@@ -1697,6 +1697,7 @@ If that test is failed, the unit suffers one Wound, allocated by the controlling
                   <conditions>
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="equalTo"/>
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="296a-89a3-2269-2093" type="equalTo"/>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="c32a-5835-8fea-be1c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="The Iron Without (IW)"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -15519,6 +15520,35 @@ Fulgrim Transfigured must be included in a Detachment using this Corrupted Rite 
 
 
 Until Fulgrim Transfigured is placed on the battlefield in this manner, all models in a Detachment he is part of have the Stubborn special rule.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="The Iron Without (IW)" hidden="false" id="c32a-5835-8fea-be1c">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="5f54-457a-fbb9-6730" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="c0df-c1fa-5ddc-9ee5" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="1f79-9f2e-2e6b-074b" shared="true" includeChildSelections="true" childName="Traitor"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <rules>
+            <rule name="The Iron Without" id="0b65-7d1d-7508-f0c9" hidden="false" page="">
+              <description>Effects
+● Legion Heavy Support Squads may be taken as non-Compulsory Troops choices in a Detachment using this Rite ofWar.
+● Before the game begins, you must assign at least 3 Infantry or Cavalry units in a Detachment using this Rite ofWar to a Flanking Assault. Any models assigned in this way automatically gain the Outflank Special Rule. You cannot assign a Lord ofWar to a Flanking Assault in this way.
+● All Infantry and Dreadnought units in a Detachment using this Rite of War gain the Hatred (Traitors) whilst within 18” of the Detachment’s Warlord.
+
+Limitations
+● A Detachment using this Rite ofWar must include either a Warsmith, a Siege Breaker Consul, or Barabas Dantioch, and this model must be the army’s Warlord.
+● A Detachment with this Rite ofWar may only take a single Fast Attack choice.
+● This Rite ofWar may only be selected for Detachments with the Loyalist allegiance.
+● Any models in a Detachment using this Rite ofWar may not be assigned to a Deep Strike Assault or a Subterranean Assault.</description>
             </rule>
           </rules>
         </selectionEntry>
