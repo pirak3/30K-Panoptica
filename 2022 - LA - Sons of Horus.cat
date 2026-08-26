@@ -3136,6 +3136,7 @@
         <entryLink import="true" name="Warlord Traits" hidden="false" id="4778-5c41-1661-93cc" type="selectionEntryGroup" targetId="9c74-1002-8103-2848"/>
       </entryLinks>
     </entryLink>
+    <entryLink import="true" name="Centurion: Rites of War" hidden="false" id="cc53-b0d8-0b73-874f" type="selectionEntry" targetId="8811-0e66-cfb6-8026"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="0c73-9141-d1b4-6a40" name="Chieftain Squad" hidden="false" collective="false" import="true" type="unit">

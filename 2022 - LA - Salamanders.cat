@@ -3353,6 +3353,7 @@
         <entryLink import="true" name="Warlord Traits" hidden="false" id="b2a0-9c60-a4f1-2839" type="selectionEntryGroup" targetId="4ef8-ecc8-b821-c604"/>
       </entryLinks>
     </entryLink>
+    <entryLink import="true" name="Centurion: Rites of War" hidden="false" id="d811-6c2f-2eef-1736" type="selectionEntry" targetId="8811-0e66-cfb6-8026"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="8c74-40b1-5019-f4d4" name="Vulkan" hidden="false" collective="false" import="true" type="unit">

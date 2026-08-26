@@ -2958,6 +2958,7 @@
         <entryLink import="true" name="Warlord Traits" hidden="false" id="8706-50f8-65c4-bd19" type="selectionEntryGroup" targetId="40ca-b143-a04e-4083"/>
       </entryLinks>
     </entryLink>
+    <entryLink import="true" name="Centurion: Rites of War" hidden="false" id="e999-fd68-f8f9-38b9" type="selectionEntry" targetId="8811-0e66-cfb6-8026"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="8ff5-cece-0fc2-100d" name="Corvus Corax" publicationId="817a-6288-e016-7469" page="333" hidden="false" collective="false" import="true" type="unit">

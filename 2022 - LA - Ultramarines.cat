@@ -2985,6 +2985,7 @@
         <entryLink import="true" name="Warlord Traits" hidden="false" id="105d-7b7c-411a-7a6d" type="selectionEntryGroup" targetId="5e14-ad5c-00c3-8c3e"/>
       </entryLinks>
     </entryLink>
+    <entryLink import="true" name="Centurion: Rites of War" hidden="false" id="0355-4727-266c-e732" type="selectionEntry" targetId="8811-0e66-cfb6-8026"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="a35d-8563-eb47-e985" name="Roboute Guilliman" hidden="false" collective="false" import="true" type="unit">

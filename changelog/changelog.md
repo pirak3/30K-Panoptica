@@ -10,6 +10,7 @@ All notable changes to the BattleScribe Data Repository will be documented in th
   - `[Death Guard]` Added `[Grave Warden Tartaros Squad]` - `[Elite]`
   - `[Iron Warriors]` Added `[Barbas Dantioch]` - `[HQ]`
   - `[Iron Warriors]` Added `[Volk-Sa'ra'ram]` - `[HQ]`
+  - `[Iron Warriors]` Added `[Barban Falk]` - `[HQ]`
 
 ### Changed
 - **Units / Points**:
@@ -18,6 +19,10 @@ All notable changes to the BattleScribe Data Repository will be documented in th
   - `Rite of War`: Added new `[Iron Warriors]` rite of war: `[The Iron Without]`
   - `Shrapnel Weapons`: Added `[Twin-Linked Shrapnel Cannon]` for `[Iron Warriors]`
   - `Shrapnel Weapons`: Added `[Gravis Shrapnel Cannon Battery]` for `[Iron Warriors]`
+
+### Fixed
+- **BattleScribe Structure**:
+  - `Centurion: Rite of War` no longer shows up in crusade detachments and is only mandatory in Centurion detachments
 ---
 
 ## Release Archive

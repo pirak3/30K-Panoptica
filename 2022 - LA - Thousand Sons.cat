@@ -3031,6 +3031,7 @@
         <entryLink import="true" name="Warlord Traits" hidden="false" id="b338-eaf7-a9dc-9459" type="selectionEntryGroup" targetId="631b-b029-0909-b8f6"/>
       </entryLinks>
     </entryLink>
+    <entryLink import="true" name="Centurion: Rites of War" hidden="false" id="f0f4-03ca-ef46-a397" type="selectionEntry" targetId="8811-0e66-cfb6-8026"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="d3ad-275c-e22b-a28f" name="Ammitara Occult Intercession Cabal" hidden="false" collective="false" import="true" type="unit">

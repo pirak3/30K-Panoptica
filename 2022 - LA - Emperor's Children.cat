@@ -3081,6 +3081,7 @@
         <entryLink import="true" name="Warlord Traits" hidden="false" id="5a78-4ff0-d90c-7645" type="selectionEntryGroup" targetId="0cb4-896e-a455-243b"/>
       </entryLinks>
     </entryLink>
+    <entryLink import="true" name="Centurion: Rites of War" hidden="false" id="679d-ec91-acc8-a61b" type="selectionEntry" targetId="8811-0e66-cfb6-8026"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="0de5-8b3c-74a0-858e" name="Fulgrim" hidden="false" collective="false" import="true" type="unit">
@@ -6351,30 +6352,6 @@ A Warlord with this Trait and all models in a unit the Warlord has joined that h
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Centurion: Rites of War" hidden="false" id="7e50-bad0-6722-e68d">
-      <entryLinks>
-        <entryLink import="true" name="Centurion: Rites of War" hidden="false" id="e94b-e4be-b7b2-52ce" type="selectionEntryGroup" targetId="beb0-ea74-d478-d228"/>
-      </entryLinks>
-      <modifiers>
-        <modifier type="set" value="0" field="dc30-0d17-285f-38f9">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="force" childId="e031-3c2-e3f8-d40a" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                <condition type="equalTo" value="0" field="selections" scope="force" childId="0068-6b0a-0086-3d6b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="abb4-6244-eb9a-e647" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dc30-0d17-285f-38f9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-      </constraints>
-      <categoryLinks>
-        <categoryLink name="Rite of War:" hidden="false" id="c593-1e9d-9c68-142e" targetId="d494-e450-d4aa-579a" primary="true"/>
-      </categoryLinks>
     </selectionEntry>
   </selectionEntries>
 </catalogue>
