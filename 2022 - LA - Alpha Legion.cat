@@ -5439,6 +5439,7 @@
         <categoryLink targetId="c5d2-69ee-8787-55d9" id="189f-d09b-0e8f-abe3" primary="false" name="The Rewards Of Treachery"/>
       </categoryLinks>
     </entryLink>
+    <entryLink import="true" name="Centurion: Rites of War" hidden="false" id="9a9f-d937-d63f-66b3" type="selectionEntry" targetId="8811-0e66-cfb6-8026"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="6161-d387-f086-0958" name="Lernaean Terminator Squad" publicationId="09c5-eeae-f398-b653" page="338" hidden="false" collective="false" import="true" type="unit">

@@ -3072,6 +3072,7 @@
         <categoryLink name="HQ:" hidden="false" id="62af-0ba7-ecff-c4b6" targetId="4f85-eb33-30c9-8f51" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink import="true" name="Centurion: Rites of War" hidden="false" id="8403-2b90-13ee-68ce" type="selectionEntry" targetId="8811-0e66-cfb6-8026"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="2c54-82c1-c1e4-3aee" name="Sanguinius" hidden="false" collective="false" import="true" type="unit">
@@ -6305,30 +6306,6 @@ Whenever a Warlord with this Trait is on the winning side of a combat in which t
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Centurion: Rites of War" hidden="false" id="5965-d2d5-5321-eb97">
-      <entryLinks>
-        <entryLink import="true" name="Centurion: Rites of War" hidden="false" id="4c9a-08e6-589f-508c" type="selectionEntryGroup" targetId="beb0-ea74-d478-d228"/>
-      </entryLinks>
-      <modifiers>
-        <modifier type="set" value="0" field="117f-c916-c622-f911">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="force" childId="e031-3c2-e3f8-d40a" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                <condition type="equalTo" value="0" field="selections" scope="force" childId="0068-6b0a-0086-3d6b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="63e5-aa08-7fb8-0bae" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="117f-c916-c622-f911" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-      </constraints>
-      <categoryLinks>
-        <categoryLink name="Rite of War:" hidden="false" id="d7a2-8557-bcd3-e4ff" targetId="d494-e450-d4aa-579a" primary="true"/>
-      </categoryLinks>
     </selectionEntry>
   </selectionEntries>
 </catalogue>

@@ -907,8 +907,21 @@ Conversely, if an Independent Character joins a unit after that unit has been th
             <conditionGroup type="or">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="5d75-f1c7-d6a7-a055" shared="true" id="2952-9f50-c25e-8ca9" includeChildSelections="true"/>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="6e1e-8616-6e4a-173d" shared="true" includeChildSelections="true"/>
               </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="6e1e-8616-6e4a-173d" shared="true" includeChildSelections="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" shared="true" includeChildSelections="true" childName="Alchymus:" childId="21b7-e431-9859-2d38"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="12db-45af-ea8f-f46a" shared="true" includeChildSelections="true" childName="Warsmith"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="c32a-5835-8fea-be1c" shared="true" id="ac3c-d807-2222-b82b" includeChildSelections="true" childName="The Iron Without (IW)"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </conditionGroup>
           </conditionGroups>
         </modifier>
@@ -1524,6 +1537,24 @@ If that test is failed, the unit suffers one Wound, allocated by the controlling
     </categoryEntry>
     <categoryEntry name="Shattered Legion Primary Detachment" id="c248-15b0-d8ed-8990" hidden="false"/>
     <categoryEntry name="Centurion: Rites of War" id="f47f-295e-3ac6-e189" hidden="false"/>
+    <categoryEntry name="Alchymus:" id="21b7-e431-9859-2d38" hidden="false">
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="force" shared="true" id="c6fc-73e1-1178-1294" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="c6fc-73e1-1178-1294" id="69bb-6e57-1e70-7adc">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="6e1e-8616-6e4a-173d" shared="true" includeChildSelections="true"/>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="8247-54dc-9194-948f" shared="true" includeChildSelections="true" childName="Siege Breaker:"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </categoryEntry>
+    <categoryEntry name="Warsmith:" id="12db-45af-ea8f-f46a" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="d926-652f-8436-30ce" name="1. Crusade Force Organisation Chart" hidden="false">
@@ -1673,6 +1704,7 @@ If that test is failed, the unit suffers one Wound, allocated by the controlling
                   <conditions>
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="equalTo"/>
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="296a-89a3-2269-2093" type="equalTo"/>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="c32a-5835-8fea-be1c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="The Iron Without (IW)"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -11721,6 +11753,21 @@ While making a Chain Fire attack, a model with this special rule may make up to 
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Centurion: Rites of War" hidden="false" id="8811-0e66-cfb6-8026">
+      <entryLinks>
+        <entryLink import="true" name="Centurion: Rites of War" hidden="false" id="13b8-05f3-9070-a16d" type="selectionEntryGroup" targetId="beb0-ea74-d478-d228"/>
+      </entryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="f47f-295e-3ac6-e189" shared="true" includeChildSelections="true" childName="Centurion: Rites of War" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="Centurion: Rites of War" hidden="false" id="3a82-2b92-661b-f4c0" targetId="f47f-295e-3ac6-e189" primary="true"/>
+      </categoryLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="4a48-4935-246d-0c2e" name="Legion" hidden="false" collective="false" import="true">
@@ -15498,6 +15545,35 @@ Until Fulgrim Transfigured is placed on the battlefield in this manner, all mode
             </rule>
           </rules>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="The Iron Without (IW)" hidden="false" id="c32a-5835-8fea-be1c">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="5f54-457a-fbb9-6730" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="c0df-c1fa-5ddc-9ee5" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="1f79-9f2e-2e6b-074b" shared="true" includeChildSelections="true" childName="Traitor"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <rules>
+            <rule name="The Iron Without" id="0b65-7d1d-7508-f0c9" hidden="false" page="">
+              <description>Effects
+● Legion Heavy Support Squads may be taken as non-Compulsory Troops choices in a Detachment using this Rite ofWar.
+● Before the game begins, you must assign at least 3 Infantry or Cavalry units in a Detachment using this Rite ofWar to a Flanking Assault. Any models assigned in this way automatically gain the Outflank Special Rule. You cannot assign a Lord ofWar to a Flanking Assault in this way.
+● All Infantry and Dreadnought units in a Detachment using this Rite of War gain the Hatred (Traitors) whilst within 18” of the Detachment’s Warlord.
+
+Limitations
+● A Detachment using this Rite ofWar must include either a Warsmith, a Siege Breaker Consul, or Barabas Dantioch, and this model must be the army’s Warlord.
+● A Detachment with this Rite ofWar may only take a single Fast Attack choice.
+● This Rite ofWar may only be selected for Detachments with the Loyalist allegiance.
+● Any models in a Detachment using this Rite ofWar may not be assigned to a Deep Strike Assault or a Subterranean Assault.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
       </selectionEntries>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -18028,8 +18104,21 @@ Vehicle Unit Type must begin the game in Reserve.</description>
         </selectionEntry>
       </selectionEntries>
       <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5767-a877-b8f6-7e20" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5767-a877-b8f6-7e20-min" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5767-a877-b8f6-7e20-max" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
       </constraints>
+      <modifiers>
+        <modifier type="set" value="0" field="5767-a877-b8f6-7e20-min">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="f47f-295e-3ac6-e189" shared="true" includeChildSelections="true" childName="Centurion: Rites of War"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="0" field="5767-a877-b8f6-7e20-max">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="f47f-295e-3ac6-e189" shared="true" includeChildSelections="true" childName="Centurion: Rites of War"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
