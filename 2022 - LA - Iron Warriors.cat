@@ -5454,6 +5454,11 @@ Melee Weapons
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e683-70c9-3b0c-48b3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Warlord" hidden="false" id="8715-cd65-9c76-201f" collective="false" targetId="0176-56a3-d590-b103" type="selectionEntry">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ff2a-4552-b850-20e4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Olympian Reaper" hidden="false" id="a3db-ef15-ec0d-3b9b">
@@ -5565,6 +5570,11 @@ Melee Weapons
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a3c2-065e-53c2-8d9e"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="16ba-e287-7221-647d"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Warlord" hidden="false" id="4af1-5f38-2ca9-165e" collective="false" targetId="0176-56a3-d590-b103" type="selectionEntry">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f81c-6b1e-fe90-0db3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
         </entryLink>
       </entryLinks>
