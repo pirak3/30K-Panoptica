@@ -2,7 +2,9 @@
 
 All notable changes to the BattleScribe Data Repository will be documented in this file.
 
-## [Unreleased] - Current branch
+## Release Archive
+
+## [2026-08-27]
 
 ### Added
 - **Units**:
@@ -32,7 +34,6 @@ All notable changes to the BattleScribe Data Repository will be documented in th
   - `Dominator Cohort` : Added missing Terminator Armour
 ---
 
-## Release Archive
 
 ### [2026-08-22]
 
