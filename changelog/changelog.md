@@ -11,6 +11,11 @@ All notable changes to the BattleScribe Data Repository will be documented in th
   - `[Iron Warriors]` Added `[Barbas Dantioch]` - `[HQ]`
   - `[Iron Warriors]` Added `[Volk-Sa'ra'ram]` - `[HQ]`
   - `[Iron Warriors]` Added `[Barban Falk]` - `[HQ]`
+  - `[Iron Warriors]` Added `[Warsmith Berossus]` - `[HQ]`
+  - `[Iron Warriors]` Added `[Berossus, Interred]` - `[HQ]`
+  - `[Iron Warriors]` Added `[Warsmith Toramino]` - `[HQ]`
+  - `[Iron Warriors]` Added `[Dominator Tartaros Cohort]` - `[Elite]`
+  - `[Iron Warriors]` Added `[Rhino Castellan]` - `[Dedicated Transport]`
 
 ### Changed
 - **Units / Points**:
@@ -23,6 +28,8 @@ All notable changes to the BattleScribe Data Repository will be documented in th
 ### Fixed
 - **BattleScribe Structure**:
   - `Centurion: Rite of War` no longer shows up in crusade detachments and is only mandatory in Centurion detachments
+- **Weapons & Profiles**:
+  - `Dominator Cohort` : Added missing Terminator Armour
 ---
 
 ## Release Archive
