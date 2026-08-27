@@ -2999,6 +2999,7 @@
         <entryLink import="true" name="Warlord Traits" hidden="false" id="2f13-a607-c8e3-d655" type="selectionEntryGroup" targetId="4dfa-3ccc-df19-6789"/>
       </entryLinks>
     </entryLink>
+    <entryLink import="true" name="Centurion: Rites of War" hidden="false" id="5d2e-91e5-89f0-a714" type="selectionEntry" targetId="8811-0e66-cfb6-8026"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="ea50-6315-7a52-f560" name="Gorgon Terminator Squad" publicationId="817a-6288-e016-7469" page="282" hidden="false" collective="false" import="true" type="unit">
@@ -4836,30 +4837,6 @@ A Warlord with this Trait, and all models in any unit he joins, gain the Fear (1
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Centurion: Rites of War" hidden="false" id="defc-da7f-52da-4703">
-      <entryLinks>
-        <entryLink import="true" name="Centurion: Rites of War" hidden="false" id="d906-5172-484b-ef21" type="selectionEntryGroup" targetId="beb0-ea74-d478-d228"/>
-      </entryLinks>
-      <modifiers>
-        <modifier type="set" value="0" field="187e-1d9f-7833-c6dc">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="force" childId="e031-3c2-e3f8-d40a" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                <condition type="equalTo" value="0" field="selections" scope="force" childId="0068-6b0a-0086-3d6b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="29f2-ff28-d6c9-027b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="187e-1d9f-7833-c6dc" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-      </constraints>
-      <categoryLinks>
-        <categoryLink name="Rite of War:" hidden="false" id="6300-fc1a-3142-eef6" targetId="d494-e450-d4aa-579a" primary="true"/>
-      </categoryLinks>
     </selectionEntry>
   </selectionEntries>
 </catalogue>

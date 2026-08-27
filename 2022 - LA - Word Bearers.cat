@@ -3367,6 +3367,7 @@
         <entryLink import="true" name="Warlord Traits" hidden="false" id="7c84-e5b5-79e9-c822" type="selectionEntryGroup" targetId="1ac0-fbef-d266-a924"/>
       </entryLinks>
     </entryLink>
+    <entryLink import="true" name="Centurion: Rites of War" hidden="false" id="9fd8-6aac-509c-5424" type="selectionEntry" targetId="8811-0e66-cfb6-8026"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="be3a-5acc-b4bd-8621" name="Gal Vorbak Squad" hidden="false" collective="false" import="true" type="unit">

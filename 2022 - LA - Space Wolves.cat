@@ -3022,6 +3022,7 @@
         <entryLink import="true" name="Warlord Traits" hidden="false" id="c765-9968-4b94-b547" type="selectionEntryGroup" targetId="4d59-1610-09c5-1991"/>
       </entryLinks>
     </entryLink>
+    <entryLink import="true" name="Centurion: Rites of War" hidden="false" id="df73-bc1a-733f-8529" type="selectionEntry" targetId="8811-0e66-cfb6-8026"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="c028-dc90-e4b6-8b43" name="Leman Russ" hidden="false" collective="false" import="true" type="unit">
@@ -7216,30 +7217,6 @@
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Centurion: Rites of War" hidden="false" id="0699-920f-73f4-0d1c">
-      <entryLinks>
-        <entryLink import="true" name="Centurion: Rites of War" hidden="false" id="380a-d616-bb0e-2d6c" type="selectionEntryGroup" targetId="beb0-ea74-d478-d228"/>
-      </entryLinks>
-      <modifiers>
-        <modifier type="set" value="0" field="6d33-9529-9aab-3ebd">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="force" childId="e031-3c2-e3f8-d40a" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                <condition type="equalTo" value="0" field="selections" scope="force" childId="0068-6b0a-0086-3d6b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="74f2-73cc-cd38-2124" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6d33-9529-9aab-3ebd" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-      </constraints>
-      <categoryLinks>
-        <categoryLink name="Rite of War:" hidden="false" id="1291-41d3-dbd8-3331" targetId="d494-e450-d4aa-579a" primary="true"/>
-      </categoryLinks>
     </selectionEntry>
   </selectionEntries>
 </catalogue>
