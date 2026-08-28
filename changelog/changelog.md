@@ -2,6 +2,20 @@
 
 All notable changes to the BattleScribe Data Repository will be documented in this file.
 
+
+## [Unreleased] - Current branch
+
+### Added
+- **Units**:
+  - `[Mechanicum]` Added `[Ironstrider Ballistarii]` - `[Heavy Support]`
+
+
+### Fixed
+- **Units / Points**:
+  - `[Archmagos Anacharis Scoria]`: Added `Orders of the High/Proscribed Techno Arcana` as Scoria is an Archmagos and they should have this
+  - `[Thanat Calix]`: Made `Shock charger` mandatory
+
+---
 ## Release Archive
 
 ## [2026-08-27]
