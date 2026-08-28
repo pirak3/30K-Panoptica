@@ -4894,7 +4894,6 @@ Note that this Warlord Trait can affect a unit which Archmagos Anacharis Scoria
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5cb3-4382-a369-b2fb" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Anima Malefica" hidden="false" id="e13e-6251-5d36-ff57" type="selectionEntry" targetId="7fec-d772-f51-95b3"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
