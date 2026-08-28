@@ -766,6 +766,13 @@
         <categoryLink targetId="0e88-0a7e-b04c-d6c3" id="def3-d6e5-caa3-0bc1" primary="false" name="Skitarii Unit Sub-Type"/>
       </categoryLinks>
     </entryLink>
+    <entryLink import="true" name="Ironstrider Ballistarii" hidden="false" id="2761-d415-6b41-33c6" type="selectionEntry" targetId="aa8c-8b33-ea9b-8d45">
+      <categoryLinks>
+        <categoryLink targetId="7031-469a-1aeb-eab0" id="ceef-b884-3733-741f" primary="true" name="Heavy Support:"/>
+        <categoryLink targetId="030f-3801-4f54-e7f8" id="09e4-36b3-99da-a0aa" primary="false" name="Compulsory Heavy Support:"/>
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="119c-d1c4-52c1-332c" primary="false" name="Unit:"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="d0f2-ee39-450c-39db" name="Archmagos Prime" publicationId="bde1-6db1-163b-3b76" page="20" hidden="false" collective="false" import="true" type="unit">
@@ -4933,6 +4940,7 @@ Note that this Warlord Trait can affect a unit which Archmagos Anacharis Scoria
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cafa-2894-d0bb-70ca" type="min"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Orders of High/Proscribed Techno-arcana" hidden="false" id="7d67-9d74-db69-b262" collective="false" targetId="c36b-a6a2-9cb2-b090" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="365"/>
