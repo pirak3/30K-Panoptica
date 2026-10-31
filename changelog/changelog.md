@@ -3,6 +3,22 @@
 All notable changes to the BattleScribe Data Repository will be documented in this file.
 
 ---
+
+## [Unreleased] - Current branch
+
+### Added
+- **Units**:
+  - `[Legiones Astartes]` Added `[Praetor, Indomitus]` - `[HQ]`
+  - `[Legiones Astartes]` Added `[Centurion, Indomitus]` - `[HQ]`
+  - `[Legiones Astartes]` Added `[Centurion, Saturnine]` - `[HQ]`
+  - `[Legiones Astartes]` Added `[Command Squad, Indomitus]` - `[HQ Retinue]`
+- **Weapons & Wargear**:
+  - `[Saturnine Terminator Armour]`
+
+### Changed
+- **Units / Points**:
+  - `Consul`: `Legiones Consularis` options other than Forge Lord, Siege Breaker and Mortificator are hidden for `[Centurion, Saturnine]`
+
 ## Release Archive
 ## [2026-08-29]
 

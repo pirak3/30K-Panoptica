@@ -44,6 +44,8 @@ Units: done
 
 
 ## **Centura**
+#### **HQ**
+- Legion Indomitus Praetor, Legion Indomitus Centurion, Legion Saturnine Centurion, Legion Indomitus Command Squad: done
 ## **Antiqua**
 ## **Imperatus**
 

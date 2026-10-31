@@ -467,6 +467,32 @@
         </entryLink>
       </entryLinks>
     </entryLink>
+    <entryLink id="9583-6c26-5014-450f" name="Centurion, Indomitus" hidden="false" collective="false" import="false" targetId="2250-7c9e-adae-5f36" type="selectionEntry">
+      <modifiers>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="f0e7-1986-ff74-c9cf" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="bb13-c4f8-5ef7-2a80" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink id="adda-215e-4d07-e0d4" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="e2a1-15ad-9714-f642" name="Warlord Traits" hidden="false" collective="false" import="true" targetId="5e14-ad5c-00c3-8c3e" type="selectionEntryGroup"/>
+        <entryLink id="e9aa-2d74-ca58-801d" name="Retinue" hidden="false" collective="false" import="true" targetId="f822-e866-658f-a875" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="35d4-0dcd-f7d2-a6da" type="lessThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+    </entryLink>
     <entryLink id="f64e-e785-a5b7-325b" name="Centurion, Tartaros" hidden="false" collective="false" import="false" targetId="f806-8a4e-d0d6-beaa" type="selectionEntry">
       <comment>template_id_6e9c-0842-4514-8ea6</comment>
       <categoryLinks>
@@ -493,6 +519,25 @@
                 <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="35d4-0dcd-f7d2-a6da" type="lessThan">
                   <comment>node_id_cbdb-2500-4e13-876a</comment>
                 </condition>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+    </entryLink>
+    <entryLink id="d288-4e36-d2ab-6697" name="Centurion, Saturnine" hidden="false" collective="false" import="false" targetId="2bed-bdcf-cfe8-e3e8" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="7144-4a8f-93d1-09e0" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="dda0-fa88-46e1-0761" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false"/>
+        <categoryLink id="e745-775d-309b-d1ff" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="5486-df0a-114a-46e2" name="Warlord Traits" hidden="false" collective="false" import="true" targetId="5e14-ad5c-00c3-8c3e" type="selectionEntryGroup"/>
+        <entryLink id="c413-a198-489e-bd62" name="Retinue" hidden="false" collective="false" import="true" targetId="f822-e866-658f-a875" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="35d4-0dcd-f7d2-a6da" type="lessThan"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1690,6 +1735,24 @@
         <entryLink id="981e-1e5f-4b90-a6eb" name="Retinue" hidden="false" collective="false" import="true" targetId="f822-e866-658f-a875" type="selectionEntryGroup">
           <comment>template_id_5c5d-d6ce-4ee4-9846    template_targetId_be38-a066-4f8e-ae54</comment>
         </entryLink>
+      </entryLinks>
+    </entryLink>
+    <entryLink id="9657-ffdb-79d2-749c" name="Praetor, Indomitus" hidden="false" collective="false" import="false" targetId="4abe-5f08-d93f-8293" type="selectionEntry">
+      <modifiers>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="ddd2-c963-2c80-6d8b" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink id="205e-fdfd-e5ae-6de6" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="bba8-c2fb-feed-f954" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="b34b-a551-5db2-03d1" name="Warlord Traits" hidden="false" collective="false" import="true" targetId="5e14-ad5c-00c3-8c3e" type="selectionEntryGroup"/>
+        <entryLink id="5991-2e8e-64a3-c09d" name="Retinue" hidden="false" collective="false" import="true" targetId="f822-e866-658f-a875" type="selectionEntryGroup"/>
       </entryLinks>
     </entryLink>
     <entryLink id="67e1-84f4-acad-0918" name="Praetor, Tartaros" hidden="false" collective="false" import="false" targetId="3760-204e-444c-1044" type="selectionEntry">
@@ -5381,6 +5444,15 @@
         <entryLink id="de58-0a0d-c78f-0e1a" name="Command Squad, Tartaros" hidden="false" collective="false" import="true" targetId="58d0-a0fd-d20b-cb1b" type="selectionEntry"/>
         <entryLink id="ad52-b9f5-8c48-72b3" name="Command Squad" hidden="false" collective="false" import="true" targetId="0aca-632d-1642-8af9" type="selectionEntry"/>
         <entryLink id="ba01-b8d8-1825-8220" name="Command Squad, Cataphractii" hidden="false" collective="false" import="true" targetId="1b17-dcd6-0153-3efe" type="selectionEntry">
+          <modifiers>
+            <modifier type="append" field="name" value="(Reserve Only)">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="4177-9f4d-f21c-e42c" name="Command Squad, Indomitus" hidden="false" collective="false" import="true" targetId="d06f-0e4f-c2fc-3eb5" type="selectionEntry">
           <modifiers>
             <modifier type="append" field="name" value="(Reserve Only)">
               <conditions>

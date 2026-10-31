@@ -18,6 +18,9 @@ Units Done:
 
 ## Centura
 
+### Liber Legiones (generic)
+HQ (p.8-11): Indomitus Praetor, Indomitus Centurion, Saturnine Centurion, Indomitus Command Squad done
+
 ### Death Guard
 Done
 ## Antiqua

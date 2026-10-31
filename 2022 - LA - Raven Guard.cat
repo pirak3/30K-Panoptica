@@ -420,6 +420,43 @@
         </entryLink>
       </entryLinks>
     </entryLink>
+    <entryLink id="228a-9774-a7d4-2909" name="Centurion, Indomitus" hidden="false" collective="false" import="false" targetId="2250-7c9e-adae-5f36" type="selectionEntry">
+      <modifiers>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo">
+            </condition>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="12f2-df1a-525f-7957" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="6572-f127-6753-5f0c" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
+        </categoryLink>
+        <categoryLink id="2ff0-dca8-aa56-8c73" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true">
+        </categoryLink>
+        <categoryLink id="823f-cc84-0fb4-0ece" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false">
+        </categoryLink>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="aec4-758a-051a-388f" name="Warlord Traits" hidden="false" collective="false" import="true" targetId="40ca-b143-a04e-4083" type="selectionEntryGroup">
+        </entryLink>
+        <entryLink id="bb19-97c8-e3fe-ddfd" name="Retinue" hidden="false" collective="false" import="true" targetId="5a61-7572-048d-9bb4" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="35d4-0dcd-f7d2-a6da" type="lessThan">
+                </condition>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+    </entryLink>
     <entryLink id="7734-d861-18f2-1a0c" name="Centurion, Tartaros" hidden="false" collective="false" import="false" targetId="f806-8a4e-d0d6-beaa" type="selectionEntry">
       <comment>template_id_6e9c-0842-4514-8ea6</comment>
       <categoryLinks>
@@ -445,6 +482,30 @@
               <conditions>
                 <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="35d4-0dcd-f7d2-a6da" type="lessThan">
                   <comment>node_id_cbdb-2500-4e13-876a</comment>
+                </condition>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+    </entryLink>
+    <entryLink id="1ed9-ccf4-25ee-4b2f" name="Centurion, Saturnine" hidden="false" collective="false" import="false" targetId="2bed-bdcf-cfe8-e3e8" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="fab3-61ff-9e29-2692" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
+        </categoryLink>
+        <categoryLink id="697e-3314-cb7a-d8c3" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false">
+        </categoryLink>
+        <categoryLink id="dc99-9216-290e-8b38" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true">
+        </categoryLink>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="b4e5-d57a-9cd4-ebeb" name="Warlord Traits" hidden="false" collective="false" import="true" targetId="40ca-b143-a04e-4083" type="selectionEntryGroup">
+        </entryLink>
+        <entryLink id="a044-dc61-b2df-5a61" name="Retinue" hidden="false" collective="false" import="true" targetId="5a61-7572-048d-9bb4" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="35d4-0dcd-f7d2-a6da" type="lessThan">
                 </condition>
               </conditions>
             </modifier>
@@ -1645,6 +1706,35 @@
         </entryLink>
         <entryLink id="da21-9501-4217-b7bf" name="Retinue" hidden="false" collective="false" import="true" targetId="5a61-7572-048d-9bb4" type="selectionEntryGroup">
           <comment>template_id_5c5d-d6ce-4ee4-9846    template_targetId_be38-a066-4f8e-ae54</comment>
+        </entryLink>
+      </entryLinks>
+    </entryLink>
+    <entryLink id="f524-b854-0f32-4bd8" name="Praetor, Indomitus" hidden="false" collective="false" import="false" targetId="4abe-5f08-d93f-8293" type="selectionEntry">
+      <modifiers>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo">
+            </condition>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="12f2-df1a-525f-7957" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="4b64-e04d-a145-9ca1" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true">
+        </categoryLink>
+        <categoryLink id="577d-dab6-8c46-6705" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
+        </categoryLink>
+        <categoryLink id="8eed-f053-57af-6b77" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false">
+        </categoryLink>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="4e26-0049-0f80-bf43" name="Warlord Traits" hidden="false" collective="false" import="true" targetId="40ca-b143-a04e-4083" type="selectionEntryGroup">
+        </entryLink>
+        <entryLink id="6100-a896-3658-17ae" name="Retinue" hidden="false" collective="false" import="true" targetId="5a61-7572-048d-9bb4" type="selectionEntryGroup">
         </entryLink>
       </entryLinks>
     </entryLink>
@@ -4696,6 +4786,20 @@ When in base to base contact with an enemy Infantry or Cavalry model whose Weapo
       </constraints>
       <entryLinks>
         <entryLink id="d33b-21f8-f253-f312" name="Command Squad, Cataphractii" hidden="false" collective="false" import="true" targetId="1b17-dcd6-0153-3efe" type="selectionEntry">
+          <modifiers>
+            <modifier type="append" field="name" value="(Reserve Only)">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="12f2-df1a-525f-7957" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="681e-ccc8-96f3-3f89" name="Command Squad, Indomitus" hidden="false" collective="false" import="true" targetId="d06f-0e4f-c2fc-3eb5" type="selectionEntry">
           <modifiers>
             <modifier type="append" field="name" value="(Reserve Only)">
               <conditions>
