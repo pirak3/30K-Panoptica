@@ -12,12 +12,33 @@ All notable changes to the BattleScribe Data Repository will be documented in th
   - `[Legiones Astartes]` Added `[Centurion, Indomitus]` - `[HQ]`
   - `[Legiones Astartes]` Added `[Centurion, Saturnine]` - `[HQ]`
   - `[Legiones Astartes]` Added `[Command Squad, Indomitus]` - `[HQ Retinue]`
+  - `[Legiones Astartes]` Added `[Centurion, Contemptor]` - `[HQ]`
+  - `[Legiones Astartes]` Added `[Centurion, Castra Ferrum]` - `[HQ]`
+  - `[Legiones Astartes]` Added `[Land Raider Dionysus]` - `[HQ]`
+  - `[Legiones Astartes]` Added `[Land Raider Tartaros]` - `[HQ / Dedicated Transport]`
 - **Weapons & Wargear**:
   - `[Saturnine Terminator Armour]`
+  - `[Gravis Force Weapon]`, `[Gravis Siege Drill]`, `[Seismic Hammer]`
+  - `[Aspectum-Pattern Occularis Array]`, `[Atomantic Dispersion Shield]`, `[Full-Spectra Comms Array]`, `[Signum-Primus]`
+- **Rules & Abilities**:
+  - Added special rules `[Pater Consularis]`, `[Vox Override]`
+  - Added `Pater Consularis` upgrades: Librarian, Master of Signals, Forge Lord, Siege Breaker, Chaplain, Armistos, Herald
+  - Added Warlord Trait `[Fist of the Legion]` (Land Raider Dionysus)
 
 ### Changed
 - **Units / Points**:
   - `Consul`: `Legiones Consularis` options other than Forge Lord, Siege Breaker and Mortificator are hidden for `[Centurion, Saturnine]`
+  - `[Praetor, Cataphractii]`, `[Praetor, Tartaros]`: Master-crafted (+10) now available to all legions
+  - `[Command Squad]`, `[Command Squad, Cataphractii/Tartaros/Indomitus]`: may take `[Land Raider Tartaros]` as Dedicated Transport
+  - `[Master of Armour]`: not required under Armoured Spearhead when a `[Land Raider Dionysus]` is taken
+  - `[Cassian Dracos]`: Warlord restriction now also covers the new Indomitus/Saturnine HQs and both new Land Raiders
+  - Siege Breaker name conditions also accept the Pater Consularis Siege Breaker
+- **Weapons & Profiles**:
+  - `[Gravis Missile Launcher]`: Added `Rad` profile (hidden for now)
+
+### Fixed
+- **BattleScribe Structure**:
+  - `[Iron Warriors]`: Restored the `Rite of War` selection, which was accidentally removed with the Dominator Tartaros Cohort update
 
 ## Release Archive
 ## [2026-08-29]

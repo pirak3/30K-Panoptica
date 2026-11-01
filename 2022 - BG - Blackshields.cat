@@ -386,6 +386,62 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
         </infoLink>
       </infoLinks>
     </entryLink>
+    <entryLink import="false" name="Land Raider Dionysus" hidden="false" id="686d-819a-682e-c0f6" collective="false" targetId="1acf-f954-e43b-acef" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="7b69-bf2f-4547-e83b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="HQ:" hidden="false" id="b919-e1ca-353a-5e49" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink name="Unit:" hidden="false" id="9015-e717-de01-38fb" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Augmetic Transport Bay" id="ee29-d2c2-aab2-a18f" hidden="false" type="rule" targetId="75c-d3e8-2f12-2749">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="be5b-1edf-8b27-2e1e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="false" name="Land Raider Tartaros" hidden="false" id="cb9b-e454-9a7f-f808" collective="false" targetId="db2b-39ae-e8c9-d133" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="7b69-bf2f-4547-e83b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="HQ:" hidden="false" id="165e-bb7b-baa4-8b30" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink name="Unit:" hidden="false" id="a9a6-3da6-373a-9645" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Augmetic Transport Bay" id="3178-d5b4-1258-30f1" hidden="false" type="rule" targetId="75c-d3e8-2f12-2749">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="be5b-1edf-8b27-2e1e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </entryLink>
     <entryLink import="false" name="Deathstorm Drop Pod Squadron" hidden="false" id="b7db-7ea6-dce5-6ded" collective="false" targetId="af13-fb4e-b792-61a3" type="selectionEntry">
       <modifiers>
         <modifier type="set" value="true" field="hidden">
