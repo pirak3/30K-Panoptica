@@ -1873,6 +1873,54 @@
         </categoryLink>
       </categoryLinks>
     </entryLink>
+    <entryLink id="cd33-5298-5612-881f" name="Land Raider Dionysus" hidden="false" collective="false" import="false" targetId="1acf-f954-e43b-acef" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="97e9-830b-802b-1a74" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink id="e35d-d553-3701-b29b" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="4562-5419-3d27-3216" name="Land Raider Tartaros" hidden="false" collective="false" import="false" targetId="db2b-39ae-e8c9-d133" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="27cf-18f6-653a-d140" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink id="ae7b-6fbc-5a89-b963" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink id="c1b8-9a38-3805-4421" name="Deredeo Dreadnought Talon" hidden="false" collective="false" import="false" targetId="bfdf-831f-2171-c1e7" type="selectionEntry">
       <comment>template_id_1408-38d9-406d-a090</comment>
       <modifiers>
@@ -4848,6 +4896,26 @@
         <entryLink id="abfb-ab92-6a88-657a" name="Warlord Traits" hidden="false" collective="false" import="true" targetId="a1f6-6ccd-6b3e-aba2" type="selectionEntryGroup">
           <comment>template_id_2a38-6544-4267-b584    template_targetId_7dee-602c-4b47-be09</comment>
         </entryLink>
+      </entryLinks>
+    </entryLink>
+    <entryLink id="8c9b-2fdd-356a-9c2a" name="Centurion, Contemptor" hidden="false" collective="false" import="false" targetId="769a-63d7-4c17-bd65" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="17f0-8fc0-0037-05dd" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="7ff1-e61a-1ba8-8da9" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink id="51e2-f8ef-c55d-7194" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="21c0-079c-b5c8-e65c" name="Warlord Traits" hidden="false" collective="false" import="true" targetId="a1f6-6ccd-6b3e-aba2" type="selectionEntryGroup"/>
+      </entryLinks>
+    </entryLink>
+    <entryLink id="0042-0345-5206-2662" name="Centurion, Castra Ferrum" hidden="false" collective="false" import="false" targetId="a7f7-e89e-82ff-9dbd" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="b393-6f30-2923-8c99" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="c39a-617c-c7ce-145f" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink id="5dbb-28c5-2eee-c529" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="cc44-3372-3a6e-3cc6" name="Warlord Traits" hidden="false" collective="false" import="true" targetId="a1f6-6ccd-6b3e-aba2" type="selectionEntryGroup"/>
       </entryLinks>
     </entryLink>
     <entryLink id="4f64-f878-448f-832e" name="Contemptor Dreadnought Talon" hidden="true" collective="false" import="false" targetId="d664-5692-cd41-f9be" type="selectionEntry">

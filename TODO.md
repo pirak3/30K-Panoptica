@@ -20,6 +20,8 @@ Units Done:
 
 ### Liber Legiones (generic)
 HQ (p.8-11): Indomitus Praetor, Indomitus Centurion, Saturnine Centurion, Indomitus Command Squad done
+HQ (p.12-16): Contemptor Centurion, Castra Ferrum Centurion, Land Raider Dionysus, Land Raider Tartaros, HQ wargear changes done; Pater Consularis (p.76-77) done
+TODO: Gravis Missile Launcher Rad profile is hidden until its unlock is known
 
 ### Death Guard
 Done
