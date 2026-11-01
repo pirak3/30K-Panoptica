@@ -48,6 +48,8 @@ Units: done
 - Legion Indomitus Praetor, Legion Indomitus Centurion, Legion Saturnine Centurion, Legion Indomitus Command Squad: done
 - Legion Contemptor Centurion, Legion Castra Ferrum Centurion, Legion Land Raider Dionysus, Legion Land Raider Tartaros: done
 - Pater Consularis: done
+#### **Elites**
+- Legion Terminator Saturnine Squad, Legion Assault Veteran Squad, Legion Contemptor-Cortus Dreadnought Talon, Possessed Legionnaires, Legion Servo-Automata Maniple, Elites wargear changes: done
 ## **Antiqua**
 ## **Imperatus**
 

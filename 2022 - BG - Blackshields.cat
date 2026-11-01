@@ -355,6 +355,12 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
         <categoryLink name="Elites:" hidden="false" id="ad5d-11b6-3942-95e" targetId="7aee-565f-b0ae-294e" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink import="false" name="Contemptor-Cortus Dreadnought Talon" hidden="false" id="7047-9cdf-7c41-11ca" collective="false" targetId="6f2e-78c7-2b2c-8a18" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Unit:" hidden="false" id="d6ba-a9db-67f1-b3f8" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink name="Elites:" hidden="false" id="7007-1668-386e-5bf2" targetId="7aee-565f-b0ae-294e" primary="true"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink import="false" name="Damocles Command Rhino" hidden="false" id="de00-bcc3-ef1c-e5e2" collective="false" targetId="e337-8239-5e92-7f5f" type="selectionEntry">
       <comment>template_id_fa0b-c14e-4b81-9dac</comment>
       <modifiers>
@@ -1834,6 +1840,12 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
         <categoryLink name="Unit:" hidden="false" id="7e75-e9fa-d351-6816" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
     </entryLink>
+    <entryLink import="false" name="Terminator Saturnine Squad" hidden="false" id="c906-6abf-2af7-65d5" collective="false" targetId="fbd3-f06b-6107-d645" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Elites:" hidden="false" id="5c55-3cd6-e840-e85b" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink name="Unit:" hidden="false" id="91f3-6d15-9727-f78f" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink import="false" name="Terminator Tartaros Squad" hidden="false" id="dde7-fae1-1ba3-dbc0" collective="false" targetId="1a8e-0ded-a4dc-2b4e" type="selectionEntry">
       <comment>template_id_0848-4e03-417a-b224</comment>
       <categoryLinks>
@@ -1924,6 +1936,20 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
         <categoryLink name="Unit:" hidden="false" id="9f45-8e79-7fb7-940" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink name="Compulsory Elite:" hidden="false" id="ded5-c7d6-52cd-b877" targetId="bb1f-ae32-b587-c3e1" primary="false"/>
         <categoryLink name="Elites:" hidden="false" id="506e-a56d-9d3d-6f1a" targetId="7aee-565f-b0ae-294e" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="false" name="Assault Veteran Squad" hidden="false" id="7353-d76b-f213-e1e9" collective="false" targetId="d687-d1ad-9afa-57dd" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Unit:" hidden="false" id="6eba-66e6-f6eb-23db" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink name="Compulsory Elite:" hidden="false" id="0b76-ab0d-010f-1ad1" targetId="bb1f-ae32-b587-c3e1" primary="false"/>
+        <categoryLink name="Elites:" hidden="false" id="cc61-1a1c-8432-4115" targetId="7aee-565f-b0ae-294e" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="false" name="Possessed Legionnaires" hidden="false" id="b5f3-1dd3-8616-714d" collective="false" targetId="a225-7515-199a-4905" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Unit:" hidden="false" id="97b9-8a4a-bd4c-8468" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink name="Compulsory Elite:" hidden="false" id="08de-9ef9-eabb-389f" targetId="bb1f-ae32-b587-c3e1" primary="false"/>
+        <categoryLink name="Elites:" hidden="false" id="78c6-ee12-eb9d-065a" targetId="7aee-565f-b0ae-294e" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="false" name="Vindicator Squadron" hidden="false" id="6485-78f1-6b7-951e" collective="false" targetId="9245-0776-6747-adb8" type="selectionEntry">
