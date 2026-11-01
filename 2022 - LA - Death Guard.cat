@@ -622,6 +622,23 @@
         </categoryLink>
       </categoryLinks>
     </entryLink>
+    <entryLink id="d81a-e099-c358-3cc6" name="Contemptor-Cortus Dreadnought Talon" hidden="false" collective="false" import="false" targetId="6f2e-78c7-2b2c-8a18" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="0c30-f60f-d709-6ff4" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="bd2d-390c-9b49-1cfc" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink id="7194-5a5e-656b-17ff" name="Damocles Command Rhino" hidden="false" collective="false" import="false" targetId="e337-8239-5e92-7f5f" type="selectionEntry">
       <comment>template_id_fa0b-c14e-4b81-9dac</comment>
       <modifiers>
@@ -2446,6 +2463,19 @@
         </categoryLink>
       </categoryLinks>
     </entryLink>
+    <entryLink id="499b-ebf2-df91-1fc7" name="Terminator Saturnine Squad" hidden="false" collective="false" import="false" targetId="fbd3-f06b-6107-d645" type="selectionEntry">
+      <modifiers>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="60b6-cecf-b751-5a87" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="4cc3-6189-5203-ac4b" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink id="83ae-538e-57d9-ce01" name="Terminator Tartaros Squad" hidden="false" collective="false" import="false" targetId="1a8e-0ded-a4dc-2b4e" type="selectionEntry">
       <comment>template_id_0848-4e03-417a-b224</comment>
       <categoryLinks>
@@ -2591,6 +2621,20 @@
         <categoryLink id="01af-6f73-48ee-8e70" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true">
           <comment>template_id_4986-9157-49f2-b670</comment>
         </categoryLink>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="bd15-14b3-dd9c-33e0" name="Assault Veteran Squad" hidden="false" collective="false" import="false" targetId="d687-d1ad-9afa-57dd" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="7750-e875-6a99-5e60" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="b30d-08b3-1c1b-8d25" name="Compulsory Elite:" hidden="false" targetId="bb1f-ae32-b587-c3e1" primary="false"/>
+        <categoryLink id="6b57-f824-5649-744f" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="2c0c-80d0-cc3c-062f" name="Possessed Legionnaires" hidden="false" collective="false" import="false" targetId="a225-7515-199a-4905" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="bbc0-bcd4-2df3-0bba" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="8529-b283-c9a2-e689" name="Compulsory Elite:" hidden="false" targetId="bb1f-ae32-b587-c3e1" primary="false"/>
+        <categoryLink id="b724-15be-f317-25af" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="b9bd-df3d-1321-f365" name="Vindicator Squadron" hidden="false" collective="false" import="false" targetId="9245-0776-6747-adb8" type="selectionEntry">

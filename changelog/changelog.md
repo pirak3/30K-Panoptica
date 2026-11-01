@@ -16,12 +16,18 @@ All notable changes to the BattleScribe Data Repository will be documented in th
   - `[Legiones Astartes]` Added `[Centurion, Castra Ferrum]` - `[HQ]`
   - `[Legiones Astartes]` Added `[Land Raider Dionysus]` - `[HQ]`
   - `[Legiones Astartes]` Added `[Land Raider Tartaros]` - `[HQ / Dedicated Transport]`
+  - `[Legiones Astartes]` Added `[Terminator Saturnine Squad]` - `[Elites]`
+  - `[Legiones Astartes]` Added `[Assault Veteran Squad]` - `[Elites]`
+  - `[Legiones Astartes]` Added `[Contemptor-Cortus Dreadnought Talon]` - `[Elites]`
+  - `[Legiones Astartes]` Added `[Possessed Legionnaires]` - `[Elites]` (Traitor only)
+  - `[Legiones Astartes]` Added `[Servo-Automata Maniple]` - `[Techmarine Covenant Retinue]`
 - **Weapons & Wargear**:
   - `[Saturnine Terminator Armour]`
   - `[Gravis Force Weapon]`, `[Gravis Siege Drill]`, `[Seismic Hammer]`
   - `[Aspectum-Pattern Occularis Array]`, `[Atomantic Dispersion Shield]`, `[Full-Spectra Comms Array]`, `[Signum-Primus]`
+  - `[Toxiferno Cannon]`, `[Rad-Fragmentation Charge Launcher]`, `[Twisted Talons]`, `[Charnabal Longsword]`, `[Atomantic Repulsor]`
 - **Rules & Abilities**:
-  - Added special rules `[Pater Consularis]`, `[Vox Override]`
+  - Added special rules `[Pater Consularis]`, `[Vox Override]`, `[Automata Attendants]`, `[Reactor Overcharge]`, `[Synthetica Mindlock]`, `[Unstable Internment]`
   - Added `Pater Consularis` upgrades: Librarian, Master of Signals, Forge Lord, Siege Breaker, Chaplain, Armistos, Herald
   - Added Warlord Trait `[Fist of the Legion]` (Land Raider Dionysus)
 
@@ -33,6 +39,9 @@ All notable changes to the BattleScribe Data Repository will be documented in th
   - `[Master of Armour]`: not required under Armoured Spearhead when a `[Land Raider Dionysus]` is taken
   - `[Cassian Dracos]`: Warlord restriction now also covers the new Indomitus/Saturnine HQs and both new Land Raiders
   - Siege Breaker name conditions also accept the Pater Consularis Siege Breaker
+  - `[Castra Ferrum Dreadnought Talon]`: Added Frag Launchers, Volkite Culverin / Gravis Siege Drill / Seismic Hammer swaps, in-built Plasma Blaster / Graviton Gun and Hunter-Killer Missiles
+  - `[Techmarine Covenant]`: may take up to 3 `[Servo-Automata Maniple]` as Retinue (one per Techmarine)
+  - `[Charnabal Weapon]`: Added `[Charnabal Longsword]`
 - **Weapons & Profiles**:
   - `[Gravis Missile Launcher]`: Added `Rad` profile (hidden for now)
 
