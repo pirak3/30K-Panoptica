@@ -2563,6 +2563,30 @@
         </categoryLink>
       </categoryLinks>
     </entryLink>
+    <entryLink id="93d9-bd7b-3091-cc89" name="Storm Eagle Transporter" hidden="false" collective="false" import="false" targetId="a2e6-cdc5-c3d8-24d6" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a621-2c8c-3df0-89d3" type="equalTo"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="72d9-1478-cdcf-52e0" name="Fast Attack:" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
+        <categoryLink id="93f6-0274-6052-c56a" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="ca38-4194-6a1c-dacf" name="Mutated Spawn" hidden="false" collective="false" import="false" targetId="e2eb-d84f-ff19-298b" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="0c2e-61b1-fc16-f3e8" name="Fast Attack:" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
+        <categoryLink id="24e4-8766-978c-e790" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink id="9223-b6a2-72c3-f158" name="Tactical Squad" hidden="false" collective="false" import="false" targetId="aa72-63e4-bc60-4611" type="selectionEntry">
       <comment>template_id_59ec-0ea0-4fcf-a75a</comment>
       <modifiers>

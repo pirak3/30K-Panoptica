@@ -1834,6 +1834,40 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
         </infoLink>
       </infoLinks>
     </entryLink>
+    <entryLink import="false" name="Storm Eagle Transporter" hidden="false" id="6f88-72c2-0092-3cd2" collective="false" targetId="a2e6-cdc5-c3d8-24d6" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="7b69-bf2f-4547-e83b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="Fast Attack:" hidden="false" id="a2cf-5d47-c9d1-46c2" targetId="20ef-cd01-a8da-376e" primary="true"/>
+        <categoryLink name="Unit:" hidden="false" id="dd93-f876-a199-b32a" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Augmetic Transport Bay" id="a859-8f90-966b-badc" hidden="false" type="rule" targetId="75c-d3e8-2f12-2749">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="be5b-1edf-8b27-2e1e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="false" name="Mutated Spawn" hidden="false" id="5d29-9eae-05be-9db0" collective="false" targetId="e2eb-d84f-ff19-298b" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Fast Attack:" hidden="false" id="2e0d-89fa-7fc9-0665" targetId="20ef-cd01-a8da-376e" primary="true"/>
+        <categoryLink name="Unit:" hidden="false" id="dd01-372f-2550-85c3" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink import="false" name="Tactical Squad" hidden="false" id="31df-1610-957b-cf93" collective="false" targetId="aa72-63e4-bc60-4611" type="selectionEntry">
       <comment>template_id_59ec-0ea0-4fcf-a75a</comment>
       <categoryLinks>

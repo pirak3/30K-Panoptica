@@ -24,6 +24,7 @@ HQ (p.12-16): Contemptor Centurion, Castra Ferrum Centurion, Land Raider Dionysu
 TODO: Gravis Missile Launcher Rad profile is hidden until its unlock is known
 Elites (p.20-25): Terminator Saturnine Squad, Assault Veteran Squad, Contemptor-Cortus Dreadnought Talon, Possessed Legionnaires, Servo-Automata Maniple, Elites wargear changes done
 Troops (p.28-34): Hussar Squadron, Sky-Seeker Squadron, Assault Support Squad, Novicii Squad, Rhino Advancer, Whispercutter, Troops wargear changes done
+Fast Attack (p.38-41): Storm Eagle Transporter, Mutated Spawn, Fast Attack wargear changes done
 
 ### Death Guard
 Done
