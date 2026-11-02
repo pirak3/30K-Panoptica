@@ -8,6 +8,8 @@ All notable changes to the BattleScribe Data Repository will be documented in th
 
 ### Added
 - **Units**:
+  - `[Legiones Astartes]` Added `[Storm Eagle Transporter]` - `[Fast Attack]`
+  - `[Legiones Astartes]` Added `[Mutated Spawn]` - `[Fast Attack]` (Traitor only)
   - `[Legiones Astartes]` Added `[Hussar Squadron]` - `[Troops]`
   - `[Legiones Astartes]` Added `[Sky-Seeker Squadron]` - `[Troops]`
   - `[Legiones Astartes]` Added `[Assault Support Squad]` - `[Troops]`
@@ -28,12 +30,15 @@ All notable changes to the BattleScribe Data Repository will be documented in th
   - `[Legiones Astartes]` Added `[Possessed Legionnaires]` - `[Elites]` (Traitor only)
   - `[Legiones Astartes]` Added `[Servo-Automata Maniple]` - `[Techmarine Covenant Retinue]`
 - **Weapons & Wargear**:
+  - `[Mutated Appendages]`, `[Gravis Heavy Flamer]`, `[EM-Storm Charge]`, `[Phosphex Cluster Bombs]`
+  - `[Drop Capsules]`, `[Forward Deployment]`, `[Concealed Positions]`, `[Battle Servitor Control]`, `[Hyperios Command Platform]`
   - `[Grenade Launcher (Charges)]`, `[Twin-linked Rotor Cannon]`, `[Estoc Jetbike]`, `[Oracle Array]`
   - `[Saturnine Terminator Armour]`
   - `[Gravis Force Weapon]`, `[Gravis Siege Drill]`, `[Seismic Hammer]`
   - `[Aspectum-Pattern Occularis Array]`, `[Atomantic Dispersion Shield]`, `[Full-Spectra Comms Array]`, `[Signum-Primus]`
   - `[Toxiferno Cannon]`, `[Rad-Fragmentation Charge Launcher]`, `[Twisted Talons]`, `[Charnabal Longsword]`, `[Atomantic Repulsor]`
 - **Rules & Abilities**:
+  - Added special rules `[Combat Transporter]`, `[Dreadnought Magna-Grapples]`, `[Mindless Aggression]`, `[Neverborn]`
   - Added special rules `[Transport Skiff]`, `[Whispercutter]`
   - Added special rules `[Pater Consularis]`, `[Vox Override]`, `[Automata Attendants]`, `[Reactor Overcharge]`, `[Synthetica Mindlock]`, `[Unstable Internment]`
   - Added `Pater Consularis` upgrades: Librarian, Master of Signals, Forge Lord, Siege Breaker, Chaplain, Armistos, Herald
@@ -41,6 +46,10 @@ All notable changes to the BattleScribe Data Repository will be documented in th
 
 ### Changed
 - **Units / Points**:
+  - `[Spatha Attack Bike Squadron]`: Added Volkite Culverin, Nuncio-Vox and an optional Attack Bike Sergeant
+  - `[Primaris-Lightning Strike Fighter]`: Added Multi-Lasers, EM-Storm Charges, Reaper Autocannons, Cyclone Missile Launcher, Phosphex Cluster Bombs (with a Siege Breaker), Hull Predator Cannon and Battle Servitor Control
+  - `[Tarantula Sentry Gun Battery]`: Added six new weapon variants, deployment options and the Hyperios Command Platform
+  - `[Javelin Squadron]`, `[Proteus Land Speeder Squadron]`: one model may take a Legion Vexilla
   - `[Terminator Indomitus Squad]`: Added Plasma Blaster / Plasma Cannon (shared 1 per 5 heavy allowance), Havoc Launcher (1 per 5), Volkite Charger and Lightning Claw options
   - `Consul`: `Legiones Consularis` options other than Forge Lord, Siege Breaker and Mortificator are hidden for `[Centurion, Saturnine]`
   - `[Praetor, Cataphractii]`, `[Praetor, Tartaros]`: Master-crafted (+10) now available to all legions

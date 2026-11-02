@@ -2367,6 +2367,35 @@
         </categoryLink>
       </categoryLinks>
     </entryLink>
+    <entryLink id="884f-72d4-991b-62de" name="Storm Eagle Transporter" hidden="false" collective="false" import="false" targetId="a2e6-cdc5-c3d8-24d6" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a621-2c8c-3df0-89d3" type="equalTo">
+                </condition>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="3160-f456-d97e-95b7" name="Fast Attack:" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true">
+        </categoryLink>
+        <categoryLink id="64c2-3548-3d97-4b92" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
+        </categoryLink>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="fdea-281e-1426-a34f" name="Mutated Spawn" hidden="false" collective="false" import="false" targetId="e2eb-d84f-ff19-298b" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="ea9c-6d57-c20e-5060" name="Fast Attack:" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true">
+        </categoryLink>
+        <categoryLink id="8490-d287-2054-882e" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
+        </categoryLink>
+      </categoryLinks>
+    </entryLink>
     <entryLink id="3e94-aa5e-e44b-1dc1" name="Tactical Squad" hidden="false" collective="false" import="false" targetId="aa72-63e4-bc60-4611" type="selectionEntry">
       <comment>template_id_59ec-0ea0-4fcf-a75a</comment>
       <modifiers>
