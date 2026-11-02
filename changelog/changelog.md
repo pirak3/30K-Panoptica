@@ -8,6 +8,12 @@ All notable changes to the BattleScribe Data Repository will be documented in th
 
 ### Added
 - **Units**:
+  - `[Legiones Astartes]` Added `[Sicaran Incinerator Squadron]` - `[Heavy Support]`
+  - `[Legiones Astartes]` Added `[Vindicator Thunderer Squadron]` - `[Heavy Support]`
+  - `[Legiones Astartes]` Added `[Fire Raptor Destroyer]` - `[Heavy Support]`
+  - `[Legiones Astartes]` Added `[Early Great Crusade Havoc Squad]` - `[Heavy Support]` (0-1 per detachment)
+  - `[Legiones Astartes]` Added `[Heavy Destroyer Squad, Tartaros]` - `[Heavy Support]`
+  - `[Legiones Astartes]` Added `[Heavy Destroyer Squad, Cataphractii]` - `[Heavy Support]`
   - `[Legiones Astartes]` Added `[Storm Eagle Transporter]` - `[Fast Attack]`
   - `[Legiones Astartes]` Added `[Mutated Spawn]` - `[Fast Attack]` (Traitor only)
   - `[Legiones Astartes]` Added `[Hussar Squadron]` - `[Troops]`
@@ -30,6 +36,8 @@ All notable changes to the BattleScribe Data Repository will be documented in th
   - `[Legiones Astartes]` Added `[Possessed Legionnaires]` - `[Elites]` (Traitor only)
   - `[Legiones Astartes]` Added `[Servo-Automata Maniple]` - `[Techmarine Covenant Retinue]`
 - **Weapons & Wargear**:
+  - `[Volkite Columbiad]`, `[Neutron Cannon]`, `[Distortion Cannon]`, `[Heavy Disintegrator]`, `[Mole Mortar]`, `[Fallout Discharger]`
+  - `[Missile Launcher (Rad Missiles only)]`, `[Quad Launcher - Phosphex Canister Shot]`, `[Deredeo Atomantic Pavaise]`, `[Teleportation Transponders]`
   - `[Mutated Appendages]`, `[Gravis Heavy Flamer]`, `[EM-Storm Charge]`, `[Phosphex Cluster Bombs]`
   - `[Drop Capsules]`, `[Forward Deployment]`, `[Concealed Positions]`, `[Battle Servitor Control]`, `[Hyperios Command Platform]`
   - `[Grenade Launcher (Charges)]`, `[Twin-linked Rotor Cannon]`, `[Estoc Jetbike]`, `[Oracle Array]`
@@ -38,6 +46,7 @@ All notable changes to the BattleScribe Data Repository will be documented in th
   - `[Aspectum-Pattern Occularis Array]`, `[Atomantic Dispersion Shield]`, `[Full-Spectra Comms Array]`, `[Signum-Primus]`
   - `[Toxiferno Cannon]`, `[Rad-Fragmentation Charge Launcher]`, `[Twisted Talons]`, `[Charnabal Longsword]`, `[Atomantic Repulsor]`
 - **Rules & Abilities**:
+  - Added special rules `[Debilitating]`, `[Volatile Ordnance]`, `[Tremor]`
   - Added special rules `[Combat Transporter]`, `[Dreadnought Magna-Grapples]`, `[Mindless Aggression]`, `[Neverborn]`
   - Added special rules `[Transport Skiff]`, `[Whispercutter]`
   - Added special rules `[Pater Consularis]`, `[Vox Override]`, `[Automata Attendants]`, `[Reactor Overcharge]`, `[Synthetica Mindlock]`, `[Unstable Internment]`
@@ -46,6 +55,11 @@ All notable changes to the BattleScribe Data Repository will be documented in th
 
 ### Changed
 - **Units / Points**:
+  - `[Deredeo Dreadnought Talon]`: may exchange its Boreas missiles for a Deredeo Atomantic Pavaise
+  - `[Land Raider Achilles]`: Added Phosphex Canister Shot (with a Siege Breaker)
+  - `[Minotaur Battery]`: Added pintle mounted weapon options
+  - `[Whirlwind]`: may include up to 2 additional Whirlwinds
+  - `[Macharius Heavy Tank Squadron]`: sponson Heavy Stubbers may be exchanged for Heavy Bolters or Heavy Flamers
   - `[Spatha Attack Bike Squadron]`: Added Volkite Culverin, Nuncio-Vox and an optional Attack Bike Sergeant
   - `[Primaris-Lightning Strike Fighter]`: Added Multi-Lasers, EM-Storm Charges, Reaper Autocannons, Cyclone Missile Launcher, Phosphex Cluster Bombs (with a Siege Breaker), Hull Predator Cannon and Battle Servitor Control
   - `[Tarantula Sentry Gun Battery]`: Added six new weapon variants, deployment options and the Hyperios Command Platform

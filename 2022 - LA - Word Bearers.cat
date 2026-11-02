@@ -966,6 +966,24 @@
         </categoryLink>
       </categoryLinks>
     </entryLink>
+    <entryLink id="ba0f-ca22-4ba0-f7ac" name="Fire Raptor Destroyer" hidden="false" collective="false" import="false" targetId="2687-8506-5c64-b51c" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a621-2c8c-3df0-89d3" type="equalTo"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="deff-fb99-d733-a91d" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="48f1-191d-9320-c894" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink id="8dba-4de2-0398-98fd" name="Glaive" hidden="false" collective="false" import="false" targetId="04e0-f69f-f759-b0b3" type="selectionEntry">
       <comment>template_id_bbe3-6b87-4619-80dd</comment>
       <modifiers>
@@ -1018,6 +1036,48 @@
         <categoryLink id="6238-2bd9-4b6b-85b1" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
           <comment>template_id_dbec-e027-4ec1-8514</comment>
         </categoryLink>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="94f6-c1fb-12ae-1079" name="Early Great Crusade Havoc Squad" hidden="false" collective="false" import="false" targetId="2d51-a422-d4ee-183b" type="selectionEntry">
+      <modifiers>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4af5-da95-6342-14a0" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="4b7c-5f73-9131-8d4b" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+        <categoryLink id="d799-800a-b698-bbd1" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="aa2c-def2-de6b-4905" name="Heavy Destroyer Squad, Tartaros" hidden="false" collective="false" import="false" targetId="2099-9a61-8c9a-d939" type="selectionEntry">
+      <modifiers>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="4b82-667b-7d3a-a7db" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+        <categoryLink id="5db7-7580-4f26-a732" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="3910-546f-4ee4-5ea4" name="Heavy Destroyer Squad, Cataphractii" hidden="false" collective="false" import="false" targetId="5fd1-360d-0b54-2360" type="selectionEntry">
+      <modifiers>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="88e2-290b-b1dc-76b0" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+        <categoryLink id="772c-38eb-fcd3-411e" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="de96-b9e1-880f-7dfa" name="Javelin Squadron" hidden="false" collective="false" import="false" targetId="deea-102f-8fbe-e2e5" type="selectionEntry">
@@ -2267,6 +2327,25 @@
         </categoryLink>
       </categoryLinks>
     </entryLink>
+    <entryLink id="3720-ef13-32f0-d11f" name="Sicaran Incinerator Squadron" hidden="false" collective="false" import="false" targetId="45ba-4b9f-f5a4-2ebb" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="1f24-4513-cc4e-aef4" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="2e30-9d77-b74e-8e5f" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink id="1086-c952-53b5-306d" name="Sicaran Venator Squadron" hidden="false" collective="false" import="false" targetId="1345-e0db-2fcb-dcc8" type="selectionEntry">
       <comment>template_id_2901-7b25-4b31-99a8</comment>
       <modifiers>
@@ -2772,6 +2851,25 @@
         <categoryLink id="8929-e05b-47f4-8b7a" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true">
           <comment>template_id_b449-403a-4e42-9239</comment>
         </categoryLink>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="f4a2-3436-169f-723a" name="Vindicator Thunderer Squadron" hidden="false" collective="false" import="false" targetId="92cd-4ed9-0f1d-5b78" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="d871-4f8b-575d-fd8b" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="cfc0-1542-f135-8592" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="9ddc-5d16-a7ab-4a97" name="Whirlwind" hidden="true" collective="false" import="false" targetId="3118-4a9b-afa4-1a73" type="selectionEntry">
