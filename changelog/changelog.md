@@ -8,6 +8,12 @@ All notable changes to the BattleScribe Data Repository will be documented in th
 
 ### Added
 - **Units**:
+  - `[Legiones Astartes]` Added `[Hussar Squadron]` - `[Troops]`
+  - `[Legiones Astartes]` Added `[Sky-Seeker Squadron]` - `[Troops]`
+  - `[Legiones Astartes]` Added `[Assault Support Squad]` - `[Troops]`
+  - `[Legiones Astartes]` Added `[Novicii Squad]` - `[Troops]`
+  - `[Legiones Astartes]` Added `[Rhino Advancer]` - `[Dedicated Transport]` (wherever a Rhino Transport can be taken)
+  - `[Legiones Astartes]` Added `[Whispercutter]` - `[Dedicated Transport]` (Skirmish infantry squads of 5)
   - `[Legiones Astartes]` Added `[Praetor, Indomitus]` - `[HQ]`
   - `[Legiones Astartes]` Added `[Centurion, Indomitus]` - `[HQ]`
   - `[Legiones Astartes]` Added `[Centurion, Saturnine]` - `[HQ]`
@@ -22,17 +28,20 @@ All notable changes to the BattleScribe Data Repository will be documented in th
   - `[Legiones Astartes]` Added `[Possessed Legionnaires]` - `[Elites]` (Traitor only)
   - `[Legiones Astartes]` Added `[Servo-Automata Maniple]` - `[Techmarine Covenant Retinue]`
 - **Weapons & Wargear**:
+  - `[Grenade Launcher (Charges)]`, `[Twin-linked Rotor Cannon]`, `[Estoc Jetbike]`, `[Oracle Array]`
   - `[Saturnine Terminator Armour]`
   - `[Gravis Force Weapon]`, `[Gravis Siege Drill]`, `[Seismic Hammer]`
   - `[Aspectum-Pattern Occularis Array]`, `[Atomantic Dispersion Shield]`, `[Full-Spectra Comms Array]`, `[Signum-Primus]`
   - `[Toxiferno Cannon]`, `[Rad-Fragmentation Charge Launcher]`, `[Twisted Talons]`, `[Charnabal Longsword]`, `[Atomantic Repulsor]`
 - **Rules & Abilities**:
+  - Added special rules `[Transport Skiff]`, `[Whispercutter]`
   - Added special rules `[Pater Consularis]`, `[Vox Override]`, `[Automata Attendants]`, `[Reactor Overcharge]`, `[Synthetica Mindlock]`, `[Unstable Internment]`
   - Added `Pater Consularis` upgrades: Librarian, Master of Signals, Forge Lord, Siege Breaker, Chaplain, Armistos, Herald
   - Added Warlord Trait `[Fist of the Legion]` (Land Raider Dionysus)
 
 ### Changed
 - **Units / Points**:
+  - `[Terminator Indomitus Squad]`: Added Plasma Blaster / Plasma Cannon (shared 1 per 5 heavy allowance), Havoc Launcher (1 per 5), Volkite Charger and Lightning Claw options
   - `Consul`: `Legiones Consularis` options other than Forge Lord, Siege Breaker and Mortificator are hidden for `[Centurion, Saturnine]`
   - `[Praetor, Cataphractii]`, `[Praetor, Tartaros]`: Master-crafted (+10) now available to all legions
   - `[Command Squad]`, `[Command Squad, Cataphractii/Tartaros/Indomitus]`: may take `[Land Raider Tartaros]` as Dedicated Transport

@@ -50,6 +50,8 @@ Units: done
 - Pater Consularis: done
 #### **Elites**
 - Legion Terminator Saturnine Squad, Legion Assault Veteran Squad, Legion Contemptor-Cortus Dreadnought Talon, Possessed Legionnaires, Legion Servo-Automata Maniple, Elites wargear changes: done
+#### **Troops**
+- Legion Hussar Squadron, Legion Sky-Seeker Squadron, Legion Assault Support Squad, Legion Novicii Squad, Legion Rhino Advancer, Legion Whispercutter, Troops wargear changes: done
 ## **Antiqua**
 ## **Imperatus**
 
