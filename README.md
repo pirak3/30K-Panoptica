@@ -54,6 +54,8 @@ Units: done
 - Legion Hussar Squadron, Legion Sky-Seeker Squadron, Legion Assault Support Squad, Legion Novicii Squad, Legion Rhino Advancer, Legion Whispercutter, Troops wargear changes: done
 #### **Fast Attack**
 - Legion Storm Eagle Transporter, Mutated Spawn, Fast Attack wargear changes: done
+#### **Heavy Support**
+- Legion Sicaran Incinerator Squadron, Legion Vindicator Thunderer Squadron, Legion Fire Raptor Destroyer, Early Great Crusade Havoc Squad, Legion Tartaros/Cataphractii Heavy Destroyer Squad, Heavy Support wargear changes: done
 ## **Antiqua**
 ## **Imperatus**
 
