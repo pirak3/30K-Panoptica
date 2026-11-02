@@ -164,6 +164,12 @@
         </categoryLink>
       </categoryLinks>
     </entryLink>
+    <entryLink id="66be-0642-c7b3-7218" name="Assault Support Squad" hidden="false" collective="false" import="false" targetId="becc-47a3-4fc2-9e56" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="b10d-886b-b9c6-139b" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+        <categoryLink id="5c51-8681-7979-1d99" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink id="8cd4-b4d6-ce65-83af" name="Legion Avenger Strike Fighter" hidden="true" collective="false" import="false" targetId="b25c-e85c-1c29-9e05" type="selectionEntry">
       <comment>template_id_1064-175d-4616-9c71</comment>
       <modifiers>
@@ -1705,6 +1711,40 @@
         </categoryLink>
       </categoryLinks>
     </entryLink>
+    <entryLink id="0323-14dc-2cae-1686" name="Hussar Squadron" hidden="false" collective="false" import="false" targetId="9efb-0f88-3f6f-db20" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="6110-622b-bdb9-c81e" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="9aed-74f5-adfc-0482" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="501f-6250-e1c5-5a74" name="Sky-Seeker Squadron" hidden="false" collective="false" import="false" targetId="ba8f-067e-50d9-d50a" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="96c4-47f1-46eb-cdbf" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="dd16-a8b0-b998-7b98" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink id="2b66-97ab-581b-f341" name="Praetor" hidden="false" collective="false" import="false" targetId="03be-5d55-d05a-771d" type="selectionEntry">
       <comment>template_id_5798-3fc7-4d4c-ad41</comment>
       <categoryLinks>
@@ -2332,6 +2372,12 @@
         <categoryLink id="bfef-a58b-4804-9758" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true">
           <comment>template_id_f221-bf81-4045-849b</comment>
         </categoryLink>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="41d4-c262-9988-356a" name="Novicii Squad" hidden="false" collective="false" import="false" targetId="9cf1-119b-9cdc-b1c0" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="8983-5e24-01e3-573a" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="2c08-97fd-e601-a664" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="c89a-902f-2ea0-3bcd" name="Tarantula Sentry Gun Battery" hidden="true" collective="false" import="false" targetId="124f-0ced-9231-bba4" type="selectionEntry">
@@ -3375,6 +3421,30 @@ Corvus Corax may still Run on a turn when the Korvidine Pinions have been activa
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="896f-44d6-985f-78d6" name="Rhino Advancer" hidden="false" collective="false" import="true" targetId="619c-8332-36e8-099c" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a621-2c8c-3df0-89d3" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="4a22-8561-000e-c2dc" name="Whispercutter" hidden="false" collective="false" import="true" targetId="291d-aed3-5c88-014d" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="c268-08ac-5b90-d034" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="notEqualTo"/>
+                  </conditions>
                 </modifier>
               </modifiers>
             </entryLink>

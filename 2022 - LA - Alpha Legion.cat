@@ -1495,6 +1495,19 @@
         </categoryLink>
       </categoryLinks>
     </entryLink>
+    <entryLink id="0136-703a-4cea-0deb" name="Assault Support Squad" hidden="false" collective="false" import="false" targetId="becc-47a3-4fc2-9e56" type="selectionEntry">
+      <modifiers>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="d50a-c265-c4f4-e26b" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+        <categoryLink id="d926-98d3-cb2b-8e1f" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink id="ba5e-59d7-8e8d-4b06" name="Breacher Squad" hidden="false" collective="false" import="false" targetId="ad97-c090-fa67-696f" type="selectionEntry">
       <comment>template_id_5c02-34db-4633-a4e9</comment>
       <modifiers>
@@ -2654,6 +2667,50 @@
         </categoryLink>
       </categoryLinks>
     </entryLink>
+    <entryLink id="fd5c-8a61-0c34-b9a2" name="Hussar Squadron" hidden="false" collective="false" import="false" targetId="9efb-0f88-3f6f-db20" type="selectionEntry">
+      <modifiers>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="af0c-9601-77e5-fe57" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="d825-7581-bf48-a590" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="bb7c-916c-02b0-8e33" name="Sky-Seeker Squadron" hidden="false" collective="false" import="false" targetId="ba8f-067e-50d9-d50a" type="selectionEntry">
+      <modifiers>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="ce2b-0c01-0458-9603" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="ac3c-4ae8-e205-1c88" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink id="1024-5940-3bbc-2737" name="Praetor" hidden="false" collective="false" import="false" targetId="03be-5d55-d05a-771d" type="selectionEntry">
       <comment>template_id_5798-3fc7-4d4c-ad41</comment>
       <modifiers>
@@ -3376,6 +3433,19 @@
         <categoryLink id="edfc-a1ad-4598-b5d5" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true">
           <comment>template_id_f221-bf81-4045-849b</comment>
         </categoryLink>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="75ab-b165-9432-61c7" name="Novicii Squad" hidden="false" collective="false" import="false" targetId="9cf1-119b-9cdc-b1c0" type="selectionEntry">
+      <modifiers>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="bf45-b2fd-eb0d-3d3d" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="4ff2-fd2c-33c3-159d" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="4d04-02d7-a275-24ec" name="Techmarine Covenant" hidden="false" collective="false" import="false" targetId="d39f-99d5-f7a4-7b86" type="selectionEntry">
@@ -6654,6 +6724,21 @@
           </constraints>
           <entryLinks>
             <entryLink id="8654-833c-cc25-62e3" name="Rhino Transport" hidden="false" collective="false" import="true" targetId="03f1-8ed9-9867-8d18" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a621-2c8c-3df0-89d3" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="0aff-1e22-cf59-4ab0" name="Rhino Advancer" hidden="false" collective="false" import="true" targetId="619c-8332-36e8-099c" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditionGroups>

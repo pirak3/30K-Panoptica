@@ -245,6 +245,12 @@
         </categoryLink>
       </categoryLinks>
     </entryLink>
+    <entryLink id="09bb-ab92-4955-30f4" name="Assault Support Squad" hidden="false" collective="false" import="false" targetId="becc-47a3-4fc2-9e56" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="24a4-c4df-9e08-8c7e" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+        <categoryLink id="75e3-fb32-2072-2c60" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink id="67a5-c32f-598e-5dd6" name="Breacher Squad" hidden="false" collective="false" import="false" targetId="ad97-c090-fa67-696f" type="selectionEntry">
       <comment>template_id_5c02-34db-4633-a4e9</comment>
       <modifiers>
@@ -1185,6 +1191,40 @@
         </categoryLink>
       </categoryLinks>
     </entryLink>
+    <entryLink id="778a-ba91-da6c-b182" name="Hussar Squadron" hidden="false" collective="false" import="false" targetId="9efb-0f88-3f6f-db20" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="a5ba-b2f1-b440-fcd0" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="3082-e468-765b-d906" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="f324-e398-5010-c01d" name="Sky-Seeker Squadron" hidden="false" collective="false" import="false" targetId="ba8f-067e-50d9-d50a" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="2356-4cca-f66a-b798" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="db4d-feef-9164-c2ed" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink id="e078-1f38-d383-0d25" name="Praetor, Cataphractii" hidden="false" collective="false" import="false" targetId="1b79-1951-5a63-4b9e" type="selectionEntry">
       <comment>template_id_ca44-db38-4377-b4ef</comment>
       <modifiers>
@@ -1748,6 +1788,12 @@
         <categoryLink id="c59d-9ef6-44e7-8ead" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true">
           <comment>template_id_f221-bf81-4045-849b</comment>
         </categoryLink>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="d3e2-b1b0-47d4-403e" name="Novicii Squad" hidden="false" collective="false" import="false" targetId="9cf1-119b-9cdc-b1c0" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="8a00-31cb-4319-7128" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="14fe-c156-701e-491a" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="96db-ede0-759b-af82" name="Techmarine Covenant" hidden="false" collective="false" import="false" targetId="d39f-99d5-f7a4-7b86" type="selectionEntry">

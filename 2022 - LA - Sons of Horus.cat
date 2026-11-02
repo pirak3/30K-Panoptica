@@ -250,6 +250,12 @@
         </categoryLink>
       </categoryLinks>
     </entryLink>
+    <entryLink id="0919-c872-5af5-49c7" name="Assault Support Squad" hidden="false" collective="false" import="false" targetId="becc-47a3-4fc2-9e56" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="1e8b-e795-0566-ea32" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+        <categoryLink id="237b-48cb-decf-85bb" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink id="5931-079a-7236-2747" name="Legion Avenger Strike Fighter" hidden="true" collective="false" import="false" targetId="b25c-e85c-1c29-9e05" type="selectionEntry">
       <comment>template_id_1064-175d-4616-9c71</comment>
       <modifiers>
@@ -1761,6 +1767,40 @@
         </categoryLink>
       </categoryLinks>
     </entryLink>
+    <entryLink id="34b6-a694-7ed1-1704" name="Hussar Squadron" hidden="false" collective="false" import="false" targetId="9efb-0f88-3f6f-db20" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="be4f-1a66-b28a-0295" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="81f3-03fe-1b8d-4bfb" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="51b5-7b81-1f11-f5a7" name="Sky-Seeker Squadron" hidden="false" collective="false" import="false" targetId="ba8f-067e-50d9-d50a" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="a375-9e96-2785-4ccc" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="9842-a4b3-0a48-d7f8" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink id="3930-0089-f27e-cd7c" name="Praetor" hidden="false" collective="false" import="false" targetId="03be-5d55-d05a-771d" type="selectionEntry">
       <comment>template_id_5798-3fc7-4d4c-ad41</comment>
       <categoryLinks>
@@ -2367,6 +2407,12 @@
         <categoryLink id="5008-22e0-4a28-addf" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true">
           <comment>template_id_f221-bf81-4045-849b</comment>
         </categoryLink>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="3646-9655-ee7d-659f" name="Novicii Squad" hidden="false" collective="false" import="false" targetId="9cf1-119b-9cdc-b1c0" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="f924-a22a-9efb-0845" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="6256-acfe-0ea2-e7ce" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="3800-5e59-a995-b32d" name="Tarantula Sentry Gun Battery" hidden="true" collective="false" import="false" targetId="124f-0ced-9231-bba4" type="selectionEntry">
@@ -4047,6 +4093,21 @@
                         <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
                         <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a621-2c8c-3df0-89d3" type="equalTo"/>
                         <condition field="selections" scope="8b29-bf2a-a814-5642" value="11" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" type="atLeast"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="2de6-f4d3-b1f8-bd93" name="Rhino Advancer" hidden="false" collective="false" import="true" targetId="619c-8332-36e8-099c" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a621-2c8c-3df0-89d3" type="equalTo"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>

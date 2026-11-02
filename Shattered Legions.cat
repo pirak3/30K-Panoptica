@@ -100,6 +100,12 @@
         </categoryLink>
       </categoryLinks>
     </entryLink>
+    <entryLink import="false" name="Assault Support Squad" hidden="false" id="e8be-b067-804b-5e7f" collective="false" targetId="becc-47a3-4fc2-9e56" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Troops:" hidden="false" id="1546-b2ce-fd01-3adb" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+        <categoryLink name="Unit:" hidden="false" id="6ad0-08a1-af13-d7ac" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink import="false" name="Breacher Squad" hidden="false" id="6391-b555-216b-9e83" collective="false" targetId="ad97-c090-fa67-696f" type="selectionEntry">
       <categoryLinks>
         <categoryLink name="Troops:" hidden="false" id="9e6a-3361-2a35-dee6" targetId="9b5d-fac7-799b-d7e7" primary="true">
@@ -934,6 +940,40 @@
         </categoryLink>
       </categoryLinks>
     </entryLink>
+    <entryLink import="false" name="Hussar Squadron" hidden="false" id="fc72-96bb-443d-fb5f" collective="false" targetId="9efb-0f88-3f6f-db20" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="7b69-bf2f-4547-e83b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="Unit:" hidden="false" id="1f99-64ff-852b-9488" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink name="Troops:" hidden="false" id="39a4-7060-8233-871c" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="false" name="Sky-Seeker Squadron" hidden="false" id="5534-17c5-60d3-d406" collective="false" targetId="ba8f-067e-50d9-d50a" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="7b69-bf2f-4547-e83b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="Unit:" hidden="false" id="d2e2-4877-98c9-0605" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink name="Troops:" hidden="false" id="79d8-155b-a7cd-4165" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink import="false" name="Praetor" hidden="false" id="0e40-d699-fae7-0c5f" collective="false" targetId="03be-5d55-d05a-771d" type="selectionEntry">
       <categoryLinks>
         <categoryLink name="HQ:" hidden="false" id="0f59-1468-b8a7-fbc5" targetId="4f85-eb33-30c9-8f51" primary="true">
@@ -1342,6 +1382,12 @@
         <categoryLink name="Troops:" hidden="false" id="d953-833a-b642-60fd" targetId="9b5d-fac7-799b-d7e7" primary="true">
           <comment>template_id_f221-bf81-4045-849b</comment>
         </categoryLink>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="false" name="Novicii Squad" hidden="false" id="b378-4640-2e6a-f1aa" collective="false" targetId="9cf1-119b-9cdc-b1c0" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Unit:" hidden="false" id="7548-d5be-6f4c-f456" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink name="Troops:" hidden="false" id="6086-a6d0-b5cd-ee5c" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="false" name="Tarantula Sentry Gun Battery" hidden="true" id="3672-5e6f-ca4f-c45d" collective="false" targetId="124f-0ced-9231-bba4" type="selectionEntry">
