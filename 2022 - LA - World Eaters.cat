@@ -1519,6 +1519,27 @@
         </categoryLink>
       </categoryLinks>
     </entryLink>
+    <entryLink id="9a59-5a6e-6eca-bf5e" name="Legion Doomhammer" hidden="false" collective="false" import="false" targetId="9a96-ecee-2e7a-5360" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="08ad-4cd8-4796-ec99" type="atLeast"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="eabb-458b-6159-540d" name="Lords of War:" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink id="db19-fa59-53f3-a831" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink id="78c0-bd86-99b4-3d35" name="Legion Stormblade" hidden="true" collective="false" import="false" targetId="4ac0-4b85-58da-0907" type="selectionEntry">
       <comment>template_id_0b55-7392-44c0-931c</comment>
       <modifiers>
@@ -1733,6 +1754,27 @@
         <categoryLink id="b017-ce01-4afb-88da" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
           <comment>template_id_9568-6142-4fdd-be3a</comment>
         </categoryLink>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="0434-cb2f-23b5-ff6b" name="Legion Banesword" hidden="false" collective="false" import="false" targetId="d23f-d032-6314-8779" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="08ad-4cd8-4796-ec99" type="atLeast"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="b4ad-c736-8004-0d09" name="Lords of War:" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink id="9f69-1e0a-3afb-5b08" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="0a1c-5ad3-c7fc-494d" name="Legion Baneblade" hidden="true" collective="false" import="false" targetId="ee5c-0952-bf95-6333" type="selectionEntry">
@@ -2546,6 +2588,27 @@
         <categoryLink id="87eb-e154-400a-a5d7" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
           <comment>template_id_2b20-1a8b-4753-b657</comment>
         </categoryLink>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="37ac-8415-98db-68c2" name="Legion Orthrus Destroyer Squadron" hidden="false" collective="false" import="false" targetId="826c-d5f7-2739-0425" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="08ad-4cd8-4796-ec99" type="atLeast"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="c8b7-2990-ab1b-c50f" name="Lords of War:" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink id="baf6-6634-58d1-6210" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="551c-fb9b-4fe1-784c" name="Centurion, Tartaros" hidden="false" collective="false" import="false" targetId="f806-8a4e-d0d6-beaa" type="selectionEntry">
