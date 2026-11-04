@@ -4672,6 +4672,54 @@ of the normal +1 for two melee weapons.</description>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
                   </costs>
                 </entryLink>
+                <entryLink id="4e05-b201-48a8-b397" name="Barb-Hook Lash" hidden="true" collective="false" import="true" targetId="e711-ab63-4899-8b00" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="aa72-63e4-bc60-4611" childId="d363-35ae-9fad-3a0e" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="141d-b7be-fc08-de02" name="Excoriator Chainaxe" hidden="true" collective="false" import="true" targetId="269e-ff0b-faec-d067" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="aa72-63e4-bc60-4611" childId="d363-35ae-9fad-3a0e" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="15ca-1003-8cdd-bf06" name="Falax Blade" hidden="true" collective="false" import="true" targetId="d5f4-6a95-b941-17e4" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="aa72-63e4-bc60-4611" childId="d363-35ae-9fad-3a0e" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="354c-df2a-ed48-b93a" name="Meteor Hammer" hidden="true" collective="false" import="true" targetId="314b-febc-93e8-a2e9" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="aa72-63e4-bc60-4611" childId="d363-35ae-9fad-3a0e" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="153e-59b7-a794-73b5" name="2) Bolt Pistol:" hidden="false" collective="false" import="true" defaultSelectionEntryId="0a0a-deef-8e3c-94e0">
@@ -5771,6 +5819,66 @@ of the normal +1 for two melee weapons.</description>
                         </modifier>
                       </modifiers>
                     </entryLink>
+                    <entryLink id="bc91-d1c8-a998-283d" name="Barb-Hook Lash" hidden="true" collective="false" import="true" targetId="e711-ab63-4899-8b00" type="selectionEntry">
+                      <modifiers>
+                        <modifier type="set" field="hidden" value="false">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="aa72-63e4-bc60-4611" childId="d363-35ae-9fad-3a0e" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb07-d7d3-d175-8953" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="22e6-32bc-ac85-b7ef" name="Excoriator Chainaxe" hidden="true" collective="false" import="true" targetId="269e-ff0b-faec-d067" type="selectionEntry">
+                      <modifiers>
+                        <modifier type="set" field="hidden" value="false">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="aa72-63e4-bc60-4611" childId="d363-35ae-9fad-3a0e" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2a91-a6fc-312b-0a3e" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="717e-462d-75f7-4f4d" name="Falax Blade" hidden="true" collective="false" import="true" targetId="d5f4-6a95-b941-17e4" type="selectionEntry">
+                      <modifiers>
+                        <modifier type="set" field="hidden" value="false">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="aa72-63e4-bc60-4611" childId="d363-35ae-9fad-3a0e" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd48-9d68-6a66-974e" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="ff60-f878-ffee-8ae8" name="Meteor Hammer" hidden="true" collective="false" import="true" targetId="314b-febc-93e8-a2e9" type="selectionEntry">
+                      <modifiers>
+                        <modifier type="set" field="hidden" value="false">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="aa72-63e4-bc60-4611" childId="d363-35ae-9fad-3a0e" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="920d-37c5-1e73-c422" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                      </costs>
+                    </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup id="d5c7-1976-97e8-01c0" name="Bayonet:" hidden="false" collective="false" import="true">
@@ -6081,6 +6189,66 @@ of the normal +1 for two melee weapons.</description>
                       </constraints>
                       <costs>
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="3ed7-66b6-9179-19d1" name="Barb-Hook Lash" hidden="true" collective="false" import="true" targetId="2403-fc44-ffd2-8fa6" type="selectionEntry">
+                      <modifiers>
+                        <modifier type="set" field="hidden" value="false">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="aa72-63e4-bc60-4611" childId="d363-35ae-9fad-3a0e" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="424d-b80e-8749-810c" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="987a-4d64-d4af-8419" name="Excoriator Chainaxe" hidden="true" collective="false" import="true" targetId="269e-ff0b-faec-d067" type="selectionEntry">
+                      <modifiers>
+                        <modifier type="set" field="hidden" value="false">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="aa72-63e4-bc60-4611" childId="d363-35ae-9fad-3a0e" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db2e-d3d9-ce4d-3c2e" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="4e7f-1ee3-5e1c-8d34" name="Falax Blade" hidden="true" collective="false" import="true" targetId="be1b-90ff-17f3-654e" type="selectionEntry">
+                      <modifiers>
+                        <modifier type="set" field="hidden" value="false">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="aa72-63e4-bc60-4611" childId="d363-35ae-9fad-3a0e" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb6c-6926-677a-3950" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="fac6-ac45-c386-302c" name="Meteor Hammer" hidden="true" collective="false" import="true" targetId="1994-6eda-5e87-3038" type="selectionEntry">
+                      <modifiers>
+                        <modifier type="set" field="hidden" value="false">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="aa72-63e4-bc60-4611" childId="d363-35ae-9fad-3a0e" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a903-614f-4cdb-5413" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
                       </costs>
                     </entryLink>
                   </entryLinks>
@@ -6707,6 +6875,7 @@ This is a Damage Mitigation roll – any model may make only a single Damage Mit
             </infoLink>
           </infoLinks>
         </entryLink>
+        <entryLink id="e3a6-9e79-94ab-7e5a" name="Savage Arsenal" hidden="false" collective="false" import="true" targetId="d363-35ae-9fad-3a0e" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
@@ -15422,6 +15591,11 @@ This is a Damage Mitigation roll – any model may make only a single Damage Mit
                     <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0b6c-5897-3790-2940" type="equalTo"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" field="name" value="Lanistus">
+                  <conditions>
+                    <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9e80-f45b-e127-8be8" type="equalTo"/>
+                  </conditions>
+                </modifier>
                 <modifier type="set" field="name" value="Dark Emissary">
                   <conditions>
                     <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="84ac-ebaf-8c66-3c1d" type="equalTo"/>
@@ -16294,6 +16468,11 @@ This is a Damage Mitigation roll – any model may make only a single Damage Mit
                 </entryLink>
                 <entryLink id="d872-a136-1f42-840f" name="Chainsword" hidden="false" collective="false" import="true" targetId="eb13-c744-eba0-77be" type="selectionEntry">
                   <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditions>
+                        <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9e80-f45b-e127-8be8" type="equalTo"/>
+                      </conditions>
+                    </modifier>
                     <modifier type="set" field="8867-e9c2-d14f-9476" value="0"/>
                     <modifier type="set" value="0" field="953c-86b9-0542-034e">
                       <conditions>
@@ -16573,6 +16752,44 @@ This is a Damage Mitigation roll – any model may make only a single Damage Mit
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
                   </costs>
                 </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Exchange Chainsword for Caedere Weapon" hidden="true" id="7c24-b445-f361-fed5">
+                  <selectionEntryGroups>
+                    <selectionEntryGroup id="8e2b-4831-7527-203d" name="Caedere Weapon" hidden="false" collective="false" import="true">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5174-28eb-b52b-98fa" type="min"/>
+                        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="46df-7385-f38e-f44c" type="max"/>
+                      </constraints>
+                      <entryLinks>
+                        <entryLink id="caa6-a15b-5211-f8af" name="Barb-Hook Lash" hidden="false" collective="false" import="true" targetId="e711-ab63-4899-8b00" type="selectionEntry"/>
+                        <entryLink id="7f8f-5157-bbd7-8b23" name="Excoriator Chainaxe" hidden="false" collective="false" import="true" targetId="269e-ff0b-faec-d067" type="selectionEntry"/>
+                        <entryLink id="b4ef-5c1d-c03e-a25b" name="Falax Blade" hidden="false" collective="false" import="true" targetId="d5f4-6a95-b941-17e4" type="selectionEntry">
+                          <modifiers>
+                            <modifier type="set" field="hidden" value="false"/>
+                          </modifiers>
+                        </entryLink>
+                        <entryLink id="e20f-7e6b-3d49-5fb8" name="Meteor Hammer" hidden="false" collective="false" import="true" targetId="314b-febc-93e8-a2e9" type="selectionEntry"/>
+                        <entryLink id="2cad-f9d7-4535-684a" name="Two Falax Blades" hidden="false" collective="false" import="true" targetId="97ad-7991-5b27-c031" type="selectionEntry">
+                          <modifiers>
+                            <modifier type="set" field="hidden" value="false"/>
+                          </modifiers>
+                        </entryLink>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                  <constraints>
+                    <constraint field="selections" scope="25a2-7a52-632a-6b2c" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3b00-72cc-e506-da58" type="max"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9e80-f45b-e127-8be8" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                  </costs>
+                </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
             <selectionEntryGroup id="525d-defc-1b29-0886" name="2) May take one:" hidden="false" collective="false" import="true">
@@ -16586,6 +16803,7 @@ This is a Damage Mitigation roll – any model may make only a single Damage Mit
                       <conditionGroups>
                         <conditionGroup type="or">
                           <conditions>
+                            <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9e80-f45b-e127-8be8" type="equalTo"/>
                             <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="35ac-992e-97a7-1612" type="equalTo"/>
                             <condition type="equalTo" value="1" field="selections" scope="force" childId="c7be-f327-8718-3dfb" shared="true" includeChildSelections="true"/>
                           </conditions>
@@ -16618,6 +16836,7 @@ This is a Damage Mitigation roll – any model may make only a single Damage Mit
                       <conditionGroups>
                         <conditionGroup type="or">
                           <conditions>
+                            <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9e80-f45b-e127-8be8" type="equalTo"/>
                             <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="35ac-992e-97a7-1612" type="equalTo"/>
                           </conditions>
                         </conditionGroup>
@@ -16634,6 +16853,7 @@ This is a Damage Mitigation roll – any model may make only a single Damage Mit
                       <conditionGroups>
                         <conditionGroup type="or">
                           <conditions>
+                            <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9e80-f45b-e127-8be8" type="equalTo"/>
                             <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="35ac-992e-97a7-1612" type="equalTo"/>
                           </conditions>
                         </conditionGroup>
@@ -16782,6 +17002,7 @@ This is a Damage Mitigation roll – any model may make only a single Damage Mit
                       <conditionGroups>
                         <conditionGroup type="or">
                           <conditions>
+                            <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9e80-f45b-e127-8be8" type="equalTo"/>
                             <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="64a2-0d7a-e716-e67f" type="equalTo"/>
                             <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="41b5-73f0-cdc9-1f83" type="equalTo"/>
                             <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7962-e835-2ae5-c6f1" type="equalTo"/>
@@ -16800,6 +17021,7 @@ This is a Damage Mitigation roll – any model may make only a single Damage Mit
                       <conditionGroups>
                         <conditionGroup type="or">
                           <conditions>
+                            <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9e80-f45b-e127-8be8" type="equalTo"/>
                             <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6d2-b3a9-6d2c-1f6f" type="equalTo"/>
                             <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="08e4-5e02-da82-f296" type="equalTo"/>
                             <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="35ac-992e-97a7-1612" type="equalTo"/>
@@ -16823,6 +17045,7 @@ This is a Damage Mitigation roll – any model may make only a single Damage Mit
                       <conditionGroups>
                         <conditionGroup type="or">
                           <conditions>
+                            <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9e80-f45b-e127-8be8" type="equalTo"/>
                             <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6d2-b3a9-6d2c-1f6f" type="equalTo"/>
                             <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="08e4-5e02-da82-f296" type="equalTo"/>
                             <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="35ac-992e-97a7-1612" type="equalTo"/>
@@ -20164,6 +20387,54 @@ This is a Damage Mitigation roll – any model may make only a single Damage Mit
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
                   </costs>
                 </entryLink>
+                <entryLink id="f912-5695-d1ac-ae4a" name="Barb-Hook Lash" hidden="true" collective="false" import="true" targetId="e711-ab63-4899-8b00" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="4357-930e-165a-a6e3" childId="d363-35ae-9fad-3a0e" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="4812-8a01-7918-1e1c" name="Excoriator Chainaxe" hidden="true" collective="false" import="true" targetId="269e-ff0b-faec-d067" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="4357-930e-165a-a6e3" childId="d363-35ae-9fad-3a0e" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="204f-3ce9-bb38-3969" name="Falax Blade" hidden="true" collective="false" import="true" targetId="d5f4-6a95-b941-17e4" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="4357-930e-165a-a6e3" childId="d363-35ae-9fad-3a0e" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="80a7-5800-222f-c367" name="Meteor Hammer" hidden="true" collective="false" import="true" targetId="314b-febc-93e8-a2e9" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="4357-930e-165a-a6e3" childId="d363-35ae-9fad-3a0e" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="dfce-712d-b1e7-d5ca" name="4) Wargear" hidden="false" collective="false" import="true">
@@ -21301,6 +21572,66 @@ This is a Damage Mitigation roll – any model may make only a single Damage Mit
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="1"/>
                       </costs>
                     </entryLink>
+                    <entryLink id="ff1d-74c7-5807-2323" name="Barb-Hook Lash" hidden="true" collective="false" import="true" targetId="2403-fc44-ffd2-8fa6" type="selectionEntry">
+                      <modifiers>
+                        <modifier type="set" field="hidden" value="false">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="4357-930e-165a-a6e3" childId="d363-35ae-9fad-3a0e" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c31-f729-e1ee-e284" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="d2c6-51cb-9681-1db9" name="Excoriator Chainaxe" hidden="true" collective="false" import="true" targetId="269e-ff0b-faec-d067" type="selectionEntry">
+                      <modifiers>
+                        <modifier type="set" field="hidden" value="false">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="4357-930e-165a-a6e3" childId="d363-35ae-9fad-3a0e" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c827-69dd-6f4a-755c" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="dc2f-d28f-c056-8e5e" name="Falax Blade" hidden="true" collective="false" import="true" targetId="be1b-90ff-17f3-654e" type="selectionEntry">
+                      <modifiers>
+                        <modifier type="set" field="hidden" value="false">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="4357-930e-165a-a6e3" childId="d363-35ae-9fad-3a0e" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e97e-4f56-711f-4dd9" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="6b66-daa0-59d2-d2dc" name="Meteor Hammer" hidden="true" collective="false" import="true" targetId="1994-6eda-5e87-3038" type="selectionEntry">
+                      <modifiers>
+                        <modifier type="set" field="hidden" value="false">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="4357-930e-165a-a6e3" childId="d363-35ae-9fad-3a0e" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ffef-b27c-3c56-28ba" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                      </costs>
+                    </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -21857,6 +22188,66 @@ This is a Damage Mitigation roll – any model may make only a single Damage Mit
                         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6178-1e49-58c1-2003" type="max"/>
                       </constraints>
                     </entryLink>
+                    <entryLink id="5443-fe11-a101-bfbb" name="Barb-Hook Lash" hidden="true" collective="false" import="true" targetId="e711-ab63-4899-8b00" type="selectionEntry">
+                      <modifiers>
+                        <modifier type="set" field="hidden" value="false">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="4357-930e-165a-a6e3" childId="d363-35ae-9fad-3a0e" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1cee-65e9-13fa-4da5" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="013a-6386-4447-7ed5" name="Excoriator Chainaxe" hidden="true" collective="false" import="true" targetId="269e-ff0b-faec-d067" type="selectionEntry">
+                      <modifiers>
+                        <modifier type="set" field="hidden" value="false">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="4357-930e-165a-a6e3" childId="d363-35ae-9fad-3a0e" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e457-cb69-8c95-e903" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="92e1-40a9-1d27-31f9" name="Falax Blade" hidden="true" collective="false" import="true" targetId="d5f4-6a95-b941-17e4" type="selectionEntry">
+                      <modifiers>
+                        <modifier type="set" field="hidden" value="false">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="4357-930e-165a-a6e3" childId="d363-35ae-9fad-3a0e" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae5c-56c4-4523-ff81" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="aef2-786e-09c9-7bba" name="Meteor Hammer" hidden="true" collective="false" import="true" targetId="314b-febc-93e8-a2e9" type="selectionEntry">
+                      <modifiers>
+                        <modifier type="set" field="hidden" value="false">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="4357-930e-165a-a6e3" childId="d363-35ae-9fad-3a0e" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c605-5883-1bd0-6d9a" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                      </costs>
+                    </entryLink>
                   </entryLinks>
                   <selectionEntries>
                     <selectionEntry type="upgrade" import="true" name="Weapons of Desperation" hidden="false" id="ba9d-745c-d031-23e7">
@@ -22210,6 +22601,7 @@ If one or more Wounds is discounted due to this special rule, and the unit that 
             </infoLink>
           </infoLinks>
         </entryLink>
+        <entryLink id="e61c-0ee3-48f1-a873" name="Savage Arsenal" hidden="false" collective="false" import="true" targetId="d363-35ae-9fad-3a0e" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -27599,6 +27991,11 @@ If one or more Wounds is discounted due to this special rule, and the unit that 
                     <condition field="selections" scope="3766-ea98-0aa7-62d0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="05a2-a69e-0c9e-1544" type="equalTo"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" field="name" value="Lanistus">
+                  <conditions>
+                    <condition field="selections" scope="3766-ea98-0aa7-62d0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9e80-f45b-e127-8be8" type="equalTo"/>
+                  </conditions>
+                </modifier>
                 <modifier type="set" field="name" value="Warmonger">
                   <conditions>
                     <condition field="selections" scope="3766-ea98-0aa7-62d0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d6cc-2e7f-16e3-e66c" type="equalTo"/>
@@ -27881,11 +28278,25 @@ If one or more Wounds is discounted due to this special rule, and the unit that 
                   </constraints>
                 </entryLink>
                 <entryLink id="3242-1c56-a9df-73e8" name="Magna Combi-Weapon" hidden="false" collective="false" import="true" targetId="e5b1-83e5-7272-a59e" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditions>
+                        <condition field="selections" scope="3766-ea98-0aa7-62d0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9e80-f45b-e127-8be8" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
                   </costs>
                 </entryLink>
                 <entryLink id="7d2d-f845-165b-9b5b" name="Minor Combi-Weapon" hidden="false" collective="false" import="true" targetId="605e-1b86-ca08-9226" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditions>
+                        <condition field="selections" scope="3766-ea98-0aa7-62d0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9e80-f45b-e127-8be8" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
                   </costs>
@@ -28100,6 +28511,51 @@ If one or more Wounds is discounted due to this special rule, and the unit that 
                     <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4149-e1a7-9e26-374d" type="min"/>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="cdd6-95a3-6c92-a198" type="max"/>
                   </constraints>
+                </entryLink>
+                <entryLink id="43a1-8722-2c9d-a93d" name="Barb-Hook Lash" hidden="true" collective="false" import="true" targetId="e711-ab63-4899-8b00" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="3766-ea98-0aa7-62d0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9e80-f45b-e127-8be8" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="396c-ecf5-ce95-92ad" name="Excoriator Chainaxe" hidden="true" collective="false" import="true" targetId="269e-ff0b-faec-d067" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="3766-ea98-0aa7-62d0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9e80-f45b-e127-8be8" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="07ef-434a-6ffe-bed4" name="Falax Blade" hidden="true" collective="false" import="true" targetId="d5f4-6a95-b941-17e4" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="3766-ea98-0aa7-62d0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9e80-f45b-e127-8be8" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="9f96-564c-b32e-0fe0" name="Meteor Hammer" hidden="true" collective="false" import="true" targetId="314b-febc-93e8-a2e9" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="3766-ea98-0aa7-62d0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9e80-f45b-e127-8be8" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="8491-0829-1d3b-277a" name="Two Falax Blades" hidden="true" collective="false" import="true" targetId="97ad-7991-5b27-c031" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="3766-ea98-0aa7-62d0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9e80-f45b-e127-8be8" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -33909,6 +34365,11 @@ If one or more Wounds is discounted due to this special rule, and the unit that 
                     <condition field="selections" scope="f806-8a4e-d0d6-beaa" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="05a2-a69e-0c9e-1544" type="equalTo"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" field="name" value="Lanistus">
+                  <conditions>
+                    <condition field="selections" scope="f806-8a4e-d0d6-beaa" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9e80-f45b-e127-8be8" type="equalTo"/>
+                  </conditions>
+                </modifier>
                 <modifier type="set" field="name" value="Chaplain">
                   <conditions>
                     <condition field="selections" scope="f806-8a4e-d0d6-beaa" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4831-6948-851c-3925" type="equalTo"/>
@@ -34222,11 +34683,25 @@ If one or more Wounds is discounted due to this special rule, and the unit that 
               </constraints>
               <entryLinks>
                 <entryLink id="3707-c436-d5bd-afbc" name="Magna Combi-Weapon" hidden="false" collective="false" import="true" targetId="e5b1-83e5-7272-a59e" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditions>
+                        <condition field="selections" scope="f806-8a4e-d0d6-beaa" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9e80-f45b-e127-8be8" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
                   </costs>
                 </entryLink>
                 <entryLink id="660d-bb73-c783-78b5" name="Minor Combi-Weapon" hidden="false" collective="false" import="true" targetId="605e-1b86-ca08-9226" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditions>
+                        <condition field="selections" scope="f806-8a4e-d0d6-beaa" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9e80-f45b-e127-8be8" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
                   </costs>
@@ -34403,6 +34878,51 @@ If one or more Wounds is discounted due to this special rule, and the unit that 
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
                   </costs>
+                </entryLink>
+                <entryLink id="1efb-9709-caee-3235" name="Barb-Hook Lash" hidden="true" collective="false" import="true" targetId="e711-ab63-4899-8b00" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="f806-8a4e-d0d6-beaa" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9e80-f45b-e127-8be8" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="8785-68af-9a7a-996b" name="Excoriator Chainaxe" hidden="true" collective="false" import="true" targetId="269e-ff0b-faec-d067" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="f806-8a4e-d0d6-beaa" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9e80-f45b-e127-8be8" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="fb97-29cc-e5d4-eb23" name="Falax Blade" hidden="true" collective="false" import="true" targetId="d5f4-6a95-b941-17e4" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="f806-8a4e-d0d6-beaa" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9e80-f45b-e127-8be8" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="d613-1678-13aa-64d2" name="Meteor Hammer" hidden="true" collective="false" import="true" targetId="314b-febc-93e8-a2e9" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="f806-8a4e-d0d6-beaa" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9e80-f45b-e127-8be8" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="b1b3-f0bf-8312-72c7" name="Two Falax Blades" hidden="true" collective="false" import="true" targetId="97ad-7991-5b27-c031" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="f806-8a4e-d0d6-beaa" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9e80-f45b-e127-8be8" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -71280,6 +71800,11 @@ In addition, a model armed with Saturnine Terminator Armour is immune to the eff
                     <condition field="selections" scope="2250-7c9e-adae-5f36" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="62c8-8f27-9673-8450" type="equalTo"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" field="name" value="Lanistus">
+                  <conditions>
+                    <condition field="selections" scope="2250-7c9e-adae-5f36" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9e80-f45b-e127-8be8" type="equalTo"/>
+                  </conditions>
+                </modifier>
                 <modifier type="set" field="name" value="Siege Breaker">
                   <conditionGroups>
                     <conditionGroup type="or">
@@ -71617,11 +72142,25 @@ In addition, a model armed with Saturnine Terminator Armour is immune to the eff
                   </constraints>
                 </entryLink>
                 <entryLink id="6d1d-2188-894d-712e" name="Magna Combi-Weapon" hidden="false" collective="false" import="true" targetId="e5b1-83e5-7272-a59e" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditions>
+                        <condition field="selections" scope="2250-7c9e-adae-5f36" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9e80-f45b-e127-8be8" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
                   </costs>
                 </entryLink>
                 <entryLink id="c0c2-9995-702f-539c" name="Minor Combi-Weapon" hidden="false" collective="false" import="true" targetId="605e-1b86-ca08-9226" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditions>
+                        <condition field="selections" scope="2250-7c9e-adae-5f36" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9e80-f45b-e127-8be8" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
                   </costs>
@@ -71841,6 +72380,51 @@ In addition, a model armed with Saturnine Terminator Armour is immune to the eff
                     <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="79f2-6c3f-6d0d-6f39" type="min"/>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4486-47e1-e50d-969a" type="max"/>
                   </constraints>
+                </entryLink>
+                <entryLink id="7810-9d56-0627-ab76" name="Barb-Hook Lash" hidden="true" collective="false" import="true" targetId="e711-ab63-4899-8b00" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="2250-7c9e-adae-5f36" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9e80-f45b-e127-8be8" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="27ca-72f0-8bec-a98f" name="Excoriator Chainaxe" hidden="true" collective="false" import="true" targetId="269e-ff0b-faec-d067" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="2250-7c9e-adae-5f36" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9e80-f45b-e127-8be8" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="34e5-2045-9937-9db9" name="Falax Blade" hidden="true" collective="false" import="true" targetId="d5f4-6a95-b941-17e4" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="2250-7c9e-adae-5f36" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9e80-f45b-e127-8be8" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="65eb-7d25-0602-d7de" name="Meteor Hammer" hidden="true" collective="false" import="true" targetId="314b-febc-93e8-a2e9" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="2250-7c9e-adae-5f36" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9e80-f45b-e127-8be8" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="39fa-258f-22ce-88fd" name="Two Falax Blades" hidden="true" collective="false" import="true" targetId="97ad-7991-5b27-c031" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="2250-7c9e-adae-5f36" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9e80-f45b-e127-8be8" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -89519,6 +90103,25 @@ Note that the bonus granted by an Atomantic Pavaise has no effect on Invulnerabl
         <infoLink id="8c70-83f3-97bf-66d6" name="Legiones Hereticus (Emperor’s Children)" hidden="false" targetId="b9e-b2ef-86e-e52d" type="rule"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry id="d363-35ae-9fad-3a0e" name="Savage Arsenal" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="9e80-f45b-e127-8be8" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="dee9-8fe0-8a5b-b5bd" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e8c7-3eb3-c6aa-795e" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="e42a-bffc-dc8f-9772" name="Savage Arsenal" hidden="false" targetId="e188-94ef-39e2-953b" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="61a2-7005-1e6c-c08e" name="Hexagrammaton Choice:" hidden="true" collective="false" import="true">
@@ -90645,6 +91248,39 @@ Note that the bonus granted by an Atomantic Pavaise has no effect on Invulnerabl
             <categoryLink name="Legion Consularis:" hidden="false" id="d10f-5f5c-2543-3731" targetId="4171-e276-e90d-b8e5" primary="false"/>
           </categoryLinks>
         </selectionEntry>
+        <selectionEntry id="9e80-f45b-e127-8be8" name="Lanistus" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="90ee-77dd-1b7f-ddfe" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="ae4a-f95c-968e-eb46" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2bed-bdcf-cfe8-e3e8" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <infoLinks>
+            <infoLink id="d9c3-51fb-faf8-3e0b" name="Familia Gladiatorium" hidden="false" targetId="9990-6408-d232-b2f4" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Legion Consularis:" hidden="false" id="2aa2-e6e4-744b-3eb8" targetId="4171-e276-e90d-b8e5" primary="false"/>
+          </categoryLinks>
+        </selectionEntry>
         <selectionEntry id="5aff-6654-f53b-c5ac" name="Phoenix Warden" publicationId="09c5-eeae-f398-b653" page="155" hidden="true" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
@@ -91424,12 +92060,8 @@ While making a Chain Fire attack, a model with this special rule may make up to 
               </conditionGroups>
             </modifier>
           </modifiers>
-          <rules>
-            <rule id="5c27-751a-155a-a66f" name="Never Back Down" hidden="false">
-              <description>If possible, a unit that includes a model with this special rule must issue a Challenge when Engaged in combat, and if an enemy player issues a Challenge to a unit including one or more models with special rule then a model with this special rule must accept. In addition, during any Assault phase where this model begins the Fight sub-phase Engaged in a Challenge, or enters into a Challenge with an enemy model, this model and all friendly models in the same combat gain the Fearless special rule until the end of that Assault phase.</description>
-            </rule>
-          </rules>
           <infoLinks>
+            <infoLink id="0175-87bc-ca63-465d" name="Never Back Down" hidden="false" targetId="1846-6820-98cb-c2ff" type="rule"/>
             <infoLink id="f274-3f45-e17e-7605" name="Fearless" hidden="false" targetId="b48c-d7e1-2a83-2f5b" type="rule"/>
             <infoLink name="Sycophantic Retinue" hidden="false" type="rule" id="a0e1-a39c-97a-24d4" targetId="3a7-63b4-4f0e-930c"/>
             <infoLink name="Preferred Enemy (X)" hidden="false" type="rule" id="389f-7b73-f0c4-55ed" targetId="37ab-d4db-891a-de8c">
@@ -96525,6 +97157,17 @@ Note that this special rule can never reduce a model’s Strength Characteristic
       <description>A unit successfully hit by a weapon with this Special Rule treats all Terrain, including open Terrain, as Difficult and Dangerous Terrain until the end of their Controlling Player’s Next Game Turn.
 
 In addition, for the purposes of line of sight, a weapon with this Special Rule should be treated as if it had the Barrage Special Rule, but note that it can still be fired even in Zone Mortalis Games without Line of Sight, despite this normally being prevented.</description>
+    </rule>
+    <rule id="9990-6408-d232-b2f4" name="Familia Gladiatorium" hidden="false">
+      <description>During Army Creation, a Detachment that includes a Legiones Consularis Lanistus may select a single Legion Tactical Squad or Legion Despoiler Squad with the Legiones Astartes (World Eaters) Special Rule in the same Detachment as the Lanistus. The Lanistus must join this unit before the game begins and may not leave it for any reason during the battle. No other models with the Independent Character Special Rule may join the unit.
+The unit loses the Line Sub-type.
+Whilst the Lanistus is alive, all models in the unit (including the Lanistus) gain the Furious Charge (1) and Counter Attack (1) Special Rules. The unit also gains the Savage Arsenal Special Rule.</description>
+    </rule>
+    <rule id="e188-94ef-39e2-953b" name="Savage Arsenal" hidden="false">
+      <description>Any model in a unit with this Special Rule may exchange a Chainsword for a Single Cadere Weapon, at a cost of +10 points per weapon.</description>
+    </rule>
+    <rule id="1846-6820-98cb-c2ff" name="Never Back Down" hidden="false">
+      <description>If possible, a unit that includes a model with this special rule must issue a Challenge when Engaged in combat, and if an enemy player issues a Challenge to a unit including one or more models with special rule then a model with this special rule must accept. In addition, during any Assault phase where this model begins the Fight sub-phase Engaged in a Challenge, or enters into a Challenge with an enemy model, this model and all friendly models in the same combat gain the Fearless special rule until the end of that Assault phase.</description>
     </rule>
   </sharedRules>
   <catalogueLinks>

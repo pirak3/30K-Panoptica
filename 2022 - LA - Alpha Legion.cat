@@ -1353,6 +1353,20 @@
         <categoryLink id="ce2b-fc21-8058-7388" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="fa2a-6180-912e-e403" name="Triarii Phalanx" hidden="true" collective="false" import="false" targetId="f562-a2cf-c4a6-47cc" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fc9a-e354-8cca-ff01" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="5df1-8385-b975-7b2c" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="1885-fd82-d382-ab62" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
+        <categoryLink id="e417-05a7-a742-13eb" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink id="62ad-e646-2deb-0a06" name="Red Butchers" hidden="true" collective="false" import="false" targetId="1987-2aa5-929b-979e" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
@@ -1374,6 +1388,32 @@
         <categoryLink id="bab1-bf37-f813-87b0" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
         <categoryLink id="7d89-c6b5-084b-5ed7" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
         <categoryLink id="dc77-206a-860a-db65" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="1ab8-adbb-08ce-a097" name="Devourers Terminator Squad" hidden="true" collective="false" import="false" targetId="3bca-3035-dcef-8104" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="49c0-348c-7bb0-fac9" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ab12-a729-e023-47be" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="13d2-adba-57be-e8c0" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="f70c-3f1e-f68d-4cec" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
+        <categoryLink id="c448-3708-d31e-d909" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="5613-923b-06e3-3d91" name="Red Hand Destroyer Assault Squad" hidden="true" collective="false" import="false" targetId="7a04-bc44-70bb-cb98" type="selectionEntry">
@@ -8973,7 +9013,31 @@ A weapon with this special rule may not be used to make Shooting Attacks as part
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="fc9a-e354-8cca-ff01" name="Triarii Phalanx" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4201-c49f-71b8-deae" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
         <selectionEntry id="0331-1ba3-d536-f90f" name="Red Butchers" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4201-c49f-71b8-deae" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="49c0-348c-7bb0-fac9" name="Devourers Terminator Squad" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
