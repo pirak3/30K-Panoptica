@@ -3500,6 +3500,41 @@ Then choose the army you wish to have a lord of war from, then pick &quot;Lord o
         <categoryLink targetId="3eeb-b4b8-3d85-245a" id="3e79-3259-21e-6162" primary="false" name="Emplacement Sub-type"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="04c8-cbd6-cc6e-ecb4" name="Basilisk Anti-Air Emplacement Battery" hidden="false" collective="false" import="true" targetId="6a4d-1215-ee87-8084" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1977-49f2-7910-f177" type="equalTo"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a621-2c8c-3df0-89d3" type="equalTo"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="equalTo"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ccb7-6c5c-76ce-5b77" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="equalTo"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ce40-b353-8eb4-ab42" type="equalTo">
+                </condition>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5ae-fd1c-729d-d855" type="equalTo"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c030-15b8-323b-f17b" type="equalTo"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b01c-f5a0-9f68-605a" type="equalTo"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a2cf-c464-bfdd-4467" type="equalTo">
+                </condition>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8742-d1a5-4518-4ecf" type="atLeast"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7572-b678-7ff5-6259" type="atLeast"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="08ad-4cd8-4796-ec99" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="c0f9-b0e7-9d60-cf5b" name="Fortification:" hidden="false" targetId="a24f-12d8-36c1-f477" primary="true"/>
+        <categoryLink targetId="679d-ec21-2940-fb9" id="8a30-17d5-06b4-8c86" primary="false" name="Fortification Unit Type"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="d0b6-712f-0b12-a308" name="Loyalist" hidden="false" collective="false" import="true" type="upgrade">
@@ -11891,6 +11926,121 @@ While making a Chain Fire attack, a model with this special rule may make up to 
         <categoryLink name="Centurion: Rites of War" hidden="false" id="3a82-2b92-661b-f4c0" targetId="f47f-295e-3ac6-e189" primary="true"/>
       </categoryLinks>
     </selectionEntry>
+    <selectionEntry id="0b59-e424-c06f-5907" name="Earthshaker Cannon - Airburst Shells" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="4fc1-db30-150a-019f" name="Earthshaker Cannon - Airburst Shells" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">12" - 72"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Massive Blast (7"), Skyfire, Pinning, Ignores Cover, Airburst Munitions</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="1e94-b881-888d-8045" name="Ordnance" hidden="false" targetId="6c55-22c8-1b01-2105" type="rule"/>
+        <infoLink id="a851-0076-cd28-fb1b" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Massive Blast (7&quot;)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="8371-6beb-0204-eef5" name="Skyfire" hidden="false" targetId="f2bf-5daa-9f93-0b01" type="rule"/>
+        <infoLink id="a36d-aabf-d38e-7c84" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+        <infoLink id="37c0-4d95-136e-a36e" name="Ignores Cover" hidden="false" targetId="fdb5-59e2-c446-1cbc" type="rule"/>
+        <infoLink id="7d9a-73c6-9823-b9ae" name="Airburst Munitions" hidden="false" targetId="e91f-1b07-dbe6-912c" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0da0-b60a-1b69-8052" name="Skytracker Augury" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="56ce-4841-358c-3bee" name="Skytracker Augury" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A model armed with a Skytracker Augury gains all of the following benefits:
+
+A model with a Skytracker Augury may always shoot its weapons as long as it is Claimed, even when unmanned.
+
+A model armed with a Skytracker Augury ignores the 24” limit to line of sight when making Shooting Attacks, and the Ballistic Skill Penalty normally applied while the Night Fighting rules are in effect.
+
+When any enemy unit is deployed to the battlefield from Reserves, a unit that includes at least one model with an Skytracker Augury may make the Interceptor Advanced Reaction (see the Horus Heresy: Age of Darkness Core Rulebook, page 309) without expending a point of the Reactive Player’s Reaction Allotment. This does not allow the unit to make more than one Reaction per Phase, but does allow the controlling player to exceed the normal three Reactions limit in a given Phase.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6a4d-1215-ee87-8084" name="Basilisk Anti-Air Emplacement Battery" hidden="false" collective="false" import="true" type="unit">
+      <selectionEntries>
+        <selectionEntry id="dd12-a65a-b46e-7930" name="Basilisk Emplacement" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf24-f8f1-4bf5-3251" type="min"/>
+            <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d7a9-89ab-da93-75e5" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="b174-2ddc-f218-02e4" name="Basilisk Emplacement" hidden="false" typeId="eeec-bde3-8ee4-35b0" typeName="Fortification">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="61e0-0fff-1638-759c">Fortification (Battlements)</characteristic>
+                <characteristic name="BS" typeId="728e-b496-e2b2-ca81">4</characteristic>
+                <characteristic name="Front" typeId="d8de-057f-70b2-4a08">13</characteristic>
+                <characteristic name="Side" typeId="bf04-0a1d-3347-3320">13</characteristic>
+                <characteristic name="Rear" typeId="5915-639f-15d6-230e">13</characteristic>
+                <characteristic name="HP" typeId="3ec4-e581-338c-dfb1">4</characteristic>
+                <characteristic name="Transport Capacity" typeId="6faf-828d-4a08-151d">-</characteristic>
+                <characteristic name="Fire Points" typeId="9d06-02d5-cc06-9698">Fire Point (One Per Hull Arc, 4)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="447b-289e-247c-9ae3" name="Battlements" hidden="false" targetId="a03c-5d6f-c219-4f3f" type="rule"/>
+            <infoLink id="161f-bce5-7102-cad1" name="Air Defence Screen" hidden="false" targetId="00e8-7b61-fa74-8e06" type="rule"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry id="97d5-c927-b084-9644" name="Emplacement-Mounted Earthshaker Cannon" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3d5b-e23f-fc47-352f" type="min"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d151-5f79-91e0-4932" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="345b-26fc-a024-7831" name="Earthshaker cannon" hidden="false" collective="false" import="true" targetId="cc2e-df5f-1778-29d8" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="218e-e110-d7db-f0cc" type="min"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ce67-270d-7c55-fdce" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="2a3c-108a-c104-f73e" name="Earthshaker Cannon - Airburst Shells" hidden="false" collective="false" import="true" targetId="0b59-e424-c06f-5907" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9590-7b21-5164-b985" type="min"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a1cd-a255-f2c3-8629" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink id="6652-ed05-e637-0205" name="Skytracker Augury" hidden="false" collective="false" import="true" targetId="0da0-b60a-1b69-8052" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c472-2f96-0c9b-f4fe" type="min"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df99-0402-8474-139a" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="125"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Fortification Unit Type" hidden="false" id="3204-2617-ca58-cbba" targetId="679d-ec21-2940-fb9" primary="false"/>
+          </categoryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="4a48-4935-246d-0c2e" name="Legion" hidden="false" collective="false" import="true">
@@ -19419,6 +19569,20 @@ To make a Bombing Run, a Flyer must be Zooming. Move the model that is making th
 - Vicious Assault: All Legion Assault Squads, Legion Assault Support Squads, and Legion Despoiler Squads gain +1WS and the Furious Charge (1) Special Rule until the start of your next turn.
 
 - Tactical Advance: All Legion Tactical Squads increase the range of their Heart of the Legion Special Rule from 6" to 12", and gain the Relentless Special Rule, until the start of your next turn.</description>
+    </rule>
+    <rule id="e91f-1b07-dbe6-912c" name="Airburst Munitions" hidden="false">
+      <description>These munitions are designed to fill the sky with scything shrapnel and blossoming explosions, designed explicitly to bring down skybourne targets.
+
+A weapon with this Special Rule may only target models with the Flyer or Antigrav Sub-types, or which have activated any form or pattern of Jump Pack, Jet Pack, or Wings in the Opposing Player’s Previous Game Turn. A Shooting attack against such a target can never hit any target that is not one of the types specified.
+
+In addition, a weapon with this Special Rule may hit models with the Flyer Sub-type using its Blasts, despite this normally being prevented.</description>
+    </rule>
+    <rule id="00e8-7b61-fa74-8e06" name="Air Defence Screen" hidden="false">
+      <description>When used properly, multiple batteries of interlinked anti-air weapons may effectively deny entire areas of the sky to the foe.
+
+When deployed onto the battlefield before the game begins, all models with this Special Rule in a unit are placed as separate units, operate independently, and are treated as separate units for the duration of the game for all purposes.
+
+In addition, a model with this Special Rule must always target the closest enemy model with the Flyer Sub-type, if there is a valid target in range. If there is not a valid target with the Flyer Sub-type, it may target other units as normal.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>

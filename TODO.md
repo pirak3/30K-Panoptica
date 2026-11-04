@@ -26,7 +26,8 @@ Troops (p.28-34): Hussar Squadron, Sky-Seeker Squadron, Assault Support Squad, N
 Fast Attack (p.38-41): Storm Eagle Transporter, Mutated Spawn, Fast Attack wargear changes done
 Heavy Support (p.44-52): Sicaran Incinerator Squadron, Vindicator Thunderer Squadron, Fire Raptor Destroyer, Early Great Crusade Havoc Squad, Heavy Destroyer Squads (Tartaros/Cataphractii), Heavy Support wargear changes done
 Rites of War (p.66-68): Breacher Spearhead, Destroyer Company, Tactica Obliqua, Storm-Lance Tumen, changes to existing rites done
-TODO: Lords of War (p.56-59) and Fortifications (p.62)
+Lords of War (p.56-59): Banesword, Doomhammer, Orthrus Destroyer Squadron, Mastodon wargear changes done
+Fortifications (p.62): Basilisk Anti-Air Emplacement Battery done
 
 ### Death Guard
 Done

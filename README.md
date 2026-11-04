@@ -56,6 +56,10 @@ Units: done
 - Legion Storm Eagle Transporter, Mutated Spawn, Fast Attack wargear changes: done
 #### **Heavy Support**
 - Legion Sicaran Incinerator Squadron, Legion Vindicator Thunderer Squadron, Legion Fire Raptor Destroyer, Early Great Crusade Havoc Squad, Legion Tartaros/Cataphractii Heavy Destroyer Squad, Heavy Support wargear changes: done
+#### **Lords of War**
+- Legion Banesword, Legion Doomhammer, Legion Orthrus Destroyer Squadron, Legion Mastodon wargear changes: done
+#### **Fortifications**
+- Basilisk Anti-Air Emplacement Battery: done
 #### **Rites of War**
 - Breacher Spearhead, Destroyer Company, Tactica Obliqua, Storm-Lance Tumen, changes to Angel's Wrath / Sky-Hunter Phalanx / Pride of the Legion / Fury of the Ancients: done
 ## **Antiqua**

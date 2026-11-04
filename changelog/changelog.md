@@ -8,6 +8,10 @@ All notable changes to the BattleScribe Data Repository will be documented in th
 
 ### Added
 - **Units**:
+  - `[Legiones Astartes]` Added `[Legion Banesword]` - `[Lords of War]`
+  - `[Legiones Astartes]` Added `[Legion Doomhammer]` - `[Lords of War]`
+  - `[Legiones Astartes]` Added `[Legion Orthrus Destroyer Squadron]` - `[Lords of War]`
+  - `[Horus Heresy]` Added `[Basilisk Anti-Air Emplacement Battery]` - `[Fortification]` (all armies)
   - `[Legiones Astartes]` Added `[Sicaran Incinerator Squadron]` - `[Heavy Support]`
   - `[Legiones Astartes]` Added `[Vindicator Thunderer Squadron]` - `[Heavy Support]`
   - `[Legiones Astartes]` Added `[Fire Raptor Destroyer]` - `[Heavy Support]`
@@ -45,6 +49,8 @@ All notable changes to the BattleScribe Data Repository will be documented in th
   - `[Gravis Force Weapon]`, `[Gravis Siege Drill]`, `[Seismic Hammer]`
   - `[Aspectum-Pattern Occularis Array]`, `[Atomantic Dispersion Shield]`, `[Full-Spectra Comms Array]`, `[Signum-Primus]`
   - `[Toxiferno Cannon]`, `[Rad-Fragmentation Charge Launcher]`, `[Twisted Talons]`, `[Charnabal Longsword]`, `[Atomantic Repulsor]`
+  - `[Quake Cannon]`, `[Melta Destroyer]`
+  - `[Earthshaker Cannon - Airburst Shells]`, `[Skytracker Augury]`
 - **Rules & Abilities**:
   - Added special rules `[Debilitating]`, `[Volatile Ordnance]`, `[Tremor]`
   - Added special rules `[Combat Transporter]`, `[Dreadnought Magna-Grapples]`, `[Mindless Aggression]`, `[Neverborn]`
@@ -54,9 +60,11 @@ All notable changes to the BattleScribe Data Repository will be documented in th
   - Added Warlord Trait `[Fist of the Legion]` (Land Raider Dionysus)
   - Added Rites of War `[Breacher Spearhead]`, `[Destroyer Company]`, `[Tactica Obliqua]`, `[Storm-Lance Tumen]`, with slot changes, unit grants and restrictions wired in all legion files
   - Added special rule `[Shifting Tides]` (Tactica Obliqua)
+  - Added special rules `[Airburst Munitions]`, `[Air Defence Screen]`
 
 ### Changed
 - **Units / Points**:
+  - `[Mastodon]`: Added up to two pintle mounted weapons and a Flare Shield
   - `[Deredeo Dreadnought Talon]`: may exchange its Boreas missiles for a Deredeo Atomantic Pavaise
   - `[Land Raider Achilles]`: Added Phosphex Canister Shot (with a Siege Breaker)
   - `[Minotaur Battery]`: Added pintle mounted weapon options

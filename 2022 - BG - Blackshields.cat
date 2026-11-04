@@ -371,6 +371,12 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
         <categoryLink name="Unit:" hidden="false" id="26b4-75c9-d2a3-82f9" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
     </entryLink>
+    <entryLink import="false" name="Legion Orthrus Destroyer Squadron" hidden="false" id="5839-7650-04ad-15c5" collective="false" targetId="826c-d5f7-2739-0425" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Lords of War:" hidden="false" id="3dde-6acb-adec-0075" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink name="Unit:" hidden="false" id="2c7b-b7d7-a6ec-2162" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink import="false" name="Contemptor Dreadnought Talon" hidden="false" id="7cb6-ec2d-9fef-ac9b" collective="false" targetId="d664-5692-cd41-f9be" type="selectionEntry">
       <comment>template_id_3aed-0370-44b8-9b06</comment>
       <categoryLinks>
@@ -1114,6 +1120,23 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
         </infoLink>
       </infoLinks>
     </entryLink>
+    <entryLink import="false" name="Legion Banesword" hidden="false" id="6113-02ac-b1f9-db7e" collective="false" targetId="d23f-d032-6314-8779" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="7b69-bf2f-4547-e83b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="Lords of War:" hidden="false" id="bda6-09b2-cd94-8df2" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink name="Unit:" hidden="false" id="8f6d-5e25-c05a-5840" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink import="false" name="Legion Basilisk Squadron" hidden="true" id="8ffd-638e-abbd-388d" collective="false" targetId="8b8a-e685-5b8b-c08f" type="selectionEntry">
       <comment>template_id_6e95-d5bf-451e-9b8a</comment>
       <modifiers>
@@ -1322,6 +1345,34 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
       </categoryLinks>
       <infoLinks>
         <infoLink name="Augmetic Transport Bay" id="57b2-7650-a3c2-db71" hidden="false" type="rule" targetId="75c-d3e8-2f12-2749">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="be5b-1edf-8b27-2e1e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="false" name="Legion Doomhammer" hidden="false" id="2086-9649-52b4-4feb" collective="false" targetId="9a96-ecee-2e7a-5360" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="7b69-bf2f-4547-e83b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="Lords of War:" hidden="false" id="c9ed-b876-f8a2-a87a" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink name="Unit:" hidden="false" id="0019-68f3-61c6-a750" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Augmetic Transport Bay" id="0df6-87c5-106b-42a2" hidden="false" type="rule" targetId="75c-d3e8-2f12-2749">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
