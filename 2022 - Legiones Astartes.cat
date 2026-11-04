@@ -48412,43 +48412,10 @@ It is not known if this is a mistake or not, as previously like with the Mech bo
             <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2</characteristic>
           </characteristics>
         </profile>
-        <profile id="57e5-b508-1cae-385e" name="Gravis Missile Launcher - Rad" hidden="true" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="model" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3fc7-3e85-0992-9eba" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48"</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Large Blast (5"), Fleshbane, Rad-Phage</characteristic>
-          </characteristics>
-        </profile>
       </profiles>
       <infoLinks>
         <infoLink id="1cdd-ef6d-d419-cda7" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
         <infoLink id="8beb-4fad-195b-1104" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
-        <infoLink id="2cd1-030f-d237-43e2" name="Fleshbane" hidden="true" targetId="40cd-9505-253c-e76f" type="rule">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="model" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3fc7-3e85-0992-9eba" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </infoLink>
-        <infoLink id="c3a7-d43f-2b04-2e79" name="Rad-Phage" hidden="true" targetId="8189-e963-d2e5-5d3d" type="rule">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="model" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3fc7-3e85-0992-9eba" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </infoLink>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -48467,6 +48434,20 @@ It is not known if this is a mistake or not, as previously like with the Mech bo
           </conditionGroups>
         </modifier>
       </modifiers>
+      <profiles>
+        <profile id="57e5-b508-1cae-385e" name="Gravis Missile Launcher - Rad" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Large Blast (5"), Fleshbane, Rad-Phage</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="2cd1-030f-d237-43e2" name="Fleshbane" hidden="false" targetId="40cd-9505-253c-e76f" type="rule"/>
+        <infoLink id="c3a7-d43f-2b04-2e79" name="Rad-Phage" hidden="false" targetId="8189-e963-d2e5-5d3d" type="rule"/>
+      </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
       </costs>
