@@ -12067,6 +12067,26 @@ When any enemy unit is deployed to the battlefield from Reserves, a unit that in
 
 • A Paladin of the Hekatonystika must take a Terranic greatsword for no additional points cost.</description>
             </rule>
+            <rule id="ade8-0ae7-282b-d1d5" name="Legiones Consularis: Lord Cypher" hidden="false">
+              <description>A Legion Centurion, Legion Tartaros Centurion, Legion Indomitus Centurion, or Legion Cataphractii Centurion with the Legiones Astartes (Dark Angels) Special Rule may be upgraded to a Lord Cypher Consul instead of selecting any of the standard Consul upgrades, gaining the benefits listed below:
+
+Special Rules
+
+The Lord Cypher, and all models in a unit he joins, gain the Fearless and Hatred (Everything!) Special Rules. In addition, The Lord Cypher increases his leadership to 10. No more than one Lord Cypher Consul can be selected per army.
+
+The Lord Cypher also gains the For Caliban and Terra! Special Rule.
+
+Wargear
+
+The Lord Cypher gains two Bolt Pistols and a Calibanite Warblade at no additional cost. The Lord Cypher may choose to replace their Bolt Pistols with any of the options stated below at the costs shown:
+
+• Volkite Serpenta: +2 points
+• Hand Flamer: +2 points
+• Plasma Pistol: +5 points
+• Inferno Pistol: +5 points
+• Archaeotech Pistol: +10 points
+• Disintegrator Pistol: +15 points</description>
+            </rule>
           </rules>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -12199,7 +12219,7 @@ Chasing the Wind – This Advanced Reaction may be made once per battle during t
 
 • Any model with both the Legiones Astartes (Space Wolves) and Independent Character Special Rules that does not have the Unique Unit Sub-type may exchange artificer armour for Aether-rune Armour for +25 points each.
 
-•The Space Wolves gain access to three Legion-Specific Legion Consularis Upgrades in the &quot;Caster of Runes&quot;, &quot;Speaker of the Dead&quot; and &quot;Pack Thegn&quot;</description>
+•The Space Wolves gain access to four Legion-Specific Legion Consularis Upgrades in the &quot;Caster of Runes&quot;, &quot;Speaker of the Dead&quot;, &quot;Pack Thegn&quot; and &quot;Priest of Iron&quot;</description>
             </rule>
             <rule id="c5d7-d0b0-8b02-abc4" name="Legiones Consularis: Speaker of the Dead" hidden="false">
               <description>A Legion Centurion, Legion Tartaros Centurion or Legion Cataphractii Centurion with the Legiones Astartes (Space Wolves) special rule may be upgraded to a Speaker of the Dead Consul instead of selecting any of the Standard Consul upgrades, gaining the following benefits:
@@ -12216,6 +12236,13 @@ Chasing the Wind – This Advanced Reaction may be made once per battle during t
 • A Caster of Runes gains the Psyker Sub-type and must select one of the following Psychic Disciplines: Winds of Fenris, Divination, Telekinesis or Biomancy. A Caster of Runes may not select any other Discipline. In addition, a Caster of Runes gains the Adamantium Will (4+) special rule.
 
 • A Caster of Runes may replace a power weapon, bolt pistol or combi-bolter with a Force Weapon at no additional points cost. In addition, a Caster of Runes may select a Psychic Hood for +15 points.</description>
+            </rule>
+            <rule id="b313-7e90-3bfb-5a6f" name="Legiones Consularis: Priest of Iron" hidden="false">
+              <description>A Legion Centurion, Legion Tartaros Centurion, Legion Cataphractii Centurion, or Legion Indomitus Centurion with the Legiones Astartes (Space Wolves) Special Rule may be upgraded to a Priest of Iron Consul instead of selecting any of the standard Consul upgrades, gaining the benefits listed below:
+Special Rules:
+A Priest of Iron gains the Battlesmith (4+), Master of Automata, Legiones Thallaxes, and Runis Machinitor Special Rules.
+Wargear:
+A Priest of Iron gains a Machinator Array and a Helfrost Pistol at no additional points cost, and may select a Cortex Controller for +15 points. A Priest of Iron may also select a Cyber Familiar for +20 points.</description>
             </rule>
           </rules>
           <costs>

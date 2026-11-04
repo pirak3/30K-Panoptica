@@ -64,6 +64,10 @@ Units: done
 - Breacher Spearhead, Destroyer Company, Tactica Obliqua, Storm-Lance Tumen, changes to Angel's Wrath / Sky-Hunter Phalanx / Pride of the Legion / Fury of the Ancients: done
 #### **World Eaters**
 - Lanistus (Legiones Consularis), Delvarus, Triarii Phalanx, Devourers Terminator Squad: done
+#### **Dark Angels**
+- Lord Cypher (Legiones Consularis), Luther, Merir Astelan, Inner Circle Indomitus Squad, Xenobane Cannons: done
+#### **Space Wolves**
+- Priest of Iron (Legiones Consularis), Varagyr Wolf Guard Tartaros Terminator Squad, Helfrost Pistol: done
 ## **Antiqua**
 ## **Imperatus**
 
