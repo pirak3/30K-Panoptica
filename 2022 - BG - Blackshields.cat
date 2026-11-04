@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="cd55-5578-4b1a-67a0" name="BG - Blackshields" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="104" revision="9" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="cd55-5578-4b1a-67a0" name="BG - Blackshields" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="104" revision="10" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Retinue" hidden="false" id="5b3d-ea70-4774-c23d" collective="false" import="true">
       <comment>template_id_be38-a066-4f8e-ae54</comment>
@@ -1530,6 +1530,7 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
             <conditionGroup type="or">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="7b69-bf2f-4547-e83b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="8742-d1a5-4518-4ecf" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -1547,6 +1548,7 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
             <conditionGroup type="or">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="7b69-bf2f-4547-e83b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="8742-d1a5-4518-4ecf" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -1564,6 +1566,7 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
             <conditionGroup type="or">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="7b69-bf2f-4547-e83b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="8742-d1a5-4518-4ecf" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -1846,6 +1849,7 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
             <conditionGroup type="or">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="7b69-bf2f-4547-e83b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="8742-d1a5-4518-4ecf" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -1896,6 +1900,7 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
             <conditionGroup type="and">
               <conditions>
                 <condition type="equalTo" value="0" field="selections" scope="force" childId="7b69-bf2f-4547-e83b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="0" field="selections" scope="roster" childId="8742-d1a5-4518-4ecf" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                 <condition type="greaterThan" value="0" field="selections" scope="roster" childId="d344-d97b-4687-8a62" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false">
                   <comment>node_id_d73d-d52e-4c75-8ac0</comment>
                 </condition>
@@ -2452,6 +2457,21 @@ When you do so, replace this model’s Legiones Astartes (Salamanders) special r
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="96aa-37a5-d95d-bd83" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f8e5-5005-c91c-657b" includeChildSelections="false"/>
           </constraints>
+        </entryLink>
+        <entryLink import="true" name="Rad Grenades" hidden="true" id="0395-c70e-82b4-e5d5" collective="false" type="selectionEntry" targetId="1b0b-3dfc-9521-b27e">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="7572-b678-7ff5-6259" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="116e-8bb9-c418-6d89" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+          </costs>
         </entryLink>
         <entryLink import="true" name="Warlord" hidden="false" id="4823-c0e7-959a-a61f" type="selectionEntry" targetId="0176-56a3-d590-b103">
           <profiles>

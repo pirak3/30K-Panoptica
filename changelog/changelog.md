@@ -52,6 +52,8 @@ All notable changes to the BattleScribe Data Repository will be documented in th
   - Added special rules `[Pater Consularis]`, `[Vox Override]`, `[Automata Attendants]`, `[Reactor Overcharge]`, `[Synthetica Mindlock]`, `[Unstable Internment]`
   - Added `Pater Consularis` upgrades: Librarian, Master of Signals, Forge Lord, Siege Breaker, Chaplain, Armistos, Herald
   - Added Warlord Trait `[Fist of the Legion]` (Land Raider Dionysus)
+  - Added Rites of War `[Breacher Spearhead]`, `[Destroyer Company]`, `[Tactica Obliqua]`, `[Storm-Lance Tumen]`, with slot changes, unit grants and restrictions wired in all legion files
+  - Added special rule `[Shifting Tides]` (Tactica Obliqua)
 
 ### Changed
 - **Units / Points**:
@@ -74,8 +76,15 @@ All notable changes to the BattleScribe Data Repository will be documented in th
   - `[Castra Ferrum Dreadnought Talon]`: Added Frag Launchers, Volkite Culverin / Gravis Siege Drill / Seismic Hammer swaps, in-built Plasma Blaster / Graviton Gun and Hunter-Killer Missiles
   - `[Techmarine Covenant]`: may take up to 3 `[Servo-Automata Maniple]` as Retinue (one per Techmarine)
   - `[Charnabal Weapon]`: Added `[Charnabal Longsword]`
+  - `[Angel's Wrath]`: units that may take a Land Raider Proteus Carrier may take a `[Caestus Assault Ram]` instead
+  - `[Sky-Hunter Phalanx]`: `[Sky-Seeker Squadron]` loses Support Squad and may fill Compulsory Troops
+  - `[Pride of the Legion]`: `[Assault Veteran Squad]` may be Troops (Line when Compulsory); `[Terminator Saturnine Squad]` may be Troops or Heavy Support
+  - `[Fury of the Ancients]`: `[Castra Ferrum Dreadnought Talon]` may be (Compulsory) Troops with Line; `[Contemptor-Cortus Dreadnought Talon]` may be Troops
+  - Destroyer Company: Rad Grenades (+10) for Infantry/Cavalry Characters and Rad Missiles (+5 per model) for Missile Launchers; `[Heavy Destroyer Squad]` Teleportation Transponders also unlock with it
+  - Breacher Spearhead: `[Tactical Support Squad]` and `[Veteran Squad]` may take Boarding Shields (Heavy)
+  - Rite requirements enforced: Destroyer Company needs a Siege Breaker or Moritat (new `Moritat:` category); Tactica Obliqua needs 2 `[Tactical Squad]`, a `[Heavy Support Squad]` and an `[Assault Squad]` or `[Despoiler Squad]`. Breacher Heavy majority and Storm-Lance Warlord bike are marked as manual checks
 - **Weapons & Profiles**:
-  - `[Gravis Missile Launcher]`: Added `Rad` profile (hidden for now)
+  - `[Gravis Missile Launcher]`: Added `Rad` profile (unlocked with Rad Missiles under Destroyer Company, +5 once per model)
 
 ### Fixed
 - **BattleScribe Structure**:
