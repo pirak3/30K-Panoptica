@@ -31,5 +31,8 @@ Fortifications (p.62): Basilisk Anti-Air Emplacement Battery done
 
 ### Death Guard
 Done
+
+### World Eaters (p.161-166)
+Lanistus consul, Delvarus, Triarii Phalanx, Devourers Terminator Squad done
 ## Antiqua
 ## Imperatus

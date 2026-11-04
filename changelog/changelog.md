@@ -8,6 +8,9 @@ All notable changes to the BattleScribe Data Repository will be documented in th
 
 ### Added
 - **Units**:
+  - `[World Eaters]` Added `[Delvarus]` - `[HQ]` (Traitor only)
+  - `[World Eaters]` Added `[Triarii Phalanx]` - `[Elites]` (also Alpha Legion Rewards of Treachery)
+  - `[World Eaters]` Added `[Devourers Terminator Squad]` - `[Elites]` (0-1; Retinue for a Master of the Legion; also Alpha Legion Rewards of Treachery)
   - `[Legiones Astartes]` Added `[Legion Banesword]` - `[Lords of War]`
   - `[Legiones Astartes]` Added `[Legion Doomhammer]` - `[Lords of War]`
   - `[Legiones Astartes]` Added `[Legion Orthrus Destroyer Squadron]` - `[Lords of War]`
@@ -51,6 +54,7 @@ All notable changes to the BattleScribe Data Repository will be documented in th
   - `[Toxiferno Cannon]`, `[Rad-Fragmentation Charge Launcher]`, `[Twisted Talons]`, `[Charnabal Longsword]`, `[Atomantic Repulsor]`
   - `[Quake Cannon]`, `[Melta Destroyer]`
   - `[Earthshaker Cannon - Airburst Shells]`, `[Skytracker Augury]`
+  - `[World Eaters]` `[Shield Breaker]`, `[Iron Jaw]`, `[Sarissa Spear]`, `[Mansplitter Blade]`
 - **Rules & Abilities**:
   - Added special rules `[Debilitating]`, `[Volatile Ordnance]`, `[Tremor]`
   - Added special rules `[Combat Transporter]`, `[Dreadnought Magna-Grapples]`, `[Mindless Aggression]`, `[Neverborn]`
@@ -61,6 +65,8 @@ All notable changes to the BattleScribe Data Repository will be documented in th
   - Added Rites of War `[Breacher Spearhead]`, `[Destroyer Company]`, `[Tactica Obliqua]`, `[Storm-Lance Tumen]`, with slot changes, unit grants and restrictions wired in all legion files
   - Added special rule `[Shifting Tides]` (Tactica Obliqua)
   - Added special rules `[Airburst Munitions]`, `[Air Defence Screen]`
+  - Added `Legiones Consularis` upgrade `[Lanistus]` (World Eaters) with special rule `[Familia Gladiatorium]`; added `[Savage Arsenal]` rule and upgrade
+  - Added special rules `[Gluttony]`, `[Phalanx Formation]`, `[Weighted Edge]`, `[Devourer Retinue]` (World Eaters); `[Never Back Down]` is now a shared rule
 
 ### Changed
 - **Units / Points**:
@@ -91,6 +97,9 @@ All notable changes to the BattleScribe Data Repository will be documented in th
   - Destroyer Company: Rad Grenades (+10) for Infantry/Cavalry Characters and Rad Missiles (+5 per model) for Missile Launchers; `[Heavy Destroyer Squad]` Teleportation Transponders also unlock with it
   - Breacher Spearhead: `[Tactical Support Squad]` and `[Veteran Squad]` may take Boarding Shields (Heavy)
   - Rite requirements enforced: Destroyer Company needs a Siege Breaker or Moritat (new `Moritat:` category); Tactica Obliqua needs 2 `[Tactical Squad]`, a `[Heavy Support Squad]` and an `[Assault Squad]` or `[Despoiler Squad]`. Breacher Heavy majority and Storm-Lance Warlord bike are marked as manual checks
+  - `[Centurion]`, `[Centurion, Cataphractii/Tartaros/Indomitus]`: Lanistus consul swaps (Caedere weapons, banned bikes/jump packs/bolters/combi-weapons)
+  - `[Tactical Squad]`, `[Despoiler Squad]`: Added `[Savage Arsenal]` upgrade (one unit per army, needs a Lanistus); unlocks Caedere weapon swaps for that unit
+  - `[Champion]` consul: Never Back Down now links the shared rule
 - **Weapons & Profiles**:
   - `[Gravis Missile Launcher]`: Added `Rad` profile (unlocked with Rad Missiles under Destroyer Company, +5 once per model)
 

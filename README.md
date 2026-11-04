@@ -62,6 +62,8 @@ Units: done
 - Basilisk Anti-Air Emplacement Battery: done
 #### **Rites of War**
 - Breacher Spearhead, Destroyer Company, Tactica Obliqua, Storm-Lance Tumen, changes to Angel's Wrath / Sky-Hunter Phalanx / Pride of the Legion / Fury of the Ancients: done
+#### **World Eaters**
+- Lanistus (Legiones Consularis), Delvarus, Triarii Phalanx, Devourers Terminator Squad: done
 ## **Antiqua**
 ## **Imperatus**
 

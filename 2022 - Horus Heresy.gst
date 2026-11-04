@@ -12320,6 +12320,19 @@ The Gorgon’s Spite – This Advanced Reaction may be made once per battle duri
           </profiles>
         </selectionEntry>
         <selectionEntry id="90ee-77dd-1b7f-ddfe" name="XII: World Eaters" hidden="false" collective="false" import="true" type="upgrade" sortIndex="12">
+          <rules>
+            <rule id="620c-0a9a-b780-9252" name="Legiones Consularis: Lanistus" hidden="false">
+              <description>A Legion Centurion with the Legiones Astartes (World Eaters) Special Rule may be upgraded to a Lanistus Consul instead of selecting any of the standard Consul upgrades, gaining the benefits listed below:
+
+Special Rules
+• The Lanistus gains the Familia Gladiatorium Special Rule.
+
+Wargear
+• The Lanistus replaces his Chainsword with a Cadere Weapon (or a pair of Falax Blades) at no additional points cost.
+
+• The Lanistus may not select a Legion Spatha Combat Bike, Legion Scimitar Jetbike, Legion Warhawk Jump Pack, Bolter, or a Minor or Magna Combi-Weapon.</description>
+            </rule>
+          </rules>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
