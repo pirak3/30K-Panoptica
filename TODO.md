@@ -34,5 +34,11 @@ Done
 
 ### World Eaters (p.161-166)
 Lanistus consul, Delvarus, Triarii Phalanx, Devourers Terminator Squad done
+
+### Dark Angels (p.99-104)
+Lord Cypher consul, Luther, Merir Astelan, Inner Circle Indomitus Squad, Xenobane Cannons wiring done
+
+### Space Wolves (p.133-136)
+Priest of Iron consul, Varagyr Wolf Guard Tartaros Terminator Squad, Helfrost Pistol wiring done
 ## Antiqua
 ## Imperatus
