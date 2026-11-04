@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="67bb-e640-ef0a-0e16" name="Shattered Legions" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="115" revision="5" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="67bb-e640-ef0a-0e16" name="Shattered Legions" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="115" revision="6" battleScribeVersion="2.03" type="catalogue">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Legions Astartes" id="50ca-2201-2e00-f825" targetId="6393-649c-7213-a327" importRootEntries="true"/>
   </catalogueLinks>
@@ -88,6 +88,18 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="false" name="Assault Squad" hidden="false" id="696b-8fa1-28c7-cf9f" collective="false" targetId="a8e9-70e1-b8bc-8ee2" type="selectionEntry">
+      <modifiers>
+        <modifier type="remove" value="8f42-a824-fb5f-8fea" field="category">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1e3c-924e-9d3f-01fb" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="b5b7-3410-a8e5-95a6" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink name="Troops:" hidden="false" id="c8e0-d9f8-12eb-6068" targetId="9b5d-fac7-799b-d7e7" primary="true">
           <comment>template_id_ac26-e639-4d53-9b8b</comment>
@@ -107,6 +119,18 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="false" name="Breacher Squad" hidden="false" id="6391-b555-216b-9e83" collective="false" targetId="ad97-c090-fa67-696f" type="selectionEntry">
+      <modifiers>
+        <modifier type="remove" value="8f42-a824-fb5f-8fea" field="category">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1e3c-924e-9d3f-01fb" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="b5b7-3410-a8e5-95a6" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink name="Troops:" hidden="false" id="9e6a-3361-2a35-dee6" targetId="9b5d-fac7-799b-d7e7" primary="true">
           <comment>template_id_3a22-caae-4eea-9bc5</comment>
@@ -362,6 +386,18 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="false" name="Despoiler Squad" hidden="false" id="deac-bc8b-137d-f037" collective="false" targetId="4357-930e-165a-a6e3" type="selectionEntry">
+      <modifiers>
+        <modifier type="remove" value="8f42-a824-fb5f-8fea" field="category">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1e3c-924e-9d3f-01fb" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="b5b7-3410-a8e5-95a6" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink name="Troops:" hidden="false" id="3168-47b3-cbab-dd98" targetId="9b5d-fac7-799b-d7e7" primary="true">
           <comment>template_id_361e-fb90-4b0e-ac3d</comment>
@@ -964,6 +1000,7 @@
             <conditionGroup type="or">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="7b69-bf2f-4547-e83b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="8742-d1a5-4518-4ecf" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -985,6 +1022,7 @@
             <conditionGroup type="or">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="7b69-bf2f-4547-e83b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="8742-d1a5-4518-4ecf" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -1002,6 +1040,7 @@
             <conditionGroup type="or">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="7b69-bf2f-4547-e83b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="8742-d1a5-4518-4ecf" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -1356,6 +1395,7 @@
               <comment>node_id_7a48-a3b0-4a26-849b</comment>
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="7b69-bf2f-4547-e83b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="8742-d1a5-4518-4ecf" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -1378,6 +1418,7 @@
             <conditionGroup type="and">
               <conditions>
                 <condition type="equalTo" value="0" field="selections" scope="force" childId="7b69-bf2f-4547-e83b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="0" field="selections" scope="roster" childId="8742-d1a5-4518-4ecf" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                 <condition type="greaterThan" value="0" field="selections" scope="roster" childId="d344-d97b-4687-8a62" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false">
                   <comment>node_id_d73d-d52e-4c75-8ac0</comment>
                 </condition>
@@ -1826,6 +1867,136 @@
       <categoryLinks>
         <categoryLink name="Unit:" hidden="false" id="802f-badf-48c6-5744" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink name="Troops:" hidden="false" id="e4ad-b36a-d529-395b" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="false" name="Destroyer Assault Squad" hidden="true" id="4ab1-0b3f-e0ab-9f5a" collective="false" targetId="d30b-59bb-8ae0-36d1" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="7572-b678-7ff5-6259" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="Troops:" hidden="false" id="3451-0bd8-247f-a5e5" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+        <categoryLink name="Unit:" hidden="false" id="e428-9a4a-c3c5-eaa2" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink name="Compulsory Troops:" hidden="false" id="3763-390f-a248-a190" targetId="8f42-a824-fb5f-8fea" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="false" name="Mortalis Destroyer Squad" hidden="true" id="312c-0147-7b40-acc3" collective="false" targetId="dbd4-930e-e003-9449" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="7572-b678-7ff5-6259" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="Troops:" hidden="false" id="73c0-52fb-016c-8304" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+        <categoryLink name="Unit:" hidden="false" id="71a7-7695-709a-fd53" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink name="Compulsory Troops:" hidden="false" id="e2b8-d89a-f7b7-0b43" targetId="8f42-a824-fb5f-8fea" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="false" name="Heavy Destroyer Squad, Tartaros" hidden="true" id="5b9d-7289-965d-9959" collective="false" targetId="2099-9a61-8c9a-d939" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="7572-b678-7ff5-6259" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="Troops:" hidden="false" id="40ee-640b-f7a4-6d21" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+        <categoryLink name="Unit:" hidden="false" id="7c0b-9559-fd49-2b40" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink name="Compulsory Troops:" hidden="false" id="8968-fab0-e2ea-5805" targetId="8f42-a824-fb5f-8fea" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="false" name="Heavy Destroyer Squad, Cataphractii" hidden="true" id="bd38-fd76-6bfd-cc6a" collective="false" targetId="5fd1-360d-0b54-2360" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="7572-b678-7ff5-6259" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="Troops:" hidden="false" id="8d99-0647-24cb-2c51" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+        <categoryLink name="Unit:" hidden="false" id="4fdd-d4bf-7cab-5f88" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink name="Compulsory Troops:" hidden="false" id="efbf-2af7-6da7-1e71" targetId="8f42-a824-fb5f-8fea" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="false" name="Outrider Squadron" hidden="true" id="0bbf-86b9-0b02-1b6e" collective="false" targetId="70eb-e4da-8b3f-f065" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="08ad-4cd8-4796-ec99" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="7b69-bf2f-4547-e83b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="0" field="selections" scope="roster" childId="8742-d1a5-4518-4ecf" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="Troops:" hidden="false" id="07ad-ab8c-4a94-378d" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+        <categoryLink name="Unit:" hidden="false" id="c9ed-49b8-e9f5-b065" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink name="Line Sub-type" hidden="false" id="8b9c-c750-aca8-8c19" targetId="6399-5c65-7833-1025" primary="false"/>
+        <categoryLink name="Compulsory Troops:" hidden="false" id="c35c-e7ba-e346-3d0f" targetId="8f42-a824-fb5f-8fea" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="false" name="Spatha Attack Bike Squadron" hidden="true" id="e013-7be8-1ba9-a98d" collective="false" targetId="4d72-1cc1-8bee-aa88" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="7b69-bf2f-4547-e83b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="greaterThan" value="0" field="selections" scope="roster" childId="d344-d97b-4687-8a62" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="0" field="selections" scope="roster" childId="8742-d1a5-4518-4ecf" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="08ad-4cd8-4796-ec99" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="Troops:" hidden="false" id="d001-2f88-03c0-51c6" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+        <categoryLink name="Unit:" hidden="false" id="474b-73c3-9f7a-37b0" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="false" name="Castra Ferrum Dreadnought Talon" hidden="true" id="684e-5e23-a870-a5b0" collective="false" targetId="daf7-b23b-5474-5836" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="roster" childId="d344-d97b-4687-8a62" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="b5b7-3410-a8e5-95a6" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="Troops:" hidden="false" id="39e1-b452-4974-c72f" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+        <categoryLink name="Unit:" hidden="false" id="60ce-dee4-6ad3-bee4" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink name="Line Sub-type" hidden="false" id="68cf-d9ca-6e96-80d2" targetId="6399-5c65-7833-1025" primary="false"/>
+        <categoryLink name="Compulsory Troops:" hidden="false" id="69d1-5a40-0779-aea5" targetId="8f42-a824-fb5f-8fea" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="false" name="Contemptor-Cortus Dreadnought Talon" hidden="true" id="2a82-527a-f73f-76f0" collective="false" targetId="6f2e-78c7-2b2c-8a18" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="b5b7-3410-a8e5-95a6" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="Troops:" hidden="false" id="2402-e4ba-bc78-de2d" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+        <categoryLink name="Unit:" hidden="false" id="dcc0-ae10-2cc3-13e5" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="false" name="Venerable Ancient Contemptor Dreadnought" hidden="true" id="ba77-baf0-31e5-52c9" collective="false" targetId="dad1-0807-e254-d498" type="selectionEntry">
