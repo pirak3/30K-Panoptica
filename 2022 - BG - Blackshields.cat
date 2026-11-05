@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="cd55-5578-4b1a-67a0" name="BG - Blackshields" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="104" revision="9" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="cd55-5578-4b1a-67a0" name="BG - Blackshields" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="104" revision="10" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Retinue" hidden="false" id="5b3d-ea70-4774-c23d" collective="false" import="true">
       <comment>template_id_be38-a066-4f8e-ae54</comment>
@@ -10,6 +10,15 @@
         <entryLink import="true" name="Command Squad" hidden="false" id="80db-a3c4-d5cd-2bc4" collective="false" targetId="0aca-632d-1642-8af9" type="selectionEntry"/>
         <entryLink import="true" name="Command Squad, Tartaros" hidden="false" id="1e01-fc74-5f6e-4a3d" collective="false" targetId="58d0-a0fd-d20b-cb1b" type="selectionEntry"/>
         <entryLink import="true" name="Command Squad, Cataphractii" hidden="false" id="4f70-9c04-df8f-813c" collective="false" targetId="1b17-dcd6-0153-3efe" type="selectionEntry">
+          <modifiers>
+            <modifier type="append" value="(Reserve Only)" field="name">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="dbde-0e4f-0b5a-43d2" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Command Squad, Indomitus" hidden="false" id="937a-276d-d3ec-a4a3" collective="false" targetId="d06f-0e4f-c2fc-3eb5" type="selectionEntry">
           <modifiers>
             <modifier type="append" value="(Reserve Only)" field="name">
               <conditions>
@@ -155,6 +164,29 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
         </modifierGroup>
       </modifierGroups>
     </entryLink>
+    <entryLink import="false" name="Assault Support Squad" hidden="false" id="c557-9f07-b5e0-6355" collective="false" targetId="becc-47a3-4fc2-9e56" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Troops:" hidden="false" id="9ac0-d7a0-af32-fee3" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+        <categoryLink name="Unit:" hidden="false" id="364b-66b4-a779-f39f" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="remove" value="8b4f-bfe2-ce7b-f1b1" field="category">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="be5b-1edf-8b27-2e1e" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="d8ab-8e21-e193-63ba" field="category">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="be5b-1edf-8b27-2e1e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <comment>The Flesh Is Weak</comment>
+        </modifierGroup>
+      </modifierGroups>
+    </entryLink>
     <entryLink import="false" name="Breacher Squad" hidden="false" id="bb75-1535-51da-a892" collective="false" targetId="ad97-c090-fa67-696f" type="selectionEntry">
       <comment>template_id_5c02-34db-4633-a4e9</comment>
       <categoryLinks>
@@ -265,6 +297,33 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
         </entryLink>
       </entryLinks>
     </entryLink>
+    <entryLink import="false" name="Centurion, Indomitus" hidden="false" id="30e7-6d27-de2a-7b2c" collective="false" targetId="2250-7c9e-adae-5f36" type="selectionEntry">
+      <comment>template_id_11b1-c617-441a-9f1a</comment>
+      <modifiers>
+        <modifier type="append" value="(Reserve Only)" field="name">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="dbde-0e4f-0b5a-43d2" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="Unit:" hidden="false" id="e89f-fb8e-6114-fa64" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink name="HQ:" hidden="false" id="e399-865e-587b-2b98" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink name="Compulsory HQ:" hidden="false" id="c751-11b0-73fb-3383" targetId="f823-8c1d-6a87-26a1" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Warlord Traits" hidden="false" id="39bf-e6ca-7228-5480" collective="false" targetId="9b47-e234-7f96-3cec" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Retinue" hidden="false" id="f3d7-e3ab-9502-a787" collective="false" targetId="5b3d-ea70-4774-c23d" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="parent" childId="35d4-0dcd-f7d2-a6da" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+    </entryLink>
     <entryLink import="false" name="Centurion, Tartaros" hidden="false" id="400d-bc33-7020-e214" collective="false" targetId="f806-8a4e-d0d6-beaa" type="selectionEntry">
       <comment>template_id_6e9c-0842-4514-8ea6</comment>
       <categoryLinks>
@@ -285,6 +344,26 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
         </entryLink>
       </entryLinks>
     </entryLink>
+    <entryLink import="false" name="Centurion, Saturnine" hidden="false" id="0a5b-0120-04c3-3178" collective="false" targetId="2bed-bdcf-cfe8-e3e8" type="selectionEntry">
+      <comment>template_id_6e9c-0842-4514-8ea6</comment>
+      <categoryLinks>
+        <categoryLink name="Unit:" hidden="false" id="52aa-28b6-36ea-6ed1" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink name="Compulsory HQ:" hidden="false" id="a69b-bf20-657a-1e37" targetId="f823-8c1d-6a87-26a1" primary="false"/>
+        <categoryLink name="HQ:" hidden="false" id="04da-264a-b4a0-29f5" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Warlord Traits" hidden="false" id="a221-d890-0377-151c" collective="false" targetId="9b47-e234-7f96-3cec" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Retinue" hidden="false" id="8063-4b4d-0c11-29ac" collective="false" targetId="5b3d-ea70-4774-c23d" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="parent" childId="35d4-0dcd-f7d2-a6da" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+    </entryLink>
     <entryLink import="false" name="Cerberus Squadron" hidden="false" id="216b-561d-fc1c-20e6" collective="false" targetId="137a-e079-34cd-8161" type="selectionEntry">
       <comment>template_id_04f7-e2bb-4774-8d08</comment>
       <categoryLinks>
@@ -292,11 +371,23 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
         <categoryLink name="Unit:" hidden="false" id="26b4-75c9-d2a3-82f9" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
     </entryLink>
+    <entryLink import="false" name="Legion Orthrus Destroyer Squadron" hidden="false" id="5839-7650-04ad-15c5" collective="false" targetId="826c-d5f7-2739-0425" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Lords of War:" hidden="false" id="3dde-6acb-adec-0075" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink name="Unit:" hidden="false" id="2c7b-b7d7-a6ec-2162" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink import="false" name="Contemptor Dreadnought Talon" hidden="false" id="7cb6-ec2d-9fef-ac9b" collective="false" targetId="d664-5692-cd41-f9be" type="selectionEntry">
       <comment>template_id_3aed-0370-44b8-9b06</comment>
       <categoryLinks>
         <categoryLink name="Unit:" hidden="false" id="930f-f145-87e7-86d5" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink name="Elites:" hidden="false" id="ad5d-11b6-3942-95e" targetId="7aee-565f-b0ae-294e" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="false" name="Contemptor-Cortus Dreadnought Talon" hidden="false" id="7047-9cdf-7c41-11ca" collective="false" targetId="6f2e-78c7-2b2c-8a18" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Unit:" hidden="false" id="d6ba-a9db-67f1-b3f8" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink name="Elites:" hidden="false" id="7007-1668-386e-5bf2" targetId="7aee-565f-b0ae-294e" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="false" name="Damocles Command Rhino" hidden="false" id="de00-bcc3-ef1c-e5e2" collective="false" targetId="e337-8239-5e92-7f5f" type="selectionEntry">
@@ -320,6 +411,62 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
       </categoryLinks>
       <infoLinks>
         <infoLink name="Augmetic Transport Bay" id="7e78-18cc-79e2-fa4b" hidden="false" type="rule" targetId="75c-d3e8-2f12-2749">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="be5b-1edf-8b27-2e1e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="false" name="Land Raider Dionysus" hidden="false" id="686d-819a-682e-c0f6" collective="false" targetId="1acf-f954-e43b-acef" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="7b69-bf2f-4547-e83b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="HQ:" hidden="false" id="b919-e1ca-353a-5e49" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink name="Unit:" hidden="false" id="9015-e717-de01-38fb" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Augmetic Transport Bay" id="ee29-d2c2-aab2-a18f" hidden="false" type="rule" targetId="75c-d3e8-2f12-2749">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="be5b-1edf-8b27-2e1e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="false" name="Land Raider Tartaros" hidden="false" id="cb9b-e454-9a7f-f808" collective="false" targetId="db2b-39ae-e8c9-d133" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="7b69-bf2f-4547-e83b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="HQ:" hidden="false" id="165e-bb7b-baa4-8b30" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink name="Unit:" hidden="false" id="a9a6-3da6-373a-9645" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Augmetic Transport Bay" id="3178-d5b4-1258-30f1" hidden="false" type="rule" targetId="75c-d3e8-2f12-2749">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
@@ -516,6 +663,23 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
         <categoryLink name="Heavy Support:" hidden="false" id="f265-26e8-55d-fae" targetId="7031-469a-1aeb-eab0" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink import="false" name="Fire Raptor Destroyer" hidden="false" id="d56b-828a-1a70-fd66" collective="false" targetId="2687-8506-5c64-b51c" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="7b69-bf2f-4547-e83b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="Unit:" hidden="false" id="df7e-0a4d-3350-3507" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink name="Heavy Support:" hidden="false" id="2723-88d9-3c9b-80f4" targetId="7031-469a-1aeb-eab0" primary="true"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink import="false" name="Glaive" hidden="false" id="baf3-16fa-3f04-b8f" collective="false" targetId="04e0-f69f-f759-b0b3" type="selectionEntry">
       <comment>template_id_bbe3-6b87-4619-80dd</comment>
       <modifiers>
@@ -541,6 +705,78 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
       <categoryLinks>
         <categoryLink name="Heavy Support:" hidden="false" id="a683-821a-bbc8-dcb7" targetId="7031-469a-1aeb-eab0" primary="true"/>
         <categoryLink name="Unit:" hidden="false" id="9dae-3dff-e9e0-aaa9" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="remove" value="8b4f-bfe2-ce7b-f1b1" field="category">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="be5b-1edf-8b27-2e1e" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="d8ab-8e21-e193-63ba" field="category">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="be5b-1edf-8b27-2e1e" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <comment>The Flesh Is Weak</comment>
+        </modifierGroup>
+      </modifierGroups>
+    </entryLink>
+    <entryLink import="false" name="Early Great Crusade Havoc Squad" hidden="false" id="7feb-c682-22bc-1eeb" collective="false" targetId="2d51-a422-d4ee-183b" type="selectionEntry">
+      <constraints>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="bc5f-10c6-f32e-b439" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink name="Heavy Support:" hidden="false" id="a9ac-e9c3-153a-731d" targetId="7031-469a-1aeb-eab0" primary="true"/>
+        <categoryLink name="Unit:" hidden="false" id="1d02-a214-bbc0-56af" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="remove" value="8b4f-bfe2-ce7b-f1b1" field="category">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="be5b-1edf-8b27-2e1e" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="d8ab-8e21-e193-63ba" field="category">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="be5b-1edf-8b27-2e1e" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <comment>The Flesh Is Weak</comment>
+        </modifierGroup>
+      </modifierGroups>
+    </entryLink>
+    <entryLink import="false" name="Heavy Destroyer Squad, Tartaros" hidden="false" id="bbff-d388-bd77-9cff" collective="false" targetId="2099-9a61-8c9a-d939" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Heavy Support:" hidden="false" id="e915-76cb-71b3-b709" targetId="7031-469a-1aeb-eab0" primary="true"/>
+        <categoryLink name="Unit:" hidden="false" id="f3b9-3e73-76a3-07b6" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="remove" value="8b4f-bfe2-ce7b-f1b1" field="category">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="be5b-1edf-8b27-2e1e" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="d8ab-8e21-e193-63ba" field="category">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="be5b-1edf-8b27-2e1e" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <comment>The Flesh Is Weak</comment>
+        </modifierGroup>
+      </modifierGroups>
+    </entryLink>
+    <entryLink import="false" name="Heavy Destroyer Squad, Cataphractii" hidden="false" id="2f2b-9fb3-1066-5edc" collective="false" targetId="5fd1-360d-0b54-2360" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Heavy Support:" hidden="false" id="96a5-ef80-3d4d-e13c" targetId="7031-469a-1aeb-eab0" primary="true"/>
+        <categoryLink name="Unit:" hidden="false" id="8081-7aad-74e1-a434" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
       <modifierGroups>
         <modifierGroup type="and">
@@ -884,6 +1120,23 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
         </infoLink>
       </infoLinks>
     </entryLink>
+    <entryLink import="false" name="Legion Banesword" hidden="false" id="6113-02ac-b1f9-db7e" collective="false" targetId="d23f-d032-6314-8779" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="7b69-bf2f-4547-e83b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="Lords of War:" hidden="false" id="bda6-09b2-cd94-8df2" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink name="Unit:" hidden="false" id="8f6d-5e25-c05a-5840" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink import="false" name="Legion Basilisk Squadron" hidden="true" id="8ffd-638e-abbd-388d" collective="false" targetId="8b8a-e685-5b8b-c08f" type="selectionEntry">
       <comment>template_id_6e95-d5bf-451e-9b8a</comment>
       <modifiers>
@@ -1102,6 +1355,34 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
         </infoLink>
       </infoLinks>
     </entryLink>
+    <entryLink import="false" name="Legion Doomhammer" hidden="false" id="2086-9649-52b4-4feb" collective="false" targetId="9a96-ecee-2e7a-5360" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="7b69-bf2f-4547-e83b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="Lords of War:" hidden="false" id="c9ed-b876-f8a2-a87a" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink name="Unit:" hidden="false" id="0019-68f3-61c6-a750" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Augmetic Transport Bay" id="0df6-87c5-106b-42a2" hidden="false" type="rule" targetId="75c-d3e8-2f12-2749">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="be5b-1edf-8b27-2e1e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </entryLink>
     <entryLink import="false" name="Legion Stormsword" hidden="true" id="1a81-1ffc-f692-946a" collective="false" targetId="8e67-8f84-730c-2778" type="selectionEntry">
       <comment>template_id_7649-50e6-43e1-a338</comment>
       <modifiers>
@@ -1300,6 +1581,7 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
             <conditionGroup type="or">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="7b69-bf2f-4547-e83b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="8742-d1a5-4518-4ecf" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -1308,6 +1590,42 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
       <categoryLinks>
         <categoryLink name="Unit:" hidden="false" id="18d1-7862-54fd-2be6" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink name="Fast Attack:" hidden="false" id="2399-bb3e-4c98-9a35" targetId="20ef-cd01-a8da-376e" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="false" name="Hussar Squadron" hidden="false" id="1012-56b9-35a5-61b6" collective="false" targetId="9efb-0f88-3f6f-db20" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="7b69-bf2f-4547-e83b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="8742-d1a5-4518-4ecf" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="Unit:" hidden="false" id="ed33-f64b-35cb-4517" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink name="Troops:" hidden="false" id="d917-03d2-02c4-0147" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="false" name="Sky-Seeker Squadron" hidden="false" id="67b3-d932-004d-146a" collective="false" targetId="ba8f-067e-50d9-d50a" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="7b69-bf2f-4547-e83b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="8742-d1a5-4518-4ecf" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="Unit:" hidden="false" id="9677-bf47-ffa5-a788" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink name="Troops:" hidden="false" id="44e5-5037-f7e5-7088" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="false" name="Praetor" hidden="false" id="af5-ef20-7338-249f" collective="false" targetId="03be-5d55-d05a-771d" type="selectionEntry">
@@ -1332,6 +1650,18 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
       <entryLinks>
         <entryLink import="true" name="Warlord Traits" hidden="false" id="5283-e32b-69fa-88d0" collective="false" targetId="9b47-e234-7f96-3cec" type="selectionEntryGroup"/>
         <entryLink import="true" name="Retinue" hidden="false" id="e801-990-f8f2-ce24" collective="false" targetId="5b3d-ea70-4774-c23d" type="selectionEntryGroup"/>
+      </entryLinks>
+    </entryLink>
+    <entryLink import="false" name="Praetor, Indomitus" hidden="false" id="a5e1-647a-7d5b-30bf" collective="false" targetId="4abe-5f08-d93f-8293" type="selectionEntry">
+      <comment>template_id_ca44-db38-4377-b4ef</comment>
+      <categoryLinks>
+        <categoryLink name="HQ:" hidden="false" id="39f5-0bb4-b7e0-fbe5" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink name="Unit:" hidden="false" id="7e39-9418-f3b8-c6e6" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink name="Compulsory HQ:" hidden="false" id="43f3-3b9c-7a86-16d5" targetId="f823-8c1d-6a87-26a1" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Warlord Traits" hidden="false" id="ccb6-3702-26b4-bddd" collective="false" targetId="9b47-e234-7f96-3cec" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Retinue" hidden="false" id="3e85-4054-01ac-1d35" collective="false" targetId="5b3d-ea70-4774-c23d" type="selectionEntryGroup"/>
       </entryLinks>
     </entryLink>
     <entryLink import="false" name="Praetor, Tartaros" hidden="false" id="9701-a924-6ce8-c94d" collective="false" targetId="3760-204e-444c-1044" type="selectionEntry">
@@ -1524,6 +1854,23 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
         <categoryLink name="Heavy Support:" hidden="false" id="a233-35a7-7c50-b6e8" targetId="7031-469a-1aeb-eab0" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink import="false" name="Sicaran Incinerator Squadron" hidden="false" id="fe98-194e-d202-bb89" collective="false" targetId="45ba-4b9f-f5a4-2ebb" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="7b69-bf2f-4547-e83b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="Unit:" hidden="false" id="de0b-7c49-84c2-3ff1" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink name="Heavy Support:" hidden="false" id="4e91-2bc0-1058-41a8" targetId="7031-469a-1aeb-eab0" primary="true"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink import="false" name="Sicaran Venator Squadron" hidden="false" id="fcb2-7913-2195-551f" collective="false" targetId="1345-e0db-2fcb-dcc8" type="selectionEntry">
       <comment>template_id_2901-7b25-4b31-99a8</comment>
       <modifiers>
@@ -1553,6 +1900,7 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
             <conditionGroup type="or">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="7b69-bf2f-4547-e83b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="8742-d1a5-4518-4ecf" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -1603,6 +1951,7 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
             <conditionGroup type="and">
               <conditions>
                 <condition type="equalTo" value="0" field="selections" scope="force" childId="7b69-bf2f-4547-e83b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="0" field="selections" scope="roster" childId="8742-d1a5-4518-4ecf" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                 <condition type="greaterThan" value="0" field="selections" scope="roster" childId="d344-d97b-4687-8a62" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false">
                   <comment>node_id_d73d-d52e-4c75-8ac0</comment>
                 </condition>
@@ -1647,6 +1996,40 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
         </infoLink>
       </infoLinks>
     </entryLink>
+    <entryLink import="false" name="Storm Eagle Transporter" hidden="false" id="6f88-72c2-0092-3cd2" collective="false" targetId="a2e6-cdc5-c3d8-24d6" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="7b69-bf2f-4547-e83b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="Fast Attack:" hidden="false" id="a2cf-5d47-c9d1-46c2" targetId="20ef-cd01-a8da-376e" primary="true"/>
+        <categoryLink name="Unit:" hidden="false" id="dd93-f876-a199-b32a" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Augmetic Transport Bay" id="a859-8f90-966b-badc" hidden="false" type="rule" targetId="75c-d3e8-2f12-2749">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="be5b-1edf-8b27-2e1e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="false" name="Mutated Spawn" hidden="false" id="5d29-9eae-05be-9db0" collective="false" targetId="e2eb-d84f-ff19-298b" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Fast Attack:" hidden="false" id="2e0d-89fa-7fc9-0665" targetId="20ef-cd01-a8da-376e" primary="true"/>
+        <categoryLink name="Unit:" hidden="false" id="dd01-372f-2550-85c3" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink import="false" name="Tactical Squad" hidden="false" id="31df-1610-957b-cf93" collective="false" targetId="aa72-63e4-bc60-4611" type="selectionEntry">
       <comment>template_id_59ec-0ea0-4fcf-a75a</comment>
       <categoryLinks>
@@ -1660,6 +2043,12 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
       <categoryLinks>
         <categoryLink name="Unit:" hidden="false" id="4fbc-7926-657f-ee38" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink name="Troops:" hidden="false" id="9686-11-4090-b751" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="false" name="Novicii Squad" hidden="false" id="16ce-8993-3dad-4340" collective="false" targetId="9cf1-119b-9cdc-b1c0" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Unit:" hidden="false" id="7c40-9760-0cdf-b14d" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink name="Troops:" hidden="false" id="d6c0-4501-2223-77d3" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="false" name="Tarantula Sentry Gun Battery" hidden="true" id="40f2-3f02-1695-2eb7" collective="false" targetId="124f-0ced-9231-bba4" type="selectionEntry">
@@ -1708,6 +2097,12 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
       <categoryLinks>
         <categoryLink name="Troops:" hidden="false" id="6a70-cee6-8946-4ee3" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
         <categoryLink name="Unit:" hidden="false" id="7e75-e9fa-d351-6816" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="false" name="Terminator Saturnine Squad" hidden="false" id="c906-6abf-2af7-65d5" collective="false" targetId="fbd3-f06b-6107-d645" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Elites:" hidden="false" id="5c55-3cd6-e840-e85b" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink name="Unit:" hidden="false" id="91f3-6d15-9727-f78f" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="false" name="Terminator Tartaros Squad" hidden="false" id="dde7-fae1-1ba3-dbc0" collective="false" targetId="1a8e-0ded-a4dc-2b4e" type="selectionEntry">
@@ -1802,6 +2197,20 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
         <categoryLink name="Elites:" hidden="false" id="506e-a56d-9d3d-6f1a" targetId="7aee-565f-b0ae-294e" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink import="false" name="Assault Veteran Squad" hidden="false" id="7353-d76b-f213-e1e9" collective="false" targetId="d687-d1ad-9afa-57dd" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Unit:" hidden="false" id="6eba-66e6-f6eb-23db" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink name="Compulsory Elite:" hidden="false" id="0b76-ab0d-010f-1ad1" targetId="bb1f-ae32-b587-c3e1" primary="false"/>
+        <categoryLink name="Elites:" hidden="false" id="cc61-1a1c-8432-4115" targetId="7aee-565f-b0ae-294e" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="false" name="Possessed Legionnaires" hidden="false" id="b5f3-1dd3-8616-714d" collective="false" targetId="a225-7515-199a-4905" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Unit:" hidden="false" id="97b9-8a4a-bd4c-8468" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink name="Compulsory Elite:" hidden="false" id="08de-9ef9-eabb-389f" targetId="bb1f-ae32-b587-c3e1" primary="false"/>
+        <categoryLink name="Elites:" hidden="false" id="78c6-ee12-eb9d-065a" targetId="7aee-565f-b0ae-294e" primary="true"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink import="false" name="Vindicator Squadron" hidden="false" id="6485-78f1-6b7-951e" collective="false" targetId="9245-0776-6747-adb8" type="selectionEntry">
       <comment>template_id_e3b3-8b3e-44d9-94e1</comment>
       <modifiers>
@@ -1820,6 +2229,23 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
       <categoryLinks>
         <categoryLink name="Unit:" hidden="false" id="1196-6f6a-2906-aec9" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink name="Heavy Support:" hidden="false" id="6583-fc50-266b-7c1f" targetId="7031-469a-1aeb-eab0" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="false" name="Vindicator Thunderer Squadron" hidden="false" id="2ad0-9684-9252-d97e" collective="false" targetId="92cd-4ed9-0f1d-5b78" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="7b69-bf2f-4547-e83b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="Unit:" hidden="false" id="3bb8-4cd4-1975-b2c8" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink name="Heavy Support:" hidden="false" id="bf16-eae9-ad2c-8d3c" targetId="7031-469a-1aeb-eab0" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="false" name="Whirlwind" hidden="true" id="b3b-b11d-abaa-7b60" collective="false" targetId="3118-4a9b-afa4-1a73" type="selectionEntry">
@@ -2082,6 +2508,21 @@ When you do so, replace this model’s Legiones Astartes (Salamanders) special r
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="96aa-37a5-d95d-bd83" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f8e5-5005-c91c-657b" includeChildSelections="false"/>
           </constraints>
+        </entryLink>
+        <entryLink import="true" name="Rad Grenades" hidden="true" id="0395-c70e-82b4-e5d5" collective="false" type="selectionEntry" targetId="1b0b-3dfc-9521-b27e">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="7572-b678-7ff5-6259" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="116e-8bb9-c418-6d89" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+          </costs>
         </entryLink>
         <entryLink import="true" name="Warlord" hidden="false" id="4823-c0e7-959a-a61f" type="selectionEntry" targetId="0176-56a3-d590-b103">
           <profiles>

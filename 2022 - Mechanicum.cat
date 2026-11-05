@@ -4764,7 +4764,6 @@ At the beginning of each of the controlling player’s Shooting phases for the r
         </profile>
       </profiles>
       <rules>
-        <rule id="9d8c-1ee2-4e7c-70c3" name="Archmagos Anacharis Scoria" hidden="false"/>
         <rule id="94ad-dd9a-c902-2f99" name="Rites of the Beast" publicationId="bde1-6db1-163b-3b76" page="63" hidden="false">
           <description>Anacharis Scoria has the Artificia Machina, Artificia Cybernetica, and Ephemera Incursus Cybertheurgic Arcana, and has all Rites and weapons that are part of those Arcana.</description>
         </rule>
@@ -8021,6 +8020,7 @@ not be changed during the battle.</description>
         <entryLink import="true" name="Frag Grenades" hidden="false" id="136d-98e0-0851-1f87" type="selectionEntry" targetId="cf9c-327b-3449-00d7">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9ac1-d6ac-7bd2-ee85"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7bbd-90f8-36d3-63a6"/>
           </constraints>
         </entryLink>
       </entryLinks>
