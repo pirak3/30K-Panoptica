@@ -6970,6 +6970,39 @@ This is a Damage Mitigation roll – any model may make only a single Damage Mit
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="d958-9083-9145-f15d" name="Medusan Zweihander" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="df7a-44f6-513d-0a37" name="Medusan Zweihander" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+2</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Two-Handed, Reach (1), Rending (6+), Murderous Strike (6+)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="e6f7-fe85-7679-650e" name="Two-handed" hidden="false" targetId="4c23-e863-a569-7617" type="rule"/>
+        <infoLink id="d940-90a3-c5ed-5bcf" name="Reach (X)" hidden="false" targetId="19bf-62a2-5737-890b" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Reach (1)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="ab75-6083-16fa-cbfc" name="Rending (X)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Rending (6+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="9259-4490-a525-77ed" name="Murderous Strike (X)" hidden="false" targetId="93b9-1454-0e7c-42ae" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Murderous Strike (6+)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
     <selectionEntry id="bde7-7c77-5973-cd52" name="Trophies of Judgement" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
@@ -66655,6 +66688,54 @@ The Reacting unit may make a Shooting Attack, targeting the unit that triggered 
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="65"/>
       </costs>
+      <selectionEntries>
+        <selectionEntry id="ccd0-4aa5-b23d-6cc7" name="The Keys of Hel" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="bfc9-c99c-bf8a-3917" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="f9cd-f32b-da51-5c68" shared="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="8bf2-740f-f301-a479" shared="true"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="03be-5d55-d05a-771d" childId="0176-56a3-d590-b103" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <condition type="atLeast" value="1" field="selections" scope="1b79-1951-5a63-4b9e" childId="0176-56a3-d590-b103" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <condition type="atLeast" value="1" field="selections" scope="4abe-5f08-d93f-8293" childId="0176-56a3-d590-b103" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <condition type="atLeast" value="1" field="selections" scope="3760-204e-444c-1044" childId="0176-56a3-d590-b103" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" field="58e5-bab8-20cc-22c5" value="0">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="03be-5d55-d05a-771d" childId="0176-56a3-d590-b103" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="equalTo" value="0" field="selections" scope="1b79-1951-5a63-4b9e" childId="0176-56a3-d590-b103" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="equalTo" value="0" field="selections" scope="4abe-5f08-d93f-8293" childId="0176-56a3-d590-b103" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="equalTo" value="0" field="selections" scope="3760-204e-444c-1044" childId="0176-56a3-d590-b103" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="58e5-bab8-20cc-22c5" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="5bf6-4998-3e45-c0d2" name="Keys of Hel" hidden="false" targetId="260e-cb48-58a7-60d4" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup name="Machinator Array" id="f689-f812-5b28-beb6" hidden="false" defaultSelectionEntryId="614b-c3f7-5607-32b8">
           <entryLinks>
@@ -68122,25 +68203,20 @@ The Reacting unit may make a Shooting Attack, targeting the unit that triggered 
     </selectionEntry>
     <selectionEntry id="0e4e-1b9a-6b38-e575" name="Master of Armour" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
-        <modifier type="set" field="c3a1-7e21-298e-5d78" value="1">
+        <modifier type="set" field="hidden" value="true">
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ccb7-6c5c-76ce-5b77" type="equalTo"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1acf-f954-e43b-acef" type="equalTo"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6c09-eb21-ca1e-a5d8" type="atLeast"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0e4e-1b9a-6b38-e575" type="lessThan"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1acf-f954-e43b-acef" type="greaterThan"/>
-          </conditions>
-        </modifier>
       </modifiers>
-      <constraints>
-        <constraint field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c3a1-7e21-298e-5d78" type="min"/>
-      </constraints>
+      <categoryLinks>
+        <categoryLink id="2daf-b4bb-a28c-2254" name="Master of Armour:" hidden="false" targetId="6c09-eb21-ca1e-a5d8" primary="false"/>
+      </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="534c-911e-62f5-5fba" name="Tank:" hidden="false" collective="false" import="true">
           <constraints>
@@ -80493,6 +80569,7 @@ In addition, at the start of your turn, a Pater Consularis Master of Signals may
         <categoryLink id="57bf-7bed-20f6-e9f2" name="Transport Sub-type" hidden="false" targetId="7b0a-a743-a8da-3a39" primary="false"/>
         <categoryLink id="b804-57b2-2733-99fa" name="Reinforced Sub-type" hidden="false" targetId="9b0d-738c-10e4-4ec1" primary="false"/>
         <categoryLink id="5909-c468-f810-377e" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
+        <categoryLink id="873a-4afb-7997-0fdf" name="Master of Armour:" hidden="false" targetId="6c09-eb21-ca1e-a5d8" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="e8d6-acbc-e445-5040" name="Legion Land Raider Dionysus" hidden="false" collective="false" import="true" type="upgrade">
@@ -97314,6 +97391,30 @@ Strength Characteristic for the duration of the combat.</description>
             </modifier>
           </modifiers>
         </entryLink>
+        <entryLink id="b166-510c-36e4-1a1c" name="Medusan Zweihander" hidden="true" collective="false" import="true" targetId="d958-9083-9145-f15d" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f75a-d5c1-59ba-5c5a" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="cf47-4aef-a6db-782d" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="bfc9-c99c-bf8a-3917" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+          </costs>
+        </entryLink>
         <entryLink id="e428-d04e-b7f6-09db" name="Carsoran Power Axe" hidden="false" collective="false" import="true" targetId="fa70-f0d0-b06d-5413" type="selectionEntry"/>
         <entryLink id="3839-0650-a625-d42e" name="Power Scythe" hidden="true" collective="false" import="true" targetId="2166-369e-0757-6f98" type="selectionEntry">
           <modifiers>
@@ -102133,6 +102234,12 @@ Any unit composed entirely of models with the Legiones Astartes (Dark Angels) Sp
     </rule>
     <rule id="2612-79b8-f67a-79bf" name="Runis Machinitor" hidden="false">
       <description>Before the game begins, you may select up to two vehicles in the same detachment as the Priest of Iron. For the duration of the game, these vehicles can move at up to Crusing speed in the movement phase, but are counted as not having moved for the purposes of their shooting attacks.</description>
+    </rule>
+    <rule id="260e-cb48-58a7-60d4" name="Keys of Hel" hidden="false">
+      <description>A model with the Keys of Hel Special Rule may join a unit with the Ghola Sub-type even if they would normally be prevented from doing so by any Special Rule.
+During army selection, the Controlling Player may select any units with the Infantry Unit Type in the same Detachment as a model with this Special Rule which also have the Legions Astartes (Iron Hands) Special Rule, and which do not already have the Ghola Unit Sub-type, and were not selected as a HQ choice.
+Units selected in this way may be given the Ghola Sub-type at a cost of +5 points per model. All models in a unit selected in this fashion must be so upgraded.
+Any Legion Techmarine Covenant or Legion Apothecarion Detachment may not be selected to gain this upgrade. Legion Techmarines may be attached to a unit with the Ghola Subtype, and do not gain the Ghola Sub-type or any associated benefits as normal, apart from the Bitter Duty Special Rule. Legion Apothecaries may never a join a unit with the Ghola Sub-type.</description>
     </rule>
   </sharedRules>
   <catalogueLinks>

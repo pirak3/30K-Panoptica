@@ -68,6 +68,12 @@ Units: done
 - Lord Cypher (Legiones Consularis), Luther, Merir Astelan, Inner Circle Indomitus Squad, Xenobane Cannons: done
 #### **Space Wolves**
 - Priest of Iron (Legiones Consularis), Varagyr Wolf Guard Tartaros Terminator Squad, Helfrost Pistol: done
+#### **Imperial Fists**
+- Huscarl Indomitus Terminator Squad: done
+#### **Raven Guard**
+- Nykona Sharrowkyn, Navar Hef, Raptors (Proto-Astartes / Mutated), Deliverers Tartaros Squad, Darkwing Gunship: done
+#### **Iron Hands**
+- The Keys of Hel, The Gates of Hel (Rite of War), Castrmen Orth, Iron-Father Kardozia, Lord Crius, Gabriel Santar, Helfather Covenant, Iron Revenants, Medusan Immortal options: done
 ## **Antiqua**
 ## **Imperatus**
 

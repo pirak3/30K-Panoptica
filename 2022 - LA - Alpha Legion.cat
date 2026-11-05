@@ -516,6 +516,20 @@
         <categoryLink id="b485-56bf-6221-dd06" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="64f4-051e-9f5f-d887" name="Huscarl Indomitus Terminator Squad" hidden="true" collective="false" import="false" targetId="f246-04d3-c697-4f61" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="34fa-9787-f5e8-a5f4" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="fbb5-b549-33ba-f5ab" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="a4ca-61f3-d5b2-053c" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
+        <categoryLink id="09d8-dd44-92f7-168f" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink id="0457-3563-1aab-ece5" name="Templar Brethren" hidden="true" collective="false" import="false" targetId="6f69-665c-3199-77aa" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
@@ -789,6 +803,20 @@
         <categoryLink id="95ea-2552-bc04-8f45" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
         <categoryLink id="8610-0a32-a51b-1666" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
         <categoryLink id="e8ef-534c-a9ca-b1e6" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="edd7-2058-7292-fd9c" name="Deliverers Tartaros Squad" hidden="true" collective="false" import="false" targetId="8e1a-ebf8-9def-3d7d" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ce97-a311-9ead-5458" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="68a0-94e7-5517-2e4e" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="43e2-33d1-5b02-9cf7" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
+        <categoryLink id="b4df-4814-283c-0972" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="9c8e-6562-6c4b-5687" name="Firedrake Terminator Squad" hidden="true" collective="false" import="false" targetId="6775-8379-8d6b-9614" type="selectionEntry">
@@ -6104,6 +6132,26 @@
         <categoryLink id="7c8b-5edf-3437-3fae" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="58b5-a389-a0f1-3825" name="Deliverers Tartaros Squad" hidden="true" collective="false" import="false" targetId="8e1a-ebf8-9def-3d7d" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="atLeast"/>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ce97-a311-9ead-5458" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="746a-83e8-eaf3-3c6a" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
+        <categoryLink id="5f10-76ed-badb-371d" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="c380-cee3-a551-5e18" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+        <categoryLink id="ebd2-3c16-628b-a319" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink id="f2e0-99b9-e0ac-5f31" name="Firedrake Terminator Squad" hidden="true" collective="false" import="false" targetId="6775-8379-8d6b-9614" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
@@ -8943,6 +8991,18 @@ A weapon with this special rule may not be used to make Shooting Attacks as part
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="34fa-9787-f5e8-a5f4" name="Huscarl Indomitus Terminator Squad" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="602b-60e7-4283-2261" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
         <selectionEntry id="9305-d355-4878-77a9" name="Phalanx Warder Squad" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
@@ -9488,6 +9548,18 @@ A weapon with this special rule may not be used to make Shooting Attacks as part
           </costs>
         </selectionEntry>
         <selectionEntry id="3fc2-d66b-93cf-5d40" name="Deliverers Squad (Exemplary)" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f721-6785-8164-c995" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="ce97-a311-9ead-5458" name="Deliverers Tartaros Squad" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>

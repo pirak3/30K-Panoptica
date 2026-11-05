@@ -40,5 +40,14 @@ Lord Cypher consul, Luther, Merir Astelan, Inner Circle Indomitus Squad, Xenoban
 
 ### Space Wolves (p.133-136)
 Priest of Iron consul, Varagyr Wolf Guard Tartaros Terminator Squad, Helfrost Pistol wiring done
+
+### Imperial Fists (p.137-140)
+Huscarl Indomitus Terminator Squad done
+
+### Raven Guard (p.205-212)
+Nykona Sharrowkyn, Navar Hef, Raptors (Proto-Astartes / Mutated), Deliverers Tartaros Squad, Darkwing Gunship done
+
+### Iron Hands (p.151-160)
+The Keys of Hel, The Gates of Hel, Castrmen Orth, Iron-Father Kardozia, Lord Crius, Gabriel Santar, Helfather Covenant, Iron Revenants, Medusan Immortal options done
 ## Antiqua
 ## Imperatus
