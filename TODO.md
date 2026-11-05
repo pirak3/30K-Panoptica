@@ -44,6 +44,12 @@ Priest of Iron consul, Varagyr Wolf Guard Tartaros Terminator Squad, Helfrost Pi
 ### Imperial Fists (p.137-140)
 Huscarl Indomitus Terminator Squad done
 
+### Night Lords (p.141-144)
+Gendor Skraivok, Contekar Cataphractii Terminator Squad, The Daemon Sword done
+
+### Blood Angels (p.145-150)
+Seraphim Majoris consul, Nassir Amit, Azkaellon, Sanguinary Guard (Retinue), Angelus Pattern Jump Pack and Flaying Knife wiring done
+
 ### Raven Guard (p.205-212)
 Nykona Sharrowkyn, Navar Hef, Raptors (Proto-Astartes / Mutated), Deliverers Tartaros Squad, Darkwing Gunship done
 

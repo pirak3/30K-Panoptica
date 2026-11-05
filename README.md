@@ -72,6 +72,10 @@ Units: done
 - Huscarl Indomitus Terminator Squad: done
 #### **Raven Guard**
 - Nykona Sharrowkyn, Navar Hef, Raptors (Proto-Astartes / Mutated), Deliverers Tartaros Squad, Darkwing Gunship: done
+#### **Night Lords**
+- Gendor Skraivok, Contekar Cataphractii Terminator Squad, The Daemon Sword: done
+#### **Blood Angels**
+- Seraphim Majoris (Legiones Consularis), Nassir Amit, Azkaellon, Sanguinary Guard (Retinue), Angelus Pattern Jump Pack and Flaying Knife wiring: done
 #### **Iron Hands**
 - The Keys of Hel, The Gates of Hel (Rite of War), Castrmen Orth, Iron-Father Kardozia, Lord Crius, Gabriel Santar, Helfather Covenant, Iron Revenants, Medusan Immortal options: done
 ## **Antiqua**
