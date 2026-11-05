@@ -22,6 +22,12 @@ All notable changes to the BattleScribe Data Repository will be documented in th
   - `[Raven Guard]` Added `[Raptors, Mutated]` - `[Elites]` (Loyalist only)
   - `[Raven Guard]` Added `[Deliverers Tartaros Squad]` - `[Elites]` (0-1; Troops under Pride of the Legion; also Alpha Legion Rewards of Treachery)
   - `[Raven Guard]` Added `[Darkwing Gunship]` - `[Fast Attack]`
+  - `[Night Lords]` Added `[Gendor Skraivok]` - `[HQ]` (Traitor only)
+  - `[Night Lords]` Added `[Contekar Cataphractii Terminator Squad]` - `[Elites]` (HQ/Troops like Contekar Terminator Squad; Retinue for Sevatar; also Alpha Legion Rewards of Treachery)
+  - `[Blood Angels]` Added `[Nassir Amit]` - `[HQ]` (Loyalist only)
+  - `[Blood Angels]` Added `[Azkaellon]` - `[HQ]` (Loyalist only)
+  - `[Blood Angels]` Added `[Sanguinary Guard]` - `[HQ]` (0-1; Retinue only, for a Blood Angels Master of the Legion with a Warhawk/Angelus Jump Pack or Sanguinius)
+  - `[Blood Angels]` Added `[Seraphim Majoris]` consul (Legiones Consularis, Legion Centurion only)
   - `[Legiones Astartes]` Added `[Legion Banesword]` - `[Lords of War]`
   - `[Legiones Astartes]` Added `[Legion Doomhammer]` - `[Lords of War]`
   - `[Legiones Astartes]` Added `[Legion Orthrus Destroyer Squadron]` - `[Lords of War]`
@@ -76,6 +82,8 @@ All notable changes to the BattleScribe Data Repository will be documented in th
   - `[Space Wolves]` `[Helfrost Pistol]`, `[Helfrost Pistol & Bolt Pistol]`
   - `[Raven Guard]` `[Needler Sniper Rifle]`, `[Dark Talon]`, `[Raptor Claws]`, `[Eclipse Missiles]`
   - `[Iron Hands]` `[Medusan Zweihander]`, `[Vengeance of the Dead]`
+  - `[Night Lords]` `[The Daemon Sword]`
+  - `[Blood Angels]` `[Angelus Pattern Jump Pack]`, `[Flaying Knife]`, `[Encarmine Broadsword]`, `[Encarmine Sword]`, `[Encarmine Axe]`, `[Bloodshard Boltgun]`
 - **Rules & Abilities**:
   - Added special rules `[Debilitating]`, `[Volatile Ordnance]`, `[Tremor]`
   - Added special rules `[Combat Transporter]`, `[Dreadnought Magna-Grapples]`, `[Mindless Aggression]`, `[Neverborn]`
@@ -92,11 +100,15 @@ All notable changes to the BattleScribe Data Repository will be documented in th
   - Added special rules `[Xenobane Cannons]`, `[Secrets and Lies]`, `[Damnation's Destiny]`, `[Warlord: The Fallen]`, `[Fortress of the Mind]`, `[Warlord: Inspirational Leader]`, `[Order Exemplars]` (Dark Angels)
   - Added `Legiones Consularis` upgrade `[Priest of Iron]` (Space Wolves) with special rule `[Runis Machinitor]`
   - Added special rules `[Kiavahran Repulsor Field]`, `[Raptor Lieutenant]`, `[Warlord: Vital Strike]`, `[Warlord: No Witnesses]` (Raven Guard)
+  - Added special rule `[Spiteful Binding]` (Night Lords)
+  - Added `[Flaring Heavenfall]`, `[Bloodlust of the Damned]`, `[Versatile]`, `[Captain of the Bloody 5th]`, `[Warlord: The Flesh Tearer]`, `[Herald of the Primarch]`, `[Artisans of War]`, `[Sanguinary Retinue]` (Blood Angels)
   - Added `[Ghola Sub-type]` (new `Ghola` category), `[Keys of Hel]`, `[Spearhead Commander]`, `[Agesine Protocols]`, `[Helfather Retinue]`, `[Warlord: Blessing of the Gorgon]`, `[Warlord: Gorgon Plating]`, `[Warlord: The Revenant's Revenge]` (Iron Hands)
   - Added Rite of War `[The Gates of Hel]` (Iron Hands): Iron Revenants as Compulsory Troops (Line, Heart of the Legion), Thallax Cohorts as Troops, no Ferrus Manus, Fortifications or Allied Detachment; needs Lord Crius or The Keys of Hel
 
 ### Changed
 - **Units / Points**:
+  - `[Legion Praetor]`, `[Legion Centurion]`, `[Legion Optae]`: Blood Angels may take an Angelus Pattern Jump Pack (+25) instead of a Warhawk Jump Pack
+  - Blood Angels Infantry (not in Terminator armour, not Unique, Dawnbreaker, Angel's Tears or Sanguinary Guard) may take free Flaying Knives when the force includes Nassir Amit
   - `[Mastodon]`: Added up to two pintle mounted weapons and a Flare Shield
   - `[Deredeo Dreadnought Talon]`: may exchange its Boreas missiles for a Deredeo Atomantic Pavaise
   - `[Land Raider Achilles]`: Added Phosphex Canister Shot (with a Siege Breaker)

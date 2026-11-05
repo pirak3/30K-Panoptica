@@ -12340,6 +12340,17 @@ The Better Part of Valour – This Advanced Reaction may be made once per battle
           </profiles>
         </selectionEntry>
         <selectionEntry id="296e-301e-3ce1-1c15" name="IX: Blood Angels" hidden="false" collective="false" import="true" type="upgrade" sortIndex="10">
+          <rules>
+            <rule id="ff92-b480-4654-73f6" name="Legiones Consularis: Seraphim Majoris" hidden="false">
+              <description>A Legion Centurion with the Legiones Astartes (Blood Angels) Special Rule may be upgraded to a Seraphim Majoris Consul instead of selecting any of the standard Consul upgrades, gaining the benefits listed below:
+
+Special Rules
+• The Seraphim Majoris gains the Flaring Heavenfall and Bloodlust of the Damned Special Rules.
+
+Wargear
+• The Seraphim Majoris gains an Angelus Pattern Jump Pack at no additional points cost.</description>
+            </rule>
+          </rules>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
