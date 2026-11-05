@@ -15,6 +15,13 @@ All notable changes to the BattleScribe Data Repository will be documented in th
   - `[Dark Angels]` Added `[Merir Astelan]` - `[HQ]`
   - `[Dark Angels]` Added `[Inner Circle Indomitus Squad]` - `[Elites]` (Troops under Pride of the Legion; Retinue for Marduk Sedras; also Alpha Legion Rewards of Treachery)
   - `[Space Wolves]` Added `[Varagyr Wolf Guard Tartaros Terminator Squad]` - `[Elites]` (Troops under Pride of the Legion; also Alpha Legion Rewards of Treachery)
+  - `[Imperial Fists]` Added `[Huscarl Indomitus Terminator Squad]` - `[Elites]` (0-1; Retinue; also Alpha Legion Rewards of Treachery)
+  - `[Raven Guard]` Added `[Nykona Sharrowkyn]` - `[HQ]` (Loyalist only)
+  - `[Raven Guard]` Added `[Navar Hef]` - `[HQ]` (Loyalist only)
+  - `[Raven Guard]` Added `[Raptors, Proto-Astartes]` - `[Elites]` (Loyalist only)
+  - `[Raven Guard]` Added `[Raptors, Mutated]` - `[Elites]` (Loyalist only)
+  - `[Raven Guard]` Added `[Deliverers Tartaros Squad]` - `[Elites]` (0-1; Troops under Pride of the Legion; also Alpha Legion Rewards of Treachery)
+  - `[Raven Guard]` Added `[Darkwing Gunship]` - `[Fast Attack]`
   - `[Legiones Astartes]` Added `[Legion Banesword]` - `[Lords of War]`
   - `[Legiones Astartes]` Added `[Legion Doomhammer]` - `[Lords of War]`
   - `[Legiones Astartes]` Added `[Legion Orthrus Destroyer Squadron]` - `[Lords of War]`
@@ -46,6 +53,12 @@ All notable changes to the BattleScribe Data Repository will be documented in th
   - `[Legiones Astartes]` Added `[Contemptor-Cortus Dreadnought Talon]` - `[Elites]`
   - `[Legiones Astartes]` Added `[Possessed Legionnaires]` - `[Elites]` (Traitor only)
   - `[Legiones Astartes]` Added `[Servo-Automata Maniple]` - `[Techmarine Covenant Retinue]`
+  - `[Iron Hands]` Added `[Castrmen Orth]` - `[HQ]` (Loyalist only)
+  - `[Iron Hands]` Added `[Iron-Father Kardozia]` - `[HQ]` (Loyalist only)
+  - `[Iron Hands]` Added `[Lord Crius]` - `[HQ]` (Loyalist only)
+  - `[Iron Hands]` Added `[Gabriel Santar]` - `[HQ]` (Loyalist only)
+  - `[Iron Hands]` Added `[Helfather Covenant]` - `[HQ Retinue]` (0-1; for a Master of the Legion with The Keys of Hel)
+  - `[Iron Hands]` Added `[Iron Revenants]` - `[Elites]` (Compulsory Troops under The Gates of Hel)
 - **Weapons & Wargear**:
   - `[Volkite Columbiad]`, `[Neutron Cannon]`, `[Distortion Cannon]`, `[Heavy Disintegrator]`, `[Mole Mortar]`, `[Fallout Discharger]`
   - `[Missile Launcher (Rad Missiles only)]`, `[Quad Launcher - Phosphex Canister Shot]`, `[Deredeo Atomantic Pavaise]`, `[Teleportation Transponders]`
@@ -61,6 +74,8 @@ All notable changes to the BattleScribe Data Repository will be documented in th
   - `[World Eaters]` `[Shield Breaker]`, `[Iron Jaw]`, `[Sarissa Spear]`, `[Mansplitter Blade]`
   - `[Dark Angels]` `[Calibanite Greatsword]`, `[Xenobane Cannon]`, `[Twin-linked Xenobane Cannon]`, `[Gravis Xenobane Cannon]`, `[Gravis Xenobane Cannon Battery]`
   - `[Space Wolves]` `[Helfrost Pistol]`, `[Helfrost Pistol & Bolt Pistol]`
+  - `[Raven Guard]` `[Needler Sniper Rifle]`, `[Dark Talon]`, `[Raptor Claws]`, `[Eclipse Missiles]`
+  - `[Iron Hands]` `[Medusan Zweihander]`, `[Vengeance of the Dead]`
 - **Rules & Abilities**:
   - Added special rules `[Debilitating]`, `[Volatile Ordnance]`, `[Tremor]`
   - Added special rules `[Combat Transporter]`, `[Dreadnought Magna-Grapples]`, `[Mindless Aggression]`, `[Neverborn]`
@@ -76,6 +91,9 @@ All notable changes to the BattleScribe Data Repository will be documented in th
   - Added `Legiones Consularis` upgrade `[Lord Cypher]` (Dark Angels) with special rule `[For Caliban and Terra!]`
   - Added special rules `[Xenobane Cannons]`, `[Secrets and Lies]`, `[Damnation's Destiny]`, `[Warlord: The Fallen]`, `[Fortress of the Mind]`, `[Warlord: Inspirational Leader]`, `[Order Exemplars]` (Dark Angels)
   - Added `Legiones Consularis` upgrade `[Priest of Iron]` (Space Wolves) with special rule `[Runis Machinitor]`
+  - Added special rules `[Kiavahran Repulsor Field]`, `[Raptor Lieutenant]`, `[Warlord: Vital Strike]`, `[Warlord: No Witnesses]` (Raven Guard)
+  - Added `[Ghola Sub-type]` (new `Ghola` category), `[Keys of Hel]`, `[Spearhead Commander]`, `[Agesine Protocols]`, `[Helfather Retinue]`, `[Warlord: Blessing of the Gorgon]`, `[Warlord: Gorgon Plating]`, `[Warlord: The Revenant's Revenge]` (Iron Hands)
+  - Added Rite of War `[The Gates of Hel]` (Iron Hands): Iron Revenants as Compulsory Troops (Line, Heart of the Legion), Thallax Cohorts as Troops, no Ferrus Manus, Fortifications or Allied Detachment; needs Lord Crius or The Keys of Hel
 
 ### Changed
 - **Units / Points**:
@@ -106,6 +124,14 @@ All notable changes to the BattleScribe Data Repository will be documented in th
   - `[Dark Angels]`: Heavy Bolters, Twin-linked Heavy Bolters, Gravis Bolt Cannons and Gravis Heavy Bolter Batteries may be upgraded to Xenobane Cannons (+2/+2/+5/+5 per weapon)
   - `[Space Wolves]`: Characters may exchange a Bolt Pistol for a Helfrost Pistol (+20)
   - `[Armoury of the Space Wolves]`: now lists four Space Wolves consuls (adds Priest of Iron)
+  - `[Huscarl Squad]`: only one Huscarl Squad or Huscarl Indomitus Terminator Squad per army
+  - `[Deliverers Squad]`: only one Deliverers Squad or Deliverers Tartaros Squad per army
+  - `[Praetor]`, `[Praetor, Cataphractii/Indomitus/Tartaros]`: an Iron Hands Iron-Father Warlord may take `[The Keys of Hel]` (+30); Ferrus Manus cannot be taken alongside it
+  - `[Medusan Immortal Squad]`: 1 in 5 Immortals may take a Power Weapon (+10)
+  - `[Iron Hands]`: Characters may exchange a Power Weapon for a `[Medusan Zweihander]` (+10), including the `[Morlock Terminator Squad]` Augmentor
+  - Armoured Spearhead: the Master of Armour requirement now uses a new `Master of Armour:` category (carried by `[Master of Armour]`, `[Land Raider Dionysus]` and `[Castrmen Orth]`)
+  - The Gates of Hel: `[Lord Crius]` must be the Warlord when no Praetor has `[The Keys of Hel]`
+  - `[Keys of Hel]` rule now lives once in Legiones Astartes (shared by the Praetor upgrade and Lord Crius)
   - Destroyer Company: Rad Grenades (+10) for Infantry/Cavalry Characters and Rad Missiles (+5 per model) for Missile Launchers; `[Heavy Destroyer Squad]` Teleportation Transponders also unlock with it
   - Breacher Spearhead: `[Tactical Support Squad]` and `[Veteran Squad]` may take Boarding Shields (Heavy)
   - Rite requirements enforced: Destroyer Company needs a Siege Breaker or Moritat (new `Moritat:` category); Tactica Obliqua needs 2 `[Tactical Squad]`, a `[Heavy Support Squad]` and an `[Assault Squad]` or `[Despoiler Squad]`. Breacher Heavy majority and Storm-Lance Warlord bike are marked as manual checks

@@ -1009,6 +1009,26 @@ Conversely, if an Independent Character joins a unit after that unit has been th
         <constraint type="min" value="0" field="selections" scope="force" shared="true" id="0531-bac6-2926-535c" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
       </constraints>
     </categoryEntry>
+    <categoryEntry id="6c09-eb21-ca1e-a5d8" name="Master of Armour:" hidden="false">
+      <modifiers>
+        <modifier type="set" value="1" field="087f-0081-13af-ce70">
+          <comment>Armoured Spearhead: Master of Armour role required</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="ccb7-6c5c-76ce-5b77" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Armoured Spearhead^"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="1" field="b34c-775f-3b20-f2c8">
+          <comment>Armoured Spearhead: only one Master of Armour role holder</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="ccb7-6c5c-76ce-5b77" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Armoured Spearhead^"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="force" shared="true" id="087f-0081-13af-ce70" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="b34c-775f-3b20-f2c8" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+      </constraints>
+    </categoryEntry>
     <categoryEntry id="2440-b64e-cb24-87f0" name="Cybernetica Sub-type" publicationId="bde1-6db1-163b-3b76" page="90" hidden="false">
       <rules>
         <rule id="ad70-0b7c-539c-3e16" name="Cybernetica Sub-type" publicationId="bde1-6db1-163b-3b76" page="90" hidden="false">
@@ -1906,6 +1926,7 @@ If that test is failed, the unit suffers one Wound, allocated by the controlling
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8742-d1a5-4518-4ecf" type="atLeast"/>
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7572-b678-7ff5-6259" type="atLeast"/>
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="08ad-4cd8-4796-ec99" type="atLeast"/>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="05d0-aa11-23f7-158f" type="atLeast"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -1930,6 +1951,7 @@ If that test is failed, the unit suffers one Wound, allocated by the controlling
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8742-d1a5-4518-4ecf" type="atLeast"/>
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7572-b678-7ff5-6259" type="atLeast"/>
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="08ad-4cd8-4796-ec99" type="atLeast"/>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="05d0-aa11-23f7-158f" type="atLeast"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -2263,6 +2285,7 @@ If that test is failed, the unit suffers one Wound, allocated by the controlling
                     <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="equalTo"/>
                     <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5430-5be1-1613-be44" type="atLeast"/>
                     <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7572-b678-7ff5-6259" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="05d0-aa11-23f7-158f" type="atLeast"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -3110,6 +3133,7 @@ Then choose the army you wish to have a lord of war from, then pick &quot;Lord o
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8742-d1a5-4518-4ecf" type="atLeast"/>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7572-b678-7ff5-6259" type="atLeast"/>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="08ad-4cd8-4796-ec99" type="atLeast"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="05d0-aa11-23f7-158f" type="atLeast"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -3147,6 +3171,7 @@ Then choose the army you wish to have a lord of war from, then pick &quot;Lord o
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8742-d1a5-4518-4ecf" type="atLeast"/>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7572-b678-7ff5-6259" type="atLeast"/>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="08ad-4cd8-4796-ec99" type="atLeast"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="05d0-aa11-23f7-158f" type="atLeast"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -3184,6 +3209,7 @@ Then choose the army you wish to have a lord of war from, then pick &quot;Lord o
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8742-d1a5-4518-4ecf" type="atLeast"/>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7572-b678-7ff5-6259" type="atLeast"/>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="08ad-4cd8-4796-ec99" type="atLeast"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="05d0-aa11-23f7-158f" type="atLeast"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -3222,6 +3248,7 @@ Then choose the army you wish to have a lord of war from, then pick &quot;Lord o
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8742-d1a5-4518-4ecf" type="atLeast"/>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7572-b678-7ff5-6259" type="atLeast"/>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="08ad-4cd8-4796-ec99" type="atLeast"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="05d0-aa11-23f7-158f" type="atLeast"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -3260,6 +3287,7 @@ Then choose the army you wish to have a lord of war from, then pick &quot;Lord o
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8742-d1a5-4518-4ecf" type="atLeast"/>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7572-b678-7ff5-6259" type="atLeast"/>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="08ad-4cd8-4796-ec99" type="atLeast"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="05d0-aa11-23f7-158f" type="atLeast"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -3298,6 +3326,7 @@ Then choose the army you wish to have a lord of war from, then pick &quot;Lord o
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8742-d1a5-4518-4ecf" type="atLeast"/>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7572-b678-7ff5-6259" type="atLeast"/>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="08ad-4cd8-4796-ec99" type="atLeast"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="05d0-aa11-23f7-158f" type="atLeast"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -3336,6 +3365,7 @@ Then choose the army you wish to have a lord of war from, then pick &quot;Lord o
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8742-d1a5-4518-4ecf" type="atLeast"/>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7572-b678-7ff5-6259" type="atLeast"/>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="08ad-4cd8-4796-ec99" type="atLeast"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="05d0-aa11-23f7-158f" type="atLeast"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -3374,6 +3404,7 @@ Then choose the army you wish to have a lord of war from, then pick &quot;Lord o
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8742-d1a5-4518-4ecf" type="atLeast"/>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7572-b678-7ff5-6259" type="atLeast"/>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="08ad-4cd8-4796-ec99" type="atLeast"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="05d0-aa11-23f7-158f" type="atLeast"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -3411,6 +3442,7 @@ Then choose the army you wish to have a lord of war from, then pick &quot;Lord o
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8742-d1a5-4518-4ecf" type="atLeast"/>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7572-b678-7ff5-6259" type="atLeast"/>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="08ad-4cd8-4796-ec99" type="atLeast"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="05d0-aa11-23f7-158f" type="atLeast"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -3450,6 +3482,7 @@ Then choose the army you wish to have a lord of war from, then pick &quot;Lord o
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8742-d1a5-4518-4ecf" type="atLeast"/>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7572-b678-7ff5-6259" type="atLeast"/>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="08ad-4cd8-4796-ec99" type="atLeast"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="05d0-aa11-23f7-158f" type="atLeast"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -3489,6 +3522,7 @@ Then choose the army you wish to have a lord of war from, then pick &quot;Lord o
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8742-d1a5-4518-4ecf" type="atLeast"/>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7572-b678-7ff5-6259" type="atLeast"/>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="08ad-4cd8-4796-ec99" type="atLeast"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="05d0-aa11-23f7-158f" type="atLeast"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -3525,6 +3559,7 @@ Then choose the army you wish to have a lord of war from, then pick &quot;Lord o
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8742-d1a5-4518-4ecf" type="atLeast"/>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7572-b678-7ff5-6259" type="atLeast"/>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="08ad-4cd8-4796-ec99" type="atLeast"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="05d0-aa11-23f7-158f" type="atLeast"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -16045,6 +16080,52 @@ Limitations
 • All units in a Detachment using this Rite of War composed entirely of models with the Infantry Unit Type must begin the battle Embarked upon a model with both the Flyer and Transport Sub-types.
 • A Detachment using this Rite of War may not include any models with the Dreadnought or Automata Unit Type.
 • An Allied Detachment may not use this Rite of War.
+• A Detachment using this Rite of War may not select any Fortification choices.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="05d0-aa11-23f7-158f" name="The Gates Of Hel (IH)" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bfc9-c99c-bf8a-3917" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0df-c1fa-5ddc-9ee5" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" field="0a30-ef1b-4d83-7084" value="0">
+              <comment>The Gates of Hel: detachment must include The Keys of Hel or Lord Crius (Warlord part enforced elsewhere: The Keys of Hel is Warlord-only, Lord Crius must be Warlord under this rite)</comment>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="eb05-c2be-e8a2-415b" type="lessThan"/>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ccd0-4aa5-b23d-6cc7" type="lessThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a30-ef1b-4d83-7084" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="54fe-6e00-4213-8962" name="The Gates Of Hel" hidden="false">
+              <description>Effects
+• Iron Revenants may be selected as Troops choices in a Detachment using this Rite of War.
+• Iron Revenants taken as Compulsory Troops gain the Line Unit Sub-Type and the Heart of the Legion Special Rule in a Detachment using this Rite of War.
+• Any unit with the Ghola Sub-type in a Detachment using this Rite of War that has at least a single model within 12&quot; of a Legion Techmarine or a model with the Independent Character Special Rule as well as the Legiones Astartes (Iron Hands) Special Rule may re-roll Feel No Pain rolls of 1.
+• Thallax Cohorts (see Liber Mechanicum) may be selected as non-compulsory Troops choices in an Detachment using this Rite of War.
+Limitations
+• A Detachment using this Rite of War must include a model with the Keys of Hel upgrade, or Lord Crius, as the Warlord.
+• A Detachment using this Rite of War may not include the Primarch Ferrus Manus.
+• A Detachment using this Rite of War may not select an Allied Detachment.
+• In a Detachment using this Rite of War, all Compulsory Troops must be Iron Revenants.
 • A Detachment using this Rite of War may not select any Fortification choices.</description>
             </rule>
           </rules>
