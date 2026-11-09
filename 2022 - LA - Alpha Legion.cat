@@ -464,6 +464,20 @@
         <categoryLink id="0df2-e5ac-30c0-562a" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="f046-c700-bcf2-e4dc" name="Terata Enhanced Warriors" hidden="true" collective="false" import="false" targetId="9938-a6db-898a-320d" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="aea4-356f-3d5d-8f2b" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="2e6b-36b4-1c34-ae31" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="1228-10ba-d9f4-c5c9" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="86e6-ade4-3948-d662" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink id="c326-cb15-c3dd-3f9c" name="Phoenix Terminator Squad" hidden="true" collective="false" import="false" targetId="5b08-65c1-cc45-1b91" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
@@ -1304,6 +1318,20 @@
         <categoryLink id="375c-755b-17a9-1232" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="2559-1171-2b1a-62c3" name="Ebon Keshig Cataphractii Cohort" hidden="true" collective="false" import="false" targetId="028d-69cd-9815-336a" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="40a8-7d55-7895-178f" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="8549-c4de-adee-90a9" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="ff79-fc46-80db-1f5e" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
+        <categoryLink id="0baa-2f53-0dd4-cc1e" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink id="336e-3223-67ce-912c" name="Kyzagan Assault Speeder Squadron" hidden="true" collective="false" import="false" targetId="e37e-09ea-50c6-2daa" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
@@ -1326,6 +1354,25 @@
         <categoryLink id="3e18-b878-223f-289e" name="Fast Attack:" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
         <categoryLink id="1538-9081-32fa-c24b" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
         <categoryLink id="6de1-d44e-3b0c-d4b5" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="28c1-53a0-65d1-0e81" name="Wind Rider Brethren" hidden="true" collective="false" import="false" targetId="1658-375c-4c00-b951" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a1f1-2d9d-e8fc-920c" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="634d-d31b-499b-34e4" name="Fast Attack:" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
+        <categoryLink id="1fc7-f2cd-499a-93ac" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
+        <categoryLink id="8b2f-64b4-67d9-0e85" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="034d-cae7-d430-71a5" name="Dark Sons of Death" hidden="true" collective="false" import="false" targetId="4372-ad51-04a6-97ce" type="selectionEntry">
@@ -6253,6 +6300,26 @@
         <categoryLink id="fcd6-ef0f-ec7f-c22d" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="9201-0f0c-e044-176b" name="Ebon Keshig Cataphractii Cohort" hidden="true" collective="false" import="false" targetId="028d-69cd-9815-336a" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="equalTo"/>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="40a8-7d55-7895-178f" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="1f71-0318-5226-ad09" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="4506-f017-945b-1c57" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
+        <categoryLink id="596a-95c3-ec32-23d0" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+        <categoryLink id="9d48-ffea-b7a9-8419" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink id="3b86-2122-0a2e-7daa" name="Red Butchers" hidden="true" collective="false" import="false" targetId="1987-2aa5-929b-979e" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
@@ -8799,6 +8866,18 @@ A weapon with this special rule may not be used to make Shooting Attacks as part
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="aea4-356f-3d5d-8f2b" name="Terata Enhanced Warriors" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="56b5-1c1d-e702-61b4" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
         <selectionEntry id="a6b9-62b3-bb09-15ad" name="Phoenix Terminator Squad" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
@@ -8895,6 +8974,18 @@ A weapon with this special rule may not be used to make Shooting Attacks as part
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="40a8-7d55-7895-178f" name="Ebon Keshig Cataphractii Cohort" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c061-25c9-d475-a565" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
         <selectionEntry id="0e87-797a-2f89-f6e6" name="Falcon&apos;s Claws (Legacy)" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
@@ -8925,6 +9016,23 @@ A weapon with this special rule may not be used to make Shooting Attacks as part
           </costs>
         </selectionEntry>
         <selectionEntry id="5f7e-aff9-ec06-ccec" name="Kyzagan Assault Speeder Squadron" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="atLeast"/>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c061-25c9-d475-a565" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="a1f1-2d9d-e8fc-920c" name="Wind Rider Brethren" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>

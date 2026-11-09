@@ -50,6 +50,12 @@ Gendor Skraivok, Contekar Cataphractii Terminator Squad, The Daemon Sword done
 ### Blood Angels (p.145-150)
 Seraphim Majoris consul, Nassir Amit, Azkaellon, Sanguinary Guard (Retinue), Angelus Pattern Jump Pack and Flaying Knife wiring done
 
+### Emperor's Children (p.105-112)
+Kakophonix Prime consul, Fabius Bile, Solomon Demeter, Marius Vairosean, Terata Enhanced Warriors, Choir of Screams wiring done
+
+### White Scars (p.125-132)
+Bolt From Blue Skies (Rite of War), Power Tulwars, Targutai Yesugei, Shiban Khan, Ebon Keshig Cataphractii Cohort, Wind Rider Brethren done
+
 ### Raven Guard (p.205-212)
 Nykona Sharrowkyn, Navar Hef, Raptors (Proto-Astartes / Mutated), Deliverers Tartaros Squad, Darkwing Gunship done
 
