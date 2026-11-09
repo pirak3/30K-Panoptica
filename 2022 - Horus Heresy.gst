@@ -12161,6 +12161,17 @@ The Angels of Death – This Advanced Reaction may be made once per battle, when
 
 • The Phoenix Warden gains a Phoenix Pattern Power Weapon of any kind and an Iron Halo at no additional points cost.</description>
             </rule>
+            <rule id="46b7-22f2-4b0a-65b0" name="Legiones Consularis: Kakophonix Prime" hidden="false">
+              <description>A Legion Centurion with the Legiones Astartes (Emperor&apos;s Children) Special Rule and the Traitor Allegiance may be upgraded to a Kakophonix Prime Consul instead of selecting any of the standard Consul upgrades, gaining the benefits listed below:
+
+Special Rules
+• The Kakophonix Prime gains the Rising Crescendo, Choir of Screams, and Fearless Special Rules.
+• The Kakophonix Prime also gains the Heavy Sub-type, and increases his Leadership Characteristic to 10.
+
+Wargear
+• The Kakophonix Prime gains the Sonic Shrieker Surgical Augment and a Cacophony weapon (see Liber Hereticus page 161) at no additional points cost.
+• The Kakophonix Prime may not select a Bike or Jetbike.</description>
+            </rule>
           </rules>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -16138,6 +16149,41 @@ Limitations
 • A Detachment using this Rite of War may not select an Allied Detachment.
 • In a Detachment using this Rite of War, all Compulsory Troops must be Iron Revenants.
 • A Detachment using this Rite of War may not select any Fortification choices.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="8242-5648-af0a-88bc" name="Bolt From Blue Skies (WS)" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01e-5cdd-e512-8353" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0df-c1fa-5ddc-9ee5" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="19fb-7ca5-40be-deb9" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="58d7-4f63-31af-32df" name="Bolt From Blue Skies" hidden="false">
+              <description>Effects
+• All models in a Detachment using this Rite of War with the Legiones Astartes (White Scars) Special Rule may add +1" to their Charge distance if the unit they are in ends its move its maximum Movement distance from its starting position in the preceding Movement phase.
+• All models in a Detachment using this Rite of War with the Legiones Astartes (White Scars) Special Rule may re-roll rolls of 1 to Wound and failed Armour Penetration rolls, if the unit ends its move its maximum Movement distance from its starting position in the preceding Movement phase.
+• Legion Outrider Squadrons and Legion Sky-Hunter Squadrons may be selected as Troops choices in a Detachment using this Rite of War.
+• Legion Outrider Squadrons and Legion Sky-Hunter Squadrons taken as Compulsory Troops gain the Line Unit Sub-Type in a Detachment using this Rite of War.
+• All units with the Cavalry Unit Type and the Antigrav Unit Sub-type taken in a Detachment using this Rite of War gain the Shrouded (6+) Special Rule if they moved in the preceding Movement Phase.
+Limitations
+• All units with the Independent Character Special Rule must take a Legion Scimitar Jetbike, Shamshir Jetbike, Sojutsu Pattern Voidbike, or Legion Spatha Combat Bike. (Note: not enforced by the army builder - check this manually.)
+• If all units with the Cavalry Unit Type in a Detachment using this Rite of War are removed from play, your Opponent gains an additional +D3 Victory Points.
+• You may only select Heavy Support or Lords of War choices if they have a Movement Characteristic of 16 or higher in a Detachment using this Rite of War. (Note: not enforced by the army builder - check this manually.)
+• Legion Outrider Squadrons or Legion Sky-Hunter Squadrons must be selected as Compulsory Troops choices in a Detachment using this Rite of War.</description>
             </rule>
           </rules>
           <costs>

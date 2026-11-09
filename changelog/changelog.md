@@ -28,6 +28,15 @@ All notable changes to the BattleScribe Data Repository will be documented in th
   - `[Blood Angels]` Added `[Azkaellon]` - `[HQ]` (Loyalist only)
   - `[Blood Angels]` Added `[Sanguinary Guard]` - `[HQ]` (0-1; Retinue only, for a Blood Angels Master of the Legion with a Warhawk/Angelus Jump Pack or Sanguinius)
   - `[Blood Angels]` Added `[Seraphim Majoris]` consul (Legiones Consularis, Legion Centurion only)
+  - `[Emperor's Children]` Added `[Fabius Bile]` - `[HQ]` (Traitor only)
+  - `[Emperor's Children]` Added `[Solomon Demeter]` - `[HQ]` (Loyalist only)
+  - `[Emperor's Children]` Added `[Marius Vairosean]` - `[HQ]` (Traitor only)
+  - `[Emperor's Children]` Added `[Terata Enhanced Warriors]` - `[Elites]` (0-1, unlimited with Fabius Bile; Traitor only; also Alpha Legion Rewards of Treachery)
+  - `[Emperor's Children]` Added `[Kakophonix Prime]` consul (Legiones Consularis, Legion Centurion only, Traitor)
+  - `[White Scars]` Added `[Targutai Yesugei]` - `[HQ]` (Loyalist only; may lead Wind Rider Brethren as a Retinue)
+  - `[White Scars]` Added `[Shiban Khan]` - `[HQ]` (Loyalist only)
+  - `[White Scars]` Added `[Ebon Keshig Cataphractii Cohort]` - `[Elites]` (Troops like Ebon Keshig Cohort; also Alpha Legion Rewards of Treachery)
+  - `[White Scars]` Added `[Wind Rider Brethren]` - `[Fast Attack]` (Retinue for a Stormseer or Targutai Yesugei; also Alpha Legion Rewards of Treachery)
   - `[Legiones Astartes]` Added `[Legion Banesword]` - `[Lords of War]`
   - `[Legiones Astartes]` Added `[Legion Doomhammer]` - `[Lords of War]`
   - `[Legiones Astartes]` Added `[Legion Orthrus Destroyer Squadron]` - `[Lords of War]`
@@ -84,6 +93,8 @@ All notable changes to the BattleScribe Data Repository will be documented in th
   - `[Iron Hands]` `[Medusan Zweihander]`, `[Vengeance of the Dead]`
   - `[Night Lords]` `[The Daemon Sword]`
   - `[Blood Angels]` `[Angelus Pattern Jump Pack]`, `[Flaying Knife]`, `[Encarmine Broadsword]`, `[Encarmine Sword]`, `[Encarmine Axe]`, `[Bloodshard Boltgun]`
+  - `[Emperor's Children]` `[Sonic Blaster]`, `[Sonic Pulveriser]`, `[Sonic Decimator]`, `[Cacophony Supreme]`, `[Xyclosian Needler]`, `[The Chirurgeon]`, `[Aquilius Longsword]`
+  - `[White Scars]` `[Power Tulwar]`, `[Mogoj Hadaas]`, `[The Shackles]`
 - **Rules & Abilities**:
   - Added special rules `[Debilitating]`, `[Volatile Ordnance]`, `[Tremor]`
   - Added special rules `[Combat Transporter]`, `[Dreadnought Magna-Grapples]`, `[Mindless Aggression]`, `[Neverborn]`
@@ -102,13 +113,20 @@ All notable changes to the BattleScribe Data Repository will be documented in th
   - Added special rules `[Kiavahran Repulsor Field]`, `[Raptor Lieutenant]`, `[Warlord: Vital Strike]`, `[Warlord: No Witnesses]` (Raven Guard)
   - Added special rule `[Spiteful Binding]` (Night Lords)
   - Added `[Flaring Heavenfall]`, `[Bloodlust of the Damned]`, `[Versatile]`, `[Captain of the Bloody 5th]`, `[Warlord: The Flesh Tearer]`, `[Herald of the Primarch]`, `[Artisans of War]`, `[Sanguinary Retinue]` (Blood Angels)
+  - Added special rules `[Choir of Screams]`, `[Rising Crescendo]`, `[Lord of Abominations]`, `[Warlord: The Perfect Creations]`, `[Risen from the Ashes]`, `[Warlord: Concert of the Damned]`, `[The Mongrel Legion]`, `[Unstable Disposition]`, `[Genetic Enhancement]` (Emperor's Children)
+  - Added special rules `[Tachseer]`, `[Master of the Zadyin Arga]`, `[Warlord: Stormseer's Fury]`, `[Warlord: Lord of the Storm]`, `[Winds of the Storm]`, `[Stormseer's Conclave]` (Wind Rider Brethren) (White Scars)
   - Added `[Ghola Sub-type]` (new `Ghola` category), `[Keys of Hel]`, `[Spearhead Commander]`, `[Agesine Protocols]`, `[Helfather Retinue]`, `[Warlord: Blessing of the Gorgon]`, `[Warlord: Gorgon Plating]`, `[Warlord: The Revenant's Revenge]` (Iron Hands)
   - Added Rite of War `[The Gates of Hel]` (Iron Hands): Iron Revenants as Compulsory Troops (Line, Heart of the Legion), Thallax Cohorts as Troops, no Ferrus Manus, Fortifications or Allied Detachment; needs Lord Crius or The Keys of Hel
+  - Added Rite of War `[Bolt From Blue Skies]` (White Scars): Outrider and Sky-Hunter Squadrons as Troops (Line) and the only Compulsory Troops; IC mount and M16+ Heavy Support/Lords of War limits are manual checks
 
 ### Changed
 - **Units / Points**:
   - `[Legion Praetor]`, `[Legion Centurion]`, `[Legion Optae]`: Blood Angels may take an Angelus Pattern Jump Pack (+25) instead of a Warhawk Jump Pack
   - Blood Angels Infantry (not in Terminator armour, not Unique, Dawnbreaker, Angel's Tears or Sanguinary Guard) may take free Flaying Knives when the force includes Nassir Amit
+  - Emperor's Children units may exchange Heavy Bolters for Sonic Blasters (+5), Gravis Bolt Cannons for Sonic Pulverisers (+10) and Gravis Heavy Bolter / Anvilus Autocannon Batteries for Sonic Decimators (+10) when the force includes a Kakophonix Prime
+  - White Scars Characters may exchange a Power Glaive for a Power Tulwar (free) or two Power Tulwars (+10) via the Power Weapon option; Two Power Tulwars replaces the Bolt Pistol or Combi-Bolter
+  - Wind Rider Brethren: Scimitar Jetbike in-built Heavy Bolter replaced by a Volkite Culverin (or Rad Missile Launcher)
+  - Shiban Khan (Tachseer): a Command Squad he leads may exchange its Scimitar Jetbikes for Shamshir Jetbikes at no cost
   - `[Mastodon]`: Added up to two pintle mounted weapons and a Flare Shield
   - `[Deredeo Dreadnought Talon]`: may exchange its Boreas missiles for a Deredeo Atomantic Pavaise
   - `[Land Raider Achilles]`: Added Phosphex Canister Shot (with a Siege Breaker)
