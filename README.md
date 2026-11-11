@@ -44,6 +44,59 @@ Units: done
 
 
 ## **Centura**
+#### **HQ**
+- Legion Indomitus Praetor, Legion Indomitus Centurion, Legion Saturnine Centurion, Legion Indomitus Command Squad: done
+- Legion Contemptor Centurion, Legion Castra Ferrum Centurion, Legion Land Raider Dionysus, Legion Land Raider Tartaros: done
+- Pater Consularis: done
+- Legiones Consularis: Terran-Born Crusader, Lodge Master: done
+#### **Elites**
+- Legion Terminator Saturnine Squad, Legion Assault Veteran Squad, Legion Contemptor-Cortus Dreadnought Talon, Possessed Legionnaires, Legion Servo-Automata Maniple, Elites wargear changes: done
+#### **Troops**
+- Legion Hussar Squadron, Legion Sky-Seeker Squadron, Legion Assault Support Squad, Legion Novicii Squad, Legion Rhino Advancer, Legion Whispercutter, Troops wargear changes: done
+#### **Fast Attack**
+- Legion Storm Eagle Transporter, Mutated Spawn, Fast Attack wargear changes: done
+#### **Heavy Support**
+- Legion Sicaran Incinerator Squadron, Legion Vindicator Thunderer Squadron, Legion Fire Raptor Destroyer, Early Great Crusade Havoc Squad, Legion Tartaros/Cataphractii Heavy Destroyer Squad, Heavy Support wargear changes: done
+#### **Lords of War**
+- Legion Banesword, Legion Doomhammer, Legion Orthrus Destroyer Squadron, Legion Mastodon wargear changes: done
+#### **Fortifications**
+- Basilisk Anti-Air Emplacement Battery: done
+#### **Rites of War**
+- Breacher Spearhead, Destroyer Company, Tactica Obliqua, Storm-Lance Tumen, changes to Angel's Wrath / Sky-Hunter Phalanx / Pride of the Legion / Fury of the Ancients: done
+#### **World Eaters**
+- Lanistus (Legiones Consularis), Delvarus, Triarii Phalanx, Devourers Terminator Squad: done
+#### **Dark Angels**
+- Lord Cypher (Legiones Consularis), Luther, Merir Astelan, Inner Circle Indomitus Squad, Xenobane Cannons: done
+#### **Space Wolves**
+- Priest of Iron (Legiones Consularis), Varagyr Wolf Guard Tartaros Terminator Squad, Helfrost Pistol: done
+#### **Imperial Fists**
+- Huscarl Indomitus Terminator Squad: done
+#### **Raven Guard**
+- Nykona Sharrowkyn, Navar Hef, Raptors (Proto-Astartes / Mutated), Deliverers Tartaros Squad, Darkwing Gunship: done
+#### **Night Lords**
+- Gendor Skraivok, Contekar Cataphractii Terminator Squad, The Daemon Sword: done
+#### **Blood Angels**
+- Seraphim Majoris (Legiones Consularis), Nassir Amit, Azkaellon, Sanguinary Guard (Retinue), Angelus Pattern Jump Pack and Flaying Knife wiring: done
+#### **Emperor's Children**
+- Kakophonix Prime (Legiones Consularis), Fabius Bile, Solomon Demeter, Marius Vairosean, Terata Enhanced Warriors, Choir of Screams sonic weapon wiring: done
+#### **Death Guard**
+- Alchymus (Legiones Consularis), Deathshroud Cataphractii Terminator Squad, Grave Warden Tartaros Terminator Squad: done
+#### **White Scars**
+- Bolt From Blue Skies (Rite of War), Power Tulwars, Targutai Yesugei, Shiban Khan, Ebon Keshig Cataphractii Cohort, Wind Rider Brethren: done
+#### **Iron Hands**
+- The Keys of Hel, The Gates of Hel (Rite of War), Castrmen Orth, Iron-Father Kardozia, Lord Crius, Gabriel Santar, Helfather Covenant, Iron Revenants, Medusan Immortal options: done
+#### **Ultramarines**
+- The Red Marked (Rite of War), Aeonid Thiel, Red-Marked Squad, Brothers in Censure wiring: done
+#### **Thousand Sons**
+- Sinistrum and Geomancy disciplines, Achea Force Stave, Khenetai Isirian Cabal, Sehkmet Tartaros Terminator Cabal: done
+#### **Sons of Horus**
+- Rukal Breacher Battalion (Rite of War), Tarik Torgaddon, Luperci Squad, Rukal Breacher Squad: done
+#### **Word Bearers**
+- Hol Beloth, Sor Talgron, Retorka Mher Squad, Anointed Cohort: done
+#### **Salamanders**
+- Pyre Guard (Legiones Consularis), Artellus Numeon, Infernus Strike-Clade Squad, Ar'Kan Attack Speeder, Firestorm Bombard Squadron, Infernus Predator Squadron, Conflagration melta weapons, Magma Plating: done
+#### **Alpha Legion**
+- Animatus (Legiones Consularis), Omegon: done
 ## **Antiqua**
 ## **Imperatus**
 
