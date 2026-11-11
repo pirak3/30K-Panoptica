@@ -3,8 +3,8 @@
 All notable changes to the BattleScribe Data Repository will be documented in this file.
 
 ---
-
-## [Unreleased] - Current branch
+## Release Archive
+## [2026-11-11]
 
 ### Added
 - **Units**:
@@ -224,7 +224,6 @@ All notable changes to the BattleScribe Data Repository will be documented in th
   - `[Thousand Sons]`: Renamed `[Sehkmet Tartaros Terminator Cabal]` to `[Sekhmet Tartaros Terminator Cabal]` (spelling)
   - `[Iron Warriors]`: Restored the `Rite of War` selection, which was accidentally removed with the Dominator Tartaros Cohort update
 
-## Release Archive
 ## [2026-08-29]
 
 ### Added
