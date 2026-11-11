@@ -3725,7 +3725,7 @@
         <categoryLink id="3b0a-c3a2-9935-5a8b" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="7401-53ea-c587-ccc8" name="Sehkmet Tartaros Terminator Cabal" hidden="false" collective="false" import="false" targetId="7fed-0cee-bc8a-14fa" type="selectionEntry">
+    <entryLink id="7401-53ea-c587-ccc8" name="Sekhmet Tartaros Terminator Cabal" hidden="false" collective="false" import="false" targetId="7fed-0cee-bc8a-14fa" type="selectionEntry">
       <modifiers>
         <modifier type="append" field="name" value="(Reserve Only)">
           <conditions>
@@ -3738,7 +3738,7 @@
         <categoryLink id="feae-8cb6-7f5b-a837" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="e10a-0e8f-1588-5189" name="Sehkmet Tartaros Terminator Cabal" hidden="true" collective="false" import="false" targetId="7fed-0cee-bc8a-14fa" type="selectionEntry">
+    <entryLink id="e10a-0e8f-1588-5189" name="Sekhmet Tartaros Terminator Cabal" hidden="true" collective="false" import="false" targetId="7fed-0cee-bc8a-14fa" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -3756,7 +3756,7 @@
         <categoryLink id="5f00-22dd-8fc9-8535" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="b0c8-fd9a-5378-c95a" name="Sehkmet Tartaros Terminator Cabal" hidden="true" collective="false" import="false" targetId="7fed-0cee-bc8a-14fa" type="selectionEntry">
+    <entryLink id="b0c8-fd9a-5378-c95a" name="Sekhmet Tartaros Terminator Cabal" hidden="true" collective="false" import="false" targetId="7fed-0cee-bc8a-14fa" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -6751,7 +6751,7 @@ Additionally, a unit that includes any models with this special rule may not be 
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7fed-0cee-bc8a-14fa" name="Sehkmet Tartaros Terminator Cabal" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="7fed-0cee-bc8a-14fa" name="Sekhmet Tartaros Terminator Cabal" hidden="false" collective="false" import="true" type="unit">
       <modifierGroups>
         <modifierGroup>
           <modifiers>

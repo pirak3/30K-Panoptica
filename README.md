@@ -48,6 +48,7 @@ Units: done
 - Legion Indomitus Praetor, Legion Indomitus Centurion, Legion Saturnine Centurion, Legion Indomitus Command Squad: done
 - Legion Contemptor Centurion, Legion Castra Ferrum Centurion, Legion Land Raider Dionysus, Legion Land Raider Tartaros: done
 - Pater Consularis: done
+- Legiones Consularis: Terran-Born Crusader, Lodge Master: done
 #### **Elites**
 - Legion Terminator Saturnine Squad, Legion Assault Veteran Squad, Legion Contemptor-Cortus Dreadnought Talon, Possessed Legionnaires, Legion Servo-Automata Maniple, Elites wargear changes: done
 #### **Troops**
@@ -78,6 +79,8 @@ Units: done
 - Seraphim Majoris (Legiones Consularis), Nassir Amit, Azkaellon, Sanguinary Guard (Retinue), Angelus Pattern Jump Pack and Flaying Knife wiring: done
 #### **Emperor's Children**
 - Kakophonix Prime (Legiones Consularis), Fabius Bile, Solomon Demeter, Marius Vairosean, Terata Enhanced Warriors, Choir of Screams sonic weapon wiring: done
+#### **Death Guard**
+- Alchymus (Legiones Consularis), Deathshroud Cataphractii Terminator Squad, Grave Warden Tartaros Terminator Squad: done
 #### **White Scars**
 - Bolt From Blue Skies (Rite of War), Power Tulwars, Targutai Yesugei, Shiban Khan, Ebon Keshig Cataphractii Cohort, Wind Rider Brethren: done
 #### **Iron Hands**

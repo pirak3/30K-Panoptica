@@ -20,7 +20,7 @@ Units Done:
 
 ### Liber Legiones (generic)
 HQ (p.8-11): Indomitus Praetor, Indomitus Centurion, Saturnine Centurion, Indomitus Command Squad done
-HQ (p.12-16): Contemptor Centurion, Castra Ferrum Centurion, Land Raider Dionysus, Land Raider Tartaros, HQ wargear changes done; Pater Consularis (p.76-77) done
+HQ (p.12-16): Contemptor Centurion, Castra Ferrum Centurion, Land Raider Dionysus, Land Raider Tartaros, HQ wargear changes done; Pater Consularis (p.76-77) done; Legiones Consularis (p.72-73): Terran-Born Crusader, Lodge Master done
 Elites (p.20-25): Terminator Saturnine Squad, Assault Veteran Squad, Contemptor-Cortus Dreadnought Talon, Possessed Legionnaires, Servo-Automata Maniple, Elites wargear changes done
 Troops (p.28-34): Hussar Squadron, Sky-Seeker Squadron, Assault Support Squad, Novicii Squad, Rhino Advancer, Whispercutter, Troops wargear changes done
 Fast Attack (p.38-41): Storm Eagle Transporter, Mutated Spawn, Fast Attack wargear changes done
@@ -29,8 +29,8 @@ Rites of War (p.66-68): Breacher Spearhead, Destroyer Company, Tactica Obliqua, 
 Lords of War (p.56-59): Banesword, Doomhammer, Orthrus Destroyer Squadron, Mastodon wargear changes done
 Fortifications (p.62): Basilisk Anti-Air Emplacement Battery done
 
-### Death Guard
-Done
+### Death Guard (p.173-176)
+Alchymus consul, Deathshroud Cataphractii Terminator Squad, Grave Warden Tartaros Terminator Squad done
 
 ### World Eaters (p.161-166)
 Lanistus consul, Delvarus, Triarii Phalanx, Devourers Terminator Squad done

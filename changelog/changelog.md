@@ -77,7 +77,7 @@ All notable changes to the BattleScribe Data Repository will be documented in th
   - `[Ultramarines]` Added `[Aeonid Thiel]` - `[HQ]` (Loyalist only)
   - `[Ultramarines]` Added `[Red-Marked Squad]` - `[Elites]` (Troops, Line when Compulsory, under The Red Marked)
   - `[Thousand Sons]` Added `[Khenetai Isirian Cabal]` - `[Elites]`
-  - `[Thousand Sons]` Added `[Sehkmet Tartaros Terminator Cabal]` - `[Elites]` (Troops under Pride of the Legion and The Guard of the Crimson King)
+  - `[Thousand Sons]` Added `[Sekhmet Tartaros Terminator Cabal]` - `[Elites]` (Troops under Pride of the Legion and The Guard of the Crimson King)
   - `[Sons of Horus]` Added `[Tarik Torgaddon]` - `[HQ]` (Loyalist only)
   - `[Sons of Horus]` Added `[Luperci Squad]` - `[Elites]` (Traitor only)
   - `[Sons of Horus]` Added `[Rukal Breacher Squad]` - `[Elites]` (Troops, Line when Compulsory, under Rukal Breacher Battalion)
@@ -92,6 +92,10 @@ All notable changes to the BattleScribe Data Repository will be documented in th
   - `[Salamanders]` Added `[Firestorm Bombard Squadron]` - `[Heavy Support]`
   - `[Salamanders]` Added `[Infernus Predator Squadron]` - `[Heavy Support]`
   - `[Legiones Astartes]` Added `[Animatus]` - `[Legiones Consularis]` (Alpha Legion; Legion Centurion only; no Spatha, Scimitar or Shamshir mount)
+  - `[Legiones Astartes]` Added `[Terran-Born Crusader]` - `[Legiones Consularis]` (Loyalist only; not for Saturnine Centurion)
+  - `[Legiones Astartes]` Added `[Lodge Master]` - `[Legiones Consularis]` (Traitor only; not for Saturnine Centurion)
+  - `[Death Guard]` Added `[Deathshroud Cataphractii Terminator Squad]` - `[Elites]` (Troops and Retinue like Deathshroud Terminator Squad; also Alpha Legion Rewards of Treachery)
+  - `[Death Guard]` Added `[Grave Warden Tartaros Terminator Squad]` - `[Heavy Support]` (Troops like Grave Warden Terminator Squad; also Alpha Legion Rewards of Treachery)
   - `[Alpha Legion]` Added `[Omegon]` - `[HQ]` (Primarch; not in an army with Alpharius)
 - **Weapons & Wargear**:
   - `[Volkite Columbiad]`, `[Neutron Cannon]`, `[Distortion Cannon]`, `[Heavy Disintegrator]`, `[Mole Mortar]`, `[Fallout Discharger]`
@@ -151,6 +155,9 @@ All notable changes to the BattleScribe Data Repository will be documented in th
   - Added special rules `[Goading to Slaughter]`, `[Hexapentic Ward]`, `[Warlord: Exhortation of Battle]`, `[Fires of Faith]`, `[Line Breakers]` (Word Bearers)
   - Added `[Legiones Consularis: Pyre Guard]`, `[Warlord: Nocturne's Fury]` (Salamanders)
   - Added `[Legiones Consularis: Animatus]`, `[Effigist of Contempt]`, `[Paired Weapons]`, `[Walker in Shadow]`, `[Marksman's Tutelage]` (Alpha Legion)
+  - Added `[Legiones Consularis: Terran-Born Crusader]` (Loyalist) with `[Blood of a Thousand Worlds]`, `[In the Light of the Emperor]`
+  - Added `[Legiones Consularis: Lodge Master]` (Traitor) with `[Exemplar of Treason]`, `[I Can't Say]`
+  - Added `[Misericordia]` special rule
 
 ### Changed
 - **Units / Points**:
@@ -214,6 +221,7 @@ All notable changes to the BattleScribe Data Repository will be documented in th
 
 ### Fixed
 - **BattleScribe Structure**:
+  - `[Thousand Sons]`: Renamed `[Sehkmet Tartaros Terminator Cabal]` to `[Sekhmet Tartaros Terminator Cabal]` (spelling)
   - `[Iron Warriors]`: Restored the `Rite of War` selection, which was accidentally removed with the Dominator Tartaros Cohort update
 
 ## Release Archive
