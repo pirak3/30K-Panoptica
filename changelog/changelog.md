@@ -74,6 +74,25 @@ All notable changes to the BattleScribe Data Repository will be documented in th
   - `[Iron Hands]` Added `[Gabriel Santar]` - `[HQ]` (Loyalist only)
   - `[Iron Hands]` Added `[Helfather Covenant]` - `[HQ Retinue]` (0-1; for a Master of the Legion with The Keys of Hel)
   - `[Iron Hands]` Added `[Iron Revenants]` - `[Elites]` (Compulsory Troops under The Gates of Hel)
+  - `[Ultramarines]` Added `[Aeonid Thiel]` - `[HQ]` (Loyalist only)
+  - `[Ultramarines]` Added `[Red-Marked Squad]` - `[Elites]` (Troops, Line when Compulsory, under The Red Marked)
+  - `[Thousand Sons]` Added `[Khenetai Isirian Cabal]` - `[Elites]`
+  - `[Thousand Sons]` Added `[Sehkmet Tartaros Terminator Cabal]` - `[Elites]` (Troops under Pride of the Legion and The Guard of the Crimson King)
+  - `[Sons of Horus]` Added `[Tarik Torgaddon]` - `[HQ]` (Loyalist only)
+  - `[Sons of Horus]` Added `[Luperci Squad]` - `[Elites]` (Traitor only)
+  - `[Sons of Horus]` Added `[Rukal Breacher Squad]` - `[Elites]` (Troops, Line when Compulsory, under Rukal Breacher Battalion)
+  - `[Word Bearers]` Added `[Hol Beloth]` - `[HQ]` (Traitor only)
+  - `[Word Bearers]` Added `[Sor Talgron]` - `[HQ]` (Traitor only)
+  - `[Word Bearers]` Added `[Retorka Mher Squad]` - `[Elites]` (0-1, Traitor only)
+  - `[Word Bearers]` Added `[Anointed Cohort]` - `[Elites]` (also a Retinue Squad option)
+  - `[Legiones Astartes]` Added `[Pyre Guard]` - `[Legiones Consularis]` (Salamanders)
+  - `[Salamanders]` Added `[Artellus Numeon]` - `[HQ]` (Loyalist only)
+  - `[Salamanders]` Added `[Strike-Clade Squad, Infernus]` - `[Fast Attack]`
+  - `[Salamanders]` Added `[Ar'Kan Attack Speeder]` - `[Fast Attack]` (0-1)
+  - `[Salamanders]` Added `[Firestorm Bombard Squadron]` - `[Heavy Support]`
+  - `[Salamanders]` Added `[Infernus Predator Squadron]` - `[Heavy Support]`
+  - `[Legiones Astartes]` Added `[Animatus]` - `[Legiones Consularis]` (Alpha Legion; Legion Centurion only; no Spatha, Scimitar or Shamshir mount)
+  - `[Alpha Legion]` Added `[Omegon]` - `[HQ]` (Primarch; not in an army with Alpharius)
 - **Weapons & Wargear**:
   - `[Volkite Columbiad]`, `[Neutron Cannon]`, `[Distortion Cannon]`, `[Heavy Disintegrator]`, `[Mole Mortar]`, `[Fallout Discharger]`
   - `[Missile Launcher (Rad Missiles only)]`, `[Quad Launcher - Phosphex Canister Shot]`, `[Deredeo Atomantic Pavaise]`, `[Teleportation Transponders]`
@@ -95,6 +114,12 @@ All notable changes to the BattleScribe Data Repository will be documented in th
   - `[Blood Angels]` `[Angelus Pattern Jump Pack]`, `[Flaying Knife]`, `[Encarmine Broadsword]`, `[Encarmine Sword]`, `[Encarmine Axe]`, `[Bloodshard Boltgun]`
   - `[Emperor's Children]` `[Sonic Blaster]`, `[Sonic Pulveriser]`, `[Sonic Decimator]`, `[Cacophony Supreme]`, `[Xyclosian Needler]`, `[The Chirurgeon]`, `[Aquilius Longsword]`
   - `[White Scars]` `[Power Tulwar]`, `[Mogoj Hadaas]`, `[The Shackles]`
+  - `[Ultramarines]` `[Electromagnetic Longsword]`
+  - `[Thousand Sons]` `[Achea Force Stave]`
+  - `[Sons of Horus]` `[Horrific Appendages]`
+  - `[Word Bearers]` `[Tenebrum]`, `[Twin-linked Boltspitter]`
+  - `[Salamanders]` `[Conflagration Meltagun]`, `[Conflagration Multi-Melta]`, `[Conflagration Melta Cannon]`, `[Conflagration Melta Lance]`, `[Magma Plating]`, `[Ryuunokasai]`
+  - `[Alpha Legion]` `[The Hydra's Teeth]`, `[The Pale Sword]`, `[The Whispering Death]`, `[The Basilisk's Raiment]`
 - **Rules & Abilities**:
   - Added special rules `[Debilitating]`, `[Volatile Ordnance]`, `[Tremor]`
   - Added special rules `[Combat Transporter]`, `[Dreadnought Magna-Grapples]`, `[Mindless Aggression]`, `[Neverborn]`
@@ -118,6 +143,14 @@ All notable changes to the BattleScribe Data Repository will be documented in th
   - Added `[Ghola Sub-type]` (new `Ghola` category), `[Keys of Hel]`, `[Spearhead Commander]`, `[Agesine Protocols]`, `[Helfather Retinue]`, `[Warlord: Blessing of the Gorgon]`, `[Warlord: Gorgon Plating]`, `[Warlord: The Revenant's Revenge]` (Iron Hands)
   - Added Rite of War `[The Gates of Hel]` (Iron Hands): Iron Revenants as Compulsory Troops (Line, Heart of the Legion), Thallax Cohorts as Troops, no Ferrus Manus, Fortifications or Allied Detachment; needs Lord Crius or The Keys of Hel
   - Added Rite of War `[Bolt From Blue Skies]` (White Scars): Outrider and Sky-Hunter Squadrons as Troops (Line) and the only Compulsory Troops; IC mount and M16+ Heavy Support/Lords of War limits are manual checks
+  - Added Rite of War `[The Red Marked]` (Ultramarines): Red-Marked Squads as Troops (Line when Compulsory), Aeonid Thiel required as Compulsory HQ, no Roboute Guilliman or Allied Detachment; Independent Characters may buy `[Brothers in Censure]` (+10); Hatred (Traitors) and Thiel as Warlord are manual checks
+  - Added special rules `[Brothers in Censure]`, `[Distrusted By Our Own]`, `[Every Door a New Horror]`, `[There's No Room for Honour Here]` (Ultramarines)
+  - Added psychic disciplines `[Sinistrum]` (Ancient Fury, Wrathful Fire, Veil of Time) and `[Geomancy]` (Sundered Earth, Warp Quake) (Thousand Sons)
+  - Added Rite of War `[Rukal Breacher Battalion]` (Sons of Horus, Traitor only): Rukal Breacher Squads as Troops (Line when Compulsory), needs a Centurion with the Dark Emissary consul; Boarding Shield rules and the Heavy Sub-type majority are manual checks
+  - Added special rules `[Freakish Agility]`, `[Warlord: Speartip Strike]` (Sons of Horus)
+  - Added special rules `[Goading to Slaughter]`, `[Hexapentic Ward]`, `[Warlord: Exhortation of Battle]`, `[Fires of Faith]`, `[Line Breakers]` (Word Bearers)
+  - Added `[Legiones Consularis: Pyre Guard]`, `[Warlord: Nocturne's Fury]` (Salamanders)
+  - Added `[Legiones Consularis: Animatus]`, `[Effigist of Contempt]`, `[Paired Weapons]`, `[Walker in Shadow]`, `[Marksman's Tutelage]` (Alpha Legion)
 
 ### Changed
 - **Units / Points**:
@@ -168,6 +201,14 @@ All notable changes to the BattleScribe Data Repository will be documented in th
   - `[Centurion]`, `[Centurion, Cataphractii/Tartaros/Indomitus]`: Lanistus consul swaps (Caedere weapons, banned bikes/jump packs/bolters/combi-weapons)
   - `[Tactical Squad]`, `[Despoiler Squad]`: Added `[Savage Arsenal]` upgrade (one unit per army, needs a Lanistus); unlocks Caedere weapon swaps for that unit
   - `[Champion]` consul: Never Back Down now links the shared rule
+  - `[Thousand Sons]`: Psykers may select the Sinistrum or Geomancy discipline; `[Magnus the Red]` knows both
+  - `[Thousand Sons]`: `[Achea Force Stave]` offered wherever the Achea Force Sword is (incl. `[Sekhmet Terminator Cabal]`)
+  - Esoterist daemon unlocks (Ruinstorm/Bound Daemon "(Esoterist)" links and the Esoterist daemon limit) also accept `[Sor Talgron]`
+  - `[Salamanders]`: any Meltagun, Multi-Melta, Gravis Melta Cannon or Cyclonic Melta Lance may be exchanged for its Conflagration version (+5/+10/+10/+10)
+  - `[Salamanders]`: Legion vehicles may take `[Magma Plating]` (+15)
+  - `[Alpharius]`: cannot be taken in an army with Omegon
+  - `[Armoury of the Alpha Legion]`: now lists Saboteur and Animatus
+  - `[Equinox Power Blade Case]`: now links the shared `[Paired Weapons]` rule
 - **Weapons & Profiles**:
   - `[Gravis Missile Launcher]`: Added `Rad` profile (unlocked with Rad Missiles under Destroyer Company, +5 once per model)
 

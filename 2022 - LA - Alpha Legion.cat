@@ -158,6 +158,23 @@
         </entryLink>
       </entryLinks>
     </entryLink>
+    <entryLink id="10ba-7ea1-cb42-d911" name="Omegon" hidden="false" collective="false" import="false" targetId="3b86-b024-cc10-bb64" type="selectionEntry">
+      <modifiers>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="816c-7f0d-fb0f-bd73" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink name="Primarch:" hidden="false" id="ba6c-74cf-7446-4910" targetId="e031-3c2-e3f8-d40a" primary="true"/>
+        <categoryLink targetId="ad5f-31db-8bc7-5c46" id="d6fb-0bb8-66d8-04a6" primary="false" name="Primarch Unit Type"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="34aa-8939-0e13-46ce" name="Retinue" hidden="false" collective="false" import="true" targetId="09f9-933c-a88e-6e38" type="selectionEntryGroup"/>
+      </entryLinks>
+    </entryLink>
     <entryLink id="d7e9-6d99-675b-0a20" name="Armillus Dynat" hidden="false" collective="false" import="false" targetId="42af-ab98-e733-dc01" type="selectionEntry">
       <modifiers>
         <modifier type="add" field="category" value="9142-d994-e260-9310">
@@ -884,6 +901,20 @@
         <categoryLink id="5dcd-cef6-8861-fba9" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="e32e-e7f3-77c9-c8cd" name="Strike-Clade Squad, Infernus" hidden="true" collective="false" import="false" targetId="6709-7382-8766-8a2d" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="43d3-6fab-7c09-66f6" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="b634-e40a-3dd8-bbd7" name="Fast Attack:" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
+        <categoryLink id="7d67-c71e-67d2-bf58" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
+        <categoryLink id="b8d5-7291-f5ea-4408" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink id="e30f-252c-9d00-eb3a" name="Deathsworn Pack" hidden="true" collective="false" import="false" targetId="3fa0-d6ed-981b-e361" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
@@ -985,6 +1016,34 @@
         <categoryLink id="6400-720a-7c91-b8c6" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
         <categoryLink id="dcf6-53ba-4274-e748" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
         <categoryLink id="6da8-2162-e41c-9dbb" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="d07b-27b2-881f-714f" name="Luperci Squad" hidden="true" collective="false" import="false" targetId="e225-2c07-eb57-b5dc" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1c09-2728-710f-f872" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="eed2-9e8e-9169-43d5" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="d314-734d-331a-2e2e" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
+        <categoryLink id="408c-0af6-0b5c-941d" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="67a5-969a-9c90-676f" name="Rukal Breacher Squad" hidden="true" collective="false" import="false" targetId="7994-cebf-fefc-8218" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b262-047e-4665-f6b7" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="9658-2c02-07b8-4b6f" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="22e1-a633-53e9-fd86" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
+        <categoryLink id="d3e3-f420-252c-b0c0" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="7666-52aa-d0d6-05f9" name="Varagyr Wolf Guard Terminator Squad" hidden="true" collective="false" import="false" targetId="9359-61a5-fcdb-c28e" type="selectionEntry">
@@ -1149,6 +1208,20 @@
         <categoryLink id="985b-042a-6c7f-3d8b" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="57f3-a407-8514-268b" name="Khenetai Isirian Cabal" hidden="true" collective="false" import="false" targetId="3624-f313-3404-6580" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d048-0b0f-cce4-4556" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="9c8e-bde7-37a3-2707" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="8417-3367-bcbd-cbc0" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
+        <categoryLink id="b4ac-1d18-2f87-b4f6" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink id="7471-4aa8-40a3-ba58" name="Sekhmet Terminator Cabal" hidden="true" collective="false" import="false" targetId="dda2-bdd0-3ced-b427" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
@@ -1170,6 +1243,29 @@
         <categoryLink id="e9db-b17f-ef90-49c9" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
         <categoryLink id="9881-969b-bd71-6e33" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
         <categoryLink id="b75b-ced4-7c8c-82ee" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="b76a-8d3d-21b8-0758" name="Sehkmet Tartaros Terminator Cabal" hidden="true" collective="false" import="false" targetId="7fed-0cee-bc8a-14fa" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2285-6532-e3d8-c3d3" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="2d25-bdf7-ec35-6c7e" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="dafe-a658-e930-c0e7" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
+        <categoryLink id="dee2-3f4a-d65f-3f3b" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="9e0a-dda3-e372-0548" name="Fulmentarus Terminator Squad" hidden="true" collective="false" import="false" targetId="7fb0-6302-d46f-029d" type="selectionEntry">
@@ -1472,6 +1568,43 @@
         <categoryLink id="6af3-1969-4705-0fb1" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
         <categoryLink id="91af-e352-f10a-b59a" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
         <categoryLink id="c519-c47d-546b-3000" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="417b-4f7d-2520-f369" name="Retorka Mher Squad" hidden="true" collective="false" import="false" targetId="a23c-6ffd-0c75-3bce" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b68-32e8-3597-8f5e" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="34c5-0ac0-5991-9ac5" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="f1a6-0485-67f5-8878" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
+        <categoryLink id="df10-713d-5c8f-4caa" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="60fc-dc18-154a-5872" name="Anointed Cohort" hidden="true" collective="false" import="false" targetId="e5b3-8609-7ce8-b961" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f319-3502-f4d9-61f1" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="d7e1-c65a-7751-326e" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="f61a-75b6-89b7-1a0e" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
+        <categoryLink id="a910-33af-7d77-3eb8" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="e2e9-3770-5b79-8838" name="Rampager Squad" hidden="true" collective="false" import="false" targetId="2fb9-74a8-43b0-dd00" type="selectionEntry">
@@ -6561,6 +6694,26 @@
         <categoryLink id="a8bb-f884-2117-0766" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="0322-99ef-32ce-c6e6" name="Sehkmet Tartaros Terminator Cabal" hidden="true" collective="false" import="false" targetId="7fed-0cee-bc8a-14fa" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2285-6532-e3d8-c3d3" type="greaterThan"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="edcc-04ba-1312-dba0" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
+        <categoryLink id="9a8c-d09f-d48c-034b" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="1c2b-88e4-ee97-ee6b" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
+        <categoryLink id="2168-e9ce-a4f4-ada4" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink id="b4bc-ef74-bd2c-2c73" name="Headhunter Kill Team" hidden="true" collective="false" import="false" targetId="70e6-ace3-8feb-1ddc" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
@@ -7925,6 +8078,18 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="e56e-40d5-e362-0e1c" name="Alpharius" publicationId="09c5-eeae-f398-b653" page="336" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3b86-b024-cc10-bb64" type="greaterThan"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="7786-10b0-f222-2c4e" value="0">
+          <conditions>
+            <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3b86-b024-cc10-bb64" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7786-10b0-f222-2c4e" type="max"/>
       </constraints>
@@ -8537,6 +8702,237 @@ A weapon with this special rule may not be used to make Shooting Attacks as part
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4c57-858a-d2d3-f073" name="The Pale Sword" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="2e6e-5a1a-5a0c-2ed1" name="The Pale Sword" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Fleshbane, Instant Death, Duellist's Edge (1)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="fbb9-3b7d-0a0a-d4f3" name="The Pale Sword" hidden="false">
+          <description>The weapon listed here is counted as a 'Power' weapon for those rules that affect such weapons.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="9893-0487-ba54-bf32" name="Fleshbane" hidden="false" targetId="40cd-9505-253c-e76f" type="rule"/>
+        <infoLink id="0545-db51-bc59-3aa7" name="Instant Death" hidden="false" targetId="9e96-fff1-b916-d9a3" type="rule"/>
+        <infoLink id="9ad2-63bf-4a26-9725" name="Duellist’s Edge (X)" hidden="false" targetId="7bf3-86ce-04c2-e6ba" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Duellist's Edge (1)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1afa-c6f8-20f9-5e87" name="The Whispering Death" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="c206-a815-88c8-f948" name="The Whispering Death" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">72"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 3, Sniper, Sunder, Pinning, Shell Shock (2), Brutal (2)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="fe0e-0c12-74d2-2e67" name="The Whispering Death" hidden="false">
+          <description>The weapon listed here is counted as a 'Bolt' weapon for those rules that affect such weapons. The Whispering Death may not be fired in any Shooting Attacks made as part of a Reaction.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="419e-f649-5363-e1a4" name="Sniper" hidden="false" targetId="9cd8-e726-5dbe-b106" type="rule"/>
+        <infoLink id="b34d-2ee5-a81a-d569" name="Sunder" hidden="false" targetId="20e2-75cf-bc16-cd8f" type="rule"/>
+        <infoLink id="9724-e852-3cba-63c0" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+        <infoLink id="bf42-f089-f08c-38bd" name="Shell Shock (X)" hidden="false" targetId="46b7-63a1-941c-96a5" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Shell Shock (2)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="ca46-e9c7-6f4b-6c7e" name="Brutal (X)" hidden="false" targetId="5079-1fec-d32b-8b84" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Brutal (2)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="cc57-ca31-bc92-5c5b" name="The Basilisk's Raiment" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="3bdf-95b5-61a0-3dfc" name="The Basilisk's Raiment" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">The Basilisk's Raiment provides Omegon with a 2+ Armour Save and a 4+ Invulnerable Save. In addition, whenever Omegon makes a Cover Save, add +1 to the roll.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3b86-b024-cc10-bb64" name="Omegon" page="213" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e56e-40d5-e362-0e1c" type="greaterThan"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="5907-d441-bb2e-7dff" value="0">
+          <conditions>
+            <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e56e-40d5-e362-0e1c" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5907-d441-bb2e-7dff" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="450c-ea55-076d-baca" name="Legiones Astartes (Alpha Legion)" hidden="false" targetId="2a9e-be1f-d6c1-0ec4" type="rule"/>
+        <infoLink id="f4ea-0043-a14a-c76d" name="Adamantium Will (X+)" hidden="false" targetId="4380-44a5-f01a-d964" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Adamantium Will (3+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="35f0-84fd-19b1-302d" name="Pathfinder" hidden="false" targetId="ec97-7aa8-49f5-b298" type="rule"/>
+        <infoLink id="1425-39a4-a34e-566d" name="Move Through Cover" hidden="false" targetId="2b6f-bfec-759e-1746" type="rule"/>
+        <infoLink id="42ee-54ff-c739-a78d" name="Shrouded (X)" hidden="false" targetId="10c3-fdb0-089f-ca65" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Shrouded (5+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="1c01-1d91-6aa1-9bc2" name="Walker in Shadow" hidden="false" targetId="4cb3-b625-91e6-04a0" type="rule"/>
+        <infoLink id="ec8e-e6c1-e612-ae47" name="Marksman's Tutelage" hidden="false" targetId="99bd-f072-6e2f-85af" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="978a-9303-7013-1b5f" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
+        <categoryLink id="44a1-110d-b1c2-1e63" name="LoW &amp; Primarchs (25% Limit)" hidden="false" targetId="2eaf-32d6-9d1d-d906" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="5349-8fc1-cd66-6c6f" name="The Hydra's Spite" publicationId="09c5-eeae-f398-b653" page="337" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="71a3-9640-4d45-418b" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4922-7a18-0176-11d6" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="804e-edea-cfd4-c0b7" name="The Hydra's Spite" publicationId="09c5-eeae-f398-b653" page="337" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">18"</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 2, Rending (4+), Master-crafted</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="7d2b-1dc7-8aa3-6335" name="Rending (X)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Rending (4+)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="3229-7152-45c9-9233" name="Master-crafted" hidden="false" targetId="6de0-55b0-bf21-48b9" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Omegon" hidden="false" id="cb9c-9f9b-113f-7334">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1b48-d210-56dc-c199"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8d48-8f31-afdd-2194"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink targetId="4f07-3d45-4f28-a0c6" id="02ac-0229-07a2-d522" primary="false" name="Independent Character"/>
+            <categoryLink targetId="ad5f-31db-8bc7-5c46" id="f8c0-692f-29f9-526b" name="Primarch Unit Type" primary="false"/>
+            <categoryLink targetId="aa94-5c65-d1f1-46a4" id="804e-493c-a7b2-c698" name="Unique Sub-type" primary="false"/>
+            <categoryLink targetId="59a4-7b61-600a-c457" id="6a99-ab04-4c20-ab07" primary="false" name="Skirmish Sub-type"/>
+          </categoryLinks>
+          <profiles>
+            <profile id="87d4-0616-5732-7135" name="Omegon" page="213" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Primarch (Skirmish, Unique)</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">8"</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">7</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">7</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">6</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">6</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">6</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">6</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">6</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="98cd-786b-ff2d-f2d5" name="Master of the Legion" hidden="false" collective="false" import="true" targetId="0068-6b0a-0086-3d6b" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3384-36ca-90e4-4cce" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af59-7d4f-f990-7db5" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="ea78-548b-e0f4-d177" name="The Basilisk's Raiment" hidden="false" collective="false" import="true" targetId="cc57-ca31-bc92-5c5b" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="79b0-6172-6980-7f0e" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="61c6-13ae-6925-947d" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="42aa-b739-de32-ed72" name="The Whispering Death" hidden="false" collective="false" import="true" targetId="1afa-c6f8-20f9-5e87" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0e78-8bd5-09f6-114d" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8c88-43c2-c331-6418" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="6143-1e83-4e3d-8eba" name="The Pale Sword" hidden="false" collective="false" import="true" targetId="4c57-858a-d2d3-f073" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a727-cca7-bbab-afc1" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2afd-19af-128a-0e41" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="50f4-a5db-2453-03f5" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="cf9c-327b-3449-00d7" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2369-ec55-4ed7-79d5" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6501-88a0-e9d3-9f35" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="78d1-1d31-473e-3229" name="Krak Grenades" hidden="false" collective="false" import="true" targetId="99df-2421-acf7-a5ad" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="40c0-4a1e-ada3-9dd2" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0ecd-a502-ffa3-9ba6" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="ce47-de4f-2413-795a" name="Meltabombs" hidden="false" collective="false" import="true" targetId="b9dd-3b21-f3f8-78e3" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a5e3-1148-0cf5-e952" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dec3-00f7-9e2d-0caa" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="a9da-c81e-fccf-e9fb" name="Shroud Bombs" hidden="false" collective="false" import="true" targetId="5d4d-36b7-6bf5-fc92" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9ff0-bfae-aab7-9f89" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f66-bedf-39b0-84ff" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="f306-ce77-fee1-7d03" name="Venom Spheres" hidden="false" collective="false" import="true" targetId="82f5-cca1-51a0-31dd" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8ed9-3d1a-27b4-2789" type="min"/>
+            <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="de86-8f56-7209-f8a1" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="450"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -9529,6 +9925,18 @@ A weapon with this special rule may not be used to make Shooting Attacks as part
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="d048-0b0f-cce4-4556" name="Khenetai Isirian Cabal" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="04f6-c4c1-ea1f-ad38" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
         <selectionEntry id="8cc0-48f6-757a-bbcc" name="Numerologist Cabal (Exemplary)" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
@@ -9542,6 +9950,18 @@ A weapon with this special rule may not be used to make Shooting Attacks as part
           </costs>
         </selectionEntry>
         <selectionEntry id="f07e-ce3a-c8cd-c3fa" name="Sekhmet Terminator Cabal" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="04f6-c4c1-ea1f-ad38" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="2285-6532-e3d8-c3d3" name="Sehkmet Tartaros Terminator Cabal" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -9601,6 +10021,30 @@ A weapon with this special rule may not be used to make Shooting Attacks as part
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="1c09-2728-710f-f872" name="Luperci Squad" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9690-78c1-64b1-65e5" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="b262-047e-4665-f6b7" name="Rukal Breacher Squad" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9690-78c1-64b1-65e5" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
         <selectionEntry id="1fa7-00b7-31d0-a241" name="Ashen Circle" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
@@ -9614,6 +10058,30 @@ A weapon with this special rule may not be used to make Shooting Attacks as part
           </costs>
         </selectionEntry>
         <selectionEntry id="048d-57db-23c3-8891" name="Gal Vorbak Squad (Traitor)" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f72d-dc21-8069-61a8" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="9b68-32e8-3597-8f5e" name="Retorka Mher Squad (Traitor)" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f72d-dc21-8069-61a8" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="f319-3502-f4d9-61f1" name="Anointed Cohort" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -9678,6 +10146,18 @@ A weapon with this special rule may not be used to make Shooting Attacks as part
           </costs>
         </selectionEntry>
         <selectionEntry id="a2de-3426-de8c-0f3c" name="Pyroclast Squad" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8a38-d3f0-732c-eafc" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="43d3-6fab-7c09-66f6" name="Strike-Clade Squad, Infernus" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -9769,6 +10249,14 @@ A weapon with this special rule may not be used to make Shooting Attacks as part
       </selectionEntries>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
+  <sharedRules>
+    <rule id="4cb3-b625-91e6-04a0" name="Walker in Shadow" hidden="false">
+      <description>This Special Rule grants Omegon the Deep Strike, Scout, and Infiltrate Special Rules. These Special Rules may be conferred to a single unit which must join Omegon via the chosen deployment method. On the turn in which a unit which uses this Special Rule enters the battle, they also gain the Shrouded (4+) Special Rule for the duration of the turn.</description>
+    </rule>
+    <rule id="99bd-f072-6e2f-85af" name="Marksman's Tutelage" hidden="false">
+      <description>Whenever Omegon, or any member of a unit he has joined, makes any attacks as part of a Shooting Attack, the range of any Weapons is not restricted or affected by the Night Fighting rules, Shroud Bombs, or any other Special Rule. In addition, no model may make Shrouded rolls to negate Wounds inflicted by Omegon's Shooting attacks.</description>
+    </rule>
+  </sharedRules>
   <catalogueLinks>
     <catalogueLink id="2f60-18fb-e6ed-8574" name="Legions Astartes" targetId="6393-649c-7213-a327" type="catalogue" importRootEntries="true"/>
     <catalogueLink id="22ab-29e1-22f3-7cff" name="LA -   I: Dark Angels" targetId="ee5e-198e-1b19-4b9f" type="catalogue" importRootEntries="false"/>

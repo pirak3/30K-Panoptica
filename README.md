@@ -82,6 +82,18 @@ Units: done
 - Bolt From Blue Skies (Rite of War), Power Tulwars, Targutai Yesugei, Shiban Khan, Ebon Keshig Cataphractii Cohort, Wind Rider Brethren: done
 #### **Iron Hands**
 - The Keys of Hel, The Gates of Hel (Rite of War), Castrmen Orth, Iron-Father Kardozia, Lord Crius, Gabriel Santar, Helfather Covenant, Iron Revenants, Medusan Immortal options: done
+#### **Ultramarines**
+- The Red Marked (Rite of War), Aeonid Thiel, Red-Marked Squad, Brothers in Censure wiring: done
+#### **Thousand Sons**
+- Sinistrum and Geomancy disciplines, Achea Force Stave, Khenetai Isirian Cabal, Sehkmet Tartaros Terminator Cabal: done
+#### **Sons of Horus**
+- Rukal Breacher Battalion (Rite of War), Tarik Torgaddon, Luperci Squad, Rukal Breacher Squad: done
+#### **Word Bearers**
+- Hol Beloth, Sor Talgron, Retorka Mher Squad, Anointed Cohort: done
+#### **Salamanders**
+- Pyre Guard (Legiones Consularis), Artellus Numeon, Infernus Strike-Clade Squad, Ar'Kan Attack Speeder, Firestorm Bombard Squadron, Infernus Predator Squadron, Conflagration melta weapons, Magma Plating: done
+#### **Alpha Legion**
+- Animatus (Legiones Consularis), Omegon: done
 ## **Antiqua**
 ## **Imperatus**
 
