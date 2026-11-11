@@ -61,5 +61,23 @@ Nykona Sharrowkyn, Navar Hef, Raptors (Proto-Astartes / Mutated), Deliverers Tar
 
 ### Iron Hands (p.151-160)
 The Keys of Hel, The Gates of Hel, Castrmen Orth, Iron-Father Kardozia, Lord Crius, Gabriel Santar, Helfather Covenant, Iron Revenants, Medusan Immortal options done
+
+### Ultramarines (p.167-172)
+The Red Marked (Rite of War), Aeonid Thiel, Red-Marked Squad, Brothers in Censure wiring done
+
+### Thousand Sons (p.179-184)
+Sinistrum and Geomancy disciplines, Achea Force Stave, Khenetai Isirian Cabal, Sehkmet Tartaros Terminator Cabal done
+
+### Sons of Horus (p.185-190)
+Rukal Breacher Battalion (Rite of War), Tarik Torgaddon, Luperci Squad, Rukal Breacher Squad done
+
+### Word Bearers (p.191-196)
+Hol Beloth, Sor Talgron, Retorka Mher Squad, Anointed Cohort done
+
+### Salamanders (p.197-204)
+Pyre Guard (Legiones Consularis), Artellus Numeon, Infernus Strike-Clade Squad, Ar'Kan Attack Speeder, Firestorm Bombard Squadron, Infernus Predator Squadron, Conflagration melta weapons, Magma Plating done
+
+### Alpha Legion (p.213-216)
+Animatus (Legiones Consularis), Omegon done
 ## Antiqua
 ## Imperatus

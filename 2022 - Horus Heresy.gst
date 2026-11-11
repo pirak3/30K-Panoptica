@@ -2286,6 +2286,7 @@ If that test is failed, the unit suffers one Wound, allocated by the controlling
                     <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5430-5be1-1613-be44" type="atLeast"/>
                     <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7572-b678-7ff5-6259" type="atLeast"/>
                     <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="05d0-aa11-23f7-158f" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b43-53b2-2d07-16ad" type="atLeast"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -12537,6 +12538,20 @@ Glorious Martyrdom – This Advanced Reaction may be made once per battle during
           </profiles>
         </selectionEntry>
         <selectionEntry id="c805-ca3a-ff93-5e2f" name="XVIII: Salamanders" hidden="false" collective="false" import="true" type="upgrade" sortIndex="18">
+          <rules>
+            <rule id="3711-89ba-8ebd-9904" name="Legiones Consularis: Pyre Guard" hidden="false">
+              <description>A Legion Centurion, Legion Cataphractii Centurion, Legion Indomitus Centurion, or Legion Tartaros Centurion with the Legiones Astartes (Salamanders) Special Rule may be upgraded to Pyre Guard Consul instead of selecting any of the standard Consul upgrades, gaining the benefits listed below:
+
+Special Rules
+• The Pyre Guard gains +1 to their Weapon Skill Characteristic, as well as the Never Back Down Special Rule (See Liber Astartes page 108).
+• The Pyre Guard may apply the Master-Crafted Special Rule to a single Melee Weapon they are armed with at no additional points cost. (Note: not enforced by the army builder - check this manually.)
+• For the purposes of Rites of War, the Pyre Guard is counted as a Legion Champion. (Note: not enforced by the army builder - check this manually.)
+
+Wargear
+• The Pyre Guard replaces their Refractor Field for an Iron Halo, and their Bolter for a Minor or Magna Combi-Weapon, at no additional points cost.
+• The Pyre Guard may purchase a Dragonscale Storm Shield for +10 points.</description>
+            </rule>
+          </rules>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
@@ -12600,7 +12615,14 @@ Fade to Black – This Advanced Reaction may be made once per battle during the 
 
 • Any model with both the Independent Character and the Legiones Astartes (Alpha Legion) special rules may exchange a bolter for a Banestrike bolter or a combi-bolter for a Banestrike combi-bolter for +5 points each. Additionally, any models in a Legion Seeker Squad that has the Legiones Astartes (Alpha Legion) special rule may exchange their Kraken bolters for Banestrike bolters for no additional points cost or any models in a Legion Veteran Squad that has the Legiones Astartes (Alpha Legion) special rule may exchange their bolters for Banestrike bolters for +2 points per model.
 
-• The Alpha Legion gains access to a Legion-Specific Legion Consularis Upgrade in the &quot;Saboteur&quot;.</description>
+• The Alpha Legion gains access to two Legion-Specific Legion Consularis Upgrades in the &quot;Saboteur&quot; and &quot;Animatus&quot;.</description>
+            </rule>
+            <rule id="efc6-cafb-0f1e-373a" name="Legiones Consularis: Animatus" hidden="false">
+              <description>A Legion Centurion with the Legiones Astartes (Alpha Legion) Special Rule may be upgraded to an Animatus Consul instead of selecting any of the standard Consul upgrades, gaining the benefits listed below:
+Special Rules:
+The Animatus gains the Effigist of Contempt Special Rule.
+Wargear:
+The Animatus gains The Hydra&apos;s Teeth at no additional points cost. The Animatus may not select a Legion Spatha Combat Bike or Legion Scimitar Jetbike.</description>
             </rule>
           </rules>
           <costs>
@@ -16184,6 +16206,74 @@ Limitations
 • If all units with the Cavalry Unit Type in a Detachment using this Rite of War are removed from play, your Opponent gains an additional +D3 Victory Points.
 • You may only select Heavy Support or Lords of War choices if they have a Movement Characteristic of 16 or higher in a Detachment using this Rite of War. (Note: not enforced by the army builder - check this manually.)
 • Legion Outrider Squadrons or Legion Sky-Hunter Squadrons must be selected as Compulsory Troops choices in a Detachment using this Rite of War.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="7b43-53b2-2d07-16ad" name="The Red Marked (UM)" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8e0f-3552-8842-f281" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0df-c1fa-5ddc-9ee5" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="82b7-5179-2f35-fbb8" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="b42d-7a25-9f78-2c4f" name="The Red Marked" hidden="false">
+              <description>Effects
+• All models in a Detachment using this Rite of War with the Legiones Astartes (Ultramarines) Special Rule gain the Hatred (Traitors) Special Rule.
+• Red-Marked Squads may be selected as Troops choices in a Detachment using this Rite of War.
+• Red-Marked Squads taken as Compulsory Troops gain the Line Unit Sub-Type in a Detachment using this Rite of War.
+• Models with the Independent Character Special Rule in a Detachment using this Rite of War may purchase the Brothers in Censure Special Rule for +10 points (see the Red-Marked Squad for the Brothers in Censure Special Rule).
+Limitations
+• A Detachment using this Rite of War may not include the Primarch Roboute Guilliman.
+• A Detachment using this Rite of War may not select an Allied Detachment.
+• In a Detachment using this Rite of War, you must select Aeonid Thiel as your Compulsory HQ choice, and he must be your Warlord. (Note: the Warlord part is not enforced by the army builder - check this manually.)</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="0bd9-a8d7-68ae-df9b" name="Rukal Breacher Battalion (SoH)" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="01b4-57c7-bf61-2abf" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0df-c1fa-5ddc-9ee5" type="atLeast"/>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bdab-ae3b-2a95-0cf4" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="21cf-1429-8bbe-c80a" name="Rukal Breacher Battalion" hidden="false">
+              <description>Effects
+    • Models with the Legiones Astartes (Sons of Horus) Special Rule taken as part of a Detachment using this Rite of War gain the Rage (2) Special Rule when they successfully Charge an enemy unit which is already locked in combat with one or more units or an enemy unit that is the target of at least one other Charge in the same Charge sub-phase.
+    • Rukal Breacher Squads may be selected as Troops choices for Detachments using this Rite of War.
+    • Rukal Breacher Squads selected as Compulsory Troops choices for Detachments using this Rite of War gain the Line Sub-type.
+    • Any unit with the Infantry (Heavy) Sub-type equipped with Boarding Shields gains the Chosen Warriors Special Rule. (Note: not enforced by the army builder - check this manually.)
+    • Any unit with the Infantry (Heavy) Sub-type equipped with Boarding Shields gains the Heart of the Legion Special Rule. (Note: not enforced by the army builder - check this manually.)
+    Limitations
+    • A Detachment using this Rite of War must take a Legion Centurion with the Legiones Consularis: Dark Emissary upgrade as a HQ choice, in addition to the Legion Praetor or other characters whose presence allows for the use of a Rite of War.
+    • A Detachment with this Rite of War must be of the Traitor Allegiance.
+    • A Detachment using this Rite of War must include more units with the Heavy Sub-type than without. (Note: not enforced by the army builder - check this manually.)</description>
             </rule>
           </rules>
           <costs>
