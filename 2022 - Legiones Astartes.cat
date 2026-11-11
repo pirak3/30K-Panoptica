@@ -16894,6 +16894,16 @@ This is a Damage Mitigation roll – any model may make only a single Damage Mit
                     <condition type="equalTo" value="1" field="selections" scope="25a2-7a52-632a-6b2c" childId="e9f2-f58a-6df3-5fdc" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" field="name" value="Terran-Born Crusader">
+                  <conditions>
+                    <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e625-0909-c7a8-0bb7" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="name" value="Lodge Master">
+                  <conditions>
+                    <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b828-7d8b-c9e2-ce9c" type="equalTo"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </modifierGroup>
             <modifierGroup type="and">
@@ -17061,6 +17071,7 @@ This is a Damage Mitigation roll – any model may make only a single Damage Mit
                         <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4831-6948-851c-3925" type="equalTo"/>
                         <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e9ab-2cc5-4507-eded" type="equalTo"/>
                         <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e0ec-cde4-46e6-eb03" type="equalTo"/>
+                        <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b828-7d8b-c9e2-ce9c" type="equalTo"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -17204,6 +17215,7 @@ This is a Damage Mitigation roll – any model may make only a single Damage Mit
                         <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4831-6948-851c-3925" type="equalTo"/>
                         <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e9ab-2cc5-4507-eded" type="equalTo"/>
                         <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e0ec-cde4-46e6-eb03" type="equalTo"/>
+                        <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b828-7d8b-c9e2-ce9c" type="equalTo"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -29784,6 +29796,16 @@ If one or more Wounds is discounted due to this special rule, and the unit that 
                     <condition field="selections" scope="3766-ea98-0aa7-62d0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d6cc-2e7f-16e3-e66c" type="equalTo"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" field="name" value="Terran-Born Crusader">
+                  <conditions>
+                    <condition field="selections" scope="3766-ea98-0aa7-62d0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e625-0909-c7a8-0bb7" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="name" value="Lodge Master">
+                  <conditions>
+                    <condition field="selections" scope="3766-ea98-0aa7-62d0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b828-7d8b-c9e2-ce9c" type="equalTo"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </modifierGroup>
             <modifierGroup type="and">
@@ -29927,6 +29949,7 @@ If one or more Wounds is discounted due to this special rule, and the unit that 
                         <condition field="selections" scope="3766-ea98-0aa7-62d0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0f32-7136-4da2-13b2" type="equalTo"/>
                         <condition field="selections" scope="3766-ea98-0aa7-62d0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4831-6948-851c-3925" type="equalTo"/>
                         <condition field="selections" scope="3766-ea98-0aa7-62d0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e9ab-2cc5-4507-eded" type="equalTo"/>
+                        <condition field="selections" scope="3766-ea98-0aa7-62d0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b828-7d8b-c9e2-ce9c" type="equalTo"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -36639,6 +36662,16 @@ If one or more Wounds is discounted due to this special rule, and the unit that 
                     <condition field="selections" scope="f806-8a4e-d0d6-beaa" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d6cc-2e7f-16e3-e66c" type="equalTo"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" field="name" value="Terran-Born Crusader">
+                  <conditions>
+                    <condition field="selections" scope="f806-8a4e-d0d6-beaa" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e625-0909-c7a8-0bb7" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="name" value="Lodge Master">
+                  <conditions>
+                    <condition field="selections" scope="f806-8a4e-d0d6-beaa" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b828-7d8b-c9e2-ce9c" type="equalTo"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </modifierGroup>
             <modifierGroup type="and">
@@ -36782,6 +36815,7 @@ If one or more Wounds is discounted due to this special rule, and the unit that 
                         <condition field="selections" scope="f806-8a4e-d0d6-beaa" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0f32-7136-4da2-13b2" type="equalTo"/>
                         <condition field="selections" scope="f806-8a4e-d0d6-beaa" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4831-6948-851c-3925" type="equalTo"/>
                         <condition field="selections" scope="f806-8a4e-d0d6-beaa" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e9ab-2cc5-4507-eded" type="equalTo"/>
+                        <condition field="selections" scope="f806-8a4e-d0d6-beaa" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b828-7d8b-c9e2-ce9c" type="equalTo"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -79510,6 +79544,16 @@ In addition, a model armed with Saturnine Terminator Armour is immune to the eff
                     <condition field="selections" scope="2250-7c9e-adae-5f36" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d6cc-2e7f-16e3-e66c" type="equalTo"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" field="name" value="Terran-Born Crusader">
+                  <conditions>
+                    <condition field="selections" scope="2250-7c9e-adae-5f36" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e625-0909-c7a8-0bb7" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="name" value="Lodge Master">
+                  <conditions>
+                    <condition field="selections" scope="2250-7c9e-adae-5f36" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b828-7d8b-c9e2-ce9c" type="equalTo"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </modifierGroup>
             <modifierGroup type="and">
@@ -79653,6 +79697,7 @@ In addition, a model armed with Saturnine Terminator Armour is immune to the eff
                         <condition field="selections" scope="2250-7c9e-adae-5f36" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0f32-7136-4da2-13b2" type="equalTo"/>
                         <condition field="selections" scope="2250-7c9e-adae-5f36" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4831-6948-851c-3925" type="equalTo"/>
                         <condition field="selections" scope="2250-7c9e-adae-5f36" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e9ab-2cc5-4507-eded" type="equalTo"/>
+                        <condition field="selections" scope="2250-7c9e-adae-5f36" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b828-7d8b-c9e2-ce9c" type="equalTo"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -103445,6 +103490,106 @@ While making a Chain Fire attack, a model with this special rule may make up to 
             <categoryLink name="Legion Consularis:" hidden="false" id="f49-5f84-8e62-2ced" targetId="4171-e276-e90d-b8e5" primary="false"/>
           </categoryLinks>
         </selectionEntry>
+        <selectionEntry id="e625-0909-c7a8-0bb7" name="Terran-Born Crusader" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0b6-712f-0b12-a308" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2bed-bdcf-cfe8-e3e8" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <rules>
+            <rule id="d9db-c5fa-544e-2ca6" name="Blood of a Thousand Worlds" hidden="false">
+              <description>The Terran-Born Crusader, and any unit he joins, gain the Preferred Enemy (Traitor) and Stubborn Special Rules.</description>
+            </rule>
+            <rule id="7ecd-d6a6-bc6e-9b67" name="In the Light of the Emperor" hidden="false">
+              <description>The Terran-Born Crusader gains the Adamantium Will (5+) Special Rule. When any unit with either the Corrupted or Daemon Unit Sub-types is within 12&quot; of the Terran-Born Crusader, that unit receives a -1 penalty to its Leadership for all Morale tests it takes. In addition, when determining what bonuses or penalties a unit with the Daemon Sub-type receives as a result of the current Game Turn, any unit within 12&quot; of the Terran-Born Crusader counts the turn counter as one higher than its true value.</description>
+            </rule>
+            <rule id="d3e0-22c5-b4dd-3fb6" name="Terran-Born Crusader Wargear" hidden="false">
+              <description>The Terran-Born Crusader may grant the Master-Crafted Special Rule to a single weapon they are armed with at no additional points cost.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="8f5e-0d48-8a13-0106" name="Preferred Enemy (X)" hidden="false" targetId="37ab-d4db-891a-de8c" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Preferred Enemy (Traitor)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="ead3-dc38-16b9-9388" name="Stubborn" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule"/>
+            <infoLink id="b48c-3732-31c4-c59a" name="Adamantium Will (X+)" hidden="false" targetId="4380-44a5-f01a-d964" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Adamantium Will (5+)"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Legion Consularis:" hidden="false" id="3798-81ce-3d88-e411" targetId="4171-e276-e90d-b8e5" primary="false"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry id="b828-7d8b-c9e2-ce9c" name="Lodge Master" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2bed-bdcf-cfe8-e3e8" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <rules>
+            <rule id="e279-686f-5b9d-7729" name="Exemplar of Treason" hidden="false">
+              <description>The Lodge Master has a Leadership Characteristic of 10. In addition, the Lodge Master and any unit they have joined automatically pass any Leadership Tests they are required to make.</description>
+            </rule>
+            <rule id="b73b-85ec-eedf-c2a1" name="I Can&apos;t Say" hidden="false">
+              <description>Before the game begins, a Detachment which contains a Lodge Master must select a secret objective from the list below. This should be noted down, and only revealed to your opponent after the game ends. If at the end of the game, this objective has not been achieved, your opponent gains 1 Victory Point.
+- Mentor to All - Select a friendly Independent Character from the same Detachment as the Lodge Master (note this cannot be the Lodge Master himself). If that model survives the game, you gain 1 Victory Point.
+- Hand of the Warmaster - At the end of the game, whilst totalling up Victory Points, the Lodge Master is counted as having the Line Sub-type for the purposes of determining whether they are controlling Objectives. If the Lodge Master is holding an Objective outside of your deployment zone at the end of the game, you gain 1 Victory Point.
+- Killer of Gods and Kings - If an enemy model with the Primarch Unit type is slain by a model with the same Legiones Astartes (X) Special Rule as the Lodge Master, you gain 1 Victory Point.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="bb37-2557-3d06-b29e" name="Preferred Enemy (X)" hidden="false" targetId="37ab-d4db-891a-de8c" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Preferred Enemy (Loyalists)"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Legion Consularis:" hidden="false" id="09c1-9b69-1a49-6107" targetId="4171-e276-e90d-b8e5" primary="false"/>
+          </categoryLinks>
+        </selectionEntry>
         <selectionEntry id="d3d6-dfc2-4da2-54cc" name="Centurion" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -108796,6 +108941,11 @@ When Engaged in a Challenge, a model with this special rule may choose to increa
     <rule id="6e09-391c-c107-abfa" name="Paired Weapons" hidden="false">
       <description>Some weapons require they are used together to achieve full effectiveness.
 A model armed with a weapon with this Special Rule gains an extra Attack.</description>
+    </rule>
+    <rule id="785d-d03b-3e3a-b835" name="Misericordia" hidden="false">
+      <description>A model with this Special Rule can carry models in any type of Legion Terminator armour and that have the Bulky (2) Special Rule as though they did not have that Special Rule.
+
+Note that this includes Legion Specific Terminator units.</description>
     </rule>
   </sharedRules>
   <catalogueLinks>

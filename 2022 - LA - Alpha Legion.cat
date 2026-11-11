@@ -443,6 +443,29 @@
         <categoryLink id="60eb-e7a6-75c2-be95" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="93f8-330f-9d26-a351" name="Grave Warden Tartaros Terminator Squad" hidden="true" collective="false" import="false" targetId="1f33-ac48-081c-9b4e" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="912e-1239-e20d-2ebb" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="dc46-f0a2-ece6-ea15" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+        <categoryLink id="089e-84b4-839c-f272" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
+        <categoryLink id="e45f-fce9-b1c6-222e" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink id="26ab-aed8-c986-17d5" name="Kakophoni Squad" hidden="true" collective="false" import="false" targetId="8359-c463-9cde-4f21" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
@@ -1245,7 +1268,7 @@
         <categoryLink id="b75b-ced4-7c8c-82ee" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="b76a-8d3d-21b8-0758" name="Sehkmet Tartaros Terminator Cabal" hidden="true" collective="false" import="false" targetId="7fed-0cee-bc8a-14fa" type="selectionEntry">
+    <entryLink id="b76a-8d3d-21b8-0758" name="Sekhmet Tartaros Terminator Cabal" hidden="true" collective="false" import="false" targetId="7fed-0cee-bc8a-14fa" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -6176,6 +6199,26 @@
         <categoryLink id="9f03-849f-9a34-cdc0" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="547d-c8c4-7e30-9d78" name="Deathshroud Cataphractii Terminator Squad" hidden="true" collective="false" import="false" targetId="8ffc-4e06-a43b-fc7a" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="equalTo"/>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="aa86-98c2-3f9a-b1ac" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="5d45-cee0-5136-5314" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="4108-a44c-5e3c-9dc0" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+        <categoryLink id="51ff-1272-d29f-7609" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
+        <categoryLink id="cb72-3206-7773-c163" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink id="2e69-3c18-2485-f692" name="Deathshroud Terminator Squad" hidden="true" collective="false" import="false" targetId="7669-a6c0-7f86-e641" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
@@ -6194,6 +6237,24 @@
         <categoryLink id="e768-98a1-a808-5cb0" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
         <categoryLink id="55ff-0e1a-84ef-14f1" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="4156-ef44-7174-09b3" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="4380-8fbf-32fe-90b1" name="Deathshroud Cataphractii Terminator Squad" hidden="true" collective="false" import="false" targetId="8ffc-4e06-a43b-fc7a" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="aa86-98c2-3f9a-b1ac" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="56e5-8742-8663-f5b1" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="20c5-dd36-9923-c99b" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="c651-3495-2edd-c153" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="5561-b985-c4f5-6577" name="Phoenix Terminator Squad" hidden="true" collective="false" import="false" targetId="5b08-65c1-cc45-1b91" type="selectionEntry">
@@ -6694,7 +6755,7 @@
         <categoryLink id="a8bb-f884-2117-0766" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="0322-99ef-32ce-c6e6" name="Sehkmet Tartaros Terminator Cabal" hidden="true" collective="false" import="false" targetId="7fed-0cee-bc8a-14fa" type="selectionEntry">
+    <entryLink id="0322-99ef-32ce-c6e6" name="Sekhmet Tartaros Terminator Cabal" hidden="true" collective="false" import="false" targetId="7fed-0cee-bc8a-14fa" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -9853,7 +9914,31 @@ A weapon with this special rule may not be used to make Shooting Attacks as part
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="aa86-98c2-3f9a-b1ac" name="Deathshroud Cataphractii Terminator Squad" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f2e8-fe22-a681-d5e5" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
         <selectionEntry id="c52c-cde0-5a9c-cff6" name="Grave Warden Terminator Squad" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f2e8-fe22-a681-d5e5" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="912e-1239-e20d-2ebb" name="Grave Warden Tartaros Terminator Squad" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -9961,7 +10046,7 @@ A weapon with this special rule may not be used to make Shooting Attacks as part
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="2285-6532-e3d8-c3d3" name="Sehkmet Tartaros Terminator Cabal" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="2285-6532-e3d8-c3d3" name="Sekhmet Tartaros Terminator Cabal" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
