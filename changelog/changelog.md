@@ -3,6 +3,80 @@
 All notable changes to the BattleScribe Data Repository will be documented in this file.
 
 ---
+## [Unreleased] - Current branch
+
+### Added
+- **Units**:
+  - `[Mechanicum]` Added `[Magos Prime]` - `[HQ]` (Liber Ingenium; one Order of Lesser Techno-Arcana, each Magos Prime a different Order)
+  - `[Mechanicum]` Added `[Magos Prime on Abeyant]` - `[HQ]` (Liber Ingenium; Lachrimallion, Macroteknia or Ruinor only)
+  - `[Mechanicum]` Added `[Skitarii Centurius]` - `[HQ]` (Liber Ingenium)
+  - `[Mechanicum]` Added `[Sicarian Clademaster]` - `[HQ]` (Liber Ingenium)
+  - `[Mechanicum]` Added `[Praetorian Servitor Maniple]` - `[HQ]` (Liber Ingenium; Retinue only, via a Praetorian Retinue group on Archmagos/Magos Prime, Scoria, Draykavac, Arkhan Land, Koriel Zeth, Kelbor-Hal and Calleb's Guardian Retinue)
+  - `[Mechanicum]` Added `[Arkhan Land]` - `[HQ]` (Liber Ingenium; Loyalist only)
+  - `[Mechanicum]` Added `[Remiare]` - `[HQ]` (Liber Ingenium; Traitor only)
+  - `[Mechanicum]` Added `[Koriel Zeth]` - `[HQ]` (Liber Ingenium; Loyalist only)
+  - `[Mechanicum]` Added `[Kelbor-Hal]` - `[Primarch]` (Liber Ingenium; Traitor only)
+  - `[Mechanicum]` Added `[Cydonian Dragoons]` - `[Elites]` (Liber Ingenium)
+  - `[Mechanicum]` Added `[Skitarii Liquidator Cohort]` - `[Elites]` (Liber Ingenium)
+  - `[Mechanicum]` Added `[Sicarian Kill-Clade]` - `[Elites]` (Liber Ingenium)
+  - `[Mechanicum]` Added `[Cydonian Sisterhood Clade]` - `[Elites]` (Liber Ingenium; 0-1)
+  - `[Mechanicum]` Added `[Archaeopter Transvector Squadron]` - `[Fast Attack]` (Liber Ingenium)
+  - `[Mechanicum]` Added `[Mechanicum Arvus Lighter]` - `[Fast Attack]` (Liber Ingenium)
+  - `[Mechanicum]` Added `[Mechanicum Avenger Strike Fighter]` - `[Fast Attack]` (Liber Ingenium)
+  - `[Mechanicum]` Added `[Mechanicum Lightning Strike Fighter]` - `[Fast Attack]` (Liber Ingenium)
+  - `[Mechanicum]` Added `[Cyber-Carnivora Pack]` - `[Fast Attack]` (Liber Ingenium; also in Arcuitor Magisterium's Hunter Killer)
+  - `[Mechanicum]` Added `[Herax Battle-Automata Maniple]` - `[Fast Attack]` (Liber Ingenium)
+  - `[Mechanicum]` Added `[Pteraxii Skyhunter Cohort]` - `[Fast Attack]` (Liber Ingenium)
+  - `[Mechanicum]` Added `[Serberys Tormentor Conclave]` - `[Fast Attack]` (Liber Ingenium)
+  - `[Mechanicum]` Added `[Thanatar-Cynis Siege-Automata Maniple]` - `[Heavy Support]` (Liber Ingenium)
+  - `[Mechanicum]` Added `[Kharax Siege-Automata Maniple]` - `[Heavy Support]` (Liber Ingenium)
+  - `[Mechanicum]` Added `[Sepketar Siege-Automata Maniple]` - `[Heavy Support]` (Liber Ingenium)
+  - `[Mechanicum]` Added `[Skorpius Disintegrator Squadron]` - `[Heavy Support]` (Liber Ingenium)
+  - `[Mechanicum]` Added `[Onager Dunecrawler Squadron]` - `[Heavy Support]` (Liber Ingenium; Icarus Array has the new Sky-Targeting Systems rule)
+  - `[Mechanicum]` Added `[Ordinatus-Exemplar War Construct]` - `[Heavy Support]` (Liber Ingenium; Archaeotechnological Marvel enforced: 0-1 per army at 2000+ pts with an Archmagos Prime in the detachment, 0-2 with the Reductor Order)
+  - `[Mechanicum]` Added `[Hierarch Siege-Automata]` - `[Lords of War]` (Liber Ingenium)
+  - `[Mechanicum]` Added `[The Kaban Machine]` - `[Lords of War]` (Liber Ingenium; Traitor only)
+  - `[Mechanicum]` Added `[Oppressor Super-Heavy Siege Tank]` - `[Lords of War]` (Liber Ingenium)
+  - `[Mechanicum]` Added `[Ordinatus-Minoris Macro Engine]` - `[Lords of War]` (Liber Ingenium)
+  - `[Questoris Household]` Added `[Knight Dominus]` - `[Lords of War]` (Liber Ingenium)
+  - `[Questoris Household]` Added `[Knight Maeliviax]` - `[Lords of War]` (Liber Ingenium)
+- **Weapons & Wargear**:
+  - Liber Ingenium (Mechanicum): `[Transonic Cannon]`, `[Transonic Blade]`, `[Chordclaw]`, `[Mechadendrite Hive]`, `[Arcana Potentis (Melee)]`, `[Praetorian Warplate]`, `[Sicarian Battle Armour]`, `[Conversion Field]`, `[Stealth Suite Module]`, `[Aggression Stim-Injectors]`, `[Radium Jezzail]`, `[Taser Lance]`, `[Arc Grenades]`, `[Battle-Automata Cradles]`, `[Clawed Limbs]`, `[Preysight Cogitators]`, `[Pteraxii Talons]`, `[Scapuli-Pattern Thruster Pack]`, `[Sulphurite Reservoirs]`, `[Two Phosphor Serpentas]`, `[Galvanic Carbine]`, `[Phosphor Blast Carbine]`, `[Cynis Plasma Ejector]`, `[Disruptor Missile Launcher]`, `[Plasma Decimator]`, `[Cascade Shield Projector]`, `[Crawler Systems]`, `[Emanatus Forcefield]`, `[Hover Nacelles]`, `[Reinforced Superstructure]`, `[Self-Repair Systems]`, `[Supercharged Reactor]`, `[Track Units]`, `[Atomantic Pulse Reactor]`, `[Electroscourge Flail]`, `[Volkite Combustor]`, `[Sonic Pulsar]`, `[Shieldbreaker Missile]`, `[Kataphron Demiplate]` (on Kataphron Destructors, p.106)
+  - Liber Ingenium (Titan weapons, Mech Library): `[Volkite Eradicator]`, `[Vortex Missile]`, `[Graviton Destructor]`, `[Twin-linked Graviton Ruinator]`, `[Ursus Claw]`
+  - Liber Ingenium (Knight weapons, Mech Library): `[Arkadia Plasma Array]`, `[Armiger Breaker-Claw]`, `[Armiger Harvest Scythe]`, `[Armiger Siege Maul]`, `[Armiger Stormwrought Warblade]`, `[Draconis Glaive]`, `[Dual Vulcanis Blades]`, `[Hurricane Missile Pod]`, `[Hyperion Multi-Launcher]`, `[Questoris Breacher Maul]`, `[Laser Lance]` (melee profile); `[Punisher Chaincannon]`, `[Reaper Chainblade]` and `[Thermal Lance]` are now shared upgrades
+- **Force Organisation**:
+  - `[Questoris Household]` Added `[Questoris Crusader Host]` force organisation chart (Liber Ingenium p.72; Lords of War 1-10, Troops +2 per Lord of War, Lords of War in it ignore the 25% limit)
+- **Rules & Abilities**:
+  - Added special rule `[Molecular Dissonance]` (shared, Mech Library)
+  - Added special rules `[Command Protocols (X)]` (linked from Skitarius and Kill-Clade) and `[Eradication Beam Weapons]` (linked from the Eradication Beamer and Eradication Beam Cannon) (Liber Ingenium p.92, p.99)
+  - Added Legiones Skitarii Warlord Traits `[Full Frame Rebuild]`, `[Uplink Override]`, `[Encoded Hate]`, only for Skitarii sub-type Warlords (Liber Ingenium p.112)
+
+### Changed
+- **Units / Points**:
+  - `[Archmagos Prime]`, `[Archmagos Prime on Abeyant]`, `[Magos Dominus]`, `[Magos Dominus on Abeyant]`: may exchange the Graviton Gun for a Magnarail Lance (+5) or Transonic Cannon (+15); Abeyant versions may take a Mechadendrite Hive (+15) (Liber Ingenium p.19)
+  - `[Arcuitor Magisterium]`: may take a Mel-Cerebrae Striderframe (+20) or Utan Jump Booster (+25); Hunter Killer may also pick a Domitar or Sarumiat Battle-Automata Maniple (Liber Ingenium p.28)
+  - `[Tech-Priest Auxilia]`: may take a Porphetian Armoured Carrier or Skorpius Dunerider as Dedicated Transport (Liber Ingenium p.28)
+  - `[Arcuitor Magisterium]`: Hunter Killer may also pick a Cyber-Carnivora Pack (Liber Ingenium p.28)
+  - Mechanicum HQ units without Pride of Place (Archmagos Prime, Magos Prime, Magos Dominus, Calleb Decima Invictus, Arcuitor Magisterium, Arkhan Land, Koriel Zeth, Remiare, Sicarian Clademaster, Skitarii Centurius): may take a `[Porphetian Armoured Carrier]` as Dedicated Transport (Overseer Transport, Liber Ingenium p.93)
+  - `[Mechanicum Tarantula Sentry Gun Battery]`: new weapon options (Gravis Heavy Flamer, Two Multi-Lasers, Two Twin-Linked Rotor Cannons, Multi-Melta and Searchlight, Volkite Dual-Culverin, Quad Launcher), Hyperios Command Platform and deployment options (Liber Ingenium p.53)
+  - `[Vultarax Stratos-Automata Squadron]`: any model may take Two Power Blade Arrays (+10) (Liber Ingenium p.53)
+  - `[Krios Squadron]`: the squadron may take Flare Shields (+25 per model); `[Macrocarid Explorator]`: Servo-Rig (+20), Flare Shield (+50), Explorator Augury Web (+50); `[Mechanicum Land Raider Phobos]`: Servo-Rig (+20), Flare Shield (+50); `[Ordo Reductor Minotaur Battery]`: pintle weapon options; `[Thanatar Siege-automata Maniple]`: Searchlights (+5 per model) (Liber Ingenium p.61)
+  - `[Warhound Scout Titan]`: arm weapons may be an Ursus Claw, Volkite Eradicator or Graviton Destructor (Free) (Liber Ingenium p.81)
+  - `[Reaver Battle Titan]`: carapace weapon may be an Inferno Gun, Volkite Eradicator, Graviton Destructor, Vulcan Mega-Bolter, Plasma Blastgun, Twin-linked Turbo Laser Destructor or Vortex Missile (Free) (Liber Ingenium p.81)
+  - `[Warlord Battle Titan]`: carapace weapons may be Two Plasma Blastguns, Two Melta Cannons, Two Gatling Blasters, Two Vortex Missiles or Two Twin-linked Vulcan Mega-Bolters; arm weapons may be a Twin-linked Graviton Ruinator (Free) (Liber Ingenium p.81)
+  - `[Knight Questoris]`: Searchlights (+5); the Reaper Chainsword may be exchanged for a Laser Lance (+15), Questoris Breacher Maul (+20), Draconis Glaive (+25) or Dual Vulcanis Blades (+15, replaces the battle cannon too) (Liber Ingenium p.76)
+  - `[Knight Acheron]`, `[Knight Castigator]`, `[Knight Lancer]`: Searchlights (+5) (Liber Ingenium p.76-77)
+  - `[Acastus Knight Porphyrion]`: Searchlights (+10); the Twin-Linked Magna Lascannons may be exchanged for Two Volkite Carronades or Two Arkadia Plasma Arrays (Free) (Liber Ingenium p.76)
+  - `[Armiger Helverin Talon]`: Searchlights (+5 per model); Phaeton Autocannons may be exchanged for a Punisher Chaincannon (+10), Hurricane Missile Pod (+20) or Thermal Lance (+25); Hyperion Multi-Launcher (+15) (Liber Ingenium p.76)
+  - `[Armiger Warglaive Talon]`: Searchlights (+5 per model); Reaper Chainblade may be exchanged for a Breaker-Claw (+5), Siege Maul, Harvest Scythe or Stormwrought Warblade (+10); Thermal Lance may be exchanged for a Reaper Chainblade, Breaker-Claw (+5), Flamestorm Cannon (+5), Punisher Chaincannon (+10) or Gravis Plasma Cannon (+20) (Liber Ingenium p.76)
+- **Fixes**:
+  - `[Anbaric Vaporizor]`: added its missing weapon profile
+  - Liber Ingenium rules pass (p.82-112): `[Fulgurite Electoo]` gets its missing second paragraph; `[Paired Weapons]` (Mech Library) gets its empty description; `[Electrostatic Gauntlets (Melee)]` range is now "-"; text fixes in `[Open-Topped]`, `[Prey-Snare (X)]`, `[Kill-Clade]`; renamed `[Datashpere Uplink]` to `[Datasphere Uplink]`, `[Erradication Beamer]` to `[Eradication Beamer]` (now using the shared profiles) and `[Phospor Cannon/Repeater/Torch]` to `[Phosphor ...]`
+  - Removed the unused `[Archaeotechnological Marvel]` upgrade from Mech Library
+  - Cleanups: `[Battle Servitor Control]` is now one shared upgrade in Mech Library (Avenger and Lightning link it); `[Surveillance Protocols]` is now a shared rule (Vultarax and Herax link it); removed a duplicate `[Overseer Transport]` rule; `[Eradication Beam Cannon]` links `[Large Blast (5")]`; fixed the `[Incunabulan Jet Pack]` link name
+  - Mech Library: duplicate constraint id on `[Seneschal (0-1)]` / `[Conqueror of Worlds (0-1)]` given a fresh id
+
+
 ## Release Archive
 ## [2026-11-11]
 
