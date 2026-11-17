@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="d901-0eca-48b5-304a" name="LA -  XII: World Eaters" revision="2043" battleScribeVersion="2.03" authorName="UrsinePatriarch" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="72" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="d901-0eca-48b5-304a" name="LA -  XII: World Eaters" revision="2044" battleScribeVersion="2.03" authorName="UrsinePatriarch" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="72" type="catalogue">
   <entryLinks>
     <entryLink id="d647-fd99-73e0-bd57" name="Angron" hidden="false" collective="false" import="false" targetId="6352-8efa-0cc4-cfa7" type="selectionEntry">
       <modifiers>
@@ -5886,71 +5886,6 @@
           </entryLinks>
         </selectionEntry>
       </selectionEntries>
-    </selectionEntry>
-    <selectionEntry id="2403-fc44-ffd2-8fa6" name="Barb-Hook Lash" hidden="false" collective="true" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="f816-cc15-752e-3da8" name="Fleshbane" hidden="false" targetId="40cd-9505-253c-e76f" type="rule"/>
-        <infoLink id="1870-e3bd-55a1-54e1" name="Rending (X)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Rending (5+)"/>
-          </modifiers>
-        </infoLink>
-        <infoLink id="a723-8a89-da38-4fff" name="Two-handed" hidden="false" targetId="4c23-e863-a569-7617" type="rule"/>
-        <infoLink id="8e2c-4a12-5eed-0ef7" name="Reach (X)" hidden="false" targetId="19bf-62a2-5737-890b" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Reach (1)"/>
-          </modifiers>
-        </infoLink>
-        <infoLink id="4be5-fa52-8ac8-938c" name="Barb-Hook Lash" targetId="6326-8212-abe1-94db" type="profile"/>
-      </infoLinks>
-      <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="be1b-90ff-17f3-654e" name="Falax Blade" hidden="false" collective="true" import="true" type="upgrade">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="90ee-77dd-1b7f-ddfe" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <infoLinks>
-        <infoLink id="2eab-2308-37e0-d852" name="Specialist Weapon" hidden="false" targetId="1a1f-3c9b-b097-5886" type="rule"/>
-        <infoLink id="4040-0283-7e47-6c4f" name="Rending (X)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Rending (4+)"/>
-          </modifiers>
-        </infoLink>
-        <infoLink id="04c9-581e-3373-7f5f" name="Duellist’s Edge (X)" hidden="false" targetId="7bf3-86ce-04c2-e6ba" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Duellist’s Edge (1)"/>
-          </modifiers>
-        </infoLink>
-        <infoLink id="e4c2-45e5-e415-f97f" name="Falax Blade" targetId="5726-e8ae-9b6b-bd6d" type="profile"/>
-      </infoLinks>
-      <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="1994-6eda-5e87-3038" name="Meteor Hammer" hidden="false" collective="true" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="88a9-458a-3628-ec19" name="Two-handed" hidden="false" targetId="4c23-e863-a569-7617" type="rule"/>
-        <infoLink id="e61f-c8df-322b-8c3e" name="Reach (X)" hidden="false" targetId="19bf-62a2-5737-890b" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Reach (1)"/>
-          </modifiers>
-        </infoLink>
-        <infoLink id="3fd6-d839-77c0-012d" name="Breaching (X)" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Breaching (5+)"/>
-          </modifiers>
-        </infoLink>
-        <infoLink id="bb77-454d-55fa-ea4f" name="Meteor Hammer" targetId="9454-4e0e-5983-e6ec" type="profile"/>
-      </infoLinks>
-      <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-      </costs>
     </selectionEntry>
     <selectionEntry id="84b5-15cf-c3f8-ff13" name="Shield Breaker" hidden="false" collective="true" import="true" type="upgrade">
       <modifiers>

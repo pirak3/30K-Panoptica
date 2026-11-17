@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="c247-da79-1654-d39e" name="Mechanicum" revision="49" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="70" type="catalogue" publicationId="3886-76e5-438f-159f">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="c247-da79-1654-d39e" name="Mechanicum" revision="50" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="70" type="catalogue" publicationId="3886-76e5-438f-159f">
   <entryLinks>
     <entryLink id="29c6-0ec7-0162-e817" name="Mechanicum" hidden="false" collective="false" import="false" targetId="ddf5-d792-3146-6e9a" type="selectionEntry">
       <modifiers>
@@ -9322,6 +9322,7 @@ Mauler Bolt Cannon Array" field="name"/>
         <categoryLink id="5582-f250-1679-a239" name="Monstrous Sub-type" hidden="false" targetId="7d95-f9d1-440a-67bd" primary="false"/>
         <categoryLink id="7c16-3cc2-f852-868f" name="Infantry Unit Type" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
         <categoryLink id="5e36-3d62-a74c-2d73" name="Feudal Hierarchy (On Abeyant)" hidden="false" targetId="4c2b-03e9-abb7-7209" primary="false"/>
+        <categoryLink id="b573-c7bf-064d-ee38" name="Magos Prime on Abeyant (Tag)" hidden="false" targetId="80a3-ca0e-aab2-43d1" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="3099-c64b-e031-e93f" name="May exchange either their Laspistol and/or Power Weapon each for one of the following options:" hidden="false" collective="false" import="true" defaultSelectionEntryId="8578-a852-5790-f8cf">
