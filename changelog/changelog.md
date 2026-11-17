@@ -75,6 +75,10 @@ All notable changes to the BattleScribe Data Repository will be documented in th
   - Removed the unused `[Archaeotechnological Marvel]` upgrade from Mech Library
   - Cleanups: `[Battle Servitor Control]` is now one shared upgrade in Mech Library (Avenger and Lightning link it); `[Surveillance Protocols]` is now a shared rule (Vultarax and Herax link it); removed a duplicate `[Overseer Transport]` rule; `[Eradication Beam Cannon]` links `[Large Blast (5")]`; fixed the `[Incunabulan Jet Pack]` link name
   - Mech Library: duplicate constraint id on `[Seneschal (0-1)]` / `[Conqueror of Worlds (0-1)]` given a fresh id
+  - Bumped catalogue revisions so editors reload the new Liber Ingenium data (fixes `[Knight Dominus]` and other new Mech Library units not resolving from Questoris Household)
+  - `[Barb-Hook Lash]`, `[Falax Blade]` and `[Meteor Hammer]` moved from World Eaters to Legiones Astartes, so the Legionary and Despoiler options linking them resolve
+  - `[Sor Talgron]`, `[Nassir Amit]`, `[Lord Crius]`, `[The Keys of Hel]` and `[Magos Prime on Abeyant]` now carry hidden tag categories; filters in other catalogues (Legiones Astartes, `[The Gates Of Hel]` rite, Mech Library) check the tag instead of an entry they cannot see
+  - `[White Scars]`: entry fix
 
 
 ## Release Archive
