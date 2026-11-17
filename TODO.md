@@ -7,9 +7,26 @@ All done except Extrinsica Weapons
 ###
 First pass on centurion detachments
 ## Ingenium
+-- HQ (p.7-19)
+Units: DONE (Magos Prime, Magos Prime on Abeyant, Skitarii Centurius, Sicarian Clademaster, Praetorian Servitor Maniple, Arkhan Land, Remiare, Koriel Zeth, Kelbor-Hal), additional HQ wargear options: DONE
+-- Elites (p.21-31)
+Units: DONE (Cydonian Dragoons, Skitarii Liquidator Cohort, Sicarian Kill-Clade, Cydonian Sisterhood Clade), additional Elites wargear options: DONE
+-- Fast Attack (p.43-53)
+Units: DONE (Archaeopter Transvector Squadron, Mechanicum Arvus Lighter, Mechanicum Avenger Strike Fighter, Mechanicum Lightning Strike Fighter, Cyber-Carnivora Pack, Herax Battle-Automata Maniple, Pteraxii Skyhunter Cohort, Serberys Tormentor Conclave), additional Fast Attack wargear options: DONE
+-- Heavy Support (p.55-63)
+Units: DONE (Thanatar-Cynis, Kharax and Sepketar Siege-Automata Maniples, Skorpius Disintegrator Squadron, Onager Dunecrawler Squadron, Ordinatus-Exemplar War Construct), additional Heavy Support wargear options: DONE
+Icarus Array Sky-Targeting Systems rule and Archaeotechnological Marvel army limit (Ordinatus-Exemplar): DONE
+-- Lords of War (p.65-69)
+Units: DONE (Hierarch Siege-Automata, The Kaban Machine, Oppressor Super-Heavy Siege Tank, Ordinatus-Minoris Macro Engine, Knight Dominus, Knight Maeliviax)
+-- Questoris Households (p.71-77)
+Questoris Crusader Host FOC: DONE (Primary-only and "no other charts" not enforced); additional Knight wargear options: DONE
+-- Titan Legions (p.79-81)
+Additional wargear options (Warhound, Reaver, Warlord): DONE
+-- Rules / Armoury / Wargear / Warlord Traits (p.82-112)
+New: Command Protocols (X), Eradication Beam Weapons, Kataphron Demiplate, Legiones Skitarii Warlord Traits; text fixes to existing rules: DONE
 -- Troops
 Units: DONE
-Porphetian Armoured carrier Dedicated transport ALL HQ: TODO
+Porphetian Armoured carrier Dedicated transport ALL HQ: DONE (10 Mechanicum HQ units; not the 6 with Pride of Place, Overseer Transport p.93)
 --
 Units Done:
     Trairos Guardian

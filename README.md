@@ -34,13 +34,24 @@ TODO:
 - All done except Extrinsica Weapons
 ## **Ingenium**
 #### **HQ**
+- Magos Prime, Magos Prime on Abeyant, Skitarii Centurius, Sicarian Clademaster, Praetorian Servitor Maniple, Arkhan Land, Remiare, Koriel Zeth, Kelbor-Hal, additional HQ wargear options (p.19): done
 #### **Elite**
+- Cydonian Dragoons, Skitarii Liquidator Cohort, Sicarian Kill-Clade, Cydonian Sisterhood Clade, additional Elites wargear options (p.28): done
 #### **Troops**
 Units: done
-- Porphetian Armoured carrier Dedicated transport ALL HQ: TODO
+- Porphetian Armoured carrier Dedicated transport ALL HQ: done
 #### **Fast Attack**
+- Archaeopter Transvector Squadron, Mechanicum Arvus Lighter, Mechanicum Avenger Strike Fighter, Mechanicum Lightning Strike Fighter, Cyber-Carnivora Pack, Herax Battle-Automata Maniple, Pteraxii Skyhunter Cohort, Serberys Tormentor Conclave, additional Fast Attack wargear options (p.53): done
 #### **Heavy Support**
+- Thanatar-Cynis, Kharax and Sepketar Siege-Automata Maniples, Skorpius Disintegrator Squadron, Onager Dunecrawler Squadron, Ordinatus-Exemplar War Construct, additional Heavy Support wargear options (p.61): done
 #### **Lords of War**
+- Hierarch Siege-Automata, The Kaban Machine, Oppressor Super-Heavy Siege Tank, Ordinatus-Minoris Macro Engine, Knight Dominus, Knight Maeliviax: done
+#### **Questoris Households**
+- Questoris Crusader Host force organisation chart, additional Knight wargear options (p.76-77): done
+#### **Rules, Armoury, Wargear and Warlord Traits (p.82-112)**
+- New rules, wargear and Legiones Skitarii Warlord Traits, text fixes to existing entries: done
+#### **Titan Legions**
+- Additional wargear options for Warhound, Reaver and Warlord Titans (p.79-81): done
 
 
 ## **Centura**

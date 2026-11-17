@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy 2nd edition + Panoptica" revision="2005" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy 2nd edition + Panoptica" revision="2006" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication name="Github" hidden="false" id="e2a4-ac85-1bef-22f5" publisherUrl="https://github.com/pirak3/30K-4-All-fixed" shortName="pirak3/30K-4-All-fixed"/>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
@@ -1655,6 +1655,8 @@ If that test is failed, the unit suffers one Wound, allocated by the controlling
       </modifiers>
     </categoryEntry>
     <categoryEntry name="Warsmith:" id="12db-45af-ea8f-f46a" hidden="false"/>
+    <categoryEntry id="6fa2-36c0-3a79-c8d1" name="Lord Crius (Tag)" hidden="true"/>
+    <categoryEntry id="a7e0-160d-0851-8df0" name="The Keys of Hel (Tag)" hidden="true"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="d926-652f-8436-30ce" name="1. Crusade Force Organisation Chart" hidden="false">
@@ -16148,8 +16150,8 @@ Limitations
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="eb05-c2be-e8a2-415b" type="lessThan"/>
-                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ccd0-4aa5-b23d-6cc7" type="lessThan"/>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6fa2-36c0-3a79-c8d1" type="lessThan"/>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a7e0-160d-0851-8df0" type="lessThan"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
