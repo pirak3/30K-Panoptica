@@ -3,7 +3,8 @@
 All notable changes to the BattleScribe Data Repository will be documented in this file.
 
 ---
-## [Unreleased] - Current branch
+## Release Archive
+## [2026-11-17]
 
 ### Added
 - **Units**:
@@ -81,7 +82,6 @@ All notable changes to the BattleScribe Data Repository will be documented in th
   - `[White Scars]`: entry fix
 
 
-## Release Archive
 ## [2026-11-11]
 
 ### Added
