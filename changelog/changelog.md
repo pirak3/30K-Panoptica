@@ -3,6 +3,36 @@
 All notable changes to the BattleScribe Data Repository will be documented in this file.
 
 ---
+## [Unreleased] - expansion/centurion
+
+### Added
+- **Force Organisation**:
+  - `[Horus Heresy]` Reworked `[ZM 2. Centurion]` into `[(Centurion) Incursio Force Organisation Chart]` (Liber Panoptica p.50-58; same id, existing rosters keep working). HQ 1-2 (1 compulsory), Troops 2-4 (2 compulsory), Elites / Fast Attack / Heavy Support 0-2, slots for one Centurion Rite of War, War-Covenant or Cohort Doctrine. No Lords of War, Fortifications, Primarchs or Allies; other force charts cannot be combined with it.
+- **Rules & Abilities**:
+  - Added category `[Centurion Game Mode]` with the Centurion Reactions (Contact!, Go to Ground! / Reposition!, Hold Fast!), Warlords, Army Restrictions and Missions rules
+  - `[Legiones Astartes]` Wired the 8 `[Centurion Rites of War]`: Compulsory Troops restrictions and Troops unlocks in every legion, required consuls (new role tags `[Vigilator:]`, `[Pathfinder:]`, `[Champion:]`, `[Delegatus:]`, `[Master of Signals:]`), required units, Command Squads for any Centurion (Command Brigade), Ambush Contingent bans (Terminator armour, Heavy/Artillery infantry), Line for Veterans (Blooded Veterans, Ravager Warband), Relentless for Breachers, Precision Strikes/Shots choice
+  - `[Mechanicum]` Added the 4 `[Centurion War-Covenants]` (picker at the Mechanicum root): one Magos Prime with the matching Lesser Techno-Arcana, Compulsory Troops restrictions, Tech-thralls at maximum unit size (Flesh-Hordes)
+  - `[Solar Auxilia]` Added the 4 `[Centurion Cohort Doctrines]` (picker at the Solar Auxilia root): Legate Marshal required, Tercio limits, no Dedicated Transports (Hardened Veterans), Medicae/Ogryn bans, Veletaris gain Line
+- **Weapons & Wargear** (only shown under their rite, covenant or doctrine):
+  - `[Phosphex Discharger]` instead of a Havoc Launcher (+20), `[Rad Missiles]` for Missile Launchers (+10), Tactical Support Squad `[Boarding Shields]` (+5/model) (Rites of War)
+  - `[Toughness 4]` Tech-thralls (+1/model), `[Weapon Skill 5]` Myrmidon Secutors (+10/model), `[Targeting Bionics]` (+10/unit) (War-Covenants)
+  - `[Rage (2) and Counter-Attack (1)]` (+30/unit), `[Laspistol and Chainsword]` instead of a Lasrifle (+2), `[Rad Grenades]` and `[Phosphex Bomb]` for Characters (+10 each) (Cohort Doctrines)
+
+### Changed
+- **Centurion army restrictions** (all factions, only in the Incursio chart):
+  - Vehicles are hidden, except Legion Rhino Transport, Skorpius Dunerider, Kharon Acquisitor, Aurox and Militia Rhino Transport
+  - Hidden: models with Master of the Legion (Primarchs aside), Feudal Hierarchy, Tribune of the Golden Legion, the Assassin or Abomination Sub-type, Toughness 8+; the Legate Marshal's normal Cohort Doctrines
+  - One Custodian Shield Captain per roster
+  - Toughness 6-7 models: at most 1 Wound per full 125 points (hidden `[T6-7 Wounds]` cost on every T6/T7 model)
+  - Dreadnought, Automata, Artillery and Mechanised units cannot grow beyond their starting size
+- **Units / Points**:
+  - `[Sarumiat]`: added its stat profile (M9 WS4 BS3 S7 T7 W5 I4 A3 Ld7 Sv3+)
+  - `[Magos Prime]`, `[Magos Prime on Abeyant]`: no longer counted as Feudal Hierarchy in the Incursio chart (they do not have the rule)
+
+### Fixed
+- **BattleScribe Structure**:
+  - Added the missing `[Vehicle:]` category to Damocles Command Rhino, Sokar Stormbird, Thunderhawk Transporter, Karacnos and Skorpius Dunerider (also fixes the Zone Mortalis and Black Watch vehicle bans for them)
+
 ## Release Archive
 ## [2026-11-17]
 
