@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="2f2b-1f31-c455-1701" name="LI - Custodes" revision="2023" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="70" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="2f2b-1f31-c455-1701" name="LI - Custodes" revision="2024" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="70" type="catalogue">
   <categoryEntries>
     <categoryEntry id="ccca-a9de-0cd9-f8be" name="Legio Custodes" hidden="false">
       <infoLinks>
@@ -13,6 +13,11 @@
         <modifier type="add" field="category" value="7b69-bf2f-4547-e83b">
           <conditions>
             <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5430-5be1-1613-be44" type="instanceOf"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="fe56-62d3-b563-ad2b">
+          <conditions>
+            <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b956-4f8e-2bca-7756" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -426,6 +431,12 @@ Furthermore, the first Reaction made in each Game Turn by this Warlord and any 
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no models with Tribune of the Golden Legion</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
         </modifier>
       </modifiers>
       <constraints>
@@ -1819,6 +1830,14 @@ Furthermore, the first Reaction made in each Game Turn by this Warlord and any 
       </costs>
     </selectionEntry>
     <selectionEntry id="bf7c-a1e1-f983-987e" name="Coronus Grav-carrier" publicationId="15a4-fc68-502d-48a9" page="27" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="7502-6263-cda0-e719" name="Coronus Grav-carrier" hidden="false" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle">
           <characteristics>
@@ -2025,6 +2044,14 @@ Furthermore, the first Reaction made in each Game Turn by this Warlord and any 
       </costs>
     </selectionEntry>
     <selectionEntry id="2ce3-4ce5-d86f-543f" name="Pallas Attack Speeder Squadron" publicationId="15a4-fc68-502d-48a9" page="29" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <infoLinks>
         <infoLink id="0392-7b04-7950-2ce6" name="Legio Custodes" hidden="false" targetId="6998-b328-c080-5341" type="rule"/>
         <infoLink id="e860-4609-b8ba-104c" name="Loyalist" hidden="false" targetId="d1de-a45d-2b9b-c878" type="rule"/>
@@ -3490,6 +3517,17 @@ A model with the Infantry Unit Type that selects a Custodes Gyrfalcon jetbike as
       </costs>
     </selectionEntry>
     <selectionEntry id="bfaf-d07a-d3a5-c708" name="Custodian Shield Captain" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" value="1" field="80a9-10cc-a5a3-781f">
+          <comment>Centurion Game Mode: only a single Custodian Shield Captain</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="80a9-10cc-a5a3-781f" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
       <profiles>
         <profile id="f55f-adbb-e729-0fa4" name="Custodian Shield Captain" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
           <characteristics>
@@ -3657,6 +3695,7 @@ A model with the Infantry Unit Type that selects a Custodes Gyrfalcon jetbike as
         <categoryLink id="5e24-b212-8d6e-f99e" name="Dreadnought Unit Type" hidden="false" targetId="4280-4963-02b5-e31d" primary="false"/>
         <categoryLink id="aced-8f0e-a2d4-d5ec" name="Legio Custodes" hidden="false" targetId="ccca-a9de-0cd9-f8be" primary="false"/>
         <categoryLink id="30f5-2d58-9563-d534" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="6570-c3fa-1389-a380" name="Centurion: Toughness 6-7" hidden="false" targetId="72bd-6fb0-5505-08ee" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="908d-f352-f376-a5d3" name="Ranged Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="a6ba-34b9-8685-78c7">
@@ -3765,6 +3804,7 @@ A model with the Infantry Unit Type that selects a Custodes Gyrfalcon jetbike as
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="250"/>
+        <cost name="T6-7 Wounds" typeId="d77c-5315-c711-f178" value="6"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="cecc-da1f-9de6-2163" name="Contemptor-Galatus Dreadnought" hidden="false" collective="false" import="true" type="model">
@@ -3858,9 +3898,11 @@ A model with the Infantry Unit Type that selects a Custodes Gyrfalcon jetbike as
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="235"/>
+        <cost name="T6-7 Wounds" typeId="d77c-5315-c711-f178" value="6"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="4280-4963-02b5-e31d" id="2226-9c28-4c15-81e7" name="Dreadnought Unit Type" primary="false"/>
+        <categoryLink id="1d6c-2fb4-bf29-ee53" name="Centurion: Toughness 6-7" hidden="false" targetId="72bd-6fb0-5505-08ee" primary="false"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry id="7cf8-3f52-2876-60e9" name="Venatari Jump Harness" publicationId="15a4-fc68-502d-48a9" page="159" hidden="false" collective="false" import="true" type="upgrade">
@@ -3921,6 +3963,14 @@ During a Reaction made in any Phase, a player may not choose to activate a model
       </costs>
     </selectionEntry>
     <selectionEntry id="ff3b-e8ec-8623-322d" name="Caladius Grav-Tank" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="7f24-dcb7-e5d0-c25f" name="Caladius Grav-Tank" hidden="false" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle">
           <characteristics>
@@ -4027,6 +4077,14 @@ During a Reaction made in any Phase, a player may not choose to activate a model
       </categoryLinks>
     </selectionEntry>
     <selectionEntry id="6526-bdfb-4ebe-6e0a" name="Orion Assault Dropship" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="9365-981d-d422-7c4a" name="Orion Assault Dropship" hidden="false" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle">
           <characteristics>
@@ -4087,6 +4145,14 @@ During a Reaction made in any Phase, a player may not choose to activate a model
       </categoryLinks>
     </selectionEntry>
     <selectionEntry id="aa0c-15a3-9d4b-ac47" name="Ares Gunship" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="d713-2661-d417-4154" name="Ares Gunship" publicationId="15a4-fc68-502d-48a9" page="36" hidden="false" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle">
           <characteristics>
@@ -4194,6 +4260,14 @@ During a Reaction made in any Phase, a player may not choose to activate a model
       </costs>
     </selectionEntry>
     <selectionEntry id="4be9-470a-201e-c72a" name="Telemon Heavy Dreadnought" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no models with Toughness 8 or higher</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="7882-2aec-368b-68ca" name="Telemon Heavy Dreadnought" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
           <characteristics>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6af7-3fee-5bc1-7533" name="LI - Solar Auxilia" revision="2038" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="70" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6af7-3fee-5bc1-7533" name="LI - Solar Auxilia" revision="2039" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="70" type="catalogue">
   <categoryEntries>
     <categoryEntry id="19f3-8727-02db-3ce5" name="Static Artillery" hidden="false">
       <rules>
@@ -25,6 +25,12 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -56,6 +62,12 @@
         <modifier type="set" field="hidden" value="true">
           <conditions>
             <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -110,6 +122,12 @@
         <modifier type="set" value="true" field="hidden">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="force" childId="7b69-bf2f-4547-e83b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -192,6 +210,11 @@
             <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5430-5be1-1613-be44" type="instanceOf"/>
           </conditions>
         </modifier>
+        <modifier type="add" field="category" value="fe56-62d3-b563-ad2b">
+          <conditions>
+            <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b956-4f8e-2bca-7756" type="instanceOf"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d28-dc52-f9e3-4cc8" type="min"/>
@@ -210,6 +233,7 @@
         <categoryLink id="9f46-eeaa-6d50-4461" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="a1ac-3d75-c5b3-eb63" name="Centurion: Cohort Doctrine" hidden="false" collective="false" import="true" targetId="546e-e301-aa08-51ae" type="selectionEntry"/>
     <entryLink id="66e5-ccf5-813f-c285" name="Tactical Command Tercio" hidden="false" collective="false" import="false" targetId="e9d4-7207-71e0-0762" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="ae33-ec9e-6580-f355" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
@@ -458,6 +482,12 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="0165-b8a0-97f6-c517" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
@@ -526,6 +556,12 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="a7e1-5382-7db4-4e74" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
@@ -545,6 +581,12 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -566,6 +608,12 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="bdfa-ee6b-b665-7cd2" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
@@ -580,6 +628,12 @@
               <comment>node_id_ba25-a4b2-4ba9-b023</comment>
             </condition>
             <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -602,6 +656,12 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="a696-fc21-00e3-8812" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
@@ -621,6 +681,12 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -642,6 +708,12 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="61c6-ca33-5c6c-21c0" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
@@ -661,6 +733,12 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -682,6 +760,12 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="a919-13c0-b14c-4f33" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
@@ -695,6 +779,12 @@
             <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="greaterThan">
               <comment>node_id_ba25-a4b2-4ba9-b023</comment>
             </condition>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -717,6 +807,12 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="fa22-3f36-d60b-3334" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
@@ -736,6 +832,12 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -776,6 +878,12 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -893,8 +1001,31 @@
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="9dd4-325a-c1cb-fac2" name="Legate Marshal" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: Cohort Doctrines rule; the Legate Marshal is only allowed with a Centurion Cohort Doctrine (he loses the rule)</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="256e-df3b-901b-2111" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="1" field="8c2d-06a8-e47e-a680">
+          <comment>Centurion Cohort Doctrine: a Solar Auxilia Legate Marshal must be selected (it loses the Cohort Doctrines rule)</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="d40e-0e0a-02a2-5225" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion Cohort Doctrine: Hardened Veterans"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="b14e-d77b-61de-8a1b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion Cohort Doctrine: Mechanised Warfare"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="56ab-a08f-951f-0039" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion Cohort Doctrine: Mortalis Specialists"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="25dc-b5d4-8b5b-c693" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion Cohort Doctrine: Unconventional Conscripts"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="154d-0b2b-1215-38bb" type="max"/>
+        <constraint type="min" value="0" field="selections" scope="force" shared="true" id="8c2d-06a8-e47e-a680" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="fb94-9780-7cb6-f0d9" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
@@ -1260,6 +1391,12 @@
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c9b6-946c-a4cb-9083" type="equalTo"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <comment>Centurion Game Mode: only Centurion Cohort Doctrines</comment>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </entryLink>
             <entryLink id="f7ac-16c1-e432-dbde" name="Fear (Feral Cohort)" hidden="false" collective="false" import="true" targetId="aefe-eff6-2961-a445" type="selectionEntry"/>
@@ -1273,6 +1410,36 @@
               </modifiers>
             </entryLink>
             <entryLink id="6044-5a15-898d-0950" name="Warlord Traits" hidden="false" collective="false" import="true" targetId="1ebb-8e01-7d58-9d99" type="selectionEntryGroup"/>
+            <entryLink id="2a2e-be8b-765a-420e" name="Rad Grenades (Mortalis Specialists)" hidden="true" collective="false" import="true" targetId="1b0b-3dfc-9521-b27e" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="56ab-a08f-951f-0039" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion Cohort Doctrine: Mortalis Specialists"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9c12-ae3e-24bc-c94a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+              </costs>
+            </entryLink>
+            <entryLink id="2d18-76a1-e09d-1151" name="Phosphex Bomb (Mortalis Specialists)" hidden="true" collective="false" import="true" targetId="4188-13ff-cb03-109e" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="56ab-a08f-951f-0039" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion Cohort Doctrine: Mortalis Specialists"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="68f5-9a97-10f3-579e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+              </costs>
+            </entryLink>
           </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="85"/>
@@ -1591,6 +1758,12 @@
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="7b69-bf2f-4547-e83b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <comment>Centurion Cohort Doctrine: Hardened Veterans - no Dedicated Transports</comment>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d40e-0e0a-02a2-5225" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion Cohort Doctrine: Hardened Veterans"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9ef5-3cce-523a-8e0d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -1609,8 +1782,153 @@
           </rules>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink id="4311-0b17-05d4-7763" name="Rage (2) and Counter-Attack (1) (Unconventional Conscripts)" hidden="false" collective="false" import="true" targetId="73f6-8675-e79e-d42c" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="546e-e301-aa08-51ae" name="Centurion: Cohort Doctrine" hidden="false" collective="false" import="true" type="upgrade">
+      <comment>Centurion Game Mode (Liber Panoptica p.58): optional, Incursio Force Organisation Chart only (slot category Centurion: Cohort Doctrine)</comment>
+      <categoryLinks>
+        <categoryLink id="70e1-015d-a3b7-a9b0" name="Centurion: Cohort Doctrine" hidden="false" targetId="256e-df3b-901b-2111" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="4a68-736a-ec46-8b70" name="Centurion: Cohort Doctrine" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1f5d-c2b5-67a5-cb2f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9b57-26fe-4b4c-9e35" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <selectionEntries>
+          <selectionEntry id="d40e-0e0a-02a2-5225" name="Hardened Veterans" hidden="false" collective="false" import="true" type="upgrade">
+            <rules>
+              <rule id="e5a7-3474-2fe4-08cb" name="Hardened Veterans" hidden="false">
+                <description>Effects:
+• All models with the Infantry Unit Type in a Detachment using this Centurion Cohort Doctrine gain a bonus of +1 to their Leadership Characteristic.
+• Any unit that includes one or more models with the Character Sub-type (excluding Auxilia Medicae) in a Detachment using this Centurion Cohort Doctrine may add +1 to their To-Hit rolls when making Shooting Attacks.
+• All models selected as part of an Auxilia Veletaris Tercio in a Detachment using this Centurion Cohort Doctrine gain the Line Sub-type.
+
+Limitations:
+• A Detachment using this Centurion Cohort Doctrine may not include more than one Auxilia Artillery Tercio.
+• A Detachment using this Centurion Cohort Doctrine may not select Dedicated Transports for any unit included in that Detachment.
+
+A Detachment which uses a Centurion Cohort Doctrine must select a Solar Auxilia Legate Marshal, with that model losing the Cohort Doctrines Special Rule as a result.</description>
+              </rule>
+            </rules>
+            <costs>
+              <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+            </costs>
+          </selectionEntry>
+          <selectionEntry id="b14e-d77b-61de-8a1b" name="Mechanised Warfare" hidden="false" collective="false" import="true" type="upgrade">
+            <rules>
+              <rule id="8f2f-f94f-f763-a2bc" name="Mechanised Warfare" hidden="false">
+                <description>Effects:
+• Whenever a model from a Detachment using this Centurion Cohort Doctrine gains a Cover Save due to intervening models, the Cover Save provided is improved to a 5+ Cover Save if the intervening model or models are from the same Detachment and have the Vehicle Unit Type. This improved Cover Save can also be claimed by models from a Detachment using this Centurion Cohort Doctrine if the terrain providing the Cover Save is a Wrecked Vehicle from the same Detachment.
+• Any models with the Infantry Unit Type and Close Order Sub-type included in a Detachment using this Centurion Cohort Doctrine may disembark up to their full Movement Characteristic and still claim the benefits of the Close Order Sub-type on that turn.
+
+Limitations:
+• All models with the Infantry Unit Type included in a Detachment using this Centurion Cohort Doctrine must begin the game embarked on a model with the Transport Sub-type, or otherwise must be placed into Reserves.
+
+A Detachment which uses a Centurion Cohort Doctrine must select a Solar Auxilia Legate Marshal, with that model losing the Cohort Doctrines Special Rule as a result.</description>
+              </rule>
+            </rules>
+            <costs>
+              <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+            </costs>
+          </selectionEntry>
+          <selectionEntry id="56ab-a08f-951f-0039" name="Mortalis Specialists" hidden="false" collective="false" import="true" type="upgrade">
+            <rules>
+              <rule id="4212-4c71-9d58-50a2" name="Mortalis Specialists" hidden="false">
+                <description>Effects:
+• Any model in a Detachment using this Centurion Cohort Doctrine may exchange a Flamer or a Heavy Flamer for a Toxiferran Flamer at no additional points cost.
+• Any model with the Character Sub-type in a Detachment using this Centurion Cohort Doctrine may be equipped with Rad Grenades at a cost of +10 points per model.
+• Any model with the Character Sub-type in a Detachment using this Centurion Cohort Doctrine may be equipped with a single Phosphex Bomb at a cost of +10 points per model.
+
+Limitations:
+• A detachment using this Centurion Cohort Doctrine may not include any Solar Auxilia Medicae Sections, Charonite Ogryn Sections, Solar Auxilia Furibundus Dreadnought Talons, or Solar Auxilia Extremis Boarding Rig Sections.
+
+A Detachment which uses a Centurion Cohort Doctrine must select a Solar Auxilia Legate Marshal, with that model losing the Cohort Doctrines Special Rule as a result.</description>
+              </rule>
+            </rules>
+            <costs>
+              <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+            </costs>
+          </selectionEntry>
+          <selectionEntry id="25dc-b5d4-8b5b-c693" name="Unconventional Conscripts" hidden="false" collective="false" import="true" type="upgrade">
+            <rules>
+              <rule id="0cc6-5f85-1ec6-8903" name="Unconventional Conscripts" hidden="false">
+                <description>Effects:
+• Any model in a Detachment using this Centurion Cohort Doctrine may replace a Lasrifle they are equipped with for one of the following options at no additional points cost; Lascarbine, Lasgun, Stubcarbine, Autorifle, Shotgun, or Laspistol and Close Combat Weapon.
+• Any model in a Detachment using this Centurion Cohort Doctrine may replace a Lasrifle they are equipped with for the following option at a cost of +2 points per model; Laspistol and Chainsword.
+• Any unit in a Detachment using this Centurion Cohort Doctrine composed entirely of models with the Infantry Unit Type may be given the Rage (2) and Counter-Attack (1) Special Rules at a cost of +30 points per unit. This does not improve or replace any existing instances of the Rage (X) or Counter-Attack (X) Special Rules that the unit already possessed.
+
+Limitations:
+• All models in a Detachment using this Centurion Cohort Doctrine with the Close-Order Sub-type lose that Sub-type.
+• A Detachment using this Centurion Cohort Doctrine may not select more than one Auxilia Tactical Command Tercio.
+• A Detachment using this Centurion Cohort Doctrine may not select more than one Auxilia Veletaris Tercio.
+• A Detachment using this Centurion Cohort Doctrine may not include any Solar Auxilia Medicae Sections, Charonite Ogryn Sections, Solar Auxilia Furibundus Dreadnought Talons, or Solar Auxilia Extremis Boarding Rig Sections.
+
+A Detachment which uses a Centurion Cohort Doctrine must select a Solar Auxilia Legate Marshal, with that model losing the Cohort Doctrines Special Rule as a result.</description>
+              </rule>
+            </rules>
+            <costs>
+              <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+            </costs>
+          </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="73f6-8675-e79e-d42c" name="Rage (2) and Counter-Attack (1) (Unconventional Conscripts)" hidden="true" collective="false" import="true" type="upgrade">
+      <comment>Unconventional Conscripts: a unit composed entirely of Infantry may take Rage (2) and Counter-Attack (1) for +30 points per unit (does not improve existing instances)</comment>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="25dc-b5d4-8b5b-c693" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion Cohort Doctrine: Unconventional Conscripts"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4b62-6c7d-0b30-b0f4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="a8fd-99a5-fee1-01f3" name="Rage (X)" hidden="false" targetId="564d-3550-ae44-2f99" type="rule">
+          <modifiers>
+            <modifier type="set" value="Rage (2)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="f58e-0ab7-227c-e909" name="Counter-Attack (X)" hidden="false" targetId="fd6d-2a76-10e0-936a" type="rule">
+          <modifiers>
+            <modifier type="set" value="Counter-Attack (1)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="013e-b925-a430-8bc3" name="Laspistol and Chainsword (replaces Lasrifle, Unconventional Conscripts)" hidden="true" collective="false" import="true" type="upgrade">
+      <comment>Unconventional Conscripts: any model may replace a Lasrifle with a Laspistol and Chainsword for +2 points per model (the free swaps stay as rule text)</comment>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="25dc-b5d4-8b5b-c693" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion Cohort Doctrine: Unconventional Conscripts"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0a12-7a90-9743-7aa4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="a599-fe81-9c44-2609" name="Laspistol" hidden="false" collective="false" import="true" targetId="654d-be88-b0a8-7ae5" type="selectionEntry"/>
+        <entryLink id="971d-3cf2-cf84-359c" name="Chainsword" hidden="false" collective="false" import="true" targetId="06e7-a6ae-ed1c-eb03" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="cc63-5cc3-212a-3d4c" name="Reinforced Void Armour" hidden="false" collective="false" import="true" type="upgrade">
@@ -1654,6 +1972,17 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="e9d4-7207-71e0-0762" name="Tactical Command Tercio" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" value="1" field="319e-4655-d846-4912">
+          <comment>Centurion Cohort Doctrine: Unconventional Conscripts - no more than one Auxilia Tactical Command Tercio</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="25dc-b5d4-8b5b-c693" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion Cohort Doctrine: Unconventional Conscripts"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="319e-4655-d846-4912" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+      </constraints>
       <categoryLinks>
         <categoryLink id="ab79-0133-fa4a-cd86" name="Infantry Unit Type" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
         <categoryLink id="2b04-daec-c616-d6bc" name="Close-order Sub-type" hidden="false" targetId="0af0-ea84-09d7-2b1f" primary="false"/>
@@ -1941,6 +2270,38 @@
                           </characteristics>
                         </profile>
                       </profiles>
+                      <entryLinks>
+                        <entryLink id="7c3b-e949-f186-05db" name="Rad Grenades (Mortalis Specialists)" hidden="true" collective="false" import="true" targetId="1b0b-3dfc-9521-b27e" type="selectionEntry">
+                          <modifiers>
+                            <modifier type="set" value="false" field="hidden">
+                              <conditions>
+                                <condition type="atLeast" value="1" field="selections" scope="force" childId="56ab-a08f-951f-0039" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion Cohort Doctrine: Mortalis Specialists"/>
+                              </conditions>
+                            </modifier>
+                          </modifiers>
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="235e-863c-82bb-8ca2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                          </constraints>
+                          <costs>
+                            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                          </costs>
+                        </entryLink>
+                        <entryLink id="60f9-1ff3-9b16-df5c" name="Phosphex Bomb (Mortalis Specialists)" hidden="true" collective="false" import="true" targetId="4188-13ff-cb03-109e" type="selectionEntry">
+                          <modifiers>
+                            <modifier type="set" value="false" field="hidden">
+                              <conditions>
+                                <condition type="atLeast" value="1" field="selections" scope="force" childId="56ab-a08f-951f-0039" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion Cohort Doctrine: Mortalis Specialists"/>
+                              </conditions>
+                            </modifier>
+                          </modifiers>
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="42c6-9ff4-3dd8-b5ec" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                          </constraints>
+                          <costs>
+                            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                          </costs>
+                        </entryLink>
+                      </entryLinks>
                       <costs>
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
                       </costs>
@@ -1995,6 +2356,38 @@
                           </characteristics>
                         </profile>
                       </profiles>
+                      <entryLinks>
+                        <entryLink id="78ae-664a-ef09-944e" name="Rad Grenades (Mortalis Specialists)" hidden="true" collective="false" import="true" targetId="1b0b-3dfc-9521-b27e" type="selectionEntry">
+                          <modifiers>
+                            <modifier type="set" value="false" field="hidden">
+                              <conditions>
+                                <condition type="atLeast" value="1" field="selections" scope="force" childId="56ab-a08f-951f-0039" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion Cohort Doctrine: Mortalis Specialists"/>
+                              </conditions>
+                            </modifier>
+                          </modifiers>
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="58aa-9c9b-48e7-4437" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                          </constraints>
+                          <costs>
+                            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                          </costs>
+                        </entryLink>
+                        <entryLink id="bac6-68b6-bb00-e1ec" name="Phosphex Bomb (Mortalis Specialists)" hidden="true" collective="false" import="true" targetId="4188-13ff-cb03-109e" type="selectionEntry">
+                          <modifiers>
+                            <modifier type="set" value="false" field="hidden">
+                              <conditions>
+                                <condition type="atLeast" value="1" field="selections" scope="force" childId="56ab-a08f-951f-0039" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion Cohort Doctrine: Mortalis Specialists"/>
+                              </conditions>
+                            </modifier>
+                          </modifiers>
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5cf0-68c7-8c18-54b4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                          </constraints>
+                          <costs>
+                            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                          </costs>
+                        </entryLink>
+                      </entryLinks>
                       <costs>
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
                       </costs>
@@ -2248,6 +2641,12 @@
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="atLeast"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <comment>Centurion Cohort Doctrine: Hardened Veterans - no Dedicated Transports</comment>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d40e-0e0a-02a2-5225" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion Cohort Doctrine: Hardened Veterans"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d15-36d7-a1ce-2687" type="max"/>
@@ -2431,6 +2830,38 @@
                       </characteristics>
                     </profile>
                   </profiles>
+                  <entryLinks>
+                    <entryLink id="088c-3bc3-e6c7-100e" name="Rad Grenades (Mortalis Specialists)" hidden="true" collective="false" import="true" targetId="1b0b-3dfc-9521-b27e" type="selectionEntry">
+                      <modifiers>
+                        <modifier type="set" value="false" field="hidden">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="force" childId="56ab-a08f-951f-0039" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion Cohort Doctrine: Mortalis Specialists"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3026-dd1d-89e3-7a8e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="bc3d-7757-79c7-69dc" name="Phosphex Bomb (Mortalis Specialists)" hidden="true" collective="false" import="true" targetId="4188-13ff-cb03-109e" type="selectionEntry">
+                      <modifiers>
+                        <modifier type="set" value="false" field="hidden">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="force" childId="56ab-a08f-951f-0039" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion Cohort Doctrine: Mortalis Specialists"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c72a-2fe3-07ed-89ac" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
                   </costs>
@@ -2688,6 +3119,12 @@
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="atLeast"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <comment>Centurion Cohort Doctrine: Hardened Veterans - no Dedicated Transports</comment>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d40e-0e0a-02a2-5225" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion Cohort Doctrine: Hardened Veterans"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f01-7bc3-e001-f9a7" type="max"/>
@@ -2768,6 +3205,9 @@
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink id="f08b-f896-d777-98f5" name="Rage (2) and Counter-Attack (1) (Unconventional Conscripts)" hidden="false" collective="false" import="true" targetId="73f6-8675-e79e-d42c" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
@@ -2789,9 +3229,22 @@
             <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bfd2-7016-f5fe-be6a" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="1" field="e97f-e0a2-9ef8-9e09">
+          <comment>Centurion Cohort Doctrine: Unconventional Conscripts - no more than one Auxilia Veletaris Tercio</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="25dc-b5d4-8b5b-c693" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion Cohort Doctrine: Unconventional Conscripts"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="6399-5c65-7833-1025" field="category">
+          <comment>Centurion Cohort Doctrine: Hardened Veterans - Veletaris Tercio models gain the Line Sub-type</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="d40e-0e0a-02a2-5225" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion Cohort Doctrine: Hardened Veterans"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="-1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ca24-f640-593d-b537" type="max"/>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="e97f-e0a2-9ef8-9e09" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="4ee4-cb02-24f5-137f" name="Infantry Unit Type" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
@@ -3036,6 +3489,38 @@
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
+              <entryLinks>
+                <entryLink id="8707-c1ac-d0f0-4a47" name="Rad Grenades (Mortalis Specialists)" hidden="true" collective="false" import="true" targetId="1b0b-3dfc-9521-b27e" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="56ab-a08f-951f-0039" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion Cohort Doctrine: Mortalis Specialists"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8341-15d8-da85-7b97" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="bcbf-8712-fd62-530f" name="Phosphex Bomb (Mortalis Specialists)" hidden="true" collective="false" import="true" targetId="4188-13ff-cb03-109e" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="56ab-a08f-951f-0039" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion Cohort Doctrine: Mortalis Specialists"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b1b6-0cc2-0998-b929" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
               </costs>
@@ -3054,6 +3539,12 @@
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="atLeast"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <comment>Centurion Cohort Doctrine: Hardened Veterans - no Dedicated Transports</comment>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d40e-0e0a-02a2-5225" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion Cohort Doctrine: Hardened Veterans"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f8a3-daac-d0ed-7e9c" type="max"/>
@@ -3067,6 +3558,12 @@
                     <modifier type="set" field="hidden" value="false">
                       <conditions>
                         <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a09b-28bd-8ffc-f4f0" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="true" field="hidden">
+                      <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -3732,6 +4229,38 @@
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
+              <entryLinks>
+                <entryLink id="8291-2348-7b69-000e" name="Rad Grenades (Mortalis Specialists)" hidden="true" collective="false" import="true" targetId="1b0b-3dfc-9521-b27e" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="56ab-a08f-951f-0039" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion Cohort Doctrine: Mortalis Specialists"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2c2b-7428-b78b-695a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="d1ad-3d0b-8d6f-21a3" name="Phosphex Bomb (Mortalis Specialists)" hidden="true" collective="false" import="true" targetId="4188-13ff-cb03-109e" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="56ab-a08f-951f-0039" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion Cohort Doctrine: Mortalis Specialists"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1028-3d3f-798a-90a6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
               </costs>
@@ -3956,6 +4485,7 @@
                         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ffc7-1049-2c65-95ef" type="max"/>
                       </constraints>
                     </entryLink>
+                    <entryLink id="7614-47d0-9650-2ab0" name="Laspistol and Chainsword (replaces Lasrifle, Unconventional Conscripts)" hidden="false" collective="false" import="true" targetId="013e-b925-a430-8bc3" type="selectionEntry"/>
                   </entryLinks>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="8"/>
@@ -4051,6 +4581,12 @@
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="atLeast"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <comment>Centurion Cohort Doctrine: Hardened Veterans - no Dedicated Transports</comment>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d40e-0e0a-02a2-5225" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion Cohort Doctrine: Hardened Veterans"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="20b7-845c-7c4e-9a24" type="max"/>
@@ -4078,6 +4614,12 @@
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
+                    </modifier>
+                    <modifier type="set" value="true" field="hidden">
+                      <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
                     </modifier>
                   </modifiers>
                 </entryLink>
@@ -4328,6 +4870,38 @@
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
+              <entryLinks>
+                <entryLink id="348d-9285-b8c0-687e" name="Rad Grenades (Mortalis Specialists)" hidden="true" collective="false" import="true" targetId="1b0b-3dfc-9521-b27e" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="56ab-a08f-951f-0039" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion Cohort Doctrine: Mortalis Specialists"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4ae0-d8d7-16ea-340a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="7581-c430-d72e-ab33" name="Phosphex Bomb (Mortalis Specialists)" hidden="true" collective="false" import="true" targetId="4188-13ff-cb03-109e" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="56ab-a08f-951f-0039" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion Cohort Doctrine: Mortalis Specialists"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="15d8-f1f6-5dc5-df04" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
               </costs>
@@ -4467,6 +5041,12 @@
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="atLeast"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <comment>Centurion Cohort Doctrine: Hardened Veterans - no Dedicated Transports</comment>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d40e-0e0a-02a2-5225" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion Cohort Doctrine: Hardened Veterans"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf07-414c-ccae-aa89" type="max"/>
@@ -4494,6 +5074,12 @@
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
+                    </modifier>
+                    <modifier type="set" value="true" field="hidden">
+                      <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
                     </modifier>
                   </modifiers>
                 </entryLink>
@@ -4537,6 +5123,14 @@
           </costs>
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Hermes Veletarii Sentinel" hidden="false" id="adab-c06b-41b9-ab59" page="181" publicationId="d882-d2a-5da1-92c4" defaultAmount="2">
+              <modifiers>
+                <modifier type="set" value="2" field="ad54-b3d5-1e2f-31d1">
+                  <comment>Centurion Game Mode: may not expand beyond its starting size</comment>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile name="Hermes Veletarii Sentinel" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="7818-24b8-4e17-9253" publicationId="d882-d2a-5da1-92c4" page="181">
                   <characteristics>
@@ -4607,6 +5201,9 @@
           </constraints>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink id="fd7d-2d84-16ed-4227" name="Rage (2) and Counter-Attack (1) (Unconventional Conscripts)" hidden="false" collective="false" import="true" targetId="73f6-8675-e79e-d42c" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
@@ -4725,6 +5322,36 @@ If the unit that includes Aevos Jovan also includes one or more Medicae Orderlie
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="875b-d3a7-1716-a08a" type="max"/>
               </constraints>
             </entryLink>
+            <entryLink id="9ee0-59fa-0fb3-2915" name="Rad Grenades (Mortalis Specialists)" hidden="true" collective="false" import="true" targetId="1b0b-3dfc-9521-b27e" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="56ab-a08f-951f-0039" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion Cohort Doctrine: Mortalis Specialists"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="21e9-fbcc-712e-ed1a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+              </costs>
+            </entryLink>
+            <entryLink id="5857-5b15-3993-1f8f" name="Phosphex Bomb (Mortalis Specialists)" hidden="true" collective="false" import="true" targetId="4188-13ff-cb03-109e" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="56ab-a08f-951f-0039" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion Cohort Doctrine: Mortalis Specialists"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2184-940f-bffd-6d5e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+              </costs>
+            </entryLink>
           </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="60"/>
@@ -4766,11 +5393,27 @@ If the unit that includes Aevos Jovan also includes one or more Medicae Orderlie
           </categoryLinks>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink id="dcf6-c946-1a55-ca98" name="Rage (2) and Counter-Attack (1) (Unconventional Conscripts)" hidden="false" collective="false" import="true" targetId="73f6-8675-e79e-d42c" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f28b-5804-f1fd-c187" name="Medicae Section" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Cohort Doctrine: Mortalis Specialists / Unconventional Conscripts - no Medicae Section</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="56ab-a08f-951f-0039" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion Cohort Doctrine: Mortalis Specialists"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="25dc-b5d4-8b5b-c693" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion Cohort Doctrine: Unconventional Conscripts"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <selectionEntries>
         <selectionEntry id="acf1-eb06-5d5d-d36f" name="Auxilia Medicae" hidden="false" collective="false" import="true" type="model">
           <modifiers>
@@ -4967,6 +5610,7 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
       </selectionEntries>
       <entryLinks>
         <entryLink id="0db6-0c76-cac6-dba7" name="Fear (Feral Cohort)" hidden="false" collective="false" import="true" targetId="aefe-eff6-2961-a445" type="selectionEntry"/>
+        <entryLink id="33b2-1cd2-3868-133b" name="Rage (2) and Counter-Attack (1) (Unconventional Conscripts)" hidden="false" collective="false" import="true" targetId="73f6-8675-e79e-d42c" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -4976,6 +5620,19 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
       </categoryLinks>
     </selectionEntry>
     <selectionEntry id="6728-8632-5bf2-79bb" name="Charonite Ogryn Section" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Cohort Doctrine: Mortalis Specialists / Unconventional Conscripts - no Charonite Ogryn Section</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="56ab-a08f-951f-0039" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion Cohort Doctrine: Mortalis Specialists"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="25dc-b5d4-8b5b-c693" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion Cohort Doctrine: Unconventional Conscripts"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <selectionEntries>
         <selectionEntry id="c2a2-f136-696e-5641" name="Charonite Ogryn" hidden="false" collective="false" import="true" type="model">
           <constraints>
@@ -5096,6 +5753,7 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
       </selectionEntries>
       <entryLinks>
         <entryLink id="dab3-cc63-98e9-cc93" name="Fear (Feral Cohort)" hidden="false" collective="false" import="true" targetId="aefe-eff6-2961-a445" type="selectionEntry"/>
+        <entryLink id="8a91-3773-6897-a268" name="Rage (2) and Counter-Attack (1) (Unconventional Conscripts)" hidden="false" collective="false" import="true" targetId="73f6-8675-e79e-d42c" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -5191,6 +5849,12 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
         <modifier type="set" field="hidden" value="true">
           <conditions>
             <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -5321,6 +5985,12 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
         <modifier type="set" field="hidden" value="true">
           <conditions>
             <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -5653,6 +6323,38 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
+              <entryLinks>
+                <entryLink id="9db8-523b-3c55-83d6" name="Rad Grenades (Mortalis Specialists)" hidden="true" collective="false" import="true" targetId="1b0b-3dfc-9521-b27e" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="56ab-a08f-951f-0039" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion Cohort Doctrine: Mortalis Specialists"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5bb3-8bf5-4dd6-3642" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="7004-dc40-1e0f-3fb6" name="Phosphex Bomb (Mortalis Specialists)" hidden="true" collective="false" import="true" targetId="4188-13ff-cb03-109e" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="56ab-a08f-951f-0039" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion Cohort Doctrine: Mortalis Specialists"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5ba5-fb52-9212-958c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
               </costs>
@@ -5674,6 +6376,12 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                 <modifier type="set" field="7001-06bf-7826-f0a3" value="1">
                   <conditions>
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d9a0-4875-fb75-f9a9" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <comment>Centurion Cohort Doctrine: Hardened Veterans - no Dedicated Transports</comment>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d40e-0e0a-02a2-5225" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion Cohort Doctrine: Hardened Veterans"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -5763,6 +6471,7 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="43cb-43f0-6582-8791" type="max"/>
                       </constraints>
                     </entryLink>
+                    <entryLink id="d961-564e-2268-c250" name="Laspistol and Chainsword (replaces Lasrifle, Unconventional Conscripts)" hidden="false" collective="false" import="true" targetId="013e-b925-a430-8bc3" type="selectionEntry"/>
                   </entryLinks>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="6"/>
@@ -5793,6 +6502,7 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df1e-d0fc-4e6d-46b3" type="max"/>
                       </constraints>
                     </entryLink>
+                    <entryLink id="da7d-4bc2-6339-5b0d" name="Laspistol and Chainsword (replaces Lasrifle, Unconventional Conscripts)" hidden="false" collective="false" import="true" targetId="013e-b925-a430-8bc3" type="selectionEntry"/>
                   </entryLinks>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="7"/>
@@ -6247,6 +6957,38 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
+              <entryLinks>
+                <entryLink id="ca23-c0cc-d22c-42f6" name="Rad Grenades (Mortalis Specialists)" hidden="true" collective="false" import="true" targetId="1b0b-3dfc-9521-b27e" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="56ab-a08f-951f-0039" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion Cohort Doctrine: Mortalis Specialists"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1df5-f4b7-185d-9cd0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="8ab7-f9dd-31b9-f106" name="Phosphex Bomb (Mortalis Specialists)" hidden="true" collective="false" import="true" targetId="4188-13ff-cb03-109e" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="56ab-a08f-951f-0039" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion Cohort Doctrine: Mortalis Specialists"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a62e-3df5-8d41-fe10" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
               </costs>
@@ -6268,6 +7010,12 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                 <modifier type="set" field="2bf1-7888-910c-6141" value="1">
                   <conditions>
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d9a0-4875-fb75-f9a9" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <comment>Centurion Cohort Doctrine: Hardened Veterans - no Dedicated Transports</comment>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d40e-0e0a-02a2-5225" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion Cohort Doctrine: Hardened Veterans"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -6341,6 +7089,7 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed1f-947d-eb1d-7105" type="max"/>
                       </constraints>
                     </entryLink>
+                    <entryLink id="7ded-d220-1749-244b" name="Laspistol and Chainsword (replaces Lasrifle, Unconventional Conscripts)" hidden="false" collective="false" import="true" targetId="013e-b925-a430-8bc3" type="selectionEntry"/>
                   </entryLinks>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
@@ -6371,6 +7120,7 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="13b1-3cd0-937c-9e6a" type="max"/>
                       </constraints>
                     </entryLink>
+                    <entryLink id="5e0c-cd47-1d48-141b" name="Laspistol and Chainsword (replaces Lasrifle, Unconventional Conscripts)" hidden="false" collective="false" import="true" targetId="013e-b925-a430-8bc3" type="selectionEntry"/>
                   </entryLinks>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="6"/>
@@ -6630,6 +7380,9 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
           </categoryLinks>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink id="1ea6-dc05-5077-775d" name="Rage (2) and Counter-Attack (1) (Unconventional Conscripts)" hidden="false" collective="false" import="true" targetId="73f6-8675-e79e-d42c" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
@@ -6700,6 +7453,14 @@ While at least one model with a Command Vox is present on the battlefield and n
       </costs>
     </selectionEntry>
     <selectionEntry id="428d-bd65-c88e-1430" name="Divisio Aeronautica Primaris-Lightning Strike Fighter" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="b1c3-5171-e456-0210" name="Primaris-Lightning Strike Fighter" publicationId="15a4-fc68-502d-48a9" page="94" hidden="false" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle">
           <characteristics>
@@ -6813,6 +7574,14 @@ While at least one model with a Command Vox is present on the battlefield and n
       </costs>
     </selectionEntry>
     <selectionEntry id="6201-e908-c475-db6b" name="Divisio Aeronautica Thunderbolt Fighter" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="3179-947f-3d3c-0f2a" name="Thunderbolt Fighter" publicationId="15a4-fc68-502d-48a9" page="95" hidden="false" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle">
           <characteristics>
@@ -6919,6 +7688,12 @@ While at least one model with a Command Vox is present on the battlefield and n
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="dbe3-dba3-67f8-8e86" type="max"/>
@@ -6928,6 +7703,14 @@ While at least one model with a Command Vox is present on the battlefield and n
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="d10d-00fa-2cd1-05f0" name="Armoured Command Section" hidden="false" collective="false" import="true" type="unit">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="847e-899e-6e56-853b" type="max"/>
           </constraints>
@@ -7085,6 +7868,12 @@ While at least one model with a Command Vox is present on the battlefield and n
                     <condition field="selections" scope="26e0-55ec-051b-d209" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3fce-bf1a-6369-a386" type="atLeast"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="82ed-946d-706f-5b65" type="max"/>
@@ -7238,6 +8027,12 @@ While at least one model with a Command Vox is present on the battlefield and n
                 <modifier type="set" field="hidden" value="true">
                   <conditions>
                     <condition field="selections" scope="26e0-55ec-051b-d209" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="813c-fa93-375d-5f3e" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -7454,9 +8249,16 @@ While at least one model with a Command Vox is present on the battlefield and n
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" value="1" field="8a15-aabc-1eda-3552">
+          <comment>Centurion Cohort Doctrine: Hardened Veterans - no more than one Auxilia Artillery Tercio</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="d40e-0e0a-02a2-5225" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion Cohort Doctrine: Hardened Veterans"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6ce1-5f74-d914-f276" type="max"/>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="8a15-aabc-1eda-3552" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
       </constraints>
       <selectionEntries>
         <selectionEntry id="d37b-b569-c471-ef76" name="Artillery Command Section" hidden="false" collective="false" import="true" type="unit">
@@ -7727,6 +8529,38 @@ While at least one model with a Command Vox is present on the battlefield and n
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
+              <entryLinks>
+                <entryLink id="0469-7afb-68c8-20cf" name="Rad Grenades (Mortalis Specialists)" hidden="true" collective="false" import="true" targetId="1b0b-3dfc-9521-b27e" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="56ab-a08f-951f-0039" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion Cohort Doctrine: Mortalis Specialists"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1278-8fd0-1a50-dcc1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="756d-570f-edc0-9156" name="Phosphex Bomb (Mortalis Specialists)" hidden="true" collective="false" import="true" targetId="4188-13ff-cb03-109e" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="56ab-a08f-951f-0039" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion Cohort Doctrine: Mortalis Specialists"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="45d6-ba37-5b80-c7cf" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="33"/>
               </costs>
@@ -7779,6 +8613,7 @@ While at least one model with a Command Vox is present on the battlefield and n
                         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db22-d4a4-8366-af37" type="max"/>
                       </constraints>
                     </entryLink>
+                    <entryLink id="f853-e5d4-c9df-fa8e" name="Laspistol and Chainsword (replaces Lasrifle, Unconventional Conscripts)" hidden="false" collective="false" import="true" targetId="013e-b925-a430-8bc3" type="selectionEntry"/>
                   </entryLinks>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="8"/>
@@ -7808,6 +8643,7 @@ While at least one model with a Command Vox is present on the battlefield and n
                         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e4c0-1265-743d-5433" type="max"/>
                       </constraints>
                     </entryLink>
+                    <entryLink id="973b-2eb8-4c6d-56cf" name="Laspistol and Chainsword (replaces Lasrifle, Unconventional Conscripts)" hidden="false" collective="false" import="true" targetId="013e-b925-a430-8bc3" type="selectionEntry"/>
                   </entryLinks>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="9"/>
@@ -8022,6 +8858,12 @@ While at least one model with a Command Vox is present on the battlefield and n
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d9a0-4875-fb75-f9a9" type="equalTo"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <comment>Centurion Cohort Doctrine: Hardened Veterans - no Dedicated Transports</comment>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d40e-0e0a-02a2-5225" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion Cohort Doctrine: Hardened Veterans"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f442-028a-9494-fc3a" type="max"/>
@@ -8128,6 +8970,14 @@ While at least one model with a Command Vox is present on the battlefield and n
                   </constraints>
                   <selectionEntries>
                     <selectionEntry id="5d7d-d450-d3a6-1abc" name="Rapier Carrier" hidden="false" collective="false" import="true" type="model">
+                      <modifiers>
+                        <modifier type="set" value="1" field="434e-e643-e34e-103e">
+                          <comment>Centurion Game Mode: may not expand beyond its starting size</comment>
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
                       <constraints>
                         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9f95-72ea-dff2-0629" type="min"/>
                         <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="434e-e643-e34e-103e" type="max"/>
@@ -8337,6 +9187,14 @@ While at least one model with a Command Vox is present on the battlefield and n
                   </constraints>
                   <selectionEntries>
                     <selectionEntry id="7f3e-55ab-351d-b1e7" name="Tarantula Sentry Gun" hidden="false" collective="false" import="true" type="model">
+                      <modifiers>
+                        <modifier type="set" value="3" field="bbdc-3313-94fe-a888">
+                          <comment>Centurion Game Mode: may not expand beyond its starting size</comment>
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
                       <constraints>
                         <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4007-470f-32f8-0850" type="min"/>
                         <constraint field="selections" scope="parent" value="9" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bbdc-3313-94fe-a888" type="max"/>
@@ -8465,11 +9323,22 @@ While at least one model with a Command Vox is present on the battlefield and n
           </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="0435-8ff2-4e2a-a324" name="Rage (2) and Counter-Attack (1) (Unconventional Conscripts)" hidden="false" collective="false" import="true" targetId="73f6-8675-e79e-d42c" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7040-cbf9-ae05-d34f" name="Malcador Heavy Tank Squadron" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="599e-e4ee-408f-8006" name="Vehicle:" hidden="false" targetId="e2b6-b770-784c-9e95" primary="false"/>
         <categoryLink id="46f0-6ee0-d708-646e" name="Reinforced Sub-type" hidden="false" targetId="9b0d-738c-10e4-4ec1" primary="false"/>
@@ -8671,6 +9540,14 @@ While at least one model with a Command Vox is present on the battlefield and n
       </costs>
     </selectionEntry>
     <selectionEntry id="c020-7685-ddf4-a10a" name="Armoured Battery" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="70e5-c4bd-67d1-48b6" name="Vehicle:" hidden="false" targetId="e2b6-b770-784c-9e95" primary="false"/>
         <categoryLink id="90dd-77e1-f4c9-494a" name="Bombard Sub-type" hidden="false" targetId="d5df-57ac-8f3c-097b" primary="false"/>
@@ -8767,6 +9644,14 @@ While at least one model with a Command Vox is present on the battlefield and n
       </costs>
     </selectionEntry>
     <selectionEntry id="087d-b4d7-7770-7c07" name="Valdor Tank Destroyer Squadron" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <infoLinks>
         <infoLink id="6f81-5b55-03b5-e1d2" name="Containment Breach" hidden="false" targetId="2bf6-9fcb-fb98-a11d" type="rule"/>
       </infoLinks>
@@ -8921,6 +9806,14 @@ While at least one model with a Command Vox is present on the battlefield and n
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="7248-052e-1c89-7cbf" name="Cyclops &amp; Operator" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" value="1" field="78a2-5d69-cdbb-ee8b">
+              <comment>Centurion Game Mode: may not expand beyond its starting size</comment>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cd49-7a00-5099-deb4" type="min"/>
             <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="78a2-5d69-cdbb-ee8b" type="max"/>
@@ -9059,6 +9952,12 @@ While at least one model with a Command Vox is present on the battlefield and n
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="atLeast"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <comment>Centurion Cohort Doctrine: Hardened Veterans - no Dedicated Transports</comment>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="d40e-0e0a-02a2-5225" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion Cohort Doctrine: Hardened Veterans"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2bfb-f080-24d0-7b7d" type="max"/>
@@ -9110,11 +10009,22 @@ While at least one model with a Command Vox is present on the battlefield and n
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="e19c-6aa1-0977-f017" name="Rage (2) and Counter-Attack (1) (Unconventional Conscripts)" hidden="false" collective="false" import="true" targetId="73f6-8675-e79e-d42c" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b0a8-0f45-9999-b893" name="Malcador Infernus Squadron" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="2be0-c1f0-c1aa-8dee" name="Vehicle:" hidden="false" targetId="e2b6-b770-784c-9e95" primary="false"/>
         <categoryLink id="e099-bd75-a34a-7a25" name="Reinforced Sub-type" hidden="false" targetId="9b0d-738c-10e4-4ec1" primary="false"/>
@@ -9310,6 +10220,14 @@ While at least one model with a Command Vox is present on the battlefield and n
       </costs>
     </selectionEntry>
     <selectionEntry id="19c9-f8e8-edff-fa8e" name="Stormhammer" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="3d2f-5e8e-b753-efe9" name="Stormhammer" hidden="false" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle">
           <characteristics>
@@ -9488,6 +10406,14 @@ While at least one model with a Command Vox is present on the battlefield and n
       </costs>
     </selectionEntry>
     <selectionEntry id="2918-e98d-0ab1-811b" name="Carnodon Strike Squadron" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="684c-8ae7-c5cb-3acc" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
         <categoryLink name="SA or IM Unit" hidden="false" id="165d-ca07-dcb-e3fd" targetId="4aca-2849-7f41-0200" primary="false"/>
@@ -9791,6 +10717,12 @@ While at least one model with a Command Vox is present on the battlefield and n
             <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="atLeast"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <infoLinks>
         <infoLink id="ebe2-b5a3-2b6f-9cf3" name="Infantry Transport" hidden="false" targetId="0c6b-9cc1-5801-3e83" type="rule"/>
@@ -9885,6 +10817,14 @@ While at least one model with a Command Vox is present on the battlefield and n
       </costs>
     </selectionEntry>
     <selectionEntry id="5ac5-b201-717f-0650" name="Armoured Support Tercio" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="d70d-a5ab-df78-5eba" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
       </categoryLinks>
@@ -9906,6 +10846,12 @@ While at least one model with a Command Vox is present on the battlefield and n
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
                 </modifier>
               </modifiers>
               <constraints>
@@ -10020,6 +10966,12 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
                 </modifier>
               </modifiers>
               <constraints>
@@ -10159,6 +11111,12 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
                     </conditionGroup>
                   </conditionGroups>
                 </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="80c4-093a-18e2-d271" type="max"/>
@@ -10295,6 +11253,14 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
       </entryLinks>
     </selectionEntry>
     <selectionEntry id="838e-101d-5501-3261" name="Minotaur Battery" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="0d9a-7bc3-a965-032a" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
         <categoryLink id="ac7f-9374-c266-cd0a" name="Reinforced Sub-type" hidden="false" targetId="9b0d-738c-10e4-4ec1" primary="false"/>
@@ -10381,6 +11347,14 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
       </costs>
     </selectionEntry>
     <selectionEntry id="e59c-1b65-8de1-4490" name="Macharius Heavy Tank Squadron" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="3cf6-cfb2-9cec-19aa" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
         <categoryLink id="0894-5a2a-e649-9e11" name="Super-heavy Sub-type" hidden="false" targetId="7381-1130-ca6e-1806" primary="false"/>
@@ -10544,6 +11518,14 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
       </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="7331-a4a7-8e69-c55e" name="Stormblade" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="68c0-0be5-9796-c78a" name="Stormblade" hidden="false" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle">
           <characteristics>
@@ -10653,6 +11635,14 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
       </costs>
     </selectionEntry>
     <selectionEntry id="1c10-5772-2e27-1e51" name="Baneblade" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="2482-9109-93f4-a892" name="Baneblade" hidden="false" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle">
           <characteristics>
@@ -10789,6 +11779,14 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
       </costs>
     </selectionEntry>
     <selectionEntry id="7bb3-2416-aaca-8e40" name="Banehammer" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="0068-847e-a08c-f19f" name="Banehammer" hidden="false" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle">
           <characteristics>
@@ -10914,6 +11912,14 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
       </infoLinks>
     </selectionEntry>
     <selectionEntry id="2bae-aaa9-9840-e2eb" name="Stormlord" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="2115-d799-e0c7-dee4" name="Stormlord" hidden="false" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle">
           <characteristics>
@@ -11037,6 +12043,14 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
       </infoLinks>
     </selectionEntry>
     <selectionEntry id="4713-c9ee-2c57-9457" name="Shadowsword" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="947b-e923-5118-4418" name="Shadowsword" hidden="false" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle">
           <characteristics>
@@ -11154,6 +12168,14 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
       </costs>
     </selectionEntry>
     <selectionEntry id="3d0b-9f37-cd30-0db7" name="Stormsword" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="26c0-cec5-acdc-0e3a" name="Stormsword" hidden="false" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle">
           <characteristics>
@@ -11283,6 +12305,14 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
       </costs>
     </selectionEntry>
     <selectionEntry id="2d13-ea6e-e48d-f352" name="Praetor Armoured Assault Launcher" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="cfcb-758f-5160-09e6" name="Praetor Armoured Assault Transport" hidden="false" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle">
           <characteristics>
@@ -11399,6 +12429,14 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
       </costs>
     </selectionEntry>
     <selectionEntry id="8cec-2913-77a0-c4e4" name="Crassus Armoured Assault Transport" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="6e85-cf68-151f-a77a" name="Transport Sub-type" hidden="false" targetId="7b0a-a743-a8da-3a39" primary="false"/>
         <categoryLink id="97e6-b9cf-c1f9-798c" name="Super-heavy Sub-type" hidden="false" targetId="7381-1130-ca6e-1806" primary="false"/>
@@ -11519,6 +12557,14 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
             <selectionEntry id="4996-c32d-a060-ea90" name="Earthshaker Artillery Platforms" hidden="false" collective="false" import="true" type="upgrade">
               <selectionEntries>
                 <selectionEntry id="d464-7884-cdc2-3d27" name="Earthshaker Artillery Platforms" hidden="false" collective="false" import="true" type="model">
+                  <modifiers>
+                    <modifier type="set" value="1" field="79a0-3fe4-99a5-aa42">
+                      <comment>Centurion Game Mode: may not expand beyond its starting size</comment>
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="79a0-3fe4-99a5-aa42" type="max"/>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="34cb-260c-3f16-61d4" type="min"/>
@@ -11612,11 +12658,13 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
                   </selectionEntries>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="100"/>
+                    <cost name="T6-7 Wounds" typeId="d77c-5315-c711-f178" value="4"/>
                   </costs>
                   <categoryLinks>
                     <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="c127-5742-4d6f-92d4" name="Infantry Unit Type" primary="false"/>
                     <categoryLink targetId="19f3-8727-02db-3ce5" id="1546-0c9e-43c9-b5bb" name="Static Artillery" primary="false"/>
                     <categoryLink targetId="9231-183c-b97b-63f9" id="6ef3-17e3-489d-ad53" name="Heavy Sub-type" primary="false"/>
+                    <categoryLink id="ab92-f976-2b9f-ce0f" name="Centurion: Toughness 6-7" hidden="false" targetId="72bd-6fb0-5505-08ee" primary="false"/>
                   </categoryLinks>
                 </selectionEntry>
               </selectionEntries>
@@ -11627,6 +12675,14 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
             <selectionEntry id="eeb1-c295-e7cb-b867" name="Medusa Artillery Platforms" hidden="false" collective="false" import="true" type="upgrade">
               <selectionEntries>
                 <selectionEntry id="bcfe-d922-eec8-98f1" name="Medusa Artillery Platforms" hidden="false" collective="false" import="true" type="model">
+                  <modifiers>
+                    <modifier type="set" value="1" field="99e2-8534-d4d6-90af">
+                      <comment>Centurion Game Mode: may not expand beyond its starting size</comment>
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4e3d-fcec-1017-5eab" type="min"/>
                     <constraint field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="99e2-8534-d4d6-90af" type="max"/>
@@ -11690,11 +12746,13 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
                   </selectionEntries>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="100"/>
+                    <cost name="T6-7 Wounds" typeId="d77c-5315-c711-f178" value="4"/>
                   </costs>
                   <categoryLinks>
                     <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="fb7d-b2aa-4699-914c" name="Infantry Unit Type" primary="false"/>
                     <categoryLink targetId="19f3-8727-02db-3ce5" id="05ff-7970-47ff-a991" name="Static Artillery" primary="false"/>
                     <categoryLink targetId="9231-183c-b97b-63f9" id="13c8-42b0-48a4-90a2" name="Heavy Sub-type" primary="false"/>
+                    <categoryLink id="6694-b76f-1717-e0bf" name="Centurion: Toughness 6-7" hidden="false" targetId="72bd-6fb0-5505-08ee" primary="false"/>
                   </categoryLinks>
                 </selectionEntry>
               </selectionEntries>
@@ -11709,6 +12767,9 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
         <infoLink name="Immobile" id="d788-c852-e0a1-92c0" hidden="false" type="rule" targetId="a37b-25ee-9b14-12fa"/>
         <infoLink name="Bulky (X)" id="7988-ae5e-51f6-28bb" hidden="false" type="rule" targetId="676c-7b75-4b6f-9405"/>
       </infoLinks>
+      <entryLinks>
+        <entryLink id="d9e4-d4c0-e4ec-4363" name="Rage (2) and Counter-Attack (1) (Unconventional Conscripts)" hidden="false" collective="false" import="true" targetId="73f6-8675-e79e-d42c" type="selectionEntry"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry name="Aethon Heavy Sentinel Squadron" type="unit" id="a67f-63df-43c3-8e3c" page="182" publicationId="d882-d2a-5da1-92c4">
       <categoryLinks>
@@ -11864,14 +12925,22 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
             <categoryLink targetId="6d79-a3e4-381f-7b0f" primary="false" id="d127-c87a-4697-be59" name="Cavalry Unit Type"/>
             <categoryLink targetId="9231-183c-b97b-63f9" primary="false" id="e5c1-4757-445d-8ee0" name="Heavy Sub-type"/>
             <categoryLink targetId="e929-a5c3-451c-6f19" primary="false" id="2e11-596e-43ca-8e5b" name="Mechanised Unit Sub-type"/>
+            <categoryLink id="e8b0-92c8-a90f-3110" name="Centurion: Toughness 6-7" hidden="false" targetId="72bd-6fb0-5505-08ee" primary="false"/>
           </categoryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="65"/>
+            <cost name="T6-7 Wounds" typeId="d77c-5315-c711-f178" value="5"/>
           </costs>
           <modifiers>
             <modifier type="set" value="5" field="afdb-a5d1-437b-9b12">
               <conditions>
                 <condition type="equalTo" value="1" field="selections" scope="force" childId="7e09-aae1-d5ff-d43e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="1" field="afdb-a5d1-437b-9b12">
+              <comment>Centurion Game Mode: may not expand beyond its starting size</comment>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -11890,6 +12959,14 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
       </costs>
       <selectionEntries>
         <selectionEntry type="model" name="Hermes Light Sentinel" id="b834-2881-4d5f-bea5" page="180" publicationId="d882-d2a-5da1-92c4">
+          <modifiers>
+            <modifier type="set" value="2" field="6033-bec8-479f-b185">
+              <comment>Centurion Game Mode: may not expand beyond its starting size</comment>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <profiles>
             <profile id="3898-8d8a-4692-98d6" name="Hermes Light Sentinel" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false">
               <characteristics>
@@ -12020,6 +13097,12 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
         <modifier type="set" value="true" field="hidden">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="force" childId="7b69-bf2f-4547-e83b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>

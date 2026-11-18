@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="2ee4-57ed-db44-8a63" name="LA -   IV: Iron Warriors" revision="2043" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="2ee4-57ed-db44-8a63" name="LA -   IV: Iron Warriors" revision="2044" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
   <entryLinks>
     <entryLink id="fe10-3104-0252-96de" name="Nârik Dreygur" hidden="true" collective="false" import="false" targetId="ac97-c8ce-16ba-9c49" type="selectionEntry">
       <modifiers>
@@ -56,6 +56,12 @@
             <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Rite of War: Ambush Contingent - no Infantry with the Heavy or Artillery Sub-types (Iron Havocs)</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="62c0-3639-5a2a-c62b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Ambush Contingent"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="1e67-0fa0-e2ff-ea41" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
@@ -102,6 +108,12 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="23c5-64f4-07e9-0ac0" name="Lords of War:" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
@@ -122,6 +134,12 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no models with Master of the Legion</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="3cb3-e3bb-c0cf-9678" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
@@ -134,6 +152,24 @@
         <modifier type="set" field="hidden" value="false">
           <conditions>
             <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="greaterThan"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no models with Master of the Legion</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Rite of War: Ambush Contingent - no Infantry with the Heavy or Artillery Sub-types (Erasmus Golg)</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="62c0-3639-5a2a-c62b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Ambush Contingent"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Rite of War: Ambush Contingent - no models in Terminator Armour</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="62c0-3639-5a2a-c62b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Ambush Contingent"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -150,6 +186,18 @@
             <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d56-d960-0687-7fee" type="greaterThan"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Rite of War: Ambush Contingent - no Infantry with the Heavy or Artillery Sub-types (Dominator Cohort)</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="62c0-3639-5a2a-c62b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Ambush Contingent"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Rite of War: Ambush Contingent - no models in Terminator Armour</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="62c0-3639-5a2a-c62b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Ambush Contingent"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="019f-1e63-3d79-80c1" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
@@ -161,6 +209,11 @@
         <modifier type="add" field="category" value="7b69-bf2f-4547-e83b">
           <conditions>
             <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5430-5be1-1613-be44" type="instanceOf"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="fe56-62d3-b563-ad2b">
+          <conditions>
+            <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b956-4f8e-2bca-7756" type="instanceOf"/>
           </conditions>
         </modifier>
         <modifier type="add" value="192e-fc36-cfa9-779a" field="category">
@@ -239,6 +292,21 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="remove" value="8f42-a824-fb5f-8fea" field="category">
+          <comment>Centurion Rite of War: Compulsory Troops restricted by the Rite of War</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="62c0-3639-5a2a-c62b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Ambush Contingent"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="b773-f5f4-e348-6e25" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Tactical Strike Force"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="5ca0-3855-a537-0473" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Blooded Veterans"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="b54c-2bc9-a6ee-d58d" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Destroyer Conclave"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="9391-f2e0-e77d-8bda" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Breacher Shieldwall"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="4594-2775-2a85-5f5e" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Seeker Cadre"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="c590-d302-4ddc-a356" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true">
@@ -278,6 +346,12 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="095a-8309-442d-8b8c" name="Fast Attack:" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true">
@@ -311,6 +385,12 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -350,6 +430,21 @@
             </condition>
           </conditions>
         </modifier>
+        <modifier type="remove" value="8f42-a824-fb5f-8fea" field="category">
+          <comment>Centurion Rite of War: Compulsory Troops restricted by the Rite of War</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="62c0-3639-5a2a-c62b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Ambush Contingent"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="8746-18c9-dad7-523c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Ravager Warband"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="b773-f5f4-e348-6e25" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Tactical Strike Force"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="5ca0-3855-a537-0473" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Blooded Veterans"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="b54c-2bc9-a6ee-d58d" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Destroyer Conclave"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="4594-2775-2a85-5f5e" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Seeker Cadre"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="3e62-cb74-4bd2-8b75" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true">
@@ -382,6 +477,12 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -459,6 +560,12 @@
                 </condition>
               </conditions>
             </modifier>
+            <modifier type="set" value="false" field="hidden">
+              <comment>Centurion Rite of War: Command Brigade - a Legion Command Squad may be taken for any Centurion</comment>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="7817-3f75-afd5-5f7a" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Command Brigade"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </entryLink>
       </entryLinks>
@@ -472,6 +579,18 @@
             <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo">
               <comment>node_id_60b1-049b-4a5f-85c2</comment>
             </condition>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Rite of War: Ambush Contingent - no Infantry with the Heavy or Artillery Sub-types (Centurion, Cataphractii)</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="62c0-3639-5a2a-c62b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Ambush Contingent"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Rite of War: Ambush Contingent - no models in Terminator Armour</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="62c0-3639-5a2a-c62b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Ambush Contingent"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -501,6 +620,12 @@
                 </condition>
               </conditions>
             </modifier>
+            <modifier type="set" value="false" field="hidden">
+              <comment>Centurion Rite of War: Command Brigade - a Legion Command Squad may be taken for any Centurion</comment>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="7817-3f75-afd5-5f7a" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Command Brigade"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </entryLink>
       </entryLinks>
@@ -511,6 +636,18 @@
           <conditions>
             <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo">
             </condition>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Rite of War: Ambush Contingent - no Infantry with the Heavy or Artillery Sub-types (Centurion, Indomitus)</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="62c0-3639-5a2a-c62b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Ambush Contingent"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Rite of War: Ambush Contingent - no models in Terminator Armour</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="62c0-3639-5a2a-c62b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Ambush Contingent"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -533,12 +670,26 @@
                 </condition>
               </conditions>
             </modifier>
+            <modifier type="set" value="false" field="hidden">
+              <comment>Centurion Rite of War: Command Brigade - a Legion Command Squad may be taken for any Centurion</comment>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="7817-3f75-afd5-5f7a" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Command Brigade"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </entryLink>
       </entryLinks>
     </entryLink>
     <entryLink id="2e01-2fea-4564-cde8" name="Centurion, Tartaros" hidden="false" collective="false" import="false" targetId="f806-8a4e-d0d6-beaa" type="selectionEntry">
       <comment>template_id_6e9c-0842-4514-8ea6</comment>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Rite of War: Ambush Contingent - no models in Terminator Armour</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="62c0-3639-5a2a-c62b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Ambush Contingent"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="0795-8ad0-4168-8807" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
           <comment>template_id_fc9d-03d1-4bbd-a1c4</comment>
@@ -565,11 +716,31 @@
                 </condition>
               </conditions>
             </modifier>
+            <modifier type="set" value="false" field="hidden">
+              <comment>Centurion Rite of War: Command Brigade - a Legion Command Squad may be taken for any Centurion</comment>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="7817-3f75-afd5-5f7a" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Command Brigade"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </entryLink>
       </entryLinks>
     </entryLink>
     <entryLink id="599c-b958-2355-ec6b" name="Centurion, Saturnine" hidden="false" collective="false" import="false" targetId="2bed-bdcf-cfe8-e3e8" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Rite of War: Ambush Contingent - no Infantry with the Heavy or Artillery Sub-types (Centurion, Saturnine)</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="62c0-3639-5a2a-c62b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Ambush Contingent"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Rite of War: Ambush Contingent - no models in Terminator Armour</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="62c0-3639-5a2a-c62b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Ambush Contingent"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="8487-26bb-3d9b-cb47" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
         </categoryLink>
@@ -587,6 +758,12 @@
               <conditions>
                 <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="35d4-0dcd-f7d2-a6da" type="lessThan">
                 </condition>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="false" field="hidden">
+              <comment>Centurion Rite of War: Command Brigade - a Legion Command Squad may be taken for any Centurion</comment>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="7817-3f75-afd5-5f7a" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Command Brigade"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -844,6 +1021,22 @@
                   <comment>node_id_94bd-c771-4a85-8581</comment>
                 </condition>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1e3c-924e-9d3f-01fb" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="remove" value="8f42-a824-fb5f-8fea" field="category">
+          <comment>Centurion Rite of War: Compulsory Troops restricted by the Rite of War</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="62c0-3639-5a2a-c62b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Ambush Contingent"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="8746-18c9-dad7-523c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Ravager Warband"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="b773-f5f4-e348-6e25" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Tactical Strike Force"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="5ca0-3855-a537-0473" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Blooded Veterans"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="b54c-2bc9-a6ee-d58d" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Destroyer Conclave"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="9391-f2e0-e77d-8bda" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Breacher Shieldwall"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="4594-2775-2a85-5f5e" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Seeker Cadre"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -1223,6 +1416,12 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="5014-85c3-4fa7-916b" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true">
@@ -1256,6 +1455,12 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -1387,6 +1592,12 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="93c1-d700-4d63-87cb" name="Lords of War:" hidden="false" targetId="c658-dc6b-727b-c488" primary="true">
@@ -1423,6 +1634,12 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -1482,6 +1699,12 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="e02c-2902-46ba-9918" name="Lords of War:" hidden="false" targetId="c658-dc6b-727b-c488" primary="true">
@@ -1516,6 +1739,12 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="44c7-94e9-40ff-bad6" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true">
@@ -1549,6 +1778,12 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -1587,6 +1822,12 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="84ef-e73b-4cf3-9fc2" name="Lords of War:" hidden="false" targetId="c658-dc6b-727b-c488" primary="true">
@@ -1624,6 +1865,12 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="5921-a8a9-4cdd-ac5f" name="Lords of War:" hidden="false" targetId="c658-dc6b-727b-c488" primary="true">
@@ -1660,6 +1907,12 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -1718,6 +1971,12 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -1822,6 +2081,12 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="002d-47e7-49c0-b051" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true">
@@ -1896,6 +2161,18 @@
             </condition>
           </conditions>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Rite of War: Ambush Contingent - no Infantry with the Heavy or Artillery Sub-types (Nullificator Squad)</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="62c0-3639-5a2a-c62b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Ambush Contingent"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Rite of War: Ambush Contingent - no models in Terminator Armour</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="62c0-3639-5a2a-c62b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Ambush Contingent"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="efd8-6a9a-4f0c-936a" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true">
@@ -1963,6 +2240,22 @@
           <conditions>
             <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
           </conditions>
+        </modifier>
+        <modifier type="remove" value="8f42-a824-fb5f-8fea" field="category">
+          <comment>Centurion Rite of War: Compulsory Troops restricted by the Rite of War</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="62c0-3639-5a2a-c62b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Ambush Contingent"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="8746-18c9-dad7-523c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Ravager Warband"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="b773-f5f4-e348-6e25" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Tactical Strike Force"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="5ca0-3855-a537-0473" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Blooded Veterans"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="b54c-2bc9-a6ee-d58d" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Destroyer Conclave"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="9391-f2e0-e77d-8bda" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Breacher Shieldwall"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="4594-2775-2a85-5f5e" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Seeker Cadre"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -2121,6 +2414,12 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="a115-098d-48d0-9547" name="Fast Attack:" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true">
@@ -2186,6 +2485,27 @@
               <comment>node_id_94b3-1331-474b-885b</comment>
             </condition>
           </conditions>
+        </modifier>
+        <modifier type="add" value="8f42-a824-fb5f-8fea" field="category">
+          <comment>Centurion Rite of War: Reconnaissance Squad counts as Compulsory Troops</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="62c0-3639-5a2a-c62b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Ambush Contingent"/>
+          </conditions>
+        </modifier>
+        <modifier type="remove" value="8f42-a824-fb5f-8fea" field="category">
+          <comment>Centurion Rite of War: Compulsory Troops restricted by the Rite of War</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="8746-18c9-dad7-523c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Ravager Warband"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="b773-f5f4-e348-6e25" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Tactical Strike Force"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="5ca0-3855-a537-0473" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Blooded Veterans"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="b54c-2bc9-a6ee-d58d" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Destroyer Conclave"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="9391-f2e0-e77d-8bda" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Breacher Shieldwall"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="4594-2775-2a85-5f5e" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Seeker Cadre"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -2264,6 +2584,27 @@
               <comment>node_id_be88-afef-49b3-bd1e</comment>
             </condition>
           </conditions>
+        </modifier>
+        <modifier type="add" value="8f42-a824-fb5f-8fea" field="category">
+          <comment>Centurion Rite of War: Scout Squad counts as Compulsory Troops</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="62c0-3639-5a2a-c62b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Ambush Contingent"/>
+          </conditions>
+        </modifier>
+        <modifier type="remove" value="8f42-a824-fb5f-8fea" field="category">
+          <comment>Centurion Rite of War: Compulsory Troops restricted by the Rite of War</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="8746-18c9-dad7-523c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Ravager Warband"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="b773-f5f4-e348-6e25" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Tactical Strike Force"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="5ca0-3855-a537-0473" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Blooded Veterans"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="b54c-2bc9-a6ee-d58d" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Destroyer Conclave"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="9391-f2e0-e77d-8bda" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Breacher Shieldwall"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="4594-2775-2a85-5f5e" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Seeker Cadre"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -2618,6 +2959,21 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="remove" value="8f42-a824-fb5f-8fea" field="category">
+          <comment>Centurion Rite of War: Compulsory Troops restricted by the Rite of War</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="62c0-3639-5a2a-c62b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Ambush Contingent"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="8746-18c9-dad7-523c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Ravager Warband"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="5ca0-3855-a537-0473" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Blooded Veterans"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="b54c-2bc9-a6ee-d58d" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Destroyer Conclave"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="9391-f2e0-e77d-8bda" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Breacher Shieldwall"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="4594-2775-2a85-5f5e" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Seeker Cadre"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="e3a9-9416-46e1-8cee" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
@@ -2663,6 +3019,12 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Rite of War: Ambush Contingent - no Infantry with the Heavy or Artillery Sub-types (Tarantula Sentry Gun Battery)</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="62c0-3639-5a2a-c62b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Ambush Contingent"/>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -2728,6 +3090,18 @@
             </condition>
           </conditions>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Rite of War: Ambush Contingent - no Infantry with the Heavy or Artillery Sub-types (Terminator Indomitus Squad)</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="62c0-3639-5a2a-c62b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Ambush Contingent"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Rite of War: Ambush Contingent - no models in Terminator Armour</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="62c0-3639-5a2a-c62b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Ambush Contingent"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="3d93-e293-4654-9baa" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true">
@@ -2781,6 +3155,12 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -2988,6 +3368,12 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="8bd7-c9e7-4ebe-b24f" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true">
@@ -3036,6 +3422,18 @@
             </condition>
           </conditions>
         </modifier>
+        <modifier type="set" value="false" field="hidden">
+          <comment>Centurion Rite of War: Seeker Squad may be taken as Troops</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="4594-2775-2a85-5f5e" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Seeker Cadre"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="8f42-a824-fb5f-8fea" field="category">
+          <comment>Centurion Rite of War: Seeker Squad counts as Compulsory Troops</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="4594-2775-2a85-5f5e" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Seeker Cadre"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="4f29-096b-4233-bf17" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
@@ -3082,6 +3480,18 @@
             </condition>
           </conditions>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Rite of War: Ambush Contingent - no Infantry with the Heavy or Artillery Sub-types (Nullificator Squad)</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="62c0-3639-5a2a-c62b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Ambush Contingent"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Rite of War: Ambush Contingent - no models in Terminator Armour</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="62c0-3639-5a2a-c62b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Ambush Contingent"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="2cd2-b1d1-4b79-9868" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
@@ -3108,6 +3518,28 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="remove" value="8f42-a824-fb5f-8fea" field="category">
+          <comment>Centurion Rite of War: Compulsory Troops restricted by the Rite of War</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="62c0-3639-5a2a-c62b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Ambush Contingent"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="8746-18c9-dad7-523c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Ravager Warband"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="b773-f5f4-e348-6e25" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Tactical Strike Force"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="5ca0-3855-a537-0473" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Blooded Veterans"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="b54c-2bc9-a6ee-d58d" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Destroyer Conclave"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="9391-f2e0-e77d-8bda" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Breacher Shieldwall"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="4594-2775-2a85-5f5e" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Seeker Cadre"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="32cb-7077-4d54-9f38" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
@@ -3130,6 +3562,12 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no models with Master of the Legion</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -3154,6 +3592,12 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="fe4f-c8f2-470f-901c" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
@@ -3173,6 +3617,22 @@
                   <comment>node_id_b932-667a-4b43-8331</comment>
                 </condition>
                 <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="remove" value="8f42-a824-fb5f-8fea" field="category">
+          <comment>Centurion Rite of War: Compulsory Troops restricted by the Rite of War</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="62c0-3639-5a2a-c62b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Ambush Contingent"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="8746-18c9-dad7-523c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Ravager Warband"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="b773-f5f4-e348-6e25" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Tactical Strike Force"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="5ca0-3855-a537-0473" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Blooded Veterans"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="b54c-2bc9-a6ee-d58d" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Destroyer Conclave"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="9391-f2e0-e77d-8bda" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Breacher Shieldwall"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="4594-2775-2a85-5f5e" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Seeker Cadre"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -3202,6 +3662,28 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="remove" value="8f42-a824-fb5f-8fea" field="category">
+          <comment>Centurion Rite of War: Compulsory Troops restricted by the Rite of War</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="62c0-3639-5a2a-c62b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Ambush Contingent"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="8746-18c9-dad7-523c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Ravager Warband"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="b773-f5f4-e348-6e25" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Tactical Strike Force"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="5ca0-3855-a537-0473" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Blooded Veterans"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="b54c-2bc9-a6ee-d58d" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Destroyer Conclave"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="9391-f2e0-e77d-8bda" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Breacher Shieldwall"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="4594-2775-2a85-5f5e" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Seeker Cadre"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="68dd-fc0f-4fde-8adc" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
@@ -3224,6 +3706,18 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Rite of War: Ambush Contingent - no Infantry with the Heavy or Artillery Sub-types (Terminator Cataphractii Squad)</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="62c0-3639-5a2a-c62b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Ambush Contingent"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Rite of War: Ambush Contingent - no models in Terminator Armour</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="62c0-3639-5a2a-c62b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Ambush Contingent"/>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -3248,6 +3742,24 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" value="false" field="hidden">
+          <comment>Centurion Rite of War: Veteran Squad may be taken as Troops</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="5ca0-3855-a537-0473" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Blooded Veterans"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="8f42-a824-fb5f-8fea" field="category">
+          <comment>Centurion Rite of War: Veteran Squad counts as Compulsory Troops</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="5ca0-3855-a537-0473" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Blooded Veterans"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="6399-5c65-7833-1025" field="category">
+          <comment>Centurion Rite of War: Blooded Veterans - Veteran Squads taken as Compulsory Troops gain the Line Sub-type</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="5ca0-3855-a537-0473" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Blooded Veterans"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="ba2d-50ad-45f1-91c9" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
@@ -3269,6 +3781,12 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Rite of War: Ambush Contingent - no models in Terminator Armour</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="62c0-3639-5a2a-c62b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Ambush Contingent"/>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -3292,6 +3810,12 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -3317,6 +3841,12 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="1fef-4409-4fab-93fc" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
@@ -3333,6 +3863,12 @@
             <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo">
               <comment>node_id_9286-579f-4e52-8a67</comment>
             </condition>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no models with Master of the Legion</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -3415,6 +3951,27 @@
             <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7572-b678-7ff5-6259" type="atLeast"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="false" field="hidden">
+          <comment>Centurion Rite of War: Destroyer Assault Squad may be taken as Troops</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="b54c-2bc9-a6ee-d58d" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Destroyer Conclave"/>
+          </conditions>
+        </modifier>
+        <modifier type="remove" value="8f42-a824-fb5f-8fea" field="category">
+          <comment>Centurion Rite of War: Compulsory Troops restricted by the Rite of War</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="62c0-3639-5a2a-c62b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Ambush Contingent"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="8746-18c9-dad7-523c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Ravager Warband"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="b773-f5f4-e348-6e25" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Tactical Strike Force"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="5ca0-3855-a537-0473" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Blooded Veterans"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="9391-f2e0-e77d-8bda" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Breacher Shieldwall"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="4594-2775-2a85-5f5e" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Seeker Cadre"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="2769-f927-e883-3977" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
@@ -3428,6 +3985,27 @@
           <conditions>
             <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7572-b678-7ff5-6259" type="atLeast"/>
           </conditions>
+        </modifier>
+        <modifier type="set" value="false" field="hidden">
+          <comment>Centurion Rite of War: Mortalis Destroyer Squad may be taken as Troops</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="b54c-2bc9-a6ee-d58d" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Destroyer Conclave"/>
+          </conditions>
+        </modifier>
+        <modifier type="remove" value="8f42-a824-fb5f-8fea" field="category">
+          <comment>Centurion Rite of War: Compulsory Troops restricted by the Rite of War</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="62c0-3639-5a2a-c62b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Ambush Contingent"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="8746-18c9-dad7-523c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Ravager Warband"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="b773-f5f4-e348-6e25" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Tactical Strike Force"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="5ca0-3855-a537-0473" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Blooded Veterans"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="9391-f2e0-e77d-8bda" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Breacher Shieldwall"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="4594-2775-2a85-5f5e" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Seeker Cadre"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -3446,6 +4024,28 @@
         <modifier type="append" field="name" value="(Reserve Only)">
           <conditions>
             <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="remove" value="8f42-a824-fb5f-8fea" field="category">
+          <comment>Centurion Rite of War: Compulsory Troops restricted by the Rite of War</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="62c0-3639-5a2a-c62b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Ambush Contingent"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="8746-18c9-dad7-523c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Ravager Warband"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="b773-f5f4-e348-6e25" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Tactical Strike Force"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="5ca0-3855-a537-0473" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Blooded Veterans"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="b54c-2bc9-a6ee-d58d" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Destroyer Conclave"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="9391-f2e0-e77d-8bda" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Breacher Shieldwall"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="4594-2775-2a85-5f5e" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Seeker Cadre"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Rite of War: Ambush Contingent - no models in Terminator Armour</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="62c0-3639-5a2a-c62b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Ambush Contingent"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -3467,6 +4067,34 @@
             <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="remove" value="8f42-a824-fb5f-8fea" field="category">
+          <comment>Centurion Rite of War: Compulsory Troops restricted by the Rite of War</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="62c0-3639-5a2a-c62b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Ambush Contingent"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="8746-18c9-dad7-523c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Ravager Warband"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="b773-f5f4-e348-6e25" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Tactical Strike Force"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="5ca0-3855-a537-0473" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Blooded Veterans"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="b54c-2bc9-a6ee-d58d" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Destroyer Conclave"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="9391-f2e0-e77d-8bda" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Breacher Shieldwall"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="4594-2775-2a85-5f5e" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Seeker Cadre"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Rite of War: Ambush Contingent - no Infantry with the Heavy or Artillery Sub-types (Heavy Destroyer Squad, Cataphractii)</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="62c0-3639-5a2a-c62b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Ambush Contingent"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Rite of War: Ambush Contingent - no models in Terminator Armour</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="62c0-3639-5a2a-c62b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Ambush Contingent"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="5ac1-f6d2-f00e-3856" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
@@ -3483,6 +4111,22 @@
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="08ad-4cd8-4796-ec99" type="atLeast"/>
                 <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="equalTo"/>
                 <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8742-d1a5-4518-4ecf" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="remove" value="8f42-a824-fb5f-8fea" field="category">
+          <comment>Centurion Rite of War: Compulsory Troops restricted by the Rite of War</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="62c0-3639-5a2a-c62b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Ambush Contingent"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="8746-18c9-dad7-523c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Ravager Warband"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="b773-f5f4-e348-6e25" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Tactical Strike Force"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="5ca0-3855-a537-0473" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Blooded Veterans"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="b54c-2bc9-a6ee-d58d" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Destroyer Conclave"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="9391-f2e0-e77d-8bda" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Breacher Shieldwall"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="4594-2775-2a85-5f5e" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Seeker Cadre"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -3526,6 +4170,12 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" value="false" field="hidden">
+          <comment>Centurion Rite of War: Assault Veteran Squad may be taken as Troops</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="5ca0-3855-a537-0473" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Blooded Veterans"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="7c75-ed7b-0102-74b3" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
@@ -3543,6 +4193,18 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Rite of War: Ambush Contingent - no Infantry with the Heavy or Artillery Sub-types (Terminator Saturnine Squad)</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="62c0-3639-5a2a-c62b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Ambush Contingent"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Rite of War: Ambush Contingent - no models in Terminator Armour</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="62c0-3639-5a2a-c62b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Ambush Contingent"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="725a-c226-afb0-28ed" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
@@ -3559,6 +4221,18 @@
         <modifier type="append" field="name" value="(Reserve Only)">
           <conditions>
             <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Rite of War: Ambush Contingent - no Infantry with the Heavy or Artillery Sub-types (Terminator Saturnine Squad)</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="62c0-3639-5a2a-c62b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Ambush Contingent"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Rite of War: Ambush Contingent - no models in Terminator Armour</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="62c0-3639-5a2a-c62b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Ambush Contingent"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -3583,6 +4257,22 @@
           <conditions>
             <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
           </conditions>
+        </modifier>
+        <modifier type="remove" value="8f42-a824-fb5f-8fea" field="category">
+          <comment>Centurion Rite of War: Compulsory Troops restricted by the Rite of War</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="62c0-3639-5a2a-c62b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Ambush Contingent"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="8746-18c9-dad7-523c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Ravager Warband"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="b773-f5f4-e348-6e25" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Tactical Strike Force"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="5ca0-3855-a537-0473" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Blooded Veterans"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="b54c-2bc9-a6ee-d58d" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Destroyer Conclave"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="9391-f2e0-e77d-8bda" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Breacher Shieldwall"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="4594-2775-2a85-5f5e" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Seeker Cadre"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -3652,6 +4342,12 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no models with Toughness 8 or higher</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="c7d1-12c2-319f-3dee" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
@@ -3684,6 +4380,34 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="remove" value="8f42-a824-fb5f-8fea" field="category">
+          <comment>Centurion Rite of War: Compulsory Troops restricted by the Rite of War</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="62c0-3639-5a2a-c62b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Ambush Contingent"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="8746-18c9-dad7-523c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Ravager Warband"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="b773-f5f4-e348-6e25" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Tactical Strike Force"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="5ca0-3855-a537-0473" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Blooded Veterans"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="b54c-2bc9-a6ee-d58d" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Destroyer Conclave"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="9391-f2e0-e77d-8bda" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Breacher Shieldwall"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="4594-2775-2a85-5f5e" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Seeker Cadre"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Rite of War: Ambush Contingent - no Infantry with the Heavy or Artillery Sub-types (Dominator Cohort)</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="62c0-3639-5a2a-c62b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Ambush Contingent"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Rite of War: Ambush Contingent - no models in Terminator Armour</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="62c0-3639-5a2a-c62b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Ambush Contingent"/>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -3733,6 +4457,12 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -4024,6 +4754,12 @@
         <modifier type="add" field="category" value="9edf-ad4f-0fe2-9b73">
           <conditions>
             <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Rite of War: Ambush Contingent - no Infantry with the Heavy or Artillery Sub-types (Iron Havocs)</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="62c0-3639-5a2a-c62b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Ambush Contingent"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -4338,6 +5074,12 @@
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </entryLink>
             <entryLink id="820d-d7c7-2385-0d85" name="Termite Assault Drill" hidden="true" collective="false" import="true" targetId="cb30-307a-f0d7-3b13" type="selectionEntry">
@@ -4350,6 +5092,12 @@
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a621-2c8c-3df0-89d3" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -4456,6 +5204,12 @@
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="da46-48b5-6cc5-9d8b" type="equalTo"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="1" field="d395-e15d-9dc2-0ea9">
+              <comment>Centurion Game Mode: may not expand beyond its starting size</comment>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="6" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d395-e15d-9dc2-0ea9" type="max"/>
@@ -4480,11 +5234,13 @@
           </profiles>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="135"/>
+            <cost name="T6-7 Wounds" typeId="d77c-5315-c711-f178" value="5"/>
           </costs>
           <categoryLinks>
             <categoryLink targetId="d8ab-8e21-e193-63ba" id="cb1a-4a89-49bd-88d3" name="Automata Unit Type" primary="false"/>
             <categoryLink targetId="2440-b64e-cb24-87f0" id="b0ae-8d9d-4a31-8451" name="Cybernetica Sub-type" primary="false"/>
             <categoryLink targetId="9231-183c-b97b-63f9" id="f4bc-f1bb-4060-aae8" name="Heavy Sub-type" primary="false"/>
+            <categoryLink id="2373-899b-ad94-c6a3" name="Centurion: Toughness 6-7" hidden="false" targetId="72bd-6fb0-5505-08ee" primary="false"/>
           </categoryLinks>
         </selectionEntry>
         <selectionEntry id="205c-194e-4d88-f40f" name="Karceri Battle Shield" hidden="false" collective="false" import="true" type="upgrade">
@@ -4529,6 +5285,20 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="795a-5698-a1bc-6ec6" name="Tyrant Siege Terminator Squad" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Rite of War: Ambush Contingent - no Infantry with the Heavy or Artillery Sub-types (Tyrant Siege Terminator Squad)</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="62c0-3639-5a2a-c62b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Ambush Contingent"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Rite of War: Ambush Contingent - no models in Terminator Armour</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="62c0-3639-5a2a-c62b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Ambush Contingent"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <infoLinks>
         <infoLink id="a275-b71b-42fe-024b" name="Bulky (X)" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
           <modifiers>
@@ -4612,6 +5382,12 @@
                     </conditionGroup>
                   </conditionGroups>
                 </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </entryLink>
             <entryLink id="2001-9982-37bd-48a7" name="Dreadclaw Drop Pod" hidden="true" collective="false" import="true" targetId="bbe8-818d-3068-d79c" type="selectionEntry">
@@ -4625,6 +5401,12 @@
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
                 </modifier>
               </modifiers>
             </entryLink>
@@ -4907,6 +5689,12 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="56b0-a8c0-499d-7197" type="max"/>
@@ -5083,6 +5871,14 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="35e0-3b3a-f569-3da8" name="Kyr Vhalen" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no models with Master of the Legion</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="472c-9b3a-ee97-9794" type="max"/>
       </constraints>
@@ -5402,6 +6198,24 @@
             <condition type="equalTo" value="0" field="selections" scope="force" childId="f9c0-0c5a-3e24-58c7" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no models with Master of the Legion</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Rite of War: Ambush Contingent - no Infantry with the Heavy or Artillery Sub-types (Erasmus Golg)</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="62c0-3639-5a2a-c62b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Ambush Contingent"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Rite of War: Ambush Contingent - no models in Terminator Armour</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="62c0-3639-5a2a-c62b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Ambush Contingent"/>
+          </conditions>
+        </modifier>
       </modifiers>
     </selectionEntry>
     <selectionEntry id="1bfa-2413-beb9-5f32" name="Dominator Cohort" hidden="false" collective="false" import="true" type="unit" publicationId="7f9d-5e88-241d-e861" page="26">
@@ -5650,6 +6464,12 @@
                     </conditionGroup>
                   </conditionGroups>
                 </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </entryLink>
             <entryLink id="3d65-ee7f-74e6-e11b" name="Dreadclaw Drop Pod" hidden="true" collective="false" import="true" targetId="bbe8-818d-3068-d79c" type="selectionEntry">
@@ -5663,6 +6483,12 @@
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
                 </modifier>
               </modifiers>
               <constraints>
@@ -5697,6 +6523,18 @@
         <modifier type="set" value="0" field="6800-f34f-c23b-35b0">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="force" childId="ebae-0825-7bae-9c16" shared="true" includeChildSelections="true" childName="Dominator Tartaros Cohort"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Rite of War: Ambush Contingent - no Infantry with the Heavy or Artillery Sub-types (Dominator Cohort)</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="62c0-3639-5a2a-c62b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Ambush Contingent"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Rite of War: Ambush Contingent - no models in Terminator Armour</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="62c0-3639-5a2a-c62b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Ambush Contingent"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -5889,6 +6727,18 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no models with Master of the Legion</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Rite of War: Ambush Contingent - no Infantry with the Heavy or Artillery Sub-types (Warsmith Dominus)</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="62c0-3639-5a2a-c62b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Ambush Contingent"/>
+          </conditions>
+        </modifier>
       </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Volk-Sa&apos;ra&apos;ram" hidden="false" id="01f4-b994-b95f-5012">
@@ -5921,6 +6771,12 @@
         <modifier type="set" value="true" field="hidden">
           <conditions>
             <condition type="equalTo" value="0" field="selections" scope="force" childId="f9c0-0c5a-3e24-58c7" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Rite of War: Ambush Contingent - no Infantry with the Heavy or Artillery Sub-types (Volk-Sa'ra'ram)</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="62c0-3639-5a2a-c62b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Ambush Contingent"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -6042,6 +6898,7 @@ Melee Weapons
       </selectionEntryGroups>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="300"/>
+        <cost name="T6-7 Wounds" typeId="d77c-5315-c711-f178" value="5"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="83c8-4c6b-4511-cdaa" primary="false" name="Infantry Unit Type"/>
@@ -6051,6 +6908,7 @@ Melee Weapons
         <categoryLink targetId="9231-183c-b97b-63f9" id="18c0-5d71-81a7-ff92" primary="false" name="Heavy Sub-type"/>
         <categoryLink targetId="11f2-472f-c1d1-9ae9" id="2a38-e6dc-9926-ba0d" primary="false" name="Legiones Astartes"/>
         <categoryLink targetId="f75a-d5c1-59ba-5c5a" id="aa37-a9c3-ad10-b8c7" primary="false" name="Character"/>
+        <categoryLink id="1f42-e6aa-1e43-f736" name="Centurion: Toughness 6-7" hidden="false" targetId="72bd-6fb0-5505-08ee" primary="false"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="623b-324a-d02e-580d"/>
@@ -6154,6 +7012,18 @@ Melee Weapons
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no models with Master of the Legion</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Rite of War: Ambush Contingent - no Infantry with the Heavy or Artillery Sub-types (Barban Falk)</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="62c0-3639-5a2a-c62b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Ambush Contingent"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="The Warsmith&apos;s Fist" hidden="false" id="3a7e-c3f6-066e-b407">
@@ -6206,6 +7076,12 @@ Melee Weapons
         <modifier type="set" value="0" field="5387-91ab-1f85-5df5">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="force" childId="5e81-4d42-d6e8-7fd5" shared="true" includeChildSelections="true" childName="Berossus, Interred"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no models with Master of the Legion</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -6337,12 +7213,14 @@ Melee Weapons
     <selectionEntry type="model" import="true" name="Berossus, Interred" hidden="false" id="5e81-4d42-d6e8-7fd5">
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="190"/>
+        <cost name="T6-7 Wounds" typeId="d77c-5315-c711-f178" value="5"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="4280-4963-02b5-e31d" id="45ea-98fb-38cb-ac4d" primary="false" name="Dreadnought Unit Type"/>
         <categoryLink targetId="f75a-d5c1-59ba-5c5a" id="520d-2f45-53ed-000b" primary="false" name="Character"/>
         <categoryLink targetId="aa94-5c65-d1f1-46a4" id="3c68-b86a-dd51-f9db" primary="false" name="Unique Sub-type"/>
         <categoryLink targetId="11f2-472f-c1d1-9ae9" id="f04b-535c-999b-a308" primary="false" name="Legiones Astartes"/>
+        <categoryLink id="53db-b7ce-7741-5a30" name="Centurion: Toughness 6-7" hidden="false" targetId="72bd-6fb0-5505-08ee" primary="false"/>
       </categoryLinks>
       <profiles>
         <profile name="Berossus, Interred" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="03a7-fb8d-f8f4-a589">
@@ -6576,6 +7454,12 @@ In addition, an army with Warsmith Toramino as the warlord gains an additional r
             <condition type="equalTo" value="0" field="selections" scope="force" childId="f9c0-0c5a-3e24-58c7" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no models with Master of the Legion</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ffa2-8445-5133-df5c"/>
@@ -6629,6 +7513,12 @@ In addition, an army with Warsmith Toramino as the warlord gains an additional r
             <condition type="atLeast" value="1" field="selections" scope="force" childId="1bfa-2413-beb9-5f32" shared="true" includeChildSelections="true" childName="Dominator Cohort"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Rite of War: Ambush Contingent - no models in Terminator Armour</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="62c0-3639-5a2a-c62b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Ambush Contingent"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <selectionEntryGroups>
         <selectionEntryGroup name="2) Dedicated Transport" id="84d3-81d1-e917-47cb" hidden="false" collective="false" import="true">
@@ -6671,6 +7561,12 @@ In addition, an army with Warsmith Toramino as the warlord gains an additional r
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
                 </modifier>
               </modifiers>
             </entryLink>
@@ -6842,6 +7738,18 @@ In addition, an army with Warsmith Toramino as the warlord gains an additional r
             <modifier type="set" field="hidden" value="false">
               <conditions>
                 <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f944-6641-a714-2fe8" type="instanceOf"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <comment>Centurion Rite of War: Ambush Contingent - no Infantry with the Heavy or Artillery Sub-types (Dominator Cohort)</comment>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="62c0-3639-5a2a-c62b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Ambush Contingent"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <comment>Centurion Rite of War: Ambush Contingent - no models in Terminator Armour</comment>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="62c0-3639-5a2a-c62b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Ambush Contingent"/>
               </conditions>
             </modifier>
           </modifiers>

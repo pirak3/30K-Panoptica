@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy 2nd edition + Panoptica" revision="2006" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy 2nd edition + Panoptica" revision="2007" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication name="Github" hidden="false" id="e2a4-ac85-1bef-22f5" publisherUrl="https://github.com/pirak3/30K-4-All-fixed" shortName="pirak3/30K-4-All-fixed"/>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
@@ -34,6 +34,7 @@
   </publications>
   <costTypes>
     <costType id="d2ee-04cb-5f8a-2642" name="Pts" defaultCostLimit="-1" hidden="false"/>
+    <costType id="d77c-5315-c711-f178" name="T6-7 Wounds" defaultCostLimit="-1" hidden="true"/>
   </costTypes>
   <profileTypes>
     <profileType id="4bb2-cb95-e6c8-5a21" name="Unit">
@@ -477,6 +478,57 @@ During Reactions made in any Phase, a unit equipped with Jump Packs may not acti
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" field="d368-7220-4856-a7f8" value="0">
+          <comment>Centurion Game Mode: no vehicles except the listed transports</comment>
+          <conditions>
+            <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="b956-4f8e-2bca-7756" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" field="d368-7220-4856-a7f8" value="1">
+          <comment>Centurion: Rhino Transport allowed</comment>
+          <repeats>
+            <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="03f1-8ed9-9867-8d18" repeats="1" roundUp="false"/>
+          </repeats>
+          <conditions>
+            <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="b956-4f8e-2bca-7756" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" field="d368-7220-4856-a7f8" value="1">
+          <comment>Centurion: Skorpius Dunerider allowed</comment>
+          <repeats>
+            <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c8a6-5089-8357-1333" repeats="1" roundUp="false"/>
+          </repeats>
+          <conditions>
+            <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="b956-4f8e-2bca-7756" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" field="d368-7220-4856-a7f8" value="1">
+          <comment>Centurion: Kharon Pattern Acquistor allowed</comment>
+          <repeats>
+            <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="16fa-53b2-b57b-ec25" repeats="1" roundUp="false"/>
+          </repeats>
+          <conditions>
+            <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="b956-4f8e-2bca-7756" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" field="d368-7220-4856-a7f8" value="1">
+          <comment>Centurion: Aurox Transport allowed</comment>
+          <repeats>
+            <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="071b-79e5-7b5b-c9cd" repeats="1" roundUp="false"/>
+          </repeats>
+          <conditions>
+            <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="b956-4f8e-2bca-7756" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" field="d368-7220-4856-a7f8" value="1">
+          <comment>Centurion: Militia Rhino Transport allowed</comment>
+          <repeats>
+            <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="854f-076a-5d5a-1714" repeats="1" roundUp="false"/>
+          </repeats>
+          <conditions>
+            <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="b956-4f8e-2bca-7756" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d368-7220-4856-a7f8" type="max"/>
@@ -508,7 +560,19 @@ During Reactions made in any Phase, a unit equipped with Jump Packs may not acti
       </infoLinks>
     </categoryEntry>
     <categoryEntry id="23eb-0b9e-0857-e965" name="Vehicle Unit:" hidden="false"/>
-    <categoryEntry id="bab3-f50d-3e5f-2f78" name="Terminators:" hidden="false"/>
+    <categoryEntry id="bab3-f50d-3e5f-2f78" name="Terminators:" hidden="false">
+      <modifiers>
+        <modifier type="set" value="0" field="096b-a15c-6895-2cdd">
+          <comment>Centurion Rite of War: Ambush Contingent - no models in Terminator Armour</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="62c0-3639-5a2a-c62b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Ambush Contingent"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="096b-a15c-6895-2cdd" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+      </constraints>
+    </categoryEntry>
     <categoryEntry id="d8ab-8e21-e193-63ba" name="Automata Unit Type" publicationId="e77a-823a-da94-16b9" page="195" hidden="false">
       <modifiers>
         <modifier type="set" field="c922-97ea-23ec-2e61" value="0">
@@ -985,6 +1049,17 @@ Conversely, if an Independent Character joins a unit after that unit has been th
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" value="1" field="1017-2edb-c0e4-7406">
+          <comment>Centurion Rite of War: Destroyer Conclave - Centurion with Siege Breaker or Moritat required</comment>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="b54c-2bc9-a6ee-d58d" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Destroyer Conclave"/>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="4c4a-47aa-bdbb-4a4c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Moritat:"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint type="min" value="0" field="selections" scope="force" shared="true" id="d132-946e-6aac-db7" includeChildSelections="true"/>
@@ -999,6 +1074,17 @@ Conversely, if an Independent Character joins a unit after that unit has been th
             <conditionGroup type="and">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="7572-b678-7ff5-6259" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Destroyer Company"/>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="8247-54dc-9194-948f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Siege Breaker:"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="1" field="0531-bac6-2926-535c">
+          <comment>Centurion Rite of War: Destroyer Conclave - Centurion with Siege Breaker or Moritat required</comment>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="b54c-2bc9-a6ee-d58d" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Destroyer Conclave"/>
                 <condition type="lessThan" value="1" field="selections" scope="force" childId="8247-54dc-9194-948f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Siege Breaker:"/>
               </conditions>
             </conditionGroup>
@@ -1027,6 +1113,86 @@ Conversely, if an Independent Character joins a unit after that unit has been th
       <constraints>
         <constraint type="min" value="0" field="selections" scope="force" shared="true" id="087f-0081-13af-ce70" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
         <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="b34c-775f-3b20-f2c8" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+      </constraints>
+    </categoryEntry>
+    <categoryEntry id="ea87-701b-48de-4787" name="Vigilator:" hidden="false">
+      <comment>Role tag for the Vigilator Legiones Consularis upgrade (Centurion Rites of War requirements)</comment>
+      <modifiers>
+        <modifier type="set" value="1" field="3487-576c-b8bc-c607">
+          <comment>Centurion Rite of War: Ambush Contingent - Centurion with Vigilator or Pathfinder required</comment>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="62c0-3639-5a2a-c62b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Ambush Contingent"/>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="b02d-ea36-608d-8ec1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Pathfinder:"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="force" shared="true" id="3487-576c-b8bc-c607" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+      </constraints>
+    </categoryEntry>
+    <categoryEntry id="b02d-ea36-608d-8ec1" name="Pathfinder:" hidden="false">
+      <comment>Role tag for the Pathfinder Legiones Consularis upgrade (Centurion Rites of War requirements)</comment>
+      <modifiers>
+        <modifier type="set" value="1" field="7af2-d5a9-84aa-9cbe">
+          <comment>Centurion Rite of War: Ambush Contingent - Centurion with Vigilator or Pathfinder required</comment>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="62c0-3639-5a2a-c62b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Ambush Contingent"/>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="ea87-701b-48de-4787" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Vigilator:"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="force" shared="true" id="7af2-d5a9-84aa-9cbe" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+      </constraints>
+    </categoryEntry>
+    <categoryEntry id="7c55-e542-4bb3-07b7" name="Champion:" hidden="false">
+      <comment>Role tag for the Champion Legiones Consularis upgrade (Centurion Rites of War requirements)</comment>
+      <modifiers>
+        <modifier type="set" value="1" field="a1f8-22b2-5ed3-25b9">
+          <comment>Centurion Rite of War: Blooded Veterans - Centurion with Champion required</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="5ca0-3855-a537-0473" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Blooded Veterans"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="force" shared="true" id="a1f8-22b2-5ed3-25b9" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+      </constraints>
+    </categoryEntry>
+    <categoryEntry id="182a-d53c-2012-3578" name="Delegatus:" hidden="false">
+      <comment>Role tag for the Delegatus Legiones Consularis upgrade (Centurion Rites of War requirements)</comment>
+      <modifiers>
+        <modifier type="set" value="1" field="dc0c-f924-1104-3410">
+          <comment>Centurion Rite of War: Command Brigade - Centurion with Delegatus required (must be the Warlord)</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="7817-3f75-afd5-5f7a" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Command Brigade"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="force" shared="true" id="dc0c-f924-1104-3410" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+      </constraints>
+    </categoryEntry>
+    <categoryEntry id="9c88-13d7-0cea-aace" name="Master of Signals:" hidden="false">
+      <comment>Role tag for the Master of Signals Legiones Consularis upgrade (Centurion Rites of War requirements)</comment>
+      <modifiers>
+        <modifier type="set" value="1" field="05da-826f-eeeb-b237">
+          <comment>Centurion Rite of War: Command Brigade - Centurion with Master of Signals required</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="7817-3f75-afd5-5f7a" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Command Brigade"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="force" shared="true" id="05da-826f-eeeb-b237" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
       </constraints>
     </categoryEntry>
     <categoryEntry id="2440-b64e-cb24-87f0" name="Cybernetica Sub-type" publicationId="bde1-6db1-163b-3b76" page="90" hidden="false">
@@ -1142,6 +1308,17 @@ In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</desc
       </modifiers>
     </categoryEntry>
     <categoryEntry id="d615-c0e4-6d17-107e" name="Assassin Sub-type" publicationId="15a4-fc68-502d-48a9" page="128" hidden="false">
+      <modifiers>
+        <modifier type="set" field="18b9-3056-a336-c489" value="0">
+          <comment>Centurion Game Mode: no Assassins</comment>
+          <conditions>
+            <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="b956-4f8e-2bca-7756" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="18b9-3056-a336-c489" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+      </constraints>
       <rules>
         <rule id="9522-1b3d-f849-fd60" name="Assassin Sub-type" publicationId="15a4-fc68-502d-48a9" page="128" hidden="false">
           <description>• Models with the Assassin Sub-type ignore all movement penalties when moving or Charging through terrain of any kind and automatically pass all Dangerous Terrain tests they are called upon to make.
@@ -1637,6 +1814,130 @@ If that test is failed, the unit suffers one Wound, allocated by the controlling
     </categoryEntry>
     <categoryEntry name="Shattered Legion Primary Detachment" id="c248-15b0-d8ed-8990" hidden="false"/>
     <categoryEntry name="Centurion: Rites of War" id="f47f-295e-3ac6-e189" hidden="false"/>
+    <categoryEntry name="Centurion Game Mode" id="fe56-62d3-b563-ad2b" hidden="false">
+      <comment>Tag added to each faction root entry in a "(Centurion) Incursio Force Organisation Chart" force (Liber Panoptica p.50-53). Units check force atLeast 1 of this id.</comment>
+      <profiles>
+        <profile id="0297-9398-7f6c-0895" name="1) Reactions in Centurion" hidden="false" typeId="90b9-7fab-87db-aed3" typeName="Reactions">
+          <characteristics>
+            <characteristic name="Description" typeId="c627-4637-8de5-65fb">When making reactions in a Centurion battle, an army may not choose to use any of the Core Reactions presented in the Core Rules, nor any army list specific Advanced Reactions. Instead, all armies, regardless of Faction or size, may only choose to use any or all of the Centurion Reactions presented in this supplement during a Centurion battle.
+
+Base Reaction Allotment, Additional Reactions, and Reaction Limits in Centurion:
+In Centurion battles of 1000 points or fewer per player, any player may make one (1) Reaction in each phase of their opponent&apos;s turn. This number may not be increased in any way. Regardless of any modifications to a player&apos;s Reaction Allotment or special rules granting additional reactions, the Reactive Player may never make more than one (1) Reaction in any given phase.
+In Centurion battles of 1001+ points or more per player, this restriction is removed.
+
+Centurion Reactions:
+During a Centurion battle, the following Reactions are available to all armies regardless of maximum points limit or Faction. These reactions are only available in Centurion battles.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6b97-d158-9023-ef19" name="2) Centurion Movement Phase Reactions" hidden="false" typeId="90b9-7fab-87db-aed3" typeName="Reactions">
+          <characteristics>
+            <characteristic name="Description" typeId="c627-4637-8de5-65fb">During the Movement Phase, the Reactive Player may declare a reaction if an enemy unit ends a move within 12&quot; and in line of sight of a friendly unit. Once the Active Player has fully resolved the movement of their unit, the Reactive Player may choose to expend their Reaction in that Phase in order to have the unit they control that is within 12&quot; and line of sight perform a Contact! Reaction.
+
+Contact!: The Reacting unit may make a Shooting Attack, targeting the unit that triggered this Reaction and following all the usual rules for Shooting Attacks. A unit that makes a Shooting Attack as part of a Contact! Reaction may not make any attacks indirectly (without line of sight). All Shooting Attacks made as part of a Contact! Reaction are Snap Shots, with the exception of Template Weapons. Note that this prevents models from making attacks with the Blast(X) special rule as part of this Reaction. Template Weapons may only be used as part of a Contact! Reaction if the target unit is within 8&quot; and must use the Wall of Death rule instead of firing normally. Models in the Reacting unit count as Stationary during this Shooting Attack, even if they moved in the previous Movement phase.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6ce5-2a0c-6f0c-4571" name="3) Centurion Shooting Phase Reactions" hidden="false" typeId="90b9-7fab-87db-aed3" typeName="Reactions">
+          <characteristics>
+            <characteristic name="Description" typeId="c627-4637-8de5-65fb">During the Shooting phase, the Reactive player may react when any enemy unit declares a Shooting Attack targeting a unit they control. Before the Active player resolves the Shooting Attack, the Reactive player may choose to expend their Reaction in that Phase to have the unit targeted by the Shooting Attack perform either a Go to Ground! Reaction or a Reposition! Reaction.
+
+Go to Ground!: All models in the Reacting unit gain a 5+ Go to Ground save against all Wounds inflicted as part of the Shooting Attack that triggered this Reaction. A Go to Ground save is counted as a Cover Save which cannot be mitigated by the Ignores Cover Special Rule.
+
+Reposition!: Each model in the Reacting unit may move a number of inches up to its unmodified Initiative Characteristic. When resolving the Shooting Attack that triggered this Reaction, all range and line of sight is measured to the Reacting unit&apos;s new position. If, as a result of this movement, no models in the reacting unit are within range or line of sight of any models in the triggering unit, the Active player cannot choose a new target for their Shooting Attack.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a324-e78a-14bf-0315" name="4) Centurion Assault Phase Reactions" hidden="false" typeId="90b9-7fab-87db-aed3" typeName="Reactions">
+          <characteristics>
+            <characteristic name="Description" typeId="c627-4637-8de5-65fb">During the Assault phase, the Reactive player may react when any enemy unit declares a Charge targeting a unit they control. Before the Active player has resolved any Charge Rolls, the Reactive player may choose to expend their Reaction in that Phase to have the unit targeted by the Charge perform a Hold Fast! Reaction.
+
+Hold Fast!: The Reacting unit must make a Morale check. If the Check is failed, the Reacting unit immediately Falls Back 1d6&quot; and automatically regroups when this Fall Back Move is completed. If the Check is successful, the Reacting unit automatically passes any Morale checks they are required to make as a result of losing an assault during the following Fight sub-phase.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="b1d9-0032-0501-7fbc" name="Warlords in the Centurion Game Mode" hidden="false">
+          <description>When choosing your army, you must nominate one model to be your Warlord, following the guidelines presented on page 284 of the Core Rules. You may not choose a Warlord Trait for your warlord in games with a maximum point limit of 500 points or less. In games of 501 points or more, each Warlord has one Warlord Trait chosen during army selections from the list of Core Warlord Traits (see page 285 of the Core Rules) or another list made available as part of that model&apos;s Allegiance or Army List.</description>
+        </rule>
+        <rule id="6386-823f-91b8-a56e" name="Centurion Army Restrictions" hidden="false">
+          <description>We recommend games using the Centurion Game Mode are played with between 500 and 1500 points, on a table at least 4ft x 4ft in size.
+
+The following effects must be adhered to whilst constructing an army to use with the Centurion Game Mode:
+• You must use the Incursio Force Organisation Chart, and may not select an Allied Detachment, nor any optional detachments.
+• Legiones Astartes armies may only use the Rites of War found in the Centurion Rites of War Section – no other Rites of War are permitted.
+• Mechanicum armies may use the War-Covenants found in the Centurion War-Covenants Section.
+• Solar Auxilia armies may use the Cohort Doctrines found in the Centurion Cohort Doctrines Section.
+• Asuryani armies may use the World-Runes found in the Centurion World-Runes Section – no other World-Runes are permitted.
+• Legio Custodes armies are not permitted to select a Chamber of the Golden Host.
+• No models with the Vehicle Unit Type may be selected - with the exception of Legion Rhino Transports, Skorpius Duneriders, Kharon Pattern Acquisitors, Silent Sisterhood Rhino Transport, Aurox Transports, Solar Auxilia Chimera Transport, Imperialis Militia Chimera Transport, and Wave Serpents - which may be selected by any unit normally able to purchase them.
+• No model with the Master of the Legion, Feudal Hierarchy, Cohort Doctrines, Tribune of the Golden Legion, or Path of Command Special Rule may be selected. In addition, only a single Custodian Shield Captain (of any variant) may be selected.
+• No model with the Assassin or Abomination Unit Sub-type may be selected.
+• Any unit with the Dreadnought or Automata Unit Type, or the Artillery, Mechanised, or Grav-Platform Sub-type, may not expand their unit beyond its starting size.
+• You may only select a maximum of 1 Wound&apos;s worth of models with a Toughness Characteristic of 6 or 7 for each full 125 points in your army – the points cost of models selected in this way is counted toward your army total. In this way, in an army of 1250 points, you could select a total of 10 Wounds worth of Toughness 6 models – thus, up to two Legion Castra Ferrum Dreadnoughts could be selected.
+• You may not select models with a Toughness Characteristic of 8 or higher.</description>
+        </rule>
+        <rule id="3e2b-116e-c174-7792" name="Missions in the Centurion Game Mode" hidden="false">
+          <description>When playing a game using the Centurion Game Mode, instead of using a mission from the Horus Heresy: Age of Darkness Core Rulebook or one presented in the Liber Panoptica, you can instead use the below process to generate and play a mission with custom Primary and Secondary Objectives. It is assumed that no matter the Primary or Secondary Objectives rolled, the Night Fighting and Reserves Mission Special Rules are used.
+
+Determine Primary Objective
+Roll a D6 for the Mission Type (in games of 1500 points or larger, roll 2D6 and use both results separately to generate a second Primary Objective): 1-3 Tactical Raid, 4-5 War for Territory, 6 Annihilation. Then roll a D3 on the relevant table.
+
+Tactical Raid: 1 Deadly Ground, 2 Denial, 3 Seize &amp; Secure.
+• Deadly Ground: After Deployment and pre-game moves, but before the game begins, the Defender must place 3 Objective Markers on the board. One must be at the centre of the table, whilst the others must be placed, one each, into each player&apos;s Deployment Zone. Each Objective Marker awards +1 Victory Point to the player that controls it at the start of that player&apos;s turn.
+• Denial: After Deployment and pre-game moves, but before the game begins, a single Objective Marker is placed at the centre of the board. This Objective Marker awards +5 Victory Points to the player that controls it at the end of the game.
+• Seize &amp; Secure: After Deployment and pre-game moves, but before the game begins, the Defender must place 3 Objective Markers on the board, and the Attacker places 1 Objective Marker. These may not be placed in either player&apos;s Deployment Zones. These Objective Markers award +2 Victory Points each to the player that controls them at the end of the game.
+
+War for Territory: 1 Run Them Down!, 2 Domination, 3 Desperate Breakout.
+• Run Them Down!: At the end of the game, each Scoring unit which is wholly within the Opponent&apos;s Deployment Zone awards the Controlling Player +2 Victory Points. Each Denial unit which is wholly within the Opponent&apos;s Deployment Zone awards the Controlling Player +1 Victory Point.
+• Domination: At the end of the game, divide the table into four equal quadrants. For each quadrant which you have more Scoring units in than your Opponent, you gain +3 Victory Points.
+• Desperate Breakout: At the end of the game, the Defender gains +1 Victory Point for each unit they control which is outside of any player&apos;s Deployment Zone, and +2 Victory Points for each unit they control which is in the Attacker&apos;s Deployment Zone. The Attacker gains +2 Victory Points for each of the Defender&apos;s units which has been completely destroyed.
+
+Annihilation: 1 Contest of Champions, 2 VIP, 3 Blood Tithe.
+• Contest of Champions: At any point during the game, if a player&apos;s Warlord successfully slays the Opposing Player&apos;s Warlord by any means, then the Controlling Player is awarded +5 Victory Points.
+• VIP: Before the game begins, the Defender must nominate a single model in their army with the Character Sub-type. If that model is slain at any point during the game, the Attacker gains +5 Victory Points. If they are still in play at the end of the game, the Defender gains +5 Victory Points.
+• Blood Tithe: Any unit slain awards the Opposing Player +1 Victory Point, in addition to any others it may award for any other reason.
+
+Determine Secondary Objectives
+Roll 2D6; each D6 corresponds to one Secondary Objective: 1 Attrition, 2 Last Man Standing, 3 Slay the Warlord, 4 Overrun, 5 Demonstration of Power, 6 First Strike.
+• Attrition: The army which has destroyed the highest number of enemy units at the end of the game gains +D3 Victory Points.
+• Last Man Standing: The side with the greatest number of surviving units at the end of the game gains +D3 Victory Points.
+• Slay the Warlord: If a side destroyed the enemy Warlord, that side gains +1 Victory Point.
+• Overrun: Any unit slain by either player by a Sweeping Advance is worth an additional +1 Victory point to that player at the end of the game.
+• Demonstration of Power: Any model slain by either player during a Challenge is worth an additional +1 Victory point to that player at the end of the game.
+• First Strike: Any unit completely destroyed by either player during their First Turn is worth an additional +1 Victory point to that player at the end of the game.
+
+Determine Deployment Map: The players should roll to determine which Deployment Map from the Core Rulebook should be used.
+Determine Attacker and Defender: The players should roll off to determine who will be the Attacker and Defender. The player who wins the roll-off may choose either role.
+Determine Night Fighting: The players should roll off or otherwise agree whether Night Fighting is in effect.
+Deployment: The player with the role of Attacker should select their Deployment Zone and then deploy their entire force, including any Fortifications they possess, except for any units held in Reserve, into their Deployment Zone. The player who is deploying second then deploys their entire force, including any Fortifications they possess, except for any units placed in Reserve, into their Deployment Zone.
+Place Objective Markers: If a Primary Objective which uses Objective Markers was rolled, these should be placed onto the board now.
+First Turn: The Attacker has the first turn, unless their opponent can Seize the Initiative.
+Game Length: After four turns, roll a D6. On the roll of a 3+, a fifth is played. If a fifth turn is played, at the end of the fifth turn, roll a D6. On the roll of a 5+, a sixth and final turn is played.
+Victory Conditions: At the end of the game, the player who has scored the most Victory Points has won the game. If the players have the same number of Victory Points, the player who has scored the most Victory Points as a result of Secondary Objectives wins the game. If both players have scored the same number of Victory Points due to Secondary Objectives, the game ends in a draw.</description>
+        </rule>
+      </rules>
+    </categoryEntry>
+    <categoryEntry name="Centurion: War-Covenant" id="213f-f075-d9c9-65a4" hidden="false"/>
+    <categoryEntry name="Centurion: Cohort Doctrine" id="256e-df3b-901b-2111" hidden="false"/>
+    <categoryEntry id="72bd-6fb0-5505-08ee" name="Centurion: Toughness 6-7" hidden="false">
+      <comment>Tag on every Toughness 6/7 model. With the hidden T6-7 Wounds cost (= the model's Wounds) it enforces the Centurion limit of 1 Wound of T6-7 models per full 125 points (Liber Panoptica p.50).</comment>
+      <modifiers>
+        <modifier type="set" value="0" field="95f9-189b-1528-1598">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="1" field="95f9-189b-1528-1598">
+          <repeats>
+            <repeat field="d2ee-04cb-5f8a-2642" scope="roster" value="125" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" repeats="1" roundUp="false"/>
+          </repeats>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="-1" field="d77c-5315-c711-f178" scope="roster" shared="true" id="95f9-189b-1528-1598" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+    </categoryEntry>
     <categoryEntry name="Alchymus:" id="21b7-e431-9859-2d38" hidden="false">
       <constraints>
         <constraint type="min" value="0" field="selections" scope="force" shared="true" id="c6fc-73e1-1178-1294" includeChildSelections="true"/>
@@ -2052,6 +2353,14 @@ If that test is failed, the unit suffers one Wound, allocated by the controlling
         </categoryLink>
         <categoryLink name="Lords of War Have Moved to &quot;Lords of War Detachment&quot;" hidden="false" id="1c43-e3d1-a119-885c" targetId="ed41-7006-3494-4c24"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="0" field="f3d1-165c-4e16-e5fc">
+          <comment>Centurion Game Mode: no other detachments</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="f3d1-165c-4e16-e5fc"/>
       </constraints>
@@ -2354,6 +2663,17 @@ If that test is failed, the unit suffers one Wound, allocated by the controlling
           </constraints>
         </categoryLink>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="0" field="1764-9c19-e3b2-c489">
+          <comment>Centurion Game Mode: no other detachments</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="-1" field="forces" scope="roster" shared="true" id="1764-9c19-e3b2-c489"/>
+      </constraints>
     </forceEntry>
     <forceEntry id="5430-5be1-1613-be44" name="ZM 1. Mortalis Assault Force Organisation Chart" hidden="false">
       <categoryLinks>
@@ -2649,6 +2969,14 @@ If that test is failed, the unit suffers one Wound, allocated by the controlling
           </constraints>
         </categoryLink>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="0" field="ce4d-7e2a-4698-b234">
+          <comment>Centurion Game Mode: no other detachments</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="ce4d-7e2a-4698-b234"/>
       </constraints>
@@ -2694,11 +3022,20 @@ If that test is failed, the unit suffers one Wound, allocated by the controlling
           </constraints>
         </categoryLink>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="0" field="c2e7-a23b-9550-671a">
+          <comment>Centurion Game Mode: no other detachments</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="c2e7-a23b-9550-671a"/>
       </constraints>
     </forceEntry>
-    <forceEntry name="ZM 2. Centurion" id="b956-4f8e-2bca-7756" hidden="false">
+    <forceEntry name="(Centurion) Incursio Force Organisation Chart" id="b956-4f8e-2bca-7756" hidden="false">
+      <comment>Centurion Game Mode, Incursio Force Organisation Chart (Liber Panoptica v5.3 p.50). Other force entries are capped at 0 while a roster contains the Centurion Game Mode tag.</comment>
       <constraints>
         <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="6d01-edcc-d504-7e78"/>
       </constraints>
@@ -2710,8 +3047,23 @@ If that test is failed, the unit suffers one Wound, allocated by the controlling
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="78ed-9d19-d877-eedf" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Centurion: Rites of War" hidden="false" id="69d7-4f70-d7ca-2324" targetId="f47f-295e-3ac6-e189"/>
-        <categoryLink name="Blackshield Oaths" hidden="false" id="adb4-7057-fab3-215f" targetId="cb34-ca48-547a-5d90"/>
+        <categoryLink name="Centurion Game Mode" hidden="false" id="7830-f006-c95d-bad4" targetId="fe56-62d3-b563-ad2b" primary="false"/>
+        <categoryLink name="Centurion: Rites of War" hidden="false" id="69d7-4f70-d7ca-2324" targetId="f47f-295e-3ac6-e189" primary="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="5a8e-f5ac-2949-1c8d" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Centurion: War-Covenant" hidden="false" id="f4e5-2714-6c81-5120" targetId="213f-f075-d9c9-65a4" primary="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="2987-3c72-0f7b-2492" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Centurion: Cohort Doctrine" hidden="false" id="d95c-9d11-212f-fea7" targetId="256e-df3b-901b-2111" primary="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="6441-a564-9858-691a" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Blackshield Oaths" hidden="false" id="adb4-7057-fab3-215f" targetId="cb34-ca48-547a-5d90" primary="false"/>
         <categoryLink name="The Rewards Of Treachery" hidden="false" id="7804-be83-f8b0-dfef" targetId="c5d2-69ee-8787-55d9" primary="false"/>
         <categoryLink name="Provenances of War" hidden="false" id="9cb2-1af8-dc33-a41d" targetId="346a-fb59-a199-25c4" primary="false"/>
         <categoryLink name="Ætheric Dominion (Whole Army)" hidden="false" id="3b3c-f5c1-d10e-3eab" targetId="5d31-e5d-67bd-1083">
@@ -2754,203 +3106,40 @@ If that test is failed, the unit suffers one Wound, allocated by the controlling
           </constraints>
         </categoryLink>
         <categoryLink name="HQ:" hidden="false" id="b112-c96d-0c8b-b315" targetId="4f85-eb33-30c9-8f51" primary="false">
-          <modifiers>
-            <modifier type="increment" value="1" field="3221-b65e-17db-9eda">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="force" childId="b23c-e41d-1ffe-1a38" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="increment" value="1" field="bd5c-f954-5e46-83b7">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="force" childId="41b5-73f0-cdc9-1f83" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                    <condition type="equalTo" value="1" field="selections" scope="force" childId="b23c-e41d-1ffe-1a38" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="increment" value="1" field="bd5c-f954-5e46-83b7">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="bf10-c83b-b8ed-aaf1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="5" field="bd5c-f954-5e46-83b7">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="force" childId="9a27-97d3-a06-ef35" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="set" value="0" field="bd5c-f954-5e46-83b7">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="force" childId="ced-ce18-5d5b-e54" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="0" field="3221-b65e-17db-9eda">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="force" childId="ced-ce18-5d5b-e54" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
           <constraints>
-            <constraint type="max" value="2" field="selections" scope="force" shared="true" id="bd5c-f954-5e46-83b7" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
             <constraint type="min" value="1" field="selections" scope="force" shared="true" id="3221-b65e-17db-9eda" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="max" value="2" field="selections" scope="force" shared="true" id="bd5c-f954-5e46-83b7" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Compulsory HQ:" hidden="false" id="e6fc-0dfb-8e06-c26d" targetId="f823-8c1d-6a87-26a1" primary="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="fd1b-6501-8095-6503" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Troops:" hidden="false" id="20ad-5109-14d4-f2a5" targetId="9b5d-fac7-799b-d7e7" primary="false">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="force" shared="true" id="eba4-bec7-e6fa-2f5b" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="max" value="4" field="selections" scope="force" shared="true" id="052f-8864-92a9-112e" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Compulsory Troops:" hidden="false" id="8335-df6f-5f4c-0a7c" targetId="8f42-a824-fb5f-8fea" primary="false">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="force" shared="true" id="8c27-d319-7493-5424" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
         </categoryLink>
         <categoryLink name="Elites:" hidden="false" id="c8c7-b11d-2a5b-0735" targetId="7aee-565f-b0ae-294e" primary="false">
           <constraints>
             <constraint type="max" value="2" field="selections" scope="force" shared="true" id="a5ef-825d-2261-d2cb" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="efb2-e3a2-78a1-ea7f"/>
           </constraints>
-          <modifiers>
-            <modifier type="set" value="6" field="a5ef-825d-2261-d2cb">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="e936-95f1-63a6-a606" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="1" field="efb2-e3a2-78a1-ea7f">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="e936-95f1-63a6-a606" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </categoryLink>
-        <categoryLink name="Troops:" hidden="false" id="20ad-5109-14d4-f2a5" targetId="9b5d-fac7-799b-d7e7" primary="false">
-          <constraints>
-            <constraint type="max" value="4" field="selections" scope="force" shared="true" id="052f-8864-92a9-112e" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-            <constraint type="min" value="2" field="selections" scope="force" shared="true" id="eba4-bec7-e6fa-2f5b" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </constraints>
-          <modifiers>
-            <modifier type="set" value="0" field="052f-8864-92a9-112e">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="e936-95f1-63a6-a606" shared="true" includeChildSelections="true"/>
-              </conditions>
-              <comment>Pride is Our Armour</comment>
-            </modifier>
-            <modifier type="set" value="0" field="eba4-bec7-e6fa-2f5b">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="e936-95f1-63a6-a606" shared="true" includeChildSelections="true"/>
-              </conditions>
-              <comment>Pride is Our Armour</comment>
-            </modifier>
-          </modifiers>
         </categoryLink>
         <categoryLink name="Fast Attack:" hidden="false" id="d3d1-76a1-fc81-00e2" targetId="20ef-cd01-a8da-376e" primary="false">
-          <modifiers>
-            <modifier type="increment" value="1" field="0e62-8752-eb1b-e756">
-              <repeats>
-                <repeat value="1" repeats="1" field="selections" scope="force" childId="7031-469a-1aeb-eab0" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </repeats>
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="force" childId="e6ec-f3e6-760c-f9bb" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                    <condition type="equalTo" value="1" field="selections" scope="force" childId="4342-923b-e0dd-9e87" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="increment" value="1" field="0e62-8752-eb1b-e756">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="force" childId="e6ec-f3e6-760c-f9bb" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                    <condition type="equalTo" value="1" field="selections" scope="force" childId="4342-923b-e0dd-9e87" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="set" value="1" field="895f-4c15-d42e-3e3e">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="force" childId="4ca1-b02c-e2c7-5f09" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                    <condition type="equalTo" value="1" field="selections" scope="force" childId="296a-89a3-2269-2093" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="increment" value="4" field="895f-4c15-d42e-3e3e">
-              <conditions>
-                <condition type="atLeast" value="4" field="selections" scope="force" childId="d3bb-bdf9-4478-9553" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="3" field="895f-4c15-d42e-3e3e">
-              <conditions>
-                <condition type="equalTo" value="3" field="selections" scope="force" childId="d3bb-bdf9-4478-9553" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="2" field="895f-4c15-d42e-3e3e">
-              <conditions>
-                <condition type="equalTo" value="2" field="selections" scope="force" childId="d3bb-bdf9-4478-9553" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="1" field="895f-4c15-d42e-3e3e">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="force" childId="d3bb-bdf9-4478-9553" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </conditions>
-            </modifier>
-          </modifiers>
           <constraints>
             <constraint type="max" value="2" field="selections" scope="force" shared="true" id="895f-4c15-d42e-3e3e" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="0e62-8752-eb1b-e756" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
         </categoryLink>
         <categoryLink name="Heavy Support:" hidden="false" id="cd31-c29a-039e-815a" targetId="7031-469a-1aeb-eab0" primary="false">
-          <modifiers>
-            <modifier type="set" value="1" field="e5d0-536a-1a82-c455">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="force" childId="e20d-6f02-d7d5-395f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                    <condition type="equalTo" value="1" field="selections" scope="force" childId="20d9-ae98-5324-6bb3" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                    <condition type="equalTo" value="1" field="selections" scope="force" childId="4ca1-b02c-e2c7-5f09" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                    <condition type="equalTo" value="1" field="selections" scope="force" childId="7f55-5d02-ba77-243d" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                    <condition type="equalTo" value="1" field="selections" scope="force" childId="c030-15b8-323b-f17b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                    <condition type="equalTo" value="1" field="selections" scope="force" childId="9c83-69fb-8066-a773" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
           <constraints>
             <constraint type="max" value="2" field="selections" scope="force" shared="true" id="e5d0-536a-1a82-c455" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Compulsory HQ:" hidden="false" id="e6fc-0dfb-8e06-c26d" targetId="f823-8c1d-6a87-26a1" primary="false">
-          <modifiers>
-            <modifier type="increment" value="1" field="fd1b-6501-8095-6503">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="force" childId="b23c-e41d-1ffe-1a38" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="0" field="fd1b-6501-8095-6503">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="force" childId="ced-ce18-5d5b-e54" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="fd1b-6501-8095-6503" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Compulsory Troops:" hidden="false" id="8335-df6f-5f4c-0a7c" targetId="8f42-a824-fb5f-8fea" primary="false">
-          <modifiers>
-            <modifier type="increment" value="1" field="8c27-d319-7493-5424">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="force" childId="b23c-e41d-1ffe-1a38" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="min" value="2" field="selections" scope="force" shared="true" id="8c27-d319-7493-5424" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
         </categoryLink>
         <categoryLink name="Infantry Unit Type" hidden="false" id="1832-2815-d681-8832" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
@@ -5323,6 +5512,24 @@ Then choose the army you wish to have a lord of war from, then pick &quot;Lord o
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink id="4177-70a9-15a6-57d1" name="Rad Missiles (Destroyer Conclave)" hidden="true" collective="false" import="true" targetId="c1c9-6678-63a4-2dda" type="selectionEntry">
+          <comment>Destroyer Conclave: units with Missile Launchers may purchase Rad Missiles for +10 points per model</comment>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="b54c-2bc9-a6ee-d58d" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Destroyer Conclave"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d7b1-61c4-be9d-1254" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
@@ -5346,6 +5553,19 @@ Then choose the army you wish to have a lord of war from, then pick &quot;Lord o
       </costs>
     </selectionEntry>
     <selectionEntry id="bde9-5abf-ec3d-2273" name="Havoc Launcher" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" value="0" field="d2ee-04cb-5f8a-2642">
+          <comment>Centurion Rite of War: Destroyer Conclave - swapped for a Phosphex Discharger</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="self" childId="2dfb-3606-923a-8987" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="Havoc Launcher (swapped for Phosphex Discharger)" field="name">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="self" childId="2dfb-3606-923a-8987" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="544f-05ac-25ee-b2a1" name="Havoc Launcher" publicationId="a716-c1c4-7b26-8424" page="133" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
@@ -5360,6 +5580,24 @@ Then choose the army you wish to have a lord of war from, then pick &quot;Lord o
         <infoLink id="f4a7-63a1-b301-b395" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
         <infoLink id="8ccc-1502-4baf-4fb7" name="Twin-linked" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
       </infoLinks>
+      <entryLinks>
+        <entryLink id="e2be-43e1-164b-a06f" name="Phosphex Discharger (instead of Havoc Launcher)" hidden="true" collective="false" import="true" targetId="2dfb-3606-923a-8987" type="selectionEntry">
+          <comment>Destroyer Conclave: may instead take a Phosphex Discharger for +20 points (the Havoc Launcher cost is set to 0)</comment>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="b54c-2bc9-a6ee-d58d" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Destroyer Conclave"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0515-5280-0b8b-61fd" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
@@ -11953,13 +12191,6 @@ While making a Chain Fire attack, a model with this special rule may make up to 
       <entryLinks>
         <entryLink import="true" name="Centurion: Rites of War" hidden="false" id="13b8-05f3-9070-a16d" type="selectionEntryGroup" targetId="beb0-ea74-d478-d228"/>
       </entryLinks>
-      <modifiers>
-        <modifier type="set" value="false" field="hidden">
-          <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="roster" childId="f47f-295e-3ac6-e189" shared="true" includeChildSelections="true" childName="Centurion: Rites of War" includeChildForces="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <categoryLinks>
         <categoryLink name="Centurion: Rites of War" hidden="false" id="3a82-2b92-661b-f4c0" targetId="f47f-295e-3ac6-e189" primary="true"/>
       </categoryLinks>

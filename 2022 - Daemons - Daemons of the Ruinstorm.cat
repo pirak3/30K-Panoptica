@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="ac63-5340-2e9e-1eb6" name="Daemons - Daemons of the Ruinstorm" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="77" revision="2013" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="ac63-5340-2e9e-1eb6" name="Daemons - Daemons of the Ruinstorm" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="77" revision="2014" battleScribeVersion="2.03" type="catalogue">
   <entryLinks>
     <entryLink import="false" name="Daemons of the Ruinstorm" hidden="false" type="selectionEntry" id="e271-f450-1c28-5b7b" targetId="afca-3047-fb26-d097">
       <constraints>
@@ -12,6 +12,11 @@
         <modifier type="add" field="category" value="7b69-bf2f-4547-e83b">
           <conditions>
             <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5430-5be1-1613-be44" type="instanceOf"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="fe56-62d3-b563-ad2b">
+          <conditions>
+            <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b956-4f8e-2bca-7756" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -172,6 +177,7 @@
             <categoryLink targetId="e699-d9cd-e68e-46d9" id="c75d-cc84-4f8f-91b7" name="Daemon Unit Type" primary="false"/>
             <categoryLink targetId="f75a-d5c1-59ba-5c5a" id="f366-260f-4815-b01d" name="Character" primary="false"/>
             <categoryLink targetId="7d95-f9d1-440a-67bd" id="4729-9aff-48a8-b0ff" name="Monstrous Sub-type" primary="false"/>
+            <categoryLink id="d3df-3a86-38fd-9a2c" name="Centurion: Toughness 6-7" hidden="false" targetId="72bd-6fb0-5505-08ee" primary="false"/>
           </categoryLinks>
           <modifiers>
             <modifier type="add" value="9231-183c-b97b-63f9" field="category">
@@ -180,6 +186,9 @@
               </conditions>
             </modifier>
           </modifiers>
+          <costs>
+            <cost name="T6-7 Wounds" typeId="d77c-5315-c711-f178" value="7"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -1888,6 +1897,7 @@
         <selectionEntry type="model" import="true" name="Greater Beast" hidden="false" id="4f8b-41ab-2b96-abdd" publicationId="8775-88f5-cfdd-24f6" page="15">
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="125"/>
+            <cost name="T6-7 Wounds" typeId="d77c-5315-c711-f178" value="5"/>
           </costs>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f3b3-3037-8bd8-4142"/>
@@ -1920,6 +1930,7 @@
           <categoryLinks>
             <categoryLink targetId="e699-d9cd-e68e-46d9" id="7ca2-ecec-440a-b9fc" name="Daemon Unit Type" primary="false"/>
             <categoryLink targetId="7d95-f9d1-440a-67bd" id="3cae-b86c-4395-a3d6" name="Monstrous Sub-type" primary="false"/>
+            <categoryLink id="e0b4-f135-399d-e582" name="Centurion: Toughness 6-7" hidden="false" targetId="72bd-6fb0-5505-08ee" primary="false"/>
           </categoryLinks>
           <modifiers>
             <modifier type="add" value="9231-183c-b97b-63f9" field="category">
@@ -2066,6 +2077,7 @@
           <categoryLinks>
             <categoryLink targetId="e699-d9cd-e68e-46d9" id="c715-e5b8-4d68-8e7b" name="Daemon Unit Type" primary="false"/>
             <categoryLink targetId="7d95-f9d1-440a-67bd" id="a797-6dc9-4343-a422" name="Monstrous Sub-type" primary="false"/>
+            <categoryLink id="9d2a-55f6-f8bb-eb17" name="Centurion: Toughness 6-7" hidden="false" targetId="72bd-6fb0-5505-08ee" primary="false"/>
           </categoryLinks>
           <modifiers>
             <modifier type="add" value="9231-183c-b97b-63f9" field="category">
@@ -2074,6 +2086,9 @@
               </conditions>
             </modifier>
           </modifiers>
+          <costs>
+            <cost name="T6-7 Wounds" typeId="d77c-5315-c711-f178" value="7"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -2472,6 +2487,12 @@
             <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8cf6-d802-d054-6a86" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no models with Toughness 8 or higher</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <modifierGroups>
         <modifierGroup type="and">
@@ -2527,6 +2548,14 @@ In addition, any weapons a model with this Special Rule is equipped with which 
       </rules>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Ka’bandha Unbound" hidden="false" id="baa5-baed-1a62-c820" publicationId="8775-88f5-cfdd-24f6" page="18">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no models with Toughness 8 or higher</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Ka’bandha" hidden="false" id="9049-169d-fcb9-7b26" publicationId="8775-88f5-cfdd-24f6" page="18">
           <profiles>
@@ -2879,6 +2908,12 @@ Lord of Decay – All units with the Daemon Unit Type and the Ætheric Dominion 
             <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7db-bf16-47c5-dc05" type="atLeast"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no models with Toughness 8 or higher</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
       </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Samus Unbound" hidden="false" id="63f0-9b87-6482-87ee" publicationId="8775-88f5-cfdd-24f6" page="21">
@@ -2910,7 +2945,11 @@ Lord of Decay – All units with the Daemon Unit Type and the Ætheric Dominion 
             <categoryLink targetId="7d95-f9d1-440a-67bd" id="bf74-28a7-4e30-8e1c" name="Monstrous Sub-type" primary="false"/>
             <categoryLink targetId="f75a-d5c1-59ba-5c5a" id="fb16-0921-403e-bc11" name="Character" primary="false"/>
             <categoryLink targetId="aa94-5c65-d1f1-46a4" id="c8c3-0a2a-4b6b-9e2a" name="Unique Sub-type" primary="false"/>
+            <categoryLink id="cf15-029f-68c4-6d41" name="Centurion: Toughness 6-7" hidden="false" targetId="72bd-6fb0-5505-08ee" primary="false"/>
           </categoryLinks>
+          <costs>
+            <cost name="T6-7 Wounds" typeId="d77c-5315-c711-f178" value="7"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="4e0b-56a7-1e28-3b3c" name="Blades of Samus" hidden="false" collective="false" import="true" type="upgrade" publicationId="8775-88f5-cfdd-24f6" page="21">
           <constraints>
