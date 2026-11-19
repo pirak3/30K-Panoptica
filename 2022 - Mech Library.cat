@@ -8515,13 +8515,25 @@ A model with an activated Utan Jump Booster may move over both friendly and ene
     </selectionEntry>
     <selectionEntry id="6ca8-efe6-3c8a-ff26" name="Centurion: War-Covenant" hidden="false" collective="false" import="true" type="upgrade">
       <comment>Centurion Game Mode (Liber Panoptica p.56-57): optional, Incursio Force Organisation Chart only (slot category Centurion: War-Covenant)</comment>
+      <modifiers>
+        <modifier type="set" field="b5fe-9748-3a44-e7da" value="0">
+          <comment>Only required (auto-added) in the (Centurion) Incursio Force Organisation Chart</comment>
+          <conditions>
+            <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="b956-4f8e-2bca-7756" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b5fe-9748-3a44-e7da" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9011-41ca-0eae-0d8e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
       <categoryLinks>
         <categoryLink id="cb81-a10a-541c-2fa1" name="Centurion: War-Covenant" hidden="false" targetId="213f-f075-d9c9-65a4" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="fbe5-b142-bfbc-6f1a" name="Centurion: War-Covenant" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c909-7639-91e9-8754" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="c909-7639-91e9-8754" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2d97-7f8d-1a3b-65d1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <selectionEntries>
@@ -15209,7 +15221,7 @@ Prehensile Dataspike. A model with this Special Rule may exchange a single Power
           </modifiers>
           <rules>
             <rule name="Myrmidae" id="6f24-b2cc-84ef-2c4c" hidden="false">
-              <description>A model with this Special Rule gains the Hatred (Everything!), Bulky (3), Firing Protocols (3), and Precision Shots (6+) Special Rules. In addition, a model with this Order of Lesser Techno-Arcana changes itsWounds Characteristic to 4</description>
+              <description>A model with this Special Rule gains the Hatred (Everything!), Bulky (3), Firing Protocols (3), and Precision Shots (6+) Special Rules. In addition, a model with this Order of Lesser Techno-Arcana changes its Wounds Characteristic to 4</description>
             </rule>
           </rules>
         </selectionEntry>

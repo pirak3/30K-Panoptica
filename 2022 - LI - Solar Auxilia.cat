@@ -1791,13 +1791,25 @@
     </selectionEntry>
     <selectionEntry id="546e-e301-aa08-51ae" name="Centurion: Cohort Doctrine" hidden="false" collective="false" import="true" type="upgrade">
       <comment>Centurion Game Mode (Liber Panoptica p.58): optional, Incursio Force Organisation Chart only (slot category Centurion: Cohort Doctrine)</comment>
+      <modifiers>
+        <modifier type="set" field="cd48-3d2d-4339-d5fe" value="0">
+          <comment>Only required (auto-added) in the (Centurion) Incursio Force Organisation Chart</comment>
+          <conditions>
+            <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="b956-4f8e-2bca-7756" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cd48-3d2d-4339-d5fe" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="76cf-ddfd-4706-1cbf" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
       <categoryLinks>
         <categoryLink id="70e1-015d-a3b7-a9b0" name="Centurion: Cohort Doctrine" hidden="false" targetId="256e-df3b-901b-2111" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="4a68-736a-ec46-8b70" name="Centurion: Cohort Doctrine" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1f5d-c2b5-67a5-cb2f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="1f5d-c2b5-67a5-cb2f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9b57-26fe-4b4c-9e35" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <selectionEntries>

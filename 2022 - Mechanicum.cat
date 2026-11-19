@@ -2880,9 +2880,7 @@
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="0eae-0c52-1087-a3b0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="df96-3b30-f3c7-43ff" type="equalTo"/>
                         <condition field="selections" scope="0eae-0c52-1087-a3b0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d8a9-8d49-0ed1-846d" type="equalTo"/>
-                        <condition field="selections" scope="0eae-0c52-1087-a3b0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="eb4f-558c-b2a5-f60a" type="equalTo"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -2904,20 +2902,6 @@
                 <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8fe0-02cf-f34d-c225" type="min"/>
               </constraints>
               <entryLinks>
-                <entryLink id="6940-130e-f973-8451" name="Servo-Arm" hidden="false" collective="false" import="true" targetId="4168-fc85-8912-7188" type="selectionEntry" defaultAmount="1">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition field="selections" scope="0eae-0c52-1087-a3b0" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="eb4f-558c-b2a5-f60a" type="equalTo"/>
-                            <condition field="selections" scope="0eae-0c52-1087-a3b0" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="df96-3b30-f3c7-43ff" type="equalTo"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
-                </entryLink>
                 <entryLink id="dfa4-ffd3-da9b-c3e5" name="Servo-Arm with Prehensile Data-Spike" hidden="true" collective="false" import="true" targetId="981f-5ffe-b686-0491" type="selectionEntry">
                   <modifiers>
                     <modifier type="set" field="hidden" value="false">
@@ -3230,6 +3214,15 @@
                   <description>Tech-Priests and Magos Auxilia in the unit are each equipped with a servo-arm. While the unit contains any number of Servo-automata, Tech-Priests and Magos Auxilia in the unit improve their Battlesmith (X) special rule to Battlesmith (4+).</description>
                 </rule>
               </rules>
+              <entryLinks>
+                <entryLink id="d840-adbf-dfa1-c6b1" name="Servo-Arm" hidden="false" collective="false" import="true" targetId="4168-fc85-8912-7188" type="selectionEntry">
+                  <comment>Each Tech-Priest and Magos Auxilia in the unit is equipped with a servo-arm; auto-added with the Techno-Arcana</comment>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b872-0b25-9161-1a17" type="min"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c52-7b85-426b-d498" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
               </costs>
@@ -3253,6 +3246,15 @@
                   <description>Tech-Priests and Magos Auxilia in the unit are each equipped with a servo-arm, and all models in the unit gain the Sunder and Wrecker special rules. Magos Auxilia may exchange their servo-arm for either a conversion beamer or graviton imploder for +25 points each.</description>
                 </rule>
               </rules>
+              <entryLinks>
+                <entryLink id="be70-69dc-3d8f-67b9" name="Servo-Arm" hidden="false" collective="false" import="true" targetId="4168-fc85-8912-7188" type="selectionEntry">
+                  <comment>Each Tech-Priest and Magos Auxilia in the unit is equipped with a servo-arm; auto-added with the Techno-Arcana</comment>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="edbe-aec0-ee01-f61c" type="min"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5978-0294-5156-3357" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
               </costs>

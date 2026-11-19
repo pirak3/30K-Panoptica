@@ -12188,6 +12188,19 @@ While making a Chain Fire attack, a model with this special rule may make up to 
       </costs>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Centurion: Rites of War" hidden="false" id="8811-0e66-cfb6-8026">
+      <comment>Auto-added to an Incursio force like Allegiance; the choice inside stays optional.</comment>
+      <modifiers>
+        <modifier type="set" field="ede0-7354-56a6-1211" value="0">
+          <comment>Only required (auto-added) in the (Centurion) Incursio Force Organisation Chart</comment>
+          <conditions>
+            <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="b956-4f8e-2bca-7756" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ede0-7354-56a6-1211" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="32a7-073a-0074-edb7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
       <entryLinks>
         <entryLink import="true" name="Centurion: Rites of War" hidden="false" id="13b8-05f3-9070-a16d" type="selectionEntryGroup" targetId="beb0-ea74-d478-d228"/>
       </entryLinks>
@@ -19043,7 +19056,7 @@ Vehicle Unit Type must begin the game in Reserve.</description>
         </selectionEntry>
       </selectionEntries>
       <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5767-a877-b8f6-7e20-min" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="5767-a877-b8f6-7e20-min" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5767-a877-b8f6-7e20-max" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
       </constraints>
       <modifiers>
