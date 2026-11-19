@@ -32,6 +32,9 @@ All notable changes to the BattleScribe Data Repository will be documented in th
 ### Fixed
 - **BattleScribe Structure**:
   - Added the missing `[Vehicle:]` category to Damocles Command Rhino, Sokar Stormbird, Thunderhawk Transporter, Karacnos and Skorpius Dunerider (also fixes the Zone Mortalis and Black Watch vehicle bans for them)
+  - `[Mechanicum]` `[Tech-Priest Auxilia]`: the `[Enginseer]` and `[Reductor]` Techno-Arcana now include the `[Servo-Arm]` automatically (it was not selected by default)
+- **Typos**:
+  - `[Myrmidae]`: "itsWounds" → "its Wounds"
 
 ## Release Archive
 ## [2026-11-17]
