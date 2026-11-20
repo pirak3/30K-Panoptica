@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="4c88-1a81-7e53-0a67" name="LI - Assassins and Agents" revision="2013" battleScribeVersion="2.03" authorName="Maye Gelt" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="70" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="4c88-1a81-7e53-0a67" name="LI - Assassins and Agents" revision="2014" battleScribeVersion="2.03" authorName="Maye Gelt" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="70" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry id="c1fd-3919-f4bf-a990" name="Clade Adamus Assassin" publicationId="15a4-fc68-502d-48a9" page="120" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no models with the Assassin Sub-type</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="df0c-6bd8-c95e-b69a" name="Clade Adamus Assassin" publicationId="15a4-fc68-502d-48a9" page="120" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
           <characteristics>
@@ -173,6 +181,14 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="ca4f-321c-519e-b34b" name="Clade Callidus Assassin" publicationId="15a4-fc68-502d-48a9" page="116" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no models with the Assassin Sub-type</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="75fb-99a0-9ecb-7166" name="Clade Callidus Assassin" publicationId="15a4-fc68-502d-48a9" page="116" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
           <characteristics>
@@ -298,6 +314,14 @@ In addition, whilst the effects of Polymorphine are active, the model equipped 
       </costs>
     </selectionEntry>
     <selectionEntry id="7c0a-f6df-88f7-e29a" name="Clade Culexus Assassin" publicationId="15a4-fc68-502d-48a9" page="115" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no models with the Assassin Sub-type</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="4564-a7a7-fad5-89fb" name="Clade Culexus Assassin" publicationId="15a4-fc68-502d-48a9" page="115" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
           <characteristics>
@@ -426,6 +450,14 @@ In addition, whilst the effects of Polymorphine are active, the model equipped 
       </costs>
     </selectionEntry>
     <selectionEntry id="a3c0-cb13-aef7-8838" name="Clade Eversor Assassin" publicationId="15a4-fc68-502d-48a9" page="118" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no models with the Assassin Sub-type</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="ea5c-ef35-fe92-4532" name="Clade Eversor Assassin" publicationId="15a4-fc68-502d-48a9" page="118" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
           <characteristics>
@@ -553,6 +585,14 @@ In addition, whilst the effects of Polymorphine are active, the model equipped 
       </costs>
     </selectionEntry>
     <selectionEntry id="c109-bb90-d38f-ce07" name="Clade Vanus Infocyte Assassin" publicationId="15a4-fc68-502d-48a9" page="124" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no models with the Assassin Sub-type</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="ea1d-0b6d-8921-eb01" name="Clade Vanus Infocyte Assassin" publicationId="15a4-fc68-502d-48a9" page="124" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
           <characteristics>
@@ -670,6 +710,14 @@ Note that weapons selected to fire in this manner must still follow the rules a
       </costs>
     </selectionEntry>
     <selectionEntry id="b1b9-e6d8-a7c2-f252" name="Clade Venenum Assassin" publicationId="15a4-fc68-502d-48a9" page="122" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no models with the Assassin Sub-type</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="499f-1a68-53ac-5417" name="Clade Venenum Assassin" publicationId="15a4-fc68-502d-48a9" page="122" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
           <characteristics>
@@ -803,6 +851,14 @@ Note that weapons selected to fire in this manner must still follow the rules a
       </costs>
     </selectionEntry>
     <selectionEntry id="0b9a-903b-c3de-5075" name="Clade Vindicare Assassin" publicationId="15a4-fc68-502d-48a9" page="114" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no models with the Assassin Sub-type</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="faee-8596-e437-1e0e" name="Clade Vindicare Assassin" publicationId="15a4-fc68-502d-48a9" page="114" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
           <characteristics>
@@ -986,6 +1042,20 @@ A model equipped with the Panoply of the Assassin also gains Frag Grenades, and
       </costs>
     </selectionEntry>
     <selectionEntry id="3928-63ee-20a9-f84b" name="Infernus Abomination" publicationId="53a4-0d21-2f8a-2c45" page="222" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no models with the Abomination Sub-type</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no models with the Assassin Sub-type</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="e96f-4614-45e1-e655" name="Infernus Abomination" publicationId="53a4-0d21-2f8a-2c45" page="222" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
           <characteristics>

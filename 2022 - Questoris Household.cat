@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="92b4-d476-8b4c-e7ef" name="Questoris Household" revision="11" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="66" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="92b4-d476-8b4c-e7ef" name="Questoris Household" revision="12" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="66" type="catalogue">
   <forceEntries>
     <forceEntry id="28d3-4be2-608d-bf8a" name="0. Questoris Household Force Organisation Chart" hidden="false">
       <categoryLinks>
@@ -35,6 +35,14 @@
           </constraints>
         </categoryLink>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="0" field="6fed-1e9-64f8-40e3">
+          <comment>Centurion Game Mode: no other detachments</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="6fed-1e9-64f8-40e3"/>
       </constraints>
@@ -68,6 +76,14 @@
           </constraints>
         </categoryLink>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="0" field="f939-6dbb-b6f3-4df7">
+          <comment>Centurion Game Mode: no other detachments</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="f939-6dbb-b6f3-4df7"/>
       </constraints>
@@ -79,6 +95,11 @@
         <modifier type="add" field="category" value="7b69-bf2f-4547-e83b">
           <conditions>
             <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5430-5be1-1613-be44" type="instanceOf"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="fe56-62d3-b563-ad2b">
+          <conditions>
+            <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b956-4f8e-2bca-7756" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -114,6 +135,12 @@
         <modifier type="add" value="5f7-c0fa-4d3-180c" field="category">
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="28d3-4be2-608d-bf8a" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -153,6 +180,12 @@
             <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="28d3-4be2-608d-bf8a" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="3e12-5f5e-ac9c-4354" name="Lords of War:" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
@@ -181,6 +214,12 @@
         <modifier type="add" value="5f7-c0fa-4d3-180c" field="category">
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="28d3-4be2-608d-bf8a" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -213,6 +252,12 @@
             <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="28d3-4be2-608d-bf8a" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="3d5a-ce72-e96a-7b84" name="Lords of War:" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
@@ -243,6 +288,12 @@
             <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="28d3-4be2-608d-bf8a" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="2e28-e276-031d-c76e" name="Lords of War:" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
@@ -268,6 +319,12 @@
         <modifier type="add" value="5f7-c0fa-4d3-180c" field="category">
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="28d3-4be2-608d-bf8a" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -300,6 +357,12 @@
             <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="28d3-4be2-608d-bf8a" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="f6c1-febb-5445-a61e" name="Lords of War:" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
@@ -330,6 +393,12 @@
             <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="28d3-4be2-608d-bf8a" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="081a-4cc1-02c0-4470" name="Lords of War:" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
@@ -358,6 +427,12 @@
         <modifier type="add" value="5f7-c0fa-4d3-180c" field="category">
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="28d3-4be2-608d-bf8a" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -432,6 +507,12 @@
             <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="28d3-4be2-608d-bf8a" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="13d9-98b4-2cc2-8d41" name="Lords of War:" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
@@ -460,6 +541,12 @@
         <modifier type="add" value="5f7-c0fa-4d3-180c" field="category">
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="28d3-4be2-608d-bf8a" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
