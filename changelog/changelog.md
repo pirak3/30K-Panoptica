@@ -3,7 +3,8 @@
 All notable changes to the BattleScribe Data Repository will be documented in this file.
 
 ---
-## [Unreleased] - expansion/centurion
+## Release Archive
+## [2026-11-20]
 
 ### Added
 - **Force Organisation**:
@@ -36,7 +37,6 @@ All notable changes to the BattleScribe Data Repository will be documented in th
 - **Typos**:
   - `[Myrmidae]`: "itsWounds" → "its Wounds"
 
-## Release Archive
 ## [2026-11-17]
 
 ### Added
