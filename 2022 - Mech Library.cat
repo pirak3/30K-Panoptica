@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Mech Library" id="3129-da35-55e0-642d" battleScribeVersion="2.03" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" library="true" revision="2048" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Mech Library" id="3129-da35-55e0-642d" battleScribeVersion="2.03" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" library="true" revision="2049" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink name="Daemon Library" id="4700-85b7-ecb4-c6c" targetId="31bf-eb23-33a-3d65" type="catalogue"/>
   </catalogueLinks>
@@ -19,6 +19,12 @@
             <condition childId="ff97-e64e-506b-0587" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="atLeast" value="1"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="0" field="0607-82af-28db-6830">
+          <comment>Centurion Game Mode: no models with Feudal Hierarchy</comment>
+          <conditions>
+            <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="b956-4f8e-2bca-7756" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
       </modifiers>
     </categoryEntry>
     <categoryEntry name="Feudal Hierarchy (On Foot)" id="ff97-e64e-506b-0587" hidden="false">
@@ -32,6 +38,12 @@
         <modifier field="4179-5998-cf1c-6557" type="set" value="0">
           <conditions>
             <condition childId="4c2b-03e9-abb7-7209" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="atLeast" value="1"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="0" field="4179-5998-cf1c-6557">
+          <comment>Centurion Game Mode: no models with Feudal Hierarchy</comment>
+          <conditions>
+            <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="b956-4f8e-2bca-7756" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -1142,6 +1154,12 @@ In addition, when a model with an ionic deflector loses its last Wound or Hull P
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <profiles>
         <profile name="Triaros Armoured Conveyor" id="9c35-7828-ae5a-edd1" hidden="false" page="38" publicationId="bde1-6db1-163b-3b76" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle">
@@ -1384,12 +1402,14 @@ In addition, when a model with an ionic deflector loses its last Wound or Hull P
         <categoryLink name="Infantry Unit Type" id="535d-121f-5839-a712" hidden="false" primary="false" targetId="8b4f-bfe2-ce7b-f1b1"/>
         <categoryLink name="Independent Character" id="ab7c-4dce-52a0-3b2a" hidden="false" primary="false" targetId="4f07-3d45-4f28-a0c6"/>
         <categoryLink name="Cybertheurgist" id="ca1a-d504-80f8-2b44" hidden="false" primary="false" targetId="57a1-ae47-ff1b-36e4"/>
+        <categoryLink id="d211-ceb0-0d4d-df46" name="Centurion: Toughness 6-7" hidden="false" targetId="72bd-6fb0-5505-08ee" primary="false"/>
       </categoryLinks>
       <constraints>
         <constraint id="c9ef-5940-dfd1-cb76" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="max" value="1"/>
       </constraints>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="240"/>
+        <cost name="T6-7 Wounds" typeId="d77c-5315-c711-f178" value="4"/>
       </costs>
       <entryLinks>
         <entryLink name="Abeyant" id="6055-57e9-8d45-c7dd" collective="false" hidden="false" import="true" targetId="9dd5-bfd0-50c9-25c2" type="selectionEntry">
@@ -1711,6 +1731,12 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
             <condition childId="ed1f-9473-df70-4544" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <selectionEntries>
         <selectionEntry name="Reaver Battle Titan" id="8de7-e87d-272d-7752" collective="false" hidden="false" import="true" type="model">
@@ -1859,6 +1885,12 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
         </modifier>
       </modifiers>
       <selectionEntries>
@@ -2090,6 +2122,12 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <selectionEntries>
         <selectionEntry name="Warhound Scout Titan" id="1f8a-929b-a949-7865" collective="false" hidden="false" import="true" type="model">
@@ -2227,6 +2265,12 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
         </modifier>
       </modifiers>
       <selectionEntries>
@@ -2774,6 +2818,7 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
             <categoryLink name="Armiger Unit Type" id="4c79-8dc9-4579-afbb" primary="false" targetId="41ff-7fc9-d4a0-da2"/>
             <categoryLink name="Skirmish Sub-type" id="6328-d00c-471e-931a" primary="false" targetId="59a4-7b61-600a-c457"/>
             <categoryLink name="Line Sub-type" id="73c1-3577-4721-8c8e" primary="false" targetId="6399-5c65-7833-1025"/>
+            <categoryLink id="f612-f0a8-8e83-df22" name="Centurion: Toughness 6-7" hidden="false" targetId="72bd-6fb0-5505-08ee" primary="false"/>
           </categoryLinks>
           <constraints>
             <constraint id="95b8-4369-aeaf-7a3a" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
@@ -2781,6 +2826,7 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
           </constraints>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="200"/>
+            <cost name="T6-7 Wounds" typeId="d77c-5315-c711-f178" value="6"/>
           </costs>
           <entryLinks>
             <entryLink name="Searchlights" id="6cb6-57a3-3c99-492d" collective="false" hidden="false" import="true" targetId="4ae3-79b4-6051-505e" type="selectionEntry">
@@ -2937,6 +2983,7 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
             <categoryLink name="Armiger Unit Type" id="2951-cb41-4c91-81d4" primary="false" targetId="41ff-7fc9-d4a0-da2"/>
             <categoryLink name="Skirmish Sub-type" id="eb06-2e6d-440b-9e98" primary="false" targetId="59a4-7b61-600a-c457"/>
             <categoryLink name="Line Sub-type" id="130d-3485-4b30-bc70" primary="false" targetId="6399-5c65-7833-1025"/>
+            <categoryLink id="e4f1-8fc5-5abf-3d11" name="Centurion: Toughness 6-7" hidden="false" targetId="72bd-6fb0-5505-08ee" primary="false"/>
           </categoryLinks>
           <constraints>
             <constraint id="2709-f87c-b1ff-baa2" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
@@ -2944,6 +2991,7 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
           </constraints>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="200"/>
+            <cost name="T6-7 Wounds" typeId="d77c-5315-c711-f178" value="6"/>
           </costs>
           <entryLinks>
             <entryLink name="Searchlights" id="5fd5-cfc3-f143-a88c" collective="false" hidden="false" import="true" targetId="4ae3-79b4-6051-505e" type="selectionEntry">
@@ -5514,6 +5562,7 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
           <categoryLinks>
             <categoryLink name="Automata Unit Type" id="be9c-9e1a-4b2b-ad73" primary="false" targetId="d8ab-8e21-e193-63ba"/>
             <categoryLink name="Cybernetica Sub-type" id="f457-42c5-48b1-b774" primary="false" targetId="2440-b64e-cb24-87f0"/>
+            <categoryLink id="0d34-d634-910b-952e" name="Centurion: Toughness 6-7" hidden="false" targetId="72bd-6fb0-5505-08ee" primary="false"/>
           </categoryLinks>
           <constraints>
             <constraint id="1d43-7c11-b7e5-7ae9" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
@@ -5521,6 +5570,7 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
           </constraints>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="85"/>
+            <cost name="T6-7 Wounds" typeId="d77c-5315-c711-f178" value="4"/>
           </costs>
           <entryLinks>
             <entryLink name="Paragon of Metal" id="2e0f-2bb6-069f-03d6" collective="false" hidden="false" import="true" targetId="cc2a-46fe-bbf3-6ba2" type="selectionEntry">
@@ -5584,6 +5634,12 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
+            </modifier>
+            <modifier type="set" value="1" field="2238-1122-27bd-f08e">
+              <comment>Centurion Game Mode: may not expand beyond its starting size</comment>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
             </modifier>
           </modifiers>
           <profiles>
@@ -5962,6 +6018,7 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
           <categoryLinks>
             <categoryLink name="Automata Unit Type" id="dc0d-2e59-4dd2-937b" primary="false" targetId="d8ab-8e21-e193-63ba"/>
             <categoryLink name="Cybernetica Sub-type" id="6a4b-c42d-4a4f-8139" primary="false" targetId="2440-b64e-cb24-87f0"/>
+            <categoryLink id="2c8a-ae25-7e7e-4b2f" name="Centurion: Toughness 6-7" hidden="false" targetId="72bd-6fb0-5505-08ee" primary="false"/>
           </categoryLinks>
           <constraints>
             <constraint id="2116-a161-c40f-7ec0" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
@@ -5969,6 +6026,7 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
           </constraints>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="130"/>
+            <cost name="T6-7 Wounds" typeId="d77c-5315-c711-f178" value="5"/>
           </costs>
           <entryLinks>
             <entryLink name="Graviton Hammer" id="a470-f451-0c7c-40af" collective="false" hidden="false" import="true" targetId="ceaa-178d-3995-c2c8" type="selectionEntry">
@@ -6040,6 +6098,12 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
+            </modifier>
+            <modifier type="set" value="1" field="9c2f-e528-8697-48b5">
+              <comment>Centurion Game Mode: may not expand beyond its starting size</comment>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
             </modifier>
           </modifiers>
           <profiles>
@@ -6342,6 +6406,12 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no models with Toughness 8 or higher</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
         </modifier>
       </modifiers>
       <selectionEntries>
@@ -6713,6 +6783,14 @@ Once a unit with this Special Rule has separated, each model counts as its own 
       </modifiers>
       <selectionEntryGroups>
         <selectionEntryGroup name="Vorax" id="6689-54ca-0570-668d" defaultSelectionEntryId="6711-d580-b463-bc7e" hidden="false">
+          <modifiers>
+            <modifier type="set" value="1" field="2a52-60b7-72f1-e1e0">
+              <comment>Centurion Game Mode: may not expand beyond its starting size</comment>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint id="8445-0c30-1015-ee0b" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
             <constraint id="2a52-60b7-72f1-e1e0" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="6"/>
@@ -8211,6 +8289,7 @@ A model with an activated Utan Jump Booster may move over both friendly and ene
             <constraint id="5bc0-cf77-3ca7-6067" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
         </entryLink>
+        <entryLink id="9175-add0-a97b-01ea" name="Targeting Bionics (Ruinor Destructor Cohort)" hidden="false" collective="false" import="true" targetId="19fa-1b26-4bca-f671" type="selectionEntry"/>
       </entryLinks>
       <selectionEntries>
         <selectionEntry name="Thallax" id="acc0-4cf8-5c18-a8d1" collective="false" hidden="false" import="true" page="35" publicationId="bde1-6db1-163b-3b76" type="model">
@@ -8433,6 +8512,134 @@ A model with an activated Utan Jump Booster may move over both friendly and ene
           </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry id="6ca8-efe6-3c8a-ff26" name="Centurion: War-Covenant" hidden="false" collective="false" import="true" type="upgrade">
+      <comment>Centurion Game Mode (Liber Panoptica p.56-57): optional, Incursio Force Organisation Chart only (slot category Centurion: War-Covenant)</comment>
+      <modifiers>
+        <modifier type="set" field="b5fe-9748-3a44-e7da" value="0">
+          <comment>Only required (auto-added) in the (Centurion) Incursio Force Organisation Chart</comment>
+          <conditions>
+            <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="b956-4f8e-2bca-7756" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b5fe-9748-3a44-e7da" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9011-41ca-0eae-0d8e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="cb81-a10a-541c-2fa1" name="Centurion: War-Covenant" hidden="false" targetId="213f-f075-d9c9-65a4" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="fbe5-b142-bfbc-6f1a" name="Centurion: War-Covenant" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="c909-7639-91e9-8754" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2d97-7f8d-1a3b-65d1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <selectionEntries>
+          <selectionEntry id="08b5-a917-f0e4-a41d" name="Lachrimallion Flesh-Hordes" hidden="false" collective="false" import="true" type="upgrade">
+            <rules>
+              <rule id="daaa-edfa-e4c9-3811" name="Lachrimallion Flesh-Hordes" hidden="false">
+                <description>Effects:
+• A model with the Lachrimallion Lesser Techno-Arcana in a Detachment using this War-Covenant gains the Vicarious Vivisectionist Special Rule.
+Vicarious Vivisectionist: A model with this Special Rule, and any models in a unit that it has joined, may re-roll failed Feel No Pain Damage Mitigation Rolls of 1.
+• Adsecularis Tech-Thralls Covenants and Adsecularis Tech-Thralls Certus Covenants taken as Compulsory Troops may be upgraded to have a Toughness Characteristic of 4 at a cost of +1 point per model.
+• Whenever a unit of either Adsecularis Tech-Thralls Covenant or Adsecularis Tech-Thralls Certus Covenant is completely destroyed, roll a D6. On a roll of a 4+, place the entire unit into Reserves instead - it enters play automatically from your board edge at the start of the Controlling Player's next turn.
+
+Limitations:
+• A Detachment using this War-Covenant must take a model with the Lachrimallion Lesser Techno-Arcana as its compulsory HQ choice, and this model must be the army's Warlord.
+• Compulsory Troops slots in a Detachment using this War-Covenant must be filled with either Adsecularis Tech-Thralls Covenants or Adsecularis Tech-Thralls Certus Covenants, and these units must be at their maximum possible unit size.
+
+A Detachment which uses a Centurion War-Covenant may only select a single model with The Lesser Orders of the Techno-Arcana Special Rule.</description>
+              </rule>
+            </rules>
+            <costs>
+              <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+            </costs>
+          </selectionEntry>
+          <selectionEntry id="7aa9-a0ce-df74-4369" name="Macroteknia Enginseer Conclave" hidden="false" collective="false" import="true" type="upgrade">
+            <rules>
+              <rule id="f0e7-e73a-b9f3-ad38" name="Macroteknia Enginseer Conclave" hidden="false">
+                <description>Effects:
+• A model in a Detachment using this War-Covenant with the Macroteknia Lesser Techno-Arcana gains the High Enginseer Special Rule (see Liber Mechanicum, page 100).
+• All Servo-Automata in a Detachment using this War-Covenant have an Armour Save of 4+.
+• Any model in a Detachment using this War-Covenant which has the Battlesmith (X) Special Rule may choose, instead of the normal effects, to attempt to return a single Servo-Automata previously slain in the battle to a unit they are part of (or have joined). A maximum of two Servo- Automata may be returned to a single unit in this way per game turn.
+
+Limitations:
+• A Detachment using this War-Covenant must take a model with the Macroteknia Lesser Techno-Arcana as its compulsory HQ choice, and this model must be the army's Warlord.
+• Compulsory Troops slots in a Detachment using this War-Covenant must be filled with Tech-Priest Auxilia units.
+
+A Detachment which uses a Centurion War-Covenant may only select a single model with The Lesser Orders of the Techno-Arcana Special Rule.</description>
+              </rule>
+            </rules>
+            <costs>
+              <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+            </costs>
+          </selectionEntry>
+          <selectionEntry id="16aa-d01b-b3a1-80bc" name="Myrmidae Destroyer Cult" hidden="false" collective="false" import="true" type="upgrade">
+            <rules>
+              <rule id="e5d3-d82a-e460-d189" name="Myrmidae Destroyer Cult" hidden="false">
+                <description>Effects:
+• A model in a Detachment using this War-Covenant with the Myrmidae Lesser Techno-Arcana gains The Myrmidon Host Special Rule (see Liber Mechanicum, page 101).
+• A single unit of Myrmidon Secutor Host in a Detachment using this War-Covenant may be upgraded to have a Weapon Skill Characteristic of 5, at a cost of +10 points per model.
+
+Limitations:
+• A Detachment using this War-Covenant must take a model with the Myrmidae Lesser Techno-Arcana as its compulsory HQ choice, and this model must be the army's Warlord.
+• A Detachment using this War-Covenant must take at least as many units that are not either Myrmidon Secutor Hosts or Myrmidon Destructor Hosts as units that are either Myrmidon Secutor Hosts or Myrmidon Destructor Hosts.
+
+A Detachment which uses a Centurion War-Covenant may only select a single model with The Lesser Orders of the Techno-Arcana Special Rule.</description>
+              </rule>
+            </rules>
+            <costs>
+              <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+            </costs>
+          </selectionEntry>
+          <selectionEntry id="6b99-d019-7c76-5be1" name="Ruinor Destructor Cohort" hidden="false" collective="false" import="true" type="upgrade">
+            <rules>
+              <rule id="2f1a-b880-0dd9-05d2" name="Ruinor Destructor Cohort" hidden="false">
+                <description>Effects:
+• A model in a Detachment using this War-Covenant with the Ruinor Lesser Techno-Arcana gains the Targeting Bionics Special Rule.
+• Any unit composed entirely of models with the Infantry Unit Type in a detachment using this War-Covenant may be upgraded to have the Targeting Bionics Special Rule for +10 points per unit.
+Targeting Bionics: Whenever a model with this Special Rule makes a Shooting Attack, reduce the benefits of any Cover Save the target unit has by -1 (a 5+ becoming a 6+, and a 6+ being ignored entirely, and so on).
+
+Limitations:
+• A detachment using this War-Covenant must take a model with the Ruinor Lesser Techno-Arcana as its compulsory HQ choice, and this model must be the army's Warlord.
+• Compulsory Troops slots in a Detachment using this War-Covenant must be filled with Thallax Cohorts.
+
+A Detachment which uses a Centurion War-Covenant may only select a single model with The Lesser Orders of the Techno-Arcana Special Rule.</description>
+              </rule>
+            </rules>
+            <costs>
+              <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+            </costs>
+          </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="19fa-1b26-4bca-f671" name="Targeting Bionics (Ruinor Destructor Cohort)" hidden="true" collective="false" import="true" type="upgrade">
+      <comment>Ruinor Destructor Cohort: any unit composed entirely of Infantry may take Targeting Bionics for +10 points per unit</comment>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="6b99-d019-7c76-5be1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion War-Covenant: Ruinor Destructor Cohort"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="492f-1594-3852-65de" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
+      <rules>
+        <rule id="2bf1-ce7b-6993-beaa" name="Targeting Bionics" hidden="false">
+          <description>Whenever a model with this Special Rule makes a Shooting Attack, reduce the benefits of any Cover Save the target unit has by -1 (a 5+ becoming a 6+, and a 6+ being ignored entirely, and so on).</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+      </costs>
     </selectionEntry>
     <selectionEntry name="Mars-Colossus Bombard" id="7967-2b30-7a55-1ac9" collective="false" hidden="false" import="true" type="upgrade">
       <costs>
@@ -8803,9 +9010,18 @@ A model with an activated Utan Jump Booster may move over both friendly and ene
       </modifiers>
       <selectionEntries>
         <selectionEntry name="Blood Slaughterer" id="bc3e-42a0-d164-2482" defaultAmount="1" hidden="false" import="true" type="model">
+          <modifiers>
+            <modifier type="set" value="1" field="d72c-4532-ddfe-d239">
+              <comment>Centurion Game Mode: may not expand beyond its starting size</comment>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <categoryLinks>
             <categoryLink name="Dreadnought Unit Type" id="5ae3-42e9-4737-8d29" primary="false" targetId="4280-4963-02b5-e31d"/>
             <categoryLink name="Corrupted Engine Sub-type" id="0e34-859c-4416-814b" primary="false" targetId="a443-dbf4-cb6c-4da1"/>
+            <categoryLink id="a5d0-188e-b699-fa3c" name="Centurion: Toughness 6-7" hidden="false" targetId="72bd-6fb0-5505-08ee" primary="false"/>
           </categoryLinks>
           <constraints>
             <constraint id="7d1e-9146-7aa-dffa" field="selections" scope="parent" shared="true" type="min" value="1"/>
@@ -8813,6 +9029,7 @@ A model with an activated Utan Jump Booster may move over both friendly and ene
           </constraints>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="110"/>
+            <cost name="T6-7 Wounds" typeId="d77c-5315-c711-f178" value="5"/>
           </costs>
           <entryLinks>
             <entryLink name="Heedless Slaughter (Corrupted Engines)" id="88f3-d08c-afce-3eb1" hidden="false" import="true" targetId="4cd2-3d17-e493-f555" type="selectionEntry"/>
@@ -8967,9 +9184,11 @@ A model with an activated Utan Jump Booster may move over both friendly and ene
         <categoryLink name="Corrupted Engine Sub-type" id="9ff1-2e56-f502-d653" primary="false" targetId="a443-dbf4-cb6c-4da1"/>
         <categoryLink name="Dreadnought Unit Type" id="527f-7bcf-e17a-4a0b" primary="false" targetId="4280-4963-02b5-e31d"/>
         <categoryLink name="Heavy Sub-type" id="4b4c-beca-7b8e-2a07" primary="false" targetId="9231-183c-b97b-63f9"/>
+        <categoryLink id="0a4a-fc3a-4cfe-e7c1" name="Centurion: Toughness 6-7" hidden="false" targetId="72bd-6fb0-5505-08ee" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="265"/>
+        <cost name="T6-7 Wounds" typeId="d77c-5315-c711-f178" value="7"/>
       </costs>
       <entryLinks>
         <entryLink name="Malevolent Artifice (Corrupted Engines)" id="3087-4493-7f40-4625" collective="false" hidden="false" import="true" targetId="342d-f0f5-4302-69db" type="selectionEntry"/>
@@ -9708,6 +9927,9 @@ In addition, if a unit that contains one or more model with this Special Rule de
       <categoryLinks>
         <categoryLink name="Elites:" id="f152-f838-ab41-d0d1" primary="false" targetId="7aee-565f-b0ae-294e"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="3517-cdfb-6e13-f283" name="Targeting Bionics (Ruinor Destructor Cohort)" hidden="false" collective="false" import="true" targetId="19fa-1b26-4bca-f671" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
       </costs>
@@ -9857,6 +10079,9 @@ In addition, if a unit that contains one or more model with this Special Rule de
       </profiles>
     </selectionEntry>
     <selectionEntry name="Kataphron Destructor Servitor Maniple" id="c423-5579-ad18-0ede" hidden="false" import="true" type="unit">
+      <entryLinks>
+        <entryLink id="f438-182c-566e-fd9c" name="Targeting Bionics (Ruinor Destructor Cohort)" hidden="false" collective="false" import="true" targetId="19fa-1b26-4bca-f671" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
       </costs>
@@ -10036,6 +10261,14 @@ In addition, if a unit that contains one or more model with this Special Rule de
       </profiles>
     </selectionEntry>
     <selectionEntry name="Triaros Guardian" id="2ca6-bb02-21ad-6c8c" hidden="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink name="Vehicle:" id="b5d6-91e6-e5b3-6222" primary="false" targetId="e2b6-b770-784c-9e95"/>
       </categoryLinks>
@@ -10167,12 +10400,41 @@ In addition, if a unit that contains one or more model with this Special Rule de
       </infoLinks>
       <selectionEntries>
         <selectionEntry name="Sarumiat" id="74a2-08fc-6504-4f9d" hidden="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="d96e-3733-e740-9947" name="Sarumiat" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Automata (Cybernetica)</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">9</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">4</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">3</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">7</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">7</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">5</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">4</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">3</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">7</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">3+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <modifiers>
+            <modifier type="set" value="1" field="5ad3-bc64-f0f1-5641">
+              <comment>Centurion Game Mode: may not expand beyond its starting size</comment>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint id="10fc-0e8d-a66c-1906" field="selections" scope="parent" shared="true" type="min" value="1"/>
             <constraint id="5ad3-bc64-f0f1-5641" field="selections" scope="parent" shared="true" type="max" value="3"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink id="dfc6-4232-daf5-6437" name="Centurion: Toughness 6-7" hidden="false" targetId="72bd-6fb0-5505-08ee" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="165"/>
+            <cost name="T6-7 Wounds" typeId="d77c-5315-c711-f178" value="5"/>
           </costs>
           <entryLinks>
             <entryLink name="Atomantic Deflector" id="533f-cee8-7c48-bd50" hidden="false" import="true" targetId="38fb-9a0b-edef-a497" type="selectionEntry">
@@ -10249,6 +10511,14 @@ In addition, if a unit that contains one or more model with this Special Rule de
       </selectionEntries>
     </selectionEntry>
     <selectionEntry name="Archaeoptor Imperator Squadron" id="8c99-62eb-b2db-e671" hidden="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <infoLinks>
         <infoLink name="Deep Strike" id="3a62-eb2c-e41b-751e" hidden="false" targetId="f1e1-986f-c783-ca9e" type="rule"/>
         <infoLink name="Attack Wing" id="7cf2-762b-cdc2-3f81" hidden="false" targetId="d4dd-c15b-6cea-6c3f" type="rule"/>
@@ -10450,8 +10720,12 @@ In addition, if a unit that contains one or more model with this Special Rule de
             <constraint id="1fee-7721-c398-8886" field="selections" scope="parent" shared="true" type="min" value="1"/>
             <constraint id="fdec-e83a-c086-d9cc" field="selections" scope="parent" shared="true" type="max" value="6"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink id="d2ac-c86a-f2bf-3c5d" name="Centurion: Toughness 6-7" hidden="false" targetId="72bd-6fb0-5505-08ee" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="60"/>
+            <cost name="T6-7 Wounds" typeId="d77c-5315-c711-f178" value="3"/>
           </costs>
           <entryLinks>
             <entryLink name="Phosphor Serpenta" id="b632-e583-0211-72cf" hidden="false" import="true" targetId="decb-2c33-9edb-7c7d" type="selectionEntry">
@@ -10902,8 +11176,12 @@ In addition, any model with an Ironstrider Engine and a Wounds Characteristic t
             <constraint id="c924-15dc-5df5-4e81" field="selections" scope="parent" shared="true" type="min" value="1"/>
             <constraint id="b985-027c-d387-1916" field="selections" scope="parent" shared="true" type="max" value="6"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink id="4509-e94d-260b-4f1e" name="Centurion: Toughness 6-7" hidden="false" targetId="72bd-6fb0-5505-08ee" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="60"/>
+            <cost name="T6-7 Wounds" typeId="d77c-5315-c711-f178" value="3"/>
           </costs>
           <entryLinks>
             <entryLink name="Phosphor Serpenta" id="79af-c869-5aec-6933" hidden="false" import="true" targetId="decb-2c33-9edb-7c7d" type="selectionEntry">
@@ -11136,6 +11414,14 @@ In addition, all models with a Scapuli-Pattern Thruster Pack that have been acti
       </profiles>
     </selectionEntry>
     <selectionEntry name="Archaeopter Transvector Squadron" id="e6bd-61f8-d7b6-9885" hidden="false" import="true" page="48" type="unit">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <infoLinks>
         <infoLink name="Deep Strike" id="f628-695f-8740-4134" hidden="false" targetId="f1e1-986f-c783-ca9e" type="rule"/>
         <infoLink name="Infantry Transport" id="95b2-1f3e-9732-6dd7" hidden="false" targetId="0c6b-9cc1-5801-3e83" type="rule"/>
@@ -11492,6 +11778,12 @@ Once these shooting attacks are complete, the model immediately suffers D3 Hull 
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no models with Toughness 8 or higher</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <selectionEntries>
         <selectionEntry name="Thanatar-Cynis" id="93bf-df3d-dab3-b559" collective="false" hidden="false" import="true" page="54" type="model">
@@ -11653,6 +11945,7 @@ Once a unit with this Special Rule has separated, each model counts as its own u
             <categoryLink name="Automata Unit Type" id="1ea5-669b-a6fb-98bd" primary="false" targetId="d8ab-8e21-e193-63ba"/>
             <categoryLink name="Cybernetica Sub-type" id="c4b0-bf86-a039-b373" primary="false" targetId="2440-b64e-cb24-87f0"/>
             <categoryLink name="Heavy Sub-type" id="0c20-d733-5c65-60a7" primary="false" targetId="9231-183c-b97b-63f9"/>
+            <categoryLink id="ca92-8fc7-c4c1-0cf7" name="Centurion: Toughness 6-7" hidden="false" targetId="72bd-6fb0-5505-08ee" primary="false"/>
           </categoryLinks>
           <constraints>
             <constraint id="42d6-f565-88de-c040" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
@@ -11660,6 +11953,7 @@ Once a unit with this Special Rule has separated, each model counts as its own u
           </constraints>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="160"/>
+            <cost name="T6-7 Wounds" typeId="d77c-5315-c711-f178" value="5"/>
           </costs>
           <entryLinks>
             <entryLink name="Paragon of Metal" id="e8f8-5044-c3c8-ccfe" collective="false" hidden="false" import="true" targetId="cc2a-46fe-bbf3-6ba2" type="selectionEntry">
@@ -11742,6 +12036,12 @@ Once a unit with this Special Rule has separated, each model counts as its own u
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
+            </modifier>
+            <modifier type="set" value="1" field="c63a-f0b0-b395-4af1">
+              <comment>Centurion Game Mode: may not expand beyond its starting size</comment>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
             </modifier>
           </modifiers>
           <profiles>
@@ -11930,6 +12230,12 @@ Once a unit with this Special Rule has separated, each model counts as its own u
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no models with Toughness 8 or higher</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <selectionEntries>
         <selectionEntry name="Sepketar" id="9b08-58dc-e612-ed44" collective="false" hidden="false" import="true" page="56" type="model">
@@ -12116,6 +12422,14 @@ Once a unit with this Special Rule has separated, each model counts as its own u
       </selectionEntries>
     </selectionEntry>
     <selectionEntry name="Skorpius Disintegrator Squadron" id="6cc3-e7fc-9fad-ef42" collective="false" hidden="false" import="true" page="59" type="unit">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink name="Vehicle Unit:" id="d9db-e295-ad60-af64" hidden="false" primary="false" targetId="23eb-0b9e-0857-e965"/>
         <categoryLink name="Skitarii Unit Sub-Type" id="b251-fe79-8556-3274" hidden="false" primary="false" targetId="0e88-0a7e-b04c-d6c3"/>
@@ -12279,6 +12593,14 @@ Once a unit with this Special Rule has separated, each model counts as its own u
       </selectionEntries>
     </selectionEntry>
     <selectionEntry name="Onager Dunecrawler Squadron" id="f38c-7375-1ff1-de7e" collective="false" hidden="false" import="true" page="58" type="unit">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink name="Vehicle Unit:" id="0f8f-9fb1-f9d0-fbde" hidden="false" primary="false" targetId="23eb-0b9e-0857-e965"/>
         <categoryLink name="Reinforced Sub-type" id="e4de-ea10-098a-316a" hidden="false" primary="false" targetId="9b0d-738c-10e4-4ec1"/>
@@ -14753,6 +15075,20 @@ A Psyker with this Discipline gains the listed Power, weapon and special rules b
     <selectionEntryGroup name="Orders of Lesser Techno Arcana" id="57b5-3d72-81e6-0fde" hidden="false">
       <selectionEntries>
         <selectionEntry name="Lachrimallion" id="9211-ad25-a0d2-5970" hidden="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <comment>Centurion War-Covenant: the Magos Prime must take the Lesser Techno-Arcana of the chosen War-Covenant</comment>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="7aa9-a0ce-df74-4369" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion War-Covenant: Macroteknia Enginseer Conclave"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="16aa-d01b-b3a1-80bc" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion War-Covenant: Myrmidae Destroyer Cult"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="6b99-d019-7c76-5be1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion War-Covenant: Ruinor Destructor Cohort"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint id="8c7f-3e79-a3b0-0613" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="roster" shared="true" type="max" value="1"/>
           </constraints>
@@ -14767,6 +15103,20 @@ A Psyker with this Discipline gains the listed Power, weapon and special rules b
           </rules>
         </selectionEntry>
         <selectionEntry name="Macroteknia" id="1d67-01f8-7261-cd31" hidden="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <comment>Centurion War-Covenant: the Magos Prime must take the Lesser Techno-Arcana of the chosen War-Covenant</comment>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="08b5-a917-f0e4-a41d" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion War-Covenant: Lachrimallion Flesh-Hordes"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="16aa-d01b-b3a1-80bc" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion War-Covenant: Myrmidae Destroyer Cult"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="6b99-d019-7c76-5be1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion War-Covenant: Ruinor Destructor Cohort"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint id="172c-121f-a86a-e331" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="roster" shared="true" type="max" value="1"/>
           </constraints>
@@ -14798,6 +15148,19 @@ A Psyker with this Discipline gains the listed Power, weapon and special rules b
             </modifier>
             <modifier affects="profiles.Unit" field="cc42-7ed5-7092-5c84" type="floor" value="5"/>
             <modifier affects="profiles.Unit" field="f111-2ce5-dd12-d6b0" type="floor" value="3"/>
+            <modifier type="set" value="true" field="hidden">
+              <comment>Centurion War-Covenant: the Magos Prime must take the Lesser Techno-Arcana of the chosen War-Covenant</comment>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="08b5-a917-f0e4-a41d" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion War-Covenant: Lachrimallion Flesh-Hordes"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="7aa9-a0ce-df74-4369" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion War-Covenant: Macroteknia Enginseer Conclave"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="16aa-d01b-b3a1-80bc" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion War-Covenant: Myrmidae Destroyer Cult"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="6b99-d019-7c76-5be1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion War-Covenant: Ruinor Destructor Cohort"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
           </modifiers>
           <rules>
             <rule name="Mech-assassin" id="1deb-95e9-b153-1eca" hidden="false">
@@ -14843,14 +15206,40 @@ Prehensile Dataspike. A model with this Special Rule may exchange a single Power
               </conditions>
             </modifier>
             <modifier affects="profiles.Unit" field="57ee-1126-32a9-5672" type="set" value="4"/>
+            <modifier type="set" value="true" field="hidden">
+              <comment>Centurion War-Covenant: the Magos Prime must take the Lesser Techno-Arcana of the chosen War-Covenant</comment>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="08b5-a917-f0e4-a41d" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion War-Covenant: Lachrimallion Flesh-Hordes"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="7aa9-a0ce-df74-4369" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion War-Covenant: Macroteknia Enginseer Conclave"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="6b99-d019-7c76-5be1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion War-Covenant: Ruinor Destructor Cohort"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
           </modifiers>
           <rules>
             <rule name="Myrmidae" id="6f24-b2cc-84ef-2c4c" hidden="false">
-              <description>A model with this Special Rule gains the Hatred (Everything!), Bulky (3), Firing Protocols (3), and Precision Shots (6+) Special Rules. In addition, a model with this Order of Lesser Techno-Arcana changes itsWounds Characteristic to 4</description>
+              <description>A model with this Special Rule gains the Hatred (Everything!), Bulky (3), Firing Protocols (3), and Precision Shots (6+) Special Rules. In addition, a model with this Order of Lesser Techno-Arcana changes its Wounds Characteristic to 4</description>
             </rule>
           </rules>
         </selectionEntry>
         <selectionEntry name="Ruinor" id="7e0e-1147-1017-9472" hidden="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <comment>Centurion War-Covenant: the Magos Prime must take the Lesser Techno-Arcana of the chosen War-Covenant</comment>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="08b5-a917-f0e4-a41d" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion War-Covenant: Lachrimallion Flesh-Hordes"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="7aa9-a0ce-df74-4369" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion War-Covenant: Macroteknia Enginseer Conclave"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="16aa-d01b-b3a1-80bc" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion War-Covenant: Myrmidae Destroyer Cult"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint id="1e44-2734-a2e8-77cd" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="roster" shared="true" type="max" value="1"/>
           </constraints>
