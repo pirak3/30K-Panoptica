@@ -4392,6 +4392,11 @@
             <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="da46-48b5-6cc5-9d8b" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="atLeast"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="6da3-d006-9266-590c" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
@@ -4403,6 +4408,11 @@
         <modifier type="set" field="hidden" value="false">
           <conditions>
             <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="da46-48b5-6cc5-9d8b" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -4428,6 +4438,11 @@
             <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifier>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="atLeast"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="859b-5586-ec5c-1dc7" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
@@ -4439,6 +4454,11 @@
         <modifier type="set" field="hidden" value="false">
           <conditions>
             <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="da46-48b5-6cc5-9d8b" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -4464,6 +4484,11 @@
             <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="62c8-8f27-9673-8450" type="greaterThan"/>
           </conditions>
         </modifier>
+        <modifier type="add" field="category" value="db6f-0311-834c-e6ff">
+          <conditions>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="atLeast"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="458a-4ee0-d9c4-3ec9" type="max"/>
@@ -4480,6 +4505,12 @@
             <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0b6-712f-0b12-a308" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="add" field="category" value="db6f-0311-834c-e6ff">
+          <comment>Pride Of The Legion: tagged on the root link only, the Retinue copy does not count</comment>
+          <conditions>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="atLeast"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="efb0-ff66-c864-3af3" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
@@ -4492,6 +4523,14 @@
       </entryLinks>
     </entryLink>
     <entryLink import="true" name="Sanguinary Guard Squad" hidden="false" id="f77b-33c7-0dfb-6584" type="selectionEntry" targetId="a333-6047-45c7-8556">
+      <modifiers>
+        <modifier type="add" field="category" value="db6f-0311-834c-e6ff">
+          <comment>Pride Of The Legion: tagged on the root link only, the Retinue copy does not count</comment>
+          <conditions>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink name="HQ:" hidden="false" id="62af-0ba7-ecff-c4b6" targetId="4f85-eb33-30c9-8f51" primary="true"/>
       </categoryLinks>
@@ -4528,6 +4567,13 @@
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="2c54-82c1-c1e4-3aee" name="Sanguinius" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <rules>
         <rule id="384a-287a-50ae-ba39" name="Angelic Presence" hidden="false">
           <description>Any friendly units that are locked in combat and have at least one model within 6&quot; of Sanguinius, as well as Sanguinius and any unit he has joined, may add +1 to the total number of successful Wounds caused for the purposes of resolving which side has won a combat (this does not stack with any other rules that increase the
@@ -4800,6 +4846,11 @@ Pack for rules and interactions that affect or require that wargear.</characteri
             <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7857-5f9d-6c9e-50c1" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="add" field="category" value="db6f-0311-834c-e6ff">
+          <conditions>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="atLeast"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <rules>
         <rule id="808d-da54-f3db-be02" name="Ghost of Saiph" hidden="false" publicationId="4934-46f7-208b-b4af" page="159">
@@ -4960,6 +5011,11 @@ While a Warlord with this Trait is within 6&quot; of one or more models with bot
           <comment>Centurion Rite of War: Ambush Contingent - no Infantry with the Heavy or Artillery Sub-types (Crimson Paladins)</comment>
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="force" childId="62c0-3639-5a2a-c62b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Ambush Contingent"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="db6f-0311-834c-e6ff">
+          <conditions>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -5515,6 +5571,13 @@ While a Warlord with this Trait is within 6&quot; of one or more models with bot
       </costs>
     </selectionEntry>
     <selectionEntry id="090c-5656-0180-16c8" name="Contemptor-Incaendius Dreadnought" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="63a2-999d-1d56-c98b" name="Contemptor-Incaendius Dreadnought" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
           <characteristics>
@@ -5673,6 +5736,11 @@ Rite of War must use the Deep Strike option and must be assigned to a Deep Strik
           <comment>Centurion Game Mode: no models with Master of the Legion</comment>
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="db6f-0311-834c-e6ff">
+          <conditions>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -6238,6 +6306,11 @@ Those models also gain the Feel No Pain (5+) special rule when locked in combat 
             <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifier>
+        <modifier type="add" field="category" value="db6f-0311-834c-e6ff">
+          <conditions>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="atLeast"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <rules>
         <rule id="308f-78bb-90b4-76f9" name="Paragon of Restoration" hidden="false">
@@ -6434,6 +6507,11 @@ A unit selected in this manner is considered a &apos;Retinue Squad? The Retinue 
           <comment>Centurion Rite of War: Ambush Contingent - no Infantry with the Heavy or Artillery Sub-types (The Angel's Tears)</comment>
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="force" childId="62c0-3639-5a2a-c62b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Ambush Contingent"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="db6f-0311-834c-e6ff">
+          <conditions>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -6908,6 +6986,13 @@ A unit selected in this manner is considered a &apos;Retinue Squad? The Retinue 
       </costs>
     </selectionEntry>
     <selectionEntry id="3c67-35da-d64a-f22b" name="Dawnbreaker Cohort" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="add" field="category" value="db6f-0311-834c-e6ff">
+          <conditions>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <rules>
         <rule id="9f1e-6596-d31d-699e" name="Set the Sky Aflame" hidden="false">
           <description>When a unit composed entirely of models with this special rule is deployed as part of a Deep Strike Assault, any enemy units within 6&quot; of the unit&apos;s final position suffer a -1 modifier to their Leadership Characteristic when taking any Pinning tests cause by the Deep Strike Assault.</description>
@@ -7859,6 +7944,11 @@ One Sanguinary Guard in a Sanguinary Guard Squad selected as a Retinue Squad may
             <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifier>
+        <modifier type="add" field="category" value="db6f-0311-834c-e6ff">
+          <conditions>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="atLeast"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="cca5-1251-c96d-b098" type="max"/>
@@ -8136,6 +8226,11 @@ One Sanguinary Guard in a Sanguinary Guard Squad selected as a Retinue Squad may
           <comment>Centurion Game Mode: no models with Master of the Legion</comment>
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="force" childId="fe56-62d3-b563-ad2b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="db6f-0311-834c-e6ff">
+          <conditions>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>

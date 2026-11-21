@@ -2938,11 +2938,11 @@
         </categoryLink>
       </categoryLinks>
       <modifiers>
-        <modifier type="set" value="0" field="ff7e-29e9-15ce-eb81">
+        <modifier type="set" value="1" field="ff7e-29e9-15ce-eb81">
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="force" childId="373b-ce5a-ddc5-cf8f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="373b-ce5a-ddc5-cf8f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                 <condition type="lessThan" value="1" field="selections" scope="force" childId="ca26-b6e2-0bef-85a5" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </conditionGroup>
@@ -3360,7 +3360,7 @@
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="force" childId="373b-ce5a-ddc5-cf8f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="373b-ce5a-ddc5-cf8f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                 <condition type="lessThan" value="1" field="selections" scope="force" childId="d39f-99d5-f7a4-7b86" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </conditionGroup>
@@ -4330,6 +4330,11 @@
     </entryLink>
     <entryLink id="9459-1bbc-25cc-935f" name="Thallax Cohort" hidden="true" collective="false" import="false" targetId="25c8-3e0f-e22d-a7eb" type="selectionEntry">
       <modifiers>
+        <modifier type="add" field="category" value="db6f-0311-834c-e6ff">
+          <conditions>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="atLeast"/>
+          </conditions>
+        </modifier>
         <modifier type="set" field="hidden" value="false">
           <conditions>
             <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="62c8-8f27-9673-8450" type="greaterThan"/>
@@ -4525,6 +4530,13 @@
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="d3ad-275c-e22b-a28f" name="Ammitara Occult Intercession Cabal" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="add" field="category" value="db6f-0311-834c-e6ff">
+          <conditions>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="d00c-1621-c7cd-c912" name="Mind Killer" hidden="false" typeId="5405-b3c6-e8d0-4e77" typeName="Psychic Power">
           <characteristics>
@@ -4824,6 +4836,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="95cb-9366-295e-f10d" name="Castellax-Achea Automata" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <rules>
         <rule id="01cd-939f-c8a5-3e4a" name="Psy -automata" publicationId="09c5-eeae-f398-b653" page="267" hidden="false">
           <description>Models with the Psy-automata Sub - type that are not within 6&quot; of a friendly model with the Psyker Sub-type and both the Legiones Astartes (Thousand Sons) and Independent Character special rules are subject to the Programmed Behaviour provision:
@@ -4979,6 +4998,13 @@ the same turn in which they shoot a Rapid-Fire Weapon.
       </costs>
     </selectionEntry>
     <selectionEntry id="eef1-0f91-a59f-b3e2" name="Contemptor-Osiron Dreadnought Talon" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <infoLinks>
         <infoLink id="1082-9f2c-235b-5cfd" name="Legiones Astartes (Thousand Sons)" hidden="false" targetId="2377-1d73-44bc-fee2" type="rule"/>
       </infoLinks>
@@ -5266,6 +5292,11 @@ the same turn in which they shoot a Rapid-Fire Weapon.
     </selectionEntry>
     <selectionEntry id="161b-2f2a-8616-9d4f" name="Magistus Amon" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
+        <modifier type="add" field="category" value="db6f-0311-834c-e6ff">
+          <conditions>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="atLeast"/>
+          </conditions>
+        </modifier>
         <modifier type="set" value="true" field="hidden">
           <comment>Centurion Game Mode: no models with Master of the Legion</comment>
           <conditions>
@@ -5524,6 +5555,11 @@ the same turn in which they shoot a Rapid-Fire Weapon.
     </selectionEntry>
     <selectionEntry id="f1d9-5c86-f496-61f0" name="Ahzek Ahriman" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
+        <modifier type="add" field="category" value="db6f-0311-834c-e6ff">
+          <conditions>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="atLeast"/>
+          </conditions>
+        </modifier>
         <modifier type="add" field="category" value="5472-b476-dcbd-c215">
           <conditions>
             <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0fa2-d71c-9cdb-86cb" type="equalTo"/>
@@ -5747,6 +5783,11 @@ the same turn in which they shoot a Rapid-Fire Weapon.
     </selectionEntry>
     <selectionEntry id="dda2-bdd0-3ced-b427" name="Sekhmet Terminator Cabal" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
+        <modifier type="add" field="category" value="db6f-0311-834c-e6ff">
+          <conditions>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="atLeast"/>
+          </conditions>
+        </modifier>
         <modifier type="set" value="true" field="hidden">
           <comment>Centurion Rite of War: Ambush Contingent - no Infantry with the Heavy or Artillery Sub-types (Sekhmet Terminator Cabal)</comment>
           <conditions>
@@ -6090,6 +6131,13 @@ the same turn in which they shoot a Rapid-Fire Weapon.
       </costs>
     </selectionEntry>
     <selectionEntry id="faa7-27d5-2ee2-5d58" name="Khenetai Occult Cabal" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="add" field="category" value="db6f-0311-834c-e6ff">
+          <conditions>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="ddfb-45bb-3827-fb21" name="Mindsong of Blades" publicationId="09c5-eeae-f398-b653" page="269" hidden="false" typeId="5405-b3c6-e8d0-4e77" typeName="Psychic Power">
           <characteristics>
@@ -6531,6 +6579,11 @@ the same turn in which they shoot a Rapid-Fire Weapon.
     </selectionEntry>
     <selectionEntry id="07f4-98a2-a371-5191" name="Magnus the Red" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="atLeast"/>
+          </conditions>
+        </modifier>
         <modifier type="add" field="category" value="5472-b476-dcbd-c215">
           <conditions>
             <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0fa2-d71c-9cdb-86cb" type="equalTo"/>
@@ -6825,6 +6878,13 @@ the same turn in which they shoot a Rapid-Fire Weapon.
       </costs>
     </selectionEntry>
     <selectionEntry id="ca26-b6e2-0bef-85a5" name="Numerologist Cabal" publicationId="f743-7ff9-a2f3-01c7" page="6" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="add" field="category" value="db6f-0311-834c-e6ff">
+          <conditions>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="eeb3-8dfb-9ebb-5eb0" type="max"/>
       </constraints>
@@ -7360,6 +7420,13 @@ Additionally, a unit that includes any models with this special rule may not be 
       </costs>
     </selectionEntry>
     <selectionEntry id="3624-f313-3404-6580" name="Khenetai Isirian Cabal" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="add" field="category" value="db6f-0311-834c-e6ff">
+          <conditions>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="29e3-e40d-d51c-9a5e" name="Mindsong of Blades" hidden="false" typeId="5405-b3c6-e8d0-4e77" typeName="Psychic Power">
           <characteristics>
@@ -7611,6 +7678,11 @@ Additionally, a unit that includes any models with this special rule may not be 
     </selectionEntry>
     <selectionEntry id="7fed-0cee-bc8a-14fa" name="Sekhmet Tartaros Terminator Cabal" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
+        <modifier type="add" field="category" value="db6f-0311-834c-e6ff">
+          <conditions>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="atLeast"/>
+          </conditions>
+        </modifier>
         <modifier type="set" value="true" field="hidden">
           <comment>Centurion Rite of War: Ambush Contingent - no models in Terminator Armour</comment>
           <conditions>

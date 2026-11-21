@@ -1728,6 +1728,16 @@
             <condition type="greaterThan" value="0" field="selections" scope="force" childId="62c8-8f27-9673-8450" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifier>
+        <modifier type="add" field="category" value="db6f-0311-834c-e6ff">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint type="max" value="0" field="selections" scope="force" shared="true" id="060f-456d-cc9e-347c" percentValue="false" includeChildSelections="true" includeChildForces="false"/>

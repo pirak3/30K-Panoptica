@@ -110,6 +110,10 @@ Units: done
 - Animatus (Legiones Consularis), Omegon: done
 ## **Antiqua**
 ## **Imperatus**
+#### **Legio Custodes**
+- Host-Master and Shield-Hosts, Agamatii/Allarii/Aquilus/Venataris/Vertoii Shield Captains, Allarus Terminator Squad, Contemptor-Moritiax Dreadnought Talon, Dawneagle Jetbike Squadron, Grav-Raider Carrier, Grav-Spartan Assault Tank, Land Raider Carrier Squadron, Land Raider Spartan Assault Tank, Chambers of the Golden Host, additional wargear options: done
+#### **Sisters of Silence, Solar Auxilia, Imperialis Militia**
+- sheets prepared, not yet built
 
 
 ## Standards

@@ -29,6 +29,12 @@
     </entryLink>
     <entryLink id="1c86-f3f7-7462-c9a1" name="Deathsworn Pack" hidden="false" collective="false" import="false" targetId="3fa0-d6ed-981b-e361" type="selectionEntry">
       <modifiers>
+        <modifier type="add" field="category" value="db6f-0311-834c-e6ff">
+          <comment>Pride Of The Legion: tagged on the root link only, the Retinue copy does not count</comment>
+          <conditions>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="atLeast"/>
+          </conditions>
+        </modifier>
         <modifier type="append" field="name" value="(Reserve Only)">
           <conditions>
             <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
@@ -4019,6 +4025,12 @@
     </entryLink>
     <entryLink id="d5f7-089a-cd1d-2c1b" name="Deathsworn Pack" hidden="true" collective="false" import="false" targetId="3fa0-d6ed-981b-e361" type="selectionEntry">
       <modifiers>
+        <modifier type="add" field="category" value="db6f-0311-834c-e6ff">
+          <comment>Pride Of The Legion: tagged on the root link only, the Retinue copy does not count</comment>
+          <conditions>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="atLeast"/>
+          </conditions>
+        </modifier>
         <modifier type="set" field="hidden" value="false">
           <conditions>
             <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7572-b678-7ff5-6259" type="atLeast"/>
@@ -4459,6 +4471,11 @@
     </entryLink>
     <entryLink id="54dd-d9d1-ee94-11fc" name="Thallax Cohort" hidden="true" collective="false" import="false" targetId="25c8-3e0f-e22d-a7eb" type="selectionEntry">
       <modifiers>
+        <modifier type="add" field="category" value="db6f-0311-834c-e6ff">
+          <conditions>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="atLeast"/>
+          </conditions>
+        </modifier>
         <modifier type="set" field="hidden" value="false">
           <conditions>
             <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="62c8-8f27-9673-8450" type="greaterThan"/>
@@ -4545,6 +4562,13 @@
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="c028-dc90-e4b6-8b43" name="Leman Russ" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <rules>
         <rule id="00ed-3f49-ad36-075e" name="Howl of the Death Wolf" hidden="false">
           <description>Once per battle, Leman Russ&apos; controlling player may declare the use of this special rule at the start of their turn. For the duration of that player turn only, all friendly models with the Legiones Astartes (Space Wolves) special rule gain a bonus of +1 to their Movement Characteristic and any enemy units that include one or more models with the Legiones Astartes (Space Wolves) special rule must take an immediate Pinning test.</description>
@@ -5274,6 +5298,11 @@
     </selectionEntry>
     <selectionEntry id="9359-61a5-fcdb-c28e" name="Varagyr Wolf Guard Terminator Squad" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
+        <modifier type="add" field="category" value="db6f-0311-834c-e6ff">
+          <conditions>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="atLeast"/>
+          </conditions>
+        </modifier>
         <modifier type="set" value="true" field="hidden">
           <comment>Centurion Rite of War: Ambush Contingent - no Infantry with the Heavy or Artillery Sub-types (Varagyr Wolf Guard Terminator Squad)</comment>
           <conditions>
@@ -5804,6 +5833,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="4bbf-f3df-7b18-4a49" name="Grey Slayer Pack" publicationId="a716-c1c4-7b26-8424" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="add" field="category" value="db6f-0311-834c-e6ff">
+          <conditions>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <infoLinks>
         <infoLink id="93fd-8b85-2340-ab02" name="Heart of the Legion" hidden="false" targetId="c0dd-9002-2ebd-f96d" type="rule"/>
         <infoLink id="d615-5cfc-48ae-91e1" name="Relentless" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
@@ -6998,6 +7034,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="4dbc-6266-853a-5114" name="Grey Stalker Pack" publicationId="a716-c1c4-7b26-8424" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="add" field="category" value="db6f-0311-834c-e6ff">
+          <conditions>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <infoLinks>
         <infoLink id="32a3-4015-d07a-3db1" name="Heart of the Legion" hidden="false" targetId="c0dd-9002-2ebd-f96d" type="rule"/>
         <infoLink id="cb15-1672-0494-dfde" name="Relentless" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
@@ -8015,6 +8058,11 @@
     </selectionEntry>
     <selectionEntry id="b4c7-4f96-122b-7ade" name="Geigor Fell-Hand" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
+        <modifier type="add" field="category" value="db6f-0311-834c-e6ff">
+          <conditions>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="atLeast"/>
+          </conditions>
+        </modifier>
         <modifier type="set" value="true" field="hidden">
           <comment>Centurion Game Mode: no models with Master of the Legion</comment>
           <conditions>
@@ -8199,6 +8247,11 @@
     </selectionEntry>
     <selectionEntry id="31b6-168b-3c08-14b0" name="Hvarl Red-Blade" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
+        <modifier type="add" field="category" value="db6f-0311-834c-e6ff">
+          <conditions>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="atLeast"/>
+          </conditions>
+        </modifier>
         <modifier type="set" value="true" field="hidden">
           <comment>Centurion Game Mode: no models with Master of the Legion</comment>
           <conditions>
@@ -8354,6 +8407,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="fcc8-bc3c-e443-eb3f" name="Jorlund Hunter Pack" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="add" field="category" value="db6f-0311-834c-e6ff">
+          <conditions>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <rules>
         <rule id="2daf-4203-d5a5-9e8a" name="Scouring Tempest" hidden="false">
           <description>Once per battle, during the Shooting phase of one of their turns as the Active player, the controlling player of a unit made up entirely of models with this special rule may choose to activate Scouring Tempest before the unit is selected to make a Shooting Attack. Until the end of the Phase, all Flame weapons in the unit gain the Pinning and Torrent (3&quot;) special rules.</description>
@@ -8963,6 +9023,11 @@
     </selectionEntry>
     <selectionEntry id="556d-f227-25eb-70b6" name="Varagyr Wolf Guard Tartaros Terminator Squad" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
+        <modifier type="add" field="category" value="db6f-0311-834c-e6ff">
+          <conditions>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="atLeast"/>
+          </conditions>
+        </modifier>
         <modifier type="set" value="true" field="hidden">
           <comment>Centurion Rite of War: Ambush Contingent - no models in Terminator Armour</comment>
           <conditions>

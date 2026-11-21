@@ -232,19 +232,6 @@ During Reactions made in any Phase, a unit equipped with Jump Packs may not acti
       </infoLinks>
     </categoryEntry>
     <categoryEntry id="8b4f-bfe2-ce7b-f1b1" name="Infantry Unit Type" hidden="false">
-      <modifiers>
-        <modifier type="increment" field="9658-3768-cea2-6062" value="1">
-          <repeats>
-            <repeat field="selections" scope="force" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="36c3-e85e-97cc-c503" repeats="1" roundUp="true"/>
-          </repeats>
-          <conditions>
-            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9658-3768-cea2-6062" type="min"/>
-      </constraints>
       <rules>
         <rule id="df64-3c40-5f1a-a101" name="Ignore Ld modifiers on Pinning (The Awakening Fire)" publicationId="817a-6288-e016-7469" page="310" hidden="true">
           <modifiers>
@@ -383,29 +370,6 @@ During Reactions made in any Phase, a unit equipped with Jump Packs may not acti
     </categoryEntry>
     <categoryEntry id="6d79-a3e4-381f-7b0f" name="Cavalry Unit Type" hidden="false">
       <modifiers>
-        <modifier type="increment" field="1b62-2f0a-dffc-cb7b" value="1">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5d75-f1c7-d6a7-a055" type="equalTo"/>
-                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5430-5be1-1613-be44" type="notInstanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="increment" field="1b62-2f0a-dffc-cb7b" value="1">
-          <repeats>
-            <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1bb5-d88b-e1fe-2984" repeats="1" roundUp="false"/>
-          </repeats>
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5d75-f1c7-d6a7-a055" type="equalTo"/>
-                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5430-5be1-1613-be44" type="notInstanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
         <modifier type="set" field="1b62-2f0a-dffc-cb7b" value="0">
           <conditionGroups>
             <conditionGroup type="or">
@@ -1162,6 +1126,12 @@ Conversely, if an Independent Character joins a unit after that unit has been th
             <condition type="atLeast" value="1" field="selections" scope="force" childId="5ca0-3855-a537-0473" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Centurion: Blooded Veterans"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="1" field="a1f8-22b2-5ed3-25b9">
+          <comment>Rite of War: The Covenant Of Fire - Centurion with Champion required</comment>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="4f28-17db-c659-1539" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="The Covenant Of Fire (SAL)"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint type="min" value="0" field="selections" scope="force" shared="true" id="a1f8-22b2-5ed3-25b9" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
@@ -1468,7 +1438,57 @@ sub-type:
       </constraints>
       <comment>Used for Rites of War that care about 4 of these</comment>
     </categoryEntry>
-    <categoryEntry id="1bb5-d88b-e1fe-2984" name="Ironfire Restriction (Arquitors, Basilisks, Medusa)" hidden="false"/>
+    <categoryEntry id="1bb5-d88b-e1fe-2984" name="Ironfire Restriction (Arquitors, Basilisks, Medusa)" hidden="false">
+      <modifiers>
+        <modifier type="set" field="8036-d37a-2554-1528" value="1">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="5d75-f1c7-d6a7-a055" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="The Ironfire (IW)"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5430-5be1-1613-be44" type="notInstanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="force" shared="true" id="8036-d37a-2554-1528" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+      </constraints>
+      <comment>The Ironfire: at least one Arquitor/Basilisk/Medusa squadron</comment>
+    </categoryEntry>
+    <categoryEntry id="8ef6-7e0d-dfb6-ff42" name="Ironfire: Cavalry Unit" hidden="false">
+      <modifiers>
+        <modifier type="increment" field="1f58-c852-cc2e-1554" value="1">
+          <comment>The Ironfire: Cavalry units max = Arquitor/Basilisk/Medusa squadrons - 1</comment>
+          <repeats>
+            <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1bb5-d88b-e1fe-2984" repeats="1" roundUp="false"/>
+          </repeats>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="5d75-f1c7-d6a7-a055" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="The Ironfire (IW)"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5430-5be1-1613-be44" type="notInstanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" field="1f58-c852-cc2e-1554" value="0">
+          <comment>The Ironfire: no squadrons means no Cavalry units (-1 would be unlimited)</comment>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="5d75-f1c7-d6a7-a055" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="The Ironfire (IW)"/>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="1bb5-d88b-e1fe-2984" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="1f58-c852-cc2e-1554" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+      </constraints>
+      <comment>Added to units that include a Cavalry model while The Ironfire is taken</comment>
+    </categoryEntry>
     <categoryEntry id="2eaf-32d6-9d1d-d906" name="LoW &amp; Primarchs (25% Limit)" hidden="false"/>
     <categoryEntry id="7b69-bf2f-4547-e83b" name="Mortalis Assault FoC" hidden="false">
       <modifiers>
@@ -2105,6 +2125,7 @@ Victory Conditions: At the end of the game, the player who has scored the most V
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="196e-303c-d4ec-f918" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Chamber: Tharanatoi"/>
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="equalTo"/>
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="296a-89a3-2269-2093" type="equalTo"/>
                     <condition type="equalTo" value="1" field="selections" scope="force" childId="c32a-5835-8fea-be1c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="The Iron Without (IW)"/>
@@ -2155,10 +2176,67 @@ Victory Conditions: At the end of the game, the player who has scored the most V
                 <condition field="selections" scope="force" value="4" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d3bb-bdf9-4478-9553" type="atLeast"/>
               </conditions>
             </modifier>
+            <modifier type="set" field="9be6-5622-8583-ba24" value="1">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="196e-303c-d4ec-f918" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Chamber: Tharanatoi"/>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="296a-89a3-2269-2093" type="equalTo"/>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="c32a-5835-8fea-be1c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="The Iron Without (IW)"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="increment" field="9be6-5622-8583-ba24" value="1">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d3bb-bdf9-4478-9553" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="9be6-5622-8583-ba24" value="2">
+              <conditions>
+                <condition field="selections" scope="force" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d3bb-bdf9-4478-9553" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="9be6-5622-8583-ba24" value="3">
+              <conditions>
+                <condition field="selections" scope="force" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d3bb-bdf9-4478-9553" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="9be6-5622-8583-ba24" value="4">
+              <conditions>
+                <condition field="selections" scope="force" value="4" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d3bb-bdf9-4478-9553" type="atLeast"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="9be6-5622-8583-ba24" value="0">
+              <comment>Moritoi: Fast Attack max = Troops - Heavy Support</comment>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="9701-be1b-d4cc-9129" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Chamber: Moritoi"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="9be6-5622-8583-ba24" value="1">
+              <comment>Moritoi: Fast Attack max = Troops - Heavy Support</comment>
+              <repeats>
+                <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b5d-fac7-799b-d7e7" repeats="1" roundUp="false"/>
+              </repeats>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="9701-be1b-d4cc-9129" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Chamber: Moritoi"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" field="9be6-5622-8583-ba24" value="1">
+              <comment>Moritoi: Fast Attack max = Troops - Heavy Support</comment>
+              <repeats>
+                <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7031-469a-1aeb-eab0" repeats="1" roundUp="false"/>
+              </repeats>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="9701-be1b-d4cc-9129" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Chamber: Moritoi"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="force" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5474-d2f8-4d1d-66be" type="max"/>
             <constraint field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d0ef-d654-f619-11a3" type="min"/>
+            <constraint field="selections" scope="force" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9be6-5622-8583-ba24" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="0662-8301-1a87-5c23" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="false">
@@ -2202,9 +2280,128 @@ Victory Conditions: At the end of the game, the player who has scored the most V
                 <condition field="selections" scope="force" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dfbc-8edd-e14f-fd80" type="equalTo"/>
               </conditions>
             </modifier>
+            <modifier type="set" field="002a-ec25-4469-2818" value="1">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="20d9-ae98-5324-6bb3" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7f55-5d02-ba77-243d" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c030-15b8-323b-f17b" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="increment" field="002a-ec25-4469-2818" value="1">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="76cd-5c38-ceac-a2b4" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="002a-ec25-4469-2818" value="2">
+              <conditions>
+                <condition field="selections" scope="force" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="76cd-5c38-ceac-a2b4" type="atLeast"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="002a-ec25-4469-2818" value="1">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dfbc-8edd-e14f-fd80" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="002a-ec25-4469-2818" value="2">
+              <conditions>
+                <condition field="selections" scope="force" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dfbc-8edd-e14f-fd80" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="002a-ec25-4469-2818" value="3">
+              <conditions>
+                <condition field="selections" scope="force" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dfbc-8edd-e14f-fd80" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="002a-ec25-4469-2818" value="0">
+              <comment>Moritoi: Heavy Support max = Troops</comment>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="9701-be1b-d4cc-9129" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Chamber: Moritoi"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="002a-ec25-4469-2818" value="1">
+              <comment>Moritoi: Heavy Support max = Troops</comment>
+              <repeats>
+                <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b5d-fac7-799b-d7e7" repeats="1" roundUp="false"/>
+              </repeats>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="9701-be1b-d4cc-9129" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Chamber: Moritoi"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="9f43-48aa-196d-d821" value="1">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="20d9-ae98-5324-6bb3" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7f55-5d02-ba77-243d" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c030-15b8-323b-f17b" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="increment" field="9f43-48aa-196d-d821" value="1">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="76cd-5c38-ceac-a2b4" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="9f43-48aa-196d-d821" value="2">
+              <conditions>
+                <condition field="selections" scope="force" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="76cd-5c38-ceac-a2b4" type="atLeast"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="9f43-48aa-196d-d821" value="1">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dfbc-8edd-e14f-fd80" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="9f43-48aa-196d-d821" value="2">
+              <conditions>
+                <condition field="selections" scope="force" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dfbc-8edd-e14f-fd80" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="9f43-48aa-196d-d821" value="3">
+              <conditions>
+                <condition field="selections" scope="force" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dfbc-8edd-e14f-fd80" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="9f43-48aa-196d-d821" value="0">
+              <comment>Moritoi: Heavy Support max = Troops - Fast Attack</comment>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="9701-be1b-d4cc-9129" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Chamber: Moritoi"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="9f43-48aa-196d-d821" value="1">
+              <comment>Moritoi: Heavy Support max = Troops - Fast Attack</comment>
+              <repeats>
+                <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b5d-fac7-799b-d7e7" repeats="1" roundUp="false"/>
+              </repeats>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="9701-be1b-d4cc-9129" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Chamber: Moritoi"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" field="9f43-48aa-196d-d821" value="1">
+              <comment>Moritoi: Heavy Support max = Troops - Fast Attack</comment>
+              <repeats>
+                <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="20ef-cd01-a8da-376e" repeats="1" roundUp="false"/>
+              </repeats>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="9701-be1b-d4cc-9129" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Chamber: Moritoi"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="force" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5c70-e3f3-a942-3e71" type="max"/>
+            <constraint field="selections" scope="force" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="002a-ec25-4469-2818" type="max"/>
+            <constraint field="selections" scope="force" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9f43-48aa-196d-d821" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="9271-24df-a8f3-4a99" name="Fortification:" hidden="false" targetId="a24f-12d8-36c1-f477" primary="false">
@@ -2213,6 +2410,7 @@ Victory Conditions: At the end of the game, the player who has scored the most V
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="9701-be1b-d4cc-9129" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Chamber: Moritoi"/>
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1977-49f2-7910-f177" type="equalTo"/>
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a621-2c8c-3df0-89d3" type="equalTo"/>
@@ -2238,6 +2436,7 @@ Victory Conditions: At the end of the game, the player who has scored the most V
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="9701-be1b-d4cc-9129" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Chamber: Moritoi"/>
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1977-49f2-7910-f177" type="equalTo"/>
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a621-2c8c-3df0-89d3" type="equalTo"/>
@@ -2845,6 +3044,7 @@ Victory Conditions: At the end of the game, the player who has scored the most V
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="196e-303c-d4ec-f918" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Chamber: Tharanatoi"/>
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="equalTo"/>
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="296a-89a3-2269-2093" type="equalTo"/>
                   </conditions>
@@ -2871,10 +3071,66 @@ Victory Conditions: At the end of the game, the player who has scored the most V
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d3bb-bdf9-4478-9553" type="equalTo"/>
               </conditions>
             </modifier>
+            <modifier type="set" field="1366-12f8-c5b8-dedc" value="1">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="196e-303c-d4ec-f918" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Chamber: Tharanatoi"/>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="296a-89a3-2269-2093" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="increment" field="1366-12f8-c5b8-dedc" value="4">
+              <conditions>
+                <condition field="selections" scope="force" value="4" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d3bb-bdf9-4478-9553" type="atLeast"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="1366-12f8-c5b8-dedc" value="3">
+              <conditions>
+                <condition field="selections" scope="force" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d3bb-bdf9-4478-9553" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="1366-12f8-c5b8-dedc" value="2">
+              <conditions>
+                <condition field="selections" scope="force" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d3bb-bdf9-4478-9553" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="1366-12f8-c5b8-dedc" value="1">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d3bb-bdf9-4478-9553" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="1366-12f8-c5b8-dedc" value="0">
+              <comment>Moritoi: Fast Attack max = Troops - Heavy Support</comment>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="9701-be1b-d4cc-9129" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Chamber: Moritoi"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="1366-12f8-c5b8-dedc" value="1">
+              <comment>Moritoi: Fast Attack max = Troops - Heavy Support</comment>
+              <repeats>
+                <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b5d-fac7-799b-d7e7" repeats="1" roundUp="false"/>
+              </repeats>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="9701-be1b-d4cc-9129" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Chamber: Moritoi"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" field="1366-12f8-c5b8-dedc" value="1">
+              <comment>Moritoi: Fast Attack max = Troops - Heavy Support</comment>
+              <repeats>
+                <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7031-469a-1aeb-eab0" repeats="1" roundUp="false"/>
+              </repeats>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="9701-be1b-d4cc-9129" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Chamber: Moritoi"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="force" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="cb3f-e02c-4b94-4ee1" type="max"/>
             <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e7c1-fd6d-b994-d48f" type="min"/>
+            <constraint field="selections" scope="force" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1366-12f8-c5b8-dedc" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="a755-e9cf-0e04-5ef4" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="false">
@@ -2893,9 +3149,78 @@ Victory Conditions: At the end of the game, the player who has scored the most V
                 </conditionGroup>
               </conditionGroups>
             </modifier>
+            <modifier type="set" field="9424-5a60-8e40-1fcb" value="1">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="20d9-ae98-5324-6bb3" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7f55-5d02-ba77-243d" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c030-15b8-323b-f17b" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" field="9424-5a60-8e40-1fcb" value="0">
+              <comment>Moritoi: Heavy Support max = Troops</comment>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="9701-be1b-d4cc-9129" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Chamber: Moritoi"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="9424-5a60-8e40-1fcb" value="1">
+              <comment>Moritoi: Heavy Support max = Troops</comment>
+              <repeats>
+                <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b5d-fac7-799b-d7e7" repeats="1" roundUp="false"/>
+              </repeats>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="9701-be1b-d4cc-9129" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Chamber: Moritoi"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="ce8f-2304-5084-e209" value="1">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="20d9-ae98-5324-6bb3" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7f55-5d02-ba77-243d" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c030-15b8-323b-f17b" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" field="ce8f-2304-5084-e209" value="0">
+              <comment>Moritoi: Heavy Support max = Troops - Fast Attack</comment>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="9701-be1b-d4cc-9129" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Chamber: Moritoi"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="ce8f-2304-5084-e209" value="1">
+              <comment>Moritoi: Heavy Support max = Troops - Fast Attack</comment>
+              <repeats>
+                <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b5d-fac7-799b-d7e7" repeats="1" roundUp="false"/>
+              </repeats>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="9701-be1b-d4cc-9129" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Chamber: Moritoi"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" field="ce8f-2304-5084-e209" value="1">
+              <comment>Moritoi: Heavy Support max = Troops - Fast Attack</comment>
+              <repeats>
+                <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="20ef-cd01-a8da-376e" repeats="1" roundUp="false"/>
+              </repeats>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="9701-be1b-d4cc-9129" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Chamber: Moritoi"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="force" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e0f5-6aa4-8e07-5b51" type="max"/>
+            <constraint field="selections" scope="force" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9424-5a60-8e40-1fcb" type="max"/>
+            <constraint field="selections" scope="force" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ce8f-2304-5084-e209" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="7526-8c64-9373-5110" name="Primarch:" hidden="false" targetId="e031-3c2-e3f8-d40a" primary="false">
@@ -3001,6 +3326,7 @@ Victory Conditions: At the end of the game, the player who has scored the most V
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="9701-be1b-d4cc-9129" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Chamber: Moritoi"/>
                     <condition type="atLeast" value="1" field="selections" scope="roster" childId="b5b7-3410-a8e5-95a6" shared="true" includeChildSelections="true"/>
                     <condition type="atLeast" value="1" field="selections" scope="roster" childId="e20d-6f02-d7d5-395f" shared="true" includeChildSelections="true"/>
                   </conditions>
@@ -10399,7 +10725,7 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Instant Death, Armourbane (Ranged), Breaching (4+), Gets Hot, Ejector Blowout</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Instant Death, Armourbane (Ranged), Gets Hot, Breaching (5+)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -10413,7 +10739,7 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
         <infoLink id="b1fa-07a0-2176-f6fb" name="Gets Hot" hidden="false" targetId="679f-9d97-5ace-a652" type="rule"/>
         <infoLink name="Breaching (X)" id="5b09-b53d-8bc5-f7d1" hidden="false" type="rule" targetId="a760-f736-1bf3-fa3c">
           <modifiers>
-            <modifier type="set" value="Breaching (4+)" field="name"/>
+            <modifier type="set" value="Breaching (5+)" field="name"/>
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -10428,7 +10754,7 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Instant Death, Armourbane (Ranged), Gets Hot, Twin-linked</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Instant Death, Armourbane (Ranged), Gets Hot, Breaching (5+), Twin-linked</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -10440,6 +10766,11 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
         </infoLink>
         <infoLink id="ce35-dd58-face-518e" name="Gets Hot" hidden="false" targetId="679f-9d97-5ace-a652" type="rule"/>
         <infoLink id="4daa-26e1-fa26-7235" name="Instant Death" hidden="false" targetId="9e96-fff1-b916-d9a3" type="rule"/>
+        <infoLink name="Breaching (X)" id="18aa-0c9d-aaed-1b13" hidden="false" type="rule" targetId="a760-f736-1bf3-fa3c">
+          <modifiers>
+            <modifier type="set" value="Breaching (5+)" field="name"/>
+          </modifiers>
+        </infoLink>
         <infoLink name="Twin-linked" id="3b59-67b8-85e0-6813" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
       </infoLinks>
       <costs>
@@ -10456,6 +10787,11 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
         </infoLink>
         <infoLink id="c617-962f-a9a8-cc64" name="Gets Hot" hidden="false" targetId="679f-9d97-5ace-a652" type="rule"/>
         <infoLink id="3c22-f365-07f7-2117" name="Instant Death" hidden="false" targetId="9e96-fff1-b916-d9a3" type="rule"/>
+        <infoLink name="Breaching (X)" id="f70c-ffa0-5740-f4fd" hidden="false" type="rule" targetId="a760-f736-1bf3-fa3c">
+          <modifiers>
+            <modifier type="set" value="Breaching (5+)" field="name"/>
+          </modifiers>
+        </infoLink>
         <infoLink name="Twin-linked" id="01d9-aa83-0ff3-7e8c" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
       </infoLinks>
       <costs>
@@ -10474,7 +10810,7 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
         </infoLink>
         <infoLink name="Breaching (X)" id="cc3e-fa6e-01a9-a107" hidden="false" type="rule" targetId="a760-f736-1bf3-fa3c">
           <modifiers>
-            <modifier type="set" value="Breaching (4+)" field="name"/>
+            <modifier type="set" value="Breaching (5+)" field="name"/>
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -20097,6 +20433,9 @@ In addition, a weapon with this Special Rule may hit models with the Flyer Sub-t
 When deployed onto the battlefield before the game begins, all models with this Special Rule in a unit are placed as separate units, operate independently, and are treated as separate units for the duration of the game for all purposes.
 
 In addition, a model with this Special Rule must always target the closest enemy model with the Flyer Sub-type, if there is a valid target in range. If there is not a valid target with the Flyer Sub-type, it may target other units as normal.</description>
+    </rule>
+    <rule id="d438-6dc3-efc9-42f3" name="Gravitic Repulsion" hidden="false">
+      <description>Whenever a charge is declared against a model with this Special Rule, the Charging unit suffers a -2 penalty to their Charge roll.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>

@@ -53,6 +53,12 @@
     </entryLink>
     <entryLink id="34f6-2994-6de1-98cc" name="Firedrake Terminator Squad" hidden="false" collective="false" import="false" targetId="6775-8379-8d6b-9614" type="selectionEntry">
       <modifiers>
+        <modifier type="add" field="category" value="db6f-0311-834c-e6ff">
+          <comment>Pride Of The Legion: tagged on the root link only, the Retinue copy does not count</comment>
+          <conditions>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="atLeast"/>
+          </conditions>
+        </modifier>
         <modifier type="append" field="name" value="(Reserve Only)">
           <conditions>
             <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
@@ -4835,6 +4841,12 @@
     </entryLink>
     <entryLink id="4b47-e776-689d-16ac" name="Firedrake Terminator Squad" hidden="true" collective="false" import="false" targetId="6775-8379-8d6b-9614" type="selectionEntry">
       <modifiers>
+        <modifier type="add" field="category" value="db6f-0311-834c-e6ff">
+          <comment>Pride Of The Legion: tagged on the root link only, the Retinue copy does not count</comment>
+          <conditions>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="atLeast"/>
+          </conditions>
+        </modifier>
         <modifier type="set" field="hidden" value="false">
           <comment>node_id_eafb-5453-4dd9-8623</comment>
           <conditionGroups>
@@ -4885,6 +4897,11 @@
     </entryLink>
     <entryLink id="8b93-87fa-144f-19c5" name="Thallax Cohort" hidden="true" collective="false" import="false" targetId="25c8-3e0f-e22d-a7eb" type="selectionEntry">
       <modifiers>
+        <modifier type="add" field="category" value="db6f-0311-834c-e6ff">
+          <conditions>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="atLeast"/>
+          </conditions>
+        </modifier>
         <modifier type="set" field="hidden" value="false">
           <conditions>
             <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="62c8-8f27-9673-8450" type="greaterThan"/>
@@ -5122,6 +5139,13 @@
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="8c74-40b1-5019-f4d4" name="Vulkan" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="65d8-0392-0de1-6820" type="max"/>
       </constraints>
@@ -5273,6 +5297,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="71fe-d3bc-b7f9-75ca" name="Pyroclast Squad" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="add" field="category" value="db6f-0311-834c-e6ff">
+          <conditions>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <rules>
         <rule id="135c-a0b8-c4d6-93ee" name="Mantle of Ash" hidden="false">
           <description>Models with this special rule gain an Invulnerable Save of 5+ against all Flame, Plasma, Melta and Volkite weapons.</description>
@@ -6060,6 +6091,11 @@
     </selectionEntry>
     <selectionEntry id="74f6-96f4-ee55-9c78" name="Lord Chaplain Nomus Rhy&apos;Tan" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
+        <modifier type="add" field="category" value="db6f-0311-834c-e6ff">
+          <conditions>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="atLeast"/>
+          </conditions>
+        </modifier>
         <modifier type="add" field="category" value="3f99-ad1b-740b-862e">
           <conditions>
             <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="41b5-73f0-cdc9-1f83" type="equalTo"/>
@@ -6255,6 +6291,11 @@ Stubborn and Hatred (Everything) Special Rules.</description>
     </selectionEntry>
     <selectionEntry id="f18f-80cf-12bc-a069" name="Predator Squadron (Dragonbreath Cannon - Covenant of Fire)" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="atLeast"/>
+          </conditions>
+        </modifier>
         <modifier type="set" value="true" field="hidden">
           <comment>Centurion Game Mode: no Vehicles other than the allowed transports</comment>
           <conditions>
@@ -6350,6 +6391,13 @@ Stubborn and Hatred (Everything) Special Rules.</description>
       </costs>
     </selectionEntry>
     <selectionEntry id="3720-9b50-f599-76ea" name="Sanctifier Squad" hidden="false" collective="false" import="true" type="unit" publicationId="7f9d-5e88-241d-e861" page="92">
+      <modifiers>
+        <modifier type="add" field="category" value="db6f-0311-834c-e6ff">
+          <conditions>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <infoLinks>
         <infoLink id="9967-2a5-61db-6e1e" name="Legiones Astartes (Salamanders)" hidden="false" targetId="5b72-d9a6-92c3-4a1c" type="rule"/>
         <infoLink id="f4d5-ee1c-7d15-3974" name="Relentless" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
@@ -7033,6 +7081,11 @@ Stubborn and Hatred (Everything) Special Rules.</description>
     </selectionEntry>
     <selectionEntry id="01d6-6df0-c528-8657" name="Artellus Numeon" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
+        <modifier type="add" field="category" value="db6f-0311-834c-e6ff">
+          <conditions>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="atLeast"/>
+          </conditions>
+        </modifier>
         <modifier type="set" field="hidden" value="true">
           <conditions>
             <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0b6-712f-0b12-a308" type="equalTo"/>
@@ -7219,6 +7272,11 @@ Stubborn and Hatred (Everything) Special Rules.</description>
     </selectionEntry>
     <selectionEntry id="7f57-88d5-055b-6184" name="Ar'Kan Attack Speeder" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="atLeast"/>
+          </conditions>
+        </modifier>
         <modifier type="add" field="category" value="fee9-d520-fed6-fb6f">
           <conditions>
             <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
@@ -7326,6 +7384,11 @@ Stubborn and Hatred (Everything) Special Rules.</description>
     </selectionEntry>
     <selectionEntry id="8bb7-032c-1bbe-de23" name="Infernus Predator Squadron" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="atLeast"/>
+          </conditions>
+        </modifier>
         <modifier type="add" field="category" value="9edf-ad4f-0fe2-9b73">
           <conditions>
             <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
@@ -7575,6 +7638,11 @@ Stubborn and Hatred (Everything) Special Rules.</description>
     </selectionEntry>
     <selectionEntry id="acb4-d89b-34fd-080f" name="Firestorm Bombard Squadron" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="atLeast"/>
+          </conditions>
+        </modifier>
         <modifier type="add" field="category" value="6d0b-fe0e-911e-486f">
           <conditions>
             <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
@@ -7843,6 +7911,13 @@ Stubborn and Hatred (Everything) Special Rules.</description>
       </costs>
     </selectionEntry>
     <selectionEntry id="6709-7382-8766-8a2d" name="Strike-Clade Squad, Infernus" page="198" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="add" field="category" value="db6f-0311-834c-e6ff">
+          <conditions>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <infoLinks>
         <infoLink id="0d75-404e-164e-028f" name="Legiones Astartes (Salamanders)" hidden="false" targetId="5b72-d9a6-92c3-4a1c" type="rule"/>
         <infoLink id="9311-7612-9612-4c65" name="Bitter Duty" hidden="false" targetId="d1b8-31da-c53c-4fe2" type="rule"/>

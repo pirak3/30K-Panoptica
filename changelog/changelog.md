@@ -3,6 +3,61 @@
 All notable changes to the BattleScribe Data Repository will be documented in this file.
 
 ---
+## [Unreleased] - Current branch
+
+### Added
+- **Units** (Liber Imperatus v1.2):
+  - `[Legio Custodes]` Added `[Custodian Host-Master]` - HQ (with the 5 Shield-Host upgrades)
+  - `[Legio Custodes]` Added `[Custodian Agamatii Shield Captain]` - HQ
+  - `[Legio Custodes]` Added `[Custodian Allarii Shield Captain]` - HQ
+  - `[Legio Custodes]` Added `[Custodian Aquilus Shield Captain]` - HQ
+  - `[Legio Custodes]` Added `[Custodian Venataris Shield Captain]` - HQ
+  - `[Legio Custodes]` Added `[Custodian Vertoii Shield Captain]` - HQ
+  - `[Legio Custodes]` Added `[Allarus Terminator Squad]` - Elites
+  - `[Legio Custodes]` Added `[Contemptor-Moritiax Dreadnought Talon]` - Elites
+  - `[Legio Custodes]` Added `[Dawneagle Jetbike Squadron]` - Fast Attack
+  - `[Legio Custodes]` Added `[Custodian Grav-Raider Carrier]` - Heavy Support
+  - `[Legio Custodes]` Added `[Custodian Grav-Spartan Assault Tank]` - Heavy Support
+  - `[Legio Custodes]` Added `[Custodian Land Raider Carrier Squadron]` - Heavy Support (a single Land Raider is also a Dedicated Transport)
+  - `[Legio Custodes]` Added `[Custodian Land Raider Spartan Assault Tank]` - Heavy Support / Dedicated Transport
+- **Weapons & Wargear**:
+  - `[Adrathic Decimator]`, `[Balistus Grenade Launcher]`, `[Interceptor Lance]`, `[Salvo Launcher]`, `[Tempest Spear]`, `[Twin-Linked Infernus Firepike]`, `[Iliastus Accelerator Cannon Arrays]`, `[Two Lastrum Bolt Cannon]`
+  - `[Allarus Terminator Armour]`, `[Custodes Dawneagle Jetbike]`, `[Auric Shackles]`, `[Tenebris Praetoria]`, `[Vexillum Imperatus]`
+  - Shared copies of `[Kinetic Destroyer]`, `[Tarsus Buckler]`, `[Venatari Lance]`, `[Proteus Plasma Projectors]`, `[Iliastus Accelerator Cannon]`, `[Enhanced Arachnus Blaze Cannon]` (previously only inside existing units)
+- **Rules & Abilities**:
+  - `[Legio Custodes]` Added special rules `[Auramite Talon]`, `[Master of the Shield-Hosts]`, `[Slayer of Kings]`, `[Honoured Ancient]`
+  - `[Legio Custodes]` Added the 5 Shield-Hosts (`[Aquilan Shield]`, `[Dread Host]`, `[Emissaries Imperatus]`, `[Shadow Keepers]`, `[Solar Watch]`) with `[Auric Guardians]`, `[For the Future of All Mankind]`, `[Moiraides Strike]`, `[Shining Fleet]`, `[Taloned Onslaught]`, `[Vaults of Rython]`, `[Walkers in Shadow]`
+  - `[Legio Custodes]` Added Warlord Traits `[Ancient of War]`, `[Kataphraktoi Charger]`, `[Wrath of the Tharanatoi]`
+  - `[Horus Heresy]` Added special rule `[Gravitic Repulsion]`
+  - `[Legio Custodes]` Added the 4 `[Chambers of the Golden Host]` (Tharanatoi, Hykanatoi, Kataphraktoi, Moritoi; Custodes primary detachment, like a Rite of War): Troops unlocks (Allarus/Aquilon, Venatari with Line, Agamatus/Dawneagle, Achillus/Galatus, Sagittarum with Line), required Compulsory HQ choices, Host-Master 0-2, Deep Strike options, Honoured Ancient (+30) for a Dreadnought Compulsory HQ, Warlord Trait swaps, unit-type and slot bans, and the Moritoi limit of no more Fast Attack and Heavy Support choices combined than Troops choices
+
+### Changed
+- **Units / Points**:
+  - `[Hetaeron Guard Squad]`: added Paragon Glaive (+10) and Paragon Blade and Vexilla (+10)
+  - `[Custodian Guard Squad]`: added a Custodian Guard with Paragon Blade & Vexilla (70)
+  - `[Sagittarum Guard Squad]`: added the Solarite Power Gauntlet option (+30)
+  - Centurion: the one-Custodian-Shield-Captain limit now covers the five new Shield Captains too
+- **Weapons & Profiles** (Liber Imperatus reprints):
+  - `[Adrathic Devastator]`: Type now Heavy 2, Instant Death, Armourbane (Ranged), Gets Hot, Breaching (5+); Ejector Blowout removed
+  - `[Adrathic Destructor]`: Breaching (4+) changed to Breaching (5+); Ejector Blowout removed
+  - `[Twin-Linked Adrathic Destructor]`, `[Twin-linked Adrathic Devastator]`: added Breaching (5+)
+  - `[Infernus Firepike]`: AP changed from 6 to 4
+
+### Fixed
+- **Rites of War**:
+  - `[Thousand Sons]` `[Achaean Configuration]`: now requires at least one Legion Techmarine Covenant (the requirement set the minimum to 0)
+  - `[Imperialis Militia]` `[Tainted Flesh]`: now has the same Levy Squad ratio as Augmented Levy (no more other non-HQ Infantry units than Levy Squads)
+  - `[Iron Warriors]` `[Ironfire]`: Cavalry is now counted per unit (bikes and jetbikes on characters included), it must be fewer than the Arquitor/Basilisk/Medusa squadrons (it was allowed to equal them), and at least one such squadron is required
+  - `[Legiones Astartes]` `[Pride of the Legion]`: "no more non-Infantry units than Infantry units" is now counted per unit across the army (it counted models, so it almost never triggered). All legion-specific units are tagged; Dedicated Transports count as their own non-Infantry unit; retinues (Command Squads and similar) and their transports are not counted; a character counts by its own mount, not its retinue's
+  - `[World Eaters]` `[The Crimson Path]`: a Centurion on a bike no longer counts as both Infantry and non-Infantry; Clade Assassins count as Infantry; previously untagged units (e.g. Deathstorm, Contemptor variants, Land Raider Dionysus, Esoterist daemons, several named characters) are now counted; Warsmith and Iron-Father consuls no longer count as an extra unit
+  - `[Salamanders]` `[The Covenant of Fire]`: now requires a Centurion (Cataphractii/Tartaros too) with the Champion consul
+- **BattleScribe Structure**:
+  - `[Pallas Attack Speeder Squadron]`: no longer counts each Pallas model as a separate unit
+  - `[Legio Custodes]` Custodes vehicle units now carry the `[Vehicle Unit:]` category, so vehicles are counted once per unit
+  - `[Coronus Grav-carrier]`: as a Dedicated Transport it is now hidden for Custodian Guard, Sentinel Guard and Sagittarum Guard Squads of more than 6 models (Transport Capacity 18, Bulky (3))
+- **Typos**:
+  - `[Kinetic Destoyer]` → `[Kinetic Destroyer]`, `[Illastus Accelerator Cannon]` → `[Iliastus Accelerator Cannon]`, `[Enchanced Arachnus Blaze Cannon]` → `[Enhanced Arachnus Blaze Cannon]`
+
 ## Release Archive
 ## [2026-11-20]
 

@@ -4305,9 +4305,14 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
               </costs>
               <modifiers>
                 <modifier type="increment" value="1" field="8e1b-abfb-e65-45d3">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="force" childId="331b-43fb-e64-9364" shared="true" includeChildSelections="true"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="331b-43fb-e64-9364" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="d5e5-b44b-5db6-ab16" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                   <repeats>
                     <repeat value="1" repeats="1" field="selections" scope="force" childId="173c-2148-c3ce-9c5c" shared="true" roundUp="false" id="4ac7-ac0b-3121-d23c" includeChildSelections="true"/>
                     <repeat value="1" repeats="1" field="selections" scope="force" childId="69d4-e221-a0cb-e428" shared="true" roundUp="false" id="423-5a40-82a7-b167" includeChildSelections="true"/>

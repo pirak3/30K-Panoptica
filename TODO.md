@@ -98,3 +98,9 @@ Pyre Guard (Legiones Consularis), Artellus Numeon, Infernus Strike-Clade Squad, 
 Animatus (Legiones Consularis), Omegon done
 ## Antiqua
 ## Imperatus
+### Legio Custodes (p.55-89)
+Host-Master and Shield-Hosts, 5 Shield Captains, Allarus Terminator Squad, Contemptor-Moritiax Dreadnought Talon, Dawneagle Jetbike Squadron, Grav-Raider Carrier, Grav-Spartan Assault Tank, Land Raider Carrier Squadron, Land Raider Spartan Assault Tank, Chambers of the Golden Host, additional wargear options done
+### Sisters of Silence (p.91-119), Solar Auxilia (p.121-193), Imperialis Militia (p.195-265), back matter (p.268-313)
+sheets prepared, not yet built
+### Traders Militant (p.9-53)
+out of scope for now
